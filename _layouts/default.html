@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'he' }}" dir="rtl">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include navbar.html -%}
+
+    <main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

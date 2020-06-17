@@ -9,7 +9,7 @@ excerpt: |
   <p style="text-align: right;">הבעיה הקומבינטורית עליה אכתוב כאן היא קלה לניסוח והבנה, אך ככל הנראה קשה מאוד לפתרון. היא ידועה בשם  "Union-closed conjecture", ונוסחה ע"י המתמטיקאי Peter Frankl בשנת 1979 (אם כי, לפי עדויות מסוימות, היתה ידועה עוד קודם).</p>
 layout: post
 guid: http://gadial.net/etgar/?p=275
-permalink: /2014/01/27/edition1-frankl/
+permalink: /2014/01/27/frankl-conjecture/
 uri:
   - 'http://net-gar.net/?author_name=%D7%A8%D7%95%D7%9F-%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F'
 ninja_forms_form:
