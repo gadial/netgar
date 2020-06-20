@@ -24,6 +24,10 @@ volumes:
       link: "https://docs.google.com/file/d/0B-_8w6IKpNuUajFzOXoyMmtwQ1U/preview"
     - title: "חוברת י"
       link: "https://docs.google.com/file/d/0B-_8w6IKpNuUMld5VVNxdXNIaG8/preview"
+    - title: "חוברת יא"
+      link: "https://docs.google.com/file/d/0B-_8w6IKpNuUSkJQcU5qSDhKM00/preview"
+    - title: "חוברת יב"
+      link: "https://docs.google.com/file/d/0B-_8w6IKpNuUZ09iODBvQ3FKazg/preview"
 - title: "כרך ב"
   sheets:
     - title: "חוברת א"
