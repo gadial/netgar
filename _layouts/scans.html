@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1>סריקות של "{{ page.title }}"</h1>
+{{ content }}
+{%- if page.volumes.size > 0 -%}
+    {% for volume in page.volumes %}
+    <h2>{{volume.title}}</h2>
+    {% for sheet in volume.sheets %}
+    <h3>{{ sheet.title }}</h3>
+    <p><iframe src="{{sheet.link}}" width="640" height="800"></iframe></p>
+    {%- endfor -%}
+    {%- endfor -%}
+{%- endif -%}
