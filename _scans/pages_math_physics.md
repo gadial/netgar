@@ -35,4 +35,4 @@ volumes:
     - title: "חוברת ב"
       link: "https://docs.google.com/file/d/0B-_8w6IKpNuUblQ5X0I0b0x4Mjg/preview"
 ---
-"דפים למתמטיקה ופיזיקה" היה כתב עת כלשהו שאני עדיין מחכה לקבל תיאור מפורט שלו
+דפים למתמטיקה ופיזיקה, בלעדי

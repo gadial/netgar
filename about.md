@@ -1,18 +1,17 @@
 ---
 layout: page
-title: About
+title: אודות
 permalink: /about/
 ---
+**נטגר** הוא עיתון מתמטי לנוער. אבל לא רק לנוער. הוא מיועד לכל שוחרי המתמטיקה באשר הם. הוא ממשיך את **אתגר - גליונות למתמטיקה** שיצא לאור בשנים 1985-2001.  קדמו לו **גליונות מתמטיקה ואתגר** כאשר לפניהם היו **הדפים למתמטיקה** ו**גליונות למתמטיקה ופיסיקה**, שיצאו לאור עוד לפני הקמת המדינה. העיתון נטגר יוצא לאור ע"י הפקולטה למתמטיקה בטכניון.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## בעלי תפקידים בעתון
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+*עורך העיתון*: פרופ' רון אהרוני
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+*מנהל אדמיניסטרטיבי*: ד"ר יוסי כהן
 
+*עורך מדור חידות*: ד"ר דניאל לובזנס
 
-[jekyll-organization]: https://github.com/jekyll
+*עורך טכני*: מיכאל ליטבק
+

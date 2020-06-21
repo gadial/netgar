@@ -79,4 +79,4 @@ volumes:
         - title: "גליון 1"
           link: "https://docs.google.com/file/d/0B-_8w6IKpNuURlJmZzIwa1lILXM/preview"
 ---
-"רבעון למתמטיקה" היה כתב עת כלשהו שאני עדיין מחכה לקבל תיאור מפורט שלו
+רבעון למתמטיקה פורסם בין השנים 1946-1959 בעריכתו של דב ירדן
