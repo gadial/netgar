@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>בעיות ישנות ותוצאות חדשות על תבניות ריבועיות | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="בעיות ישנות ותוצאות חדשות על תבניות ריבועיות" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="האם כל מספר הוא סכום של שני ריבועים של מספרים שלמים? בוודאי שלא. הוכיחו לעצמכם שאם מספר משאיר שארית 3 בחלוקה ב-4 אז הוא לא סכום של שני ריבועים. כך, 3, 7, 11, 15 וכו’ אינם סכומים של שני ריבועים. האם כל מספר הוא סכום של שלושה ריבועים שלמים? גם זה לא. 7 איננו סכום כזה. 11 כ ן: הוא שווה ל-9+1+1. נסו והיווכחו ש- 15 אינו סכום של שלושה ריבועים. (מה אם מרשים גם הפרשים?)" />
+<meta property="og:description" content="האם כל מספר הוא סכום של שני ריבועים של מספרים שלמים? בוודאי שלא. הוכיחו לעצמכם שאם מספר משאיר שארית 3 בחלוקה ב-4 אז הוא לא סכום של שני ריבועים. כך, 3, 7, 11, 15 וכו’ אינם סכומים של שני ריבועים. האם כל מספר הוא סכום של שלושה ריבועים שלמים? גם זה לא. 7 איננו סכום כזה. 11 כ ן: הוא שווה ל-9+1+1. נסו והיווכחו ש- 15 אינו סכום של שלושה ריבועים. (מה אם מרשים גם הפרשים?)" />
+<link rel="canonical" href="/2014/07/01/old_problems_and_new_results_on_quadratic_forms/" />
+<meta property="og:url" content="/2014/07/01/old_problems_and_new_results_on_quadratic_forms/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-07-01T00:02:19+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-07-01T00:02:19+03:00","datePublished":"2014-07-01T00:02:19+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/07/01/old_problems_and_new_results_on_quadratic_forms/"},"url":"/2014/07/01/old_problems_and_new_results_on_quadratic_forms/","description":"האם כל מספר הוא סכום של שני ריבועים של מספרים שלמים? בוודאי שלא. הוכיחו לעצמכם שאם מספר משאיר שארית 3 בחלוקה ב-4 אז הוא לא סכום של שני ריבועים. כך, 3, 7, 11, 15 וכו’ אינם סכומים של שני ריבועים. האם כל מספר הוא סכום של שלושה ריבועים שלמים? גם זה לא. 7 איננו סכום כזה. 11 כ ן: הוא שווה ל-9+1+1. נסו והיווכחו ש- 15 אינו סכום של שלושה ריבועים. (מה אם מרשים גם הפרשים?)","headline":"בעיות ישנות ותוצאות חדשות על תבניות ריבועיות","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/07/01/riddles-3/">&laquo; חידה לגדולים</a>
+    
+    
+      <a class="next" href="/2014/07/01/geometry_of_japan_temples/">גיאומטריית המקדשים היפנית &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">בעיות ישנות ותוצאות חדשות על תבניות ריבועיות</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-07-01T00:02:19+03:00" itemprop="datePublished">Jul 1, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">וויליאם דיוק, Notices of the AMS vol. 44, 1997  תרגם: משה ברוך</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  <strong>הקדמה</strong>
+</p>
+
+<p style="text-align: right;">
+  האם כל מספר הוא סכום של שני ריבועים של מספרים שלמים? בוודאי שלא. הוכיחו לעצמכם שאם מספר משאיר שארית 3 בחלוקה ב-4 אז הוא לא סכום של שני ריבועים. כך, 3, 7, 11, 15 וכו' אינם סכומים של שני ריבועים. האם כל מספר הוא סכום של שלושה ריבועים שלמים? גם זה לא. 7 איננו סכום כזה. 11 כ ן: הוא שווה ל-9+1+1. נסו והיווכחו ש- 15 אינו סכום של שלושה ריבועים. (מה אם מרשים גם הפרשים?)
+</p>
+
+<p style="text-align: right;">
+  אחד המשפטים המפורסמים על מספרים שלמים הוא של לגרנז' –
+</p>
+
+<p style="text-align: right;">
+  כל מספר שלם הוא סכום של ארבעה ריבועים שלמים.
+</p>
+
+<p style="text-align: right;">
+  במאמר הזה נספר קצת על ההיסטוריה המרתקת של המשפט הזה, ועל משפטים שקשורים אליו.
+</p>
+
+<p style="direction: rtl;">
+  <strong>טענה של פרמה</strong>
+</p>
+
+<p style="direction: rtl;">
+  ב 1638 שיער פרמה שכל מספר טבעי הוא סכום של לכל היותר שלושה מספרים משולשים, ארבעה ריבועים, חמישה מספרים מחומשים וכו. מהם כל המספרים האלה, הקרויים על שמות צורות גיאומטריות? הנה ההגדרה:
+</p>
+
+<p style="direction: rtl;">
+  מספרים משולשים הם המספרים $latex { 1,3,6,10,\dots,\frac{n^2+n}{2},\dots }$ . מספרים ריבועים הם המספרים  $latex { 1,4,9,116,\dots,n^2,\dots }$ מספרים מחומשים הם המספרים $latex { 1,5,12,22,\dots,\frac{3n^2-2}{2},\dots }$  מספרים משושים הם המספרים $latex { 1,6,15,28,\dots,2n^2-n,\dots }$. באופן כללי, מספר פוליגונאלי מסדר  $latex { k  } $ נתון על ידי $latex { \frac{(k-2)n^2-(k-4)n}{2} } $
+</p>
+
+<p style="text-align: right;">
+  ההשערה של פרמה יפה במיוחד משום שהיא חדה. לכל k יש מספרים שאינם מיוצגים כסכום של פחות מ-k מספרים פוליגונאליים מסדר k. דוגמה לכך הוא המספר 2k-1 .
+</p>
+
+<p style="text-align: right;">
+  במכתב שכתב פרמה לפסקל ב-1654 הוא תיאר את הטענה הזו כתוצאה החשובה ביותר שלו. כמו במקרה המפורסם יותר, של ההשערה שזכתה לשם "השערת פרמה" או "המשפט האחרון של פרמה", הוא כנראה השלה את עצמו. במיוחד קשה להאמין שהייתה לו הוכחה נכונה עבור שלושה מספרים משולשים.
+</p>
+
+<p style="text-align: right;">
+  ראשונה להיפתר בצורה מלאה הייתה הטענה שכל מספר טבעי הואסכום של ארבעה ריבועים. היא הוכחה על ידי לגרנג' ב-1772 בעזרת רעיונות של אוילר.
+</p>
+
+<p> </p>
+
+<p style="text-align: right;">
+  הבא בתור היה המקרה של שלושה מספרים משולשים. לפני כמאתיים שנה התחיל גאוס לכתוב את היומן המתמטי שלו. בין הרישומים הראשונים שלו מופיע:
+</p>
+
+<p style="text-align: right;">
+  מספר $latex {\Delta+\Delta+\Delta =} $ יוריקה!
+</p>
+
+<p> </p>
+
+<p style="text-align: right;">
+  כלומר – כל מספר הוא סכום של שלושה מספרים משולשים – מצאתי! כאמור, הטענה הזאת פירושה ש:
+</p>
+
+<p style="direction: rtl;">
+  $latex {m = \frac{n_1^2+n_1}{2}+\frac{n_2^2+n_2}{2}+\frac{n_3^2+n_3}{2}} $ עם שלמים אי שליליים שבהעברת אגפים פירושו: $latex { 8m+3 = (2n_1+1)^2+(2n_2+1)^2+(2n_3+1)^2 }$ t אם כן, הטענה של גאוס שקולה לטענה שכל מספר מהצורה $latex { 8m + 3 } $ הוא סכום של שלושה ריבועים של מספרים אי זוגיים. זהו מקרה פרטי של תוצאה כללית יותר, שמספר הוא סכום של שלושה ריבועים בדיוק כאשר הוא אינו מהצורה$latex { 4^b(8m+7) } $ . הטענה הזאת שוערהעל ידי לג'נדר ב 1798 . ב-1801 נתן גאוס הוכחה מלאה לטענה זו בספרו המפורסם "מחקרים אריתמטיים"  (<em>Disquisitiones Arithmeticae)</em> .
+</p>
+
+<p style="direction: rtl;">
+   ב- 1813 פתר קושי את ההשערה של פרמה במלואה. הוא הראה שההשערה הכללית נובעת מהמשפט על המספרים המשולשים.
+</p>
+
+<p style="direction: rtl;">
+  זמן מה לאחר ההוכחה של קושי, דיריכלה מצא נוסחה יפה למספר האפשרויות שבהן מספר $latex {m} $ מיוצג כסכום של שלושה מספרים משולשים. במקרה המיוחד שבו $latex {8m+3} $ הוא מספר ראשוני, נוסחה זו אומרת שמספר זה הוא ההפרש בין מספר השרשים הריבועיים מוד $latex {8m+3} $ למספר אלו שאינם שרשים ריבועיים מוד $latex {8m+3} $ בקטע מ $latex {1} $ עד $latex {4m+1} $ . לדוגמא, אם $latex {m=2} $ אז $latex {8m+3=19} $ ויש ששה שרשים ריבועיים מוד $latex {19} $  בקטע מ $latex {1} $ עד $latex {4m+1=9} $ שהם $latex {1,4,5,6,7,9} $ ושלושה מספרים שאינם שרשים ריבועיים שהם $latex {2,3,8} $ . לכן יש שלוש דרכים להציג את $latex {2} $ כסכום של שלושה מספרים משולשים: $latex {2=1+1+0=1+0+1=0+1+1} $
+</p>
+
+<p style="text-align: right;">
+  עדיין נשארו בעיות פתוחות רבות על המספרים האלה. לג'נדר בספרו "תורת המספרים" מ1830 הוכיח באמצעים אלמנטריים שכל מספר גדול מ 1791 הוא סכום של ארבעה מספרים משושים (הקסגונליים). תוצאה זו הובילה לשאלה האם אפשר להסתפק בשלושה מספרים הקסגונליים ממקום מסוים ואילך. ואכן, כך הוא:
+</p>
+
+<p style="text-align: right;">
+  <strong><em>  </em></strong><strong><em>משפט(דיוק ושולץ-פילו 1990</em></strong><strong>)</strong>:  <em>קיים מספר טבעי שהחל ממנו כל מספר טבעי הוא סכום של שלושה</em> <em>מספרים הקסגונליים.   </em>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 18pt;">  <strong>מאמר של רמנוג'ן</strong></span>
+</p>
+
+<p style="direction: rtl;">
+  <strong> </strong>ב-1914, רמנוג'ן פרסם מאמר [8] שהיה לו השפעה גדולה על המחקר בנושא של ייצוג מספרים על ידי תבניות ריבועיות. הוא חיפש את כל השלמים $latex {0\le a \le b \le c \le d} $ כך שכל מספר טבעי מיוצג על ידי התבנית:   $latex {ax_1^2+bx_2^2+cx_3^2+dx_4^2} $ בדיקה אלמנטרית של כל המקרים האפשריים מראה שכדי שהמספרים  $latex {1,2,3,5} $ ייוצגו אז $latex {(a,b,c)} $ צריכים להיות מבין $latex {(1,1,1),(1,1,2),(1,1,3),(1,2,2),(1,2,3),(1,2,4)} $ או $latex {(1,2,5)} $ . אף אחת מבין התבניות הריבועיות בשלושה משתנים $latex {ax_1^2+bx_2^2+cx_3^2} $ המתאימות לשלשות אלו אינה מייצגת את כל הטבעיים. המספרים הקטנים ביותר שאינם מיוצגים הם $latex {7,14,6,7,10,14,10} $  בהתאמה. (אחד לכל תבנית). על ידי בדיקת המספרים הללו בתבניות המתאימות עם ארבעה משתנים מגיעים ל- $latex {55} $ תבניות אפשריות.  רמנוג'ן מצא כללים פשוטים לטבעיים שמיוצגים על ידי התבניות בשלושה משתנים ובעזרת הכללים הללו הראה שכל אחת מה $latex {55} $ התבניות עם ארבע משתנים מייצגת את כל הטבעיים. עשר שנים מאוחר יותר, דיקסון  [3] שם לב שהתבנית המתאימה ל$latex {(1,2,5,5)} $  אינה מייצגת את $latex {15} $ אבל הוכיח שבשאר המקרים רמנוג'ן צדק ופרט בכללים שמצא עבור התבניות בשלושה משתנים. אפשר בקלות להכליל את הבעיה של רמנוג'ן לתבניות ריבועיות אחרות בשלושה משתנים. אפשר בקלות להכליל את הבעיה של רמנוג'ן לתבניות ריבועיות אחרות. תבנית ריבועית חיובית מסדר $latex { I } $ המקבלת ערכים שלמים היא פולינום הומוגני ריבועי $latex {Q(x) =Q(x_1,x_2,\dots,x_1) } $ עם מקדמים שלמים  שמקיים $latex {Q(x) &gt;0 } $   עבור $latex {x \neq 0} $  <em>, $latex {x} $ </em> ממשי. תבנית כזו מיוצגת בסימונים של מטריצות בצורה $latex {Q(x) = x^tAx} $  כאשר $latex {A=\frac{1}{2} \frac{\partial^2Q(x)}{\partial x_i\partial x_j}} $  היא מטריצה סימטרית חיובית. האיברים של $latex {A} $  הם חצי שלמים. אם כל האיברים של $latex {A} $ הם שלמים אז $latex {Q(x)} $<em> נקראת תבנית שלמה מטריציונית. </em>
+</p>
+
+<p style="text-align: right;">
+  המילה האחרונה (בינתיים() בדבר השאלה אילו תבניות מייצגות את כל הטבעיים ניתנה על ידי קונווי ושניברגר [1] שהוכיחו:
+</p>
+
+<p style="direction: rtl;">
+  <em> </em><strong><em>משפט: </em></strong><em>אם תבנית ריבועית חיובית שלמה מטריציונית מייצגת את המספרים</em>
+</p>
+
+<p style="direction: rtl;">
+  <em>                                   $latex {1,2,3,5,6,7,10,14,15} $ </em>
+</p>
+
+<p style="direction: rtl;">
+  אז היא מייצגת את כל הטבעיים.
+</p>
+
+<p style="direction: rtl;">
+  <strong>השערה: </strong><em>אם תבנית חיובית עם ערכים שלמים מייצגת את כל אחד מהשלמים</em>
+</p>
+
+<p style="direction: rtl;">
+  $latex {1,2,3,5,6,7,10,13,14,15,17,19,21,22,23,26,29,30,31,34,35,37,42,58,93,110,145,203,290} $
+</p>
+
+<p style="direction: rtl;">
+  <em>אז היא מייצגת את כל הטבעיים.</em>
+</p>
+
+<p style="direction: rtl;">
+  במאמרו [8] רמנוג'ן מנסח את הבעיה של למצוא את כל התבניות החיוביות מהצורה $latex {ax_1^2+bx_2^2+cx_3^2+dx_4^2} $ שמייצגות כל מספר טבעי גדול מספיק. הוא טוען שהבעיה הזו היא קשה יותר ומעניינית יותר. בעיה זו נפתרה באופן מהותי על ידי קלוסתרמן ב-[6] ב-1926. המאמר של קלוסתרמן מהווה פריצת דרך בנושא. קלוסתרמן שיפר והכליל את שיטת המעגל בדרך שאפשרה לו לקבל תוצאה על ייצוג של שלמים בעזרת תבניות עם ארבעה משתנים. תוצאה זו הגיעה מחסם על סכומים שנקראים היום סכומי קלוסתרמן. הדוגמא הפשוטה ביותר לסכום קלוסתרמן הוא הסכום
+</p>
+
+<p style="text-align: center;">
+  $latex \displaystyle K(n,p)= \sum_{d=1}^{p-1} e^{2\pi in(d+\tilde{d})/p} $
+</p>
+
+<p style="direction: rtl;">
+  כאשר $latex {p} $ הוא ראשוני ו$latex {\tilde{d}} $ הוא ההפיך הכפלי של $latex {d} $ מוד $latex {p} $. החסם של קלוסתרמן שהספיק בשביל השימוש לתבניות ריבועיות בארבעה משתנים שופר בהמשך על ידי החסם של וויל (Weil ) שהוא הטוב ביותר האפשרי:
+</p>
+
+<p style="direction: rtl;">
+  $latex {|K(n,p)|\le2sqrt(p)} $
+</p>
+
+<p style="direction: rtl;">
+  וויל הגיע לחסם הזה כמסקנה מההנחה של רימן עבור עקומים מעל שדה סופי שאותה הוכיח.
+</p>
+
+<p style="direction: rtl;">
+  המאמר של רמנוג'ן גם פתח את הנושא הקשה יותר של תבניות שלושה משתנים. הוא כתב הערה במאמר על כך  "שהמספרים הזוגיים שאינם מהצורה $latex { x^2 + y^2 +10z^2} $ הם כולם מהצורה  $latex {4^k(16r+6)} $ (כלומר, כל מספר זוגי חיובי אחר מיוצג) בעוד שהמספרים האי זוגיים שאינם מיוצגים כמו
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex {3,7,21,31,33,43,67,79,87,133,217,219,223,253,307,391,\dots} $
+</p>
+
+<p style="direction: rtl;">
+  אינם מקיימים כלל ברור". דיקסון הוכיח את הטענה של רמנוג'ן בעזרת טיעון פשוט אבל השאלה אם קיימים אינסוף מספרים אי זוגיים שאינם מיוצגים נשארה פתוחה עד 1991. נובע מ[4] ש-
+</p>
+
+<p style="direction: rtl;">
+  <strong> </strong><strong>משפט: </strong><em>קבוצת </em><strong> </strong><em>המספרים האי זוגיים החיוביים שאינם מיוצגים על ידי התבנית של רמנוג'ן <em><em><em>$latex { x^2 + y^2 +10z^2} $</em></em></em></em><em> היא קבוצה סופית.</em>
+</p>
+
+<p style="direction: rtl;">
+  גם במקרה הזה, ההוכחה אינה נותנת חסם מפורש על מספר היוצאים מן הכלל. בעצם, הרשימה של היוצאים מן הכלל של רמנוג'ן אינה מלאה, וגם המספרים <em><em>$latex {679} $</em></em> ו <em><em>$latex {2719} $</em></em> אינם מיוצגים. אונו ו סאונדררג'ן במאמר מרשים [7] הראו שאם מניחים את השערת רימן המוכללת אז אלו הם כל היוצאים מן הכלל.
+</p>
+
+<p style="direction: rtl;">
+  <strong><em>ביבליוגרפיה</em></strong>
+</p>
+
+<p><strong><em> </em></strong><strong>[1]</strong> J. H. Conway and W. Schneeberger, to appear.</p>
+
+<p><strong>[2]</strong> L.E. Dickson, History of the theory of numbers II, Chelsea Publishing, 1971.</p>
+
+<p><strong>[3]</strong> L.E. Dickson, Integers represented by positive ternary quadratic forms, Bull. Amer. Math. Soc. <strong>33</strong> (1927) 63-70.</p>
+
+<p><strong>[4]</strong> W. Duke and R. Schulze-Pillot, Representations of integers by positive ternary quadratic forms and equidistribution of lattice points on ellipsoids, Invent. Math. <strong>99</strong> (1990), 49-57.</p>
+
+<p><strong>[5]</strong> R. K. Guy, Every number is expressible as a sum of how many polygonal numbers?, Amer. Math. Monthly <strong>101</strong> (1994), 169-172.</p>
+
+<p><strong>[6]</strong> H. D. Kloosterman, On the representations of numbers in the form  , Acta Math. <strong>49</strong> (1926), 407-464.</p>
+
+<p><strong>[7]</strong> K. Ono and K. Sounararajan, Ramanujan’s ternary quadratic form, Invent. Math. <strong>130</strong> (1997), 415-454.</p>
+
+<p><strong>[8]</strong> S. Ramanujan, On the expression of a number in the form , Collected papers, Chelsea.</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/07/01/riddles-3/">&laquo; חידה לגדולים</a>
+    
+    
+      <a class="next" href="/2014/07/01/geometry_of_japan_temples/">גיאומטריית המקדשים היפנית &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/07/01/old_problems_and_new_results_on_quadratic_forms/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>שברים עשרוניים וטורים גיאומטריים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="שברים עשרוניים וטורים גיאומטריים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="הסדרה 1,2,4,8,16 נקראת &quot;סדרה גיאומטרית&quot;. במקרה זה - סדרה אינסופית, אבל אפשר לדבר גם על סדרות גיאומטריות סופיות, שבהן יש איבר אחרון. בסדרה גיאומטרית כל איבר גדול מקודמו פי מספר קבוע, שנקרא ה&quot;מנה&quot; של הסדרה. בדוגמה הזאת המנה היא 2. המקור של השם הוא בכך שכל איבר הוא הממוצע הגיאומטרי של שני שכניו. למשל, 8 הוא הממוצע הגיאומטרי של 4 ושל 16..." />
+<meta property="og:description" content="הסדרה 1,2,4,8,16 נקראת &quot;סדרה גיאומטרית&quot;. במקרה זה - סדרה אינסופית, אבל אפשר לדבר גם על סדרות גיאומטריות סופיות, שבהן יש איבר אחרון. בסדרה גיאומטרית כל איבר גדול מקודמו פי מספר קבוע, שנקרא ה&quot;מנה&quot; של הסדרה. בדוגמה הזאת המנה היא 2. המקור של השם הוא בכך שכל איבר הוא הממוצע הגיאומטרי של שני שכניו. למשל, 8 הוא הממוצע הגיאומטרי של 4 ושל 16..." />
+<link rel="canonical" href="/2014/04/01/decimal-fractions-and-geometric-series/" />
+<meta property="og:url" content="/2014/04/01/decimal-fractions-and-geometric-series/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-04-01T00:06:18+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-04-01T00:06:18+03:00","datePublished":"2014-04-01T00:06:18+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/04/01/decimal-fractions-and-geometric-series/"},"url":"/2014/04/01/decimal-fractions-and-geometric-series/","description":"הסדרה 1,2,4,8,16 נקראת &quot;סדרה גיאומטרית&quot;. במקרה זה - סדרה אינסופית, אבל אפשר לדבר גם על סדרות גיאומטריות סופיות, שבהן יש איבר אחרון. בסדרה גיאומטרית כל איבר גדול מקודמו פי מספר קבוע, שנקרא ה&quot;מנה&quot; של הסדרה. בדוגמה הזאת המנה היא 2. המקור של השם הוא בכך שכל איבר הוא הממוצע הגיאומטרי של שני שכניו. למשל, 8 הוא הממוצע הגיאומטרי של 4 ושל 16...","headline":"שברים עשרוניים וטורים גיאומטריים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/03/31/riddles/">&laquo; חידה לילדים גדולים</a>
+    
+    
+      <a class="next" href="/2014/04/01/my-prespective-on-teaching/">תפיסת ההוראה שלי &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">שברים עשרוניים וטורים גיאומטריים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-04-01T00:06:18+03:00" itemprop="datePublished">Apr 1, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">רון אהרוני</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>1. מתי פגשתם לראשונה בסדרות גיאומטריות?</strong></p>
+
+<p>הסדרה $latex {1,~2,~4,~8,~16\ldots}$ נקראת “סדרה גיאומטרית”. במקרה זה - סדרה אינסופית, אבל אפשר לדבר גם על סדרות גיאומטריות סופיות, שבהן יש איבר אחרון. בסדרה גיאומטרית כל איבר גדול מקודמו פי מספר קבוע, שנקרא ה”מנה” של הסדרה. בדוגמה הזאת המנה היא 2. המקור של השם הוא בכך שכל איבר הוא הממוצע הגיאומטרי של שני שכניו. למשל, 8 הוא הממוצע הגיאומטרי של $latex {4}$ ושל $latex {16}$, שפירושו ש-$latex {8^2=4 \times 16}$. בדיוק כפי שבסדרה חשבונית, שבה כל איבר גדול מקודמו במספר קבוע, כל איבר הוא הממוצע החשבוני של שני שכניו. למשל, בסדרה $latex {5,~8,~11,~14,\ldots}$ האיבר $latex {11}$ הוא הממוצע החשבוני בין שני שכניו: $latex {11+11=8+14}$.</p>
+
+<p>סדרות גיאומטריות פוגשים לראשונה בדרך כלל בבית הספר התיכון. לפחות כך מוצהר. אבל למעשה, לומדים אותן הרבה קודם, אפילו בכיתה א’. משום שהשיטה שמקובלת כיום לייצוג מספרים, השיטה העשרונית, מבוססת על סדרה גיאומטרית - על הסדרה $latex {1,~10,~100,~1000,\ldots}$. בשיטה העשרונית מקבצים לעשרות. עשר אחדות מקבצים לעשרת אחת, עשר עשרות מקבצים למאה אחת, וכו’. הסיבה לכך שהשיטה העשרונית כה יעילה בייצוג מספרים )יש הטוענים שזהו הרעיון המתמטי המועיל ביותר מאז ומעולם( היא שהסדרה הגיאומטרית $latex {1,~10,~100,~1000,\ldots}$, כמו כל סדרה גיאומטרית עם מנה גדולה מ-$latex {1}$, גדלה מהר מאוד. אומרים שהיא גדלה “בקצב מעריכי” - המעריך בחזקה הוא שקובע את גודלה. בשבע ספרות אפשר לייצג את המספר העצום מיליון.</p>
+
+<p><strong>2. לצד השני</strong></p>
+
+<p>אפשר גם ללכת לצד השני, לחזקות שליליות של $latex {10}$. כלומר, להסתכל בסדרה $latex {1,~\frac{1}{10}=10^{-1},~\frac{1}{100}=10^{-2},~\frac{1}{1000}=10^{-3},~\frac{1}{10000}=10^{-4},~\ldots}$. הרעיון הזה קיים כבר זמן רב מאוד - למשל בחלוקת יחידות כסף לעשיריות ולמאיות: שקלים לאגורות, דולרים לסנטים. במתמטיקה הוא הופיע לראשונה במאה השבע עשרה, בצורת השברים העשרוניים. הייצוג פשוט מאוד: באיזשהו מקום שמים נקודה, משמאל לה חזקות חיוביות של $latex {10}$ ומימין לה חזקות שליליות. במקום $latex {\frac{1}{10}}$ כותבים $latex {0.1}$, במקום $latex {\frac{1}{100}}$ כותבים $latex {0.01}$ וכו’.</p>
+
+<p>אנחנו עוברים בזאת מן העולם של “המפץ הגדול”, שבו המספרים גדלים בצורה מעריכית )שמשמעו - מהר מאוד( לעולם המיקרוסקופי, שבו המספרים קטנים בצורה מעריכית )שמשמעו שהם קטנים מהר מאוד(. ומתברר שזהו עולם לא פחות מעניין. לדעת רבים - מעניין עוד יותר. בעולם של המספרים ששואפים לאפס חי, למשל, החשבון הדיפרנציאלי.</p>
+
+<p><strong>3. סדרות וטורים</strong></p>
+
+<p>מדוע העולם הזה מעניין כל כך? בין השאר, משום שאפשר לסכם בו אינסוף מספרים, ובכל זאת לקבל סכום סופי. למעשה, שם פתחנו את המאמר הקודם. זוכרים? הסתכלנו שם במספר $latex {0.999…}$. זהו למעשה סכום אינסופי:</p>
+
+<p align="center">
+  $latex \displaystyle 0.999\ldots = ~\frac{9}{10}+\frac{9}{100}+\frac{9}{1000}\ldots+\frac{9}{10000}\ldots$
+</p>
+
+<p>זהו סכום של איברי סדרה גיאומטרית אינסופית, עם איבר ראשון $latex {0.9}$ ומנה $latex {\frac{1}{10}}$. המפליא הוא שאף על פי שיש כאן אינסוף איברים, הסכום הזה סופי! מתברר שסכום של מספר אינסופי של מספרים יכול להיות סופי. התנאי לכך הוא שהמספרים קטנים מהר מספיק.</p>
+
+<p>כאשר מסכמים איברים של סדרה הסכום נקרא “טור”. אנחנו מדברים אם כן על טורים גיאומטריים, במקרה הזה טורים גיאומטריים אינסופיים.</p>
+
+<p><strong>4. הפרקטל הראשון שלי</strong></p>
+
+<p>רבים מכם שמעו בוודאי על פרקטלים. פרקטל הוא אובייקט מתמטי )למשל, צורה גיאומטרית, אבל לאו דווקא( שדומה לחלק שלו. מה פירוש “דומה”? יש לכך מובן מדויק: החלק הדומה לשלם הוא השלם מוקטן פי מספר מסוים. למשל, גילו שחופים מתנהגים כפרקטלים. כשמצלמים אותם מרחוק מתקבלת צורה אופיינית. כשמתקרבים ומצלמים חלק קטן מקרוב, מתקבלת אותה צורה. החלק הוא בעל אותה צורה כמו החוף כולו, רק מוקטן. אם תיקחו עתה חלק קטן עוד יותר, תקבלו שוב צורה דומה. כמובן, בחופים התהליך הזה חייב להיעצר באיזשהו מקום - לכל המאוחר כאשר נגיע למולקולות שמרכיבות את החול או את הסלעים. בפרקטל “אמיתי”, כלומר מתמטי, התהליך לעולם לא נעצר. הוא אינסופי. אתם יכולים לקחת חלקים קטנים יותר ויתר, ותמיד תמצאו חלק של החלק, שדומה לחלק כולו.</p>
+
+<p>ושוב, מצפה לכם כאן הפתעה: אתם מכירים פרקטלים! כבר פגשתם אותם, לכל המאוחר בחטיבת הביניים, כאשר פגשתם במספר $latex {0.999\ldots}$. אמרנו שהוא שווה ל-$latex {~\frac{9}{10}+\frac{9}{100}+\frac{9}{1000}+\frac{9}{10000}\ldots}$. אם תכפלו אותו ב-$latex {\frac{1}{10}}$ תקבלו</p>
+
+<p align="center">
+  $latex \displaystyle ~\frac{9}{100}+\frac{9}{1000}+\frac{9}{10000}+\frac{9}{100000}\ldots$
+</p>
+
+<p>שהוא חלק מן הסכום - הסכום החל מן האיבר השני.</p>
+
+<p>בואו ניקח טור גיאומטרי אינסופי )כמעט( כללי:</p>
+
+<p align="center">
+  $latex \displaystyle 1+q+q^2+q^3+\ldots$
+</p>
+
+<p>זהו טור גיאומטרי עם מנה $latex {q}$. הוא כמעט כללי כי הוא מתחיל ב-$latex {1}$, כשטור גיאומטרי כללי יכול להתחיל במספר כלשהו. טור גיאומטרי כללי מתקבל מטור כזה על ידי כפל כל האיברים במספר אחד - האיבר הראשון. אני טוען שזהו פרקטל. מדוע? משום שאם תכפלו את כל איברי הטור ב-$latex {q}$ תקבלו</p>
+
+<p align="center">
+  $latex \displaystyle q+q^2+q^3+q^4+\ldots$
+</p>
+
+<p>שהוא אותו סכום, החל מן האיבר השני. כלומר, החלק של הסכום, החל מן האיבר השני, דומה לסכום כולו - הוא קטן ממנו פי $latex {q}$ )כתבתי “קטן” משום שההנחה היא ש-$latex {q&lt;1}$, אחרת הסכום הזה אינו מתכנס למספר סופי(.</p>
+
+<p><strong>5. חישוב הסכום</strong></p>
+
+<p>תכונת הפקטליות של סכומים גיאומטריים מאפשרת לחשב את הסכום שלהם. בואו נסמן את הסכום $latex {1+q+q^2+q^3+\ldots}$ ב-$latex {S}$. כלומר $latex {S=1+q+q^2+q^3+\ldots}$. לפי האמור, הסכום החל מן האיבר השני הוא $latex {S}$ כפול $latex {q}$. כלומר:</p>
+
+<p align="center">
+  $latex \displaystyle qS=q+q^2+q^3+q^4+\ldots$
+</p>
+
+<p>אבל הסכום החל מן האיבר השני הוא $latex {S}$ פחות האיבר הראשון, שהוא $latex {1}$. כלומר:</p>
+
+<p align="center">
+  $latex \displaystyle qS=S-1.$
+</p>
+
+<p>בהעברת אגפים, נקבל $latex {S(q-1)=1}$, שפירושו</p>
+
+<p align="center">
+  $latex \displaystyle S=\frac{1}{1-q}$
+</p>
+
+<p>ומה אם הטור אינו מתחיל ב-$latex {1}$, אלא במספר כלשהו $latex {a}$? פשוט - הסכום הוא $latex {\frac{a}{1-q}}$. הסכום כולו נכפל ב-$latex {a}$. למשל, אם האיבר הראשון הוא $latex {0.9}$ והמנה היא $latex {\frac{1}{10}}$, מתקבל: $latex {0.999\ldots = \frac{0.9}{1-0.1}=\frac{0.9}{0.9}=1}$ - כפי שאנחנו יודעים כבר מזמן!</p>
+
+<p><strong>6. מה משמעו של סכום אינסופי</strong></p>
+
+<p>בנקודה עדינה אחת לא נגענו כמעט: מה פירושו של סכום אינסופי? ואיך אנחנו יודעים שסכום של טור גיאומטרי עם מנה קטנה מ-$latex {1}$ בכלל קיים?</p>
+
+<p>ושוב, תתפלאו להיווכח שבעצם אתם יודעים את התשובה. וגם כאן פגשתם אותה במקרה של המספר $latex {0.999\ldots}$. זוכרים מה משמעותו? זהו הגבול של המספרים $latex {0.9,~0.99,~0.999,\ldots}$. כלומר זהו גבול הסדרה</p>
+
+<p align="center">
+  $latex {~\frac{9}{10}}$
+</p>
+
+<p style="text-align: center;">
+  $latex {~\frac{9}{10}+\frac{9}{100}}$
+</p>
+
+<p style="text-align: center;">
+  $latex {~\frac{9}{10}+\frac{9}{100}+\frac{9}{1000}}$
+</p>
+
+<p style="text-align: center;">
+  $latex {~\frac{9}{10}+\frac{9}{100}+\frac{9}{1000}+\frac{9}{10000}\ldots\ldots}$
+</p>
+
+<p>אתם יכולים לנחש מהי המשמעות של העובדה שסכום אינסופי מתכנס לגבול: מסכמים עוד ועוד איברים, ורוצים שסדרת הסכומים האלה תתקרב לגבול. אם כן, אנחנו צריכים לדעת מהו הסכום של טור גיאומטרי סופי.</p>
+
+<p><strong>7. סכום של טור גיאומטרי סופי</strong></p>
+
+<p>מהו הסכום של טור גיאומטרי שבו אנחנו עוצרים, נאמר בחזקה $latex {n}$?</p>
+
+<p>כלומר, מהו הסכום $latex {1+q+q^2+\ldots+q^n}$?</p>
+
+<p>בואו נסמן את הסכום הזה ב-$latex {S_n}$. כלומר:</p>
+
+<p align="center">
+  $latex \displaystyle S_n=1+q+q^2+\ldots+q^n$
+</p>
+
+<p>אותו טריק שהשתמשנו בו במקרה האינסופי יכול לשמש גם כאן. הוא מעט יותר מסובך )כן, המקרה הסופי יכול להיות יותר מסובך מן האינסופי!(. נכפול את שני האגפים ב-$latex {q}$. נקבל:</p>
+
+<p align="center">
+  $latex \displaystyle qS_n=q+q^2+\ldots+q^n+q^{n+1}$
+</p>
+
+<p>באגף ימין מופיע כמעט $latex {S_n}$. מהו ההבדל? יש לנו תוספת, של $latex {q^{n+1}}$. לעומת זאת, חסר משהו - האיבר הראשון, $latex {1}$. כלומר:</p>
+
+<p align="center">
+  $latex \displaystyle qS_n=S_n+q^{n+1}-1$
+</p>
+
+<p>ובהעברת אגפים,</p>
+
+<p align="center">
+  $latex \displaystyle S_n=\frac{1-q^{n+1}}{1-q}$
+</p>
+
+<p>ועכשיו, נחשוב: מה קורה, למשל, אם $latex {q=10}$? כאשר נסכם עוד ועוד איברים, כלומר $latex {n}$ גדל עוד ועוד, המספר $latex {10^{n+1}}$ ישאף לאינסוף. לכן כל הביטוי ישאף לאינסוף. הרי שאר האיברים נשארים קבועים )אגב, מדוע לא למינוס אינסוף? הרי המקדם של $latex {10^{n+1}}$ הוא $latex {-1}$! רמז: הסתכלו בסימן של המכנה(. לעומת זאת, אם $latex {q&lt;1}$ )למשל $latex {q=\frac{1}{10}}$(, אז $latex {q^{n+1}}$ שואף ל-$latex {0}$. בגבול הוא נעלם. נשאר רק $latex {\frac{1}{1-q}}$. אם כן, במקרה זה:</p>
+
+<p align="center">
+  $latex \displaystyle 1+q+q^2+\ldots+q^n+\ldots = \frac{1}{1-q}$
+</p>
+
+<p>כפי שאנחנו יודעים.</p>
+
+<p>למשל, אם מציבים $latex {q=\frac{1}{10}}$ מקבלים $latex {1+0.1+0.01+0.001+\ldots =\frac{1}{1-0.1}=\frac{10}{9}}$. האם ידעתם זאת גם קודם, לפני שקראתם את המאמר הזה? בוודאי.</p>
+
+<p align="center">
+  $latex \displaystyle 1+0.1+0.01+0.001+\ldots=1.111\ldots =1+0.111\ldots = 1+\frac{0.999\ldots}{9}=1+\frac{1}{9}=\frac{10}{9}$
+</p>
+
+<p><strong>8. לאן מכאן?</strong></p>
+
+<p>כדי לדעת את התשובה לשאלה הזאת, כדאי לכם לקרוא את מאמרו של ד”ר יוסי כהן בגיליון הזה - הדברים יתקשרו בפעם הבאה! כן, לטורים גיאומטריים ולמספרים עשרוניים יש קשר גם להשערות מתקדמות מתורת המספרים! ועוד, נקשר את הטורים האינסופיים לפרדוקס מפורסם מימי היוונים.</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/03/31/riddles/">&laquo; חידה לילדים גדולים</a>
+    
+    
+      <a class="next" href="/2014/04/01/my-prespective-on-teaching/">תפיסת ההוראה שלי &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/04/01/decimal-fractions-and-geometric-series/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

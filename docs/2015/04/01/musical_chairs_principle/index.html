@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>עקרון הכיסאות המוזיקליים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="עקרון הכיסאות המוזיקליים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="בעולמנו זה כולם רוצים להשתדך: נשים לגברים, גברים לנשים, דיירים לדירות. אלא שלפעמים אין מספיק איברים בצד אחד של השידוך - אין מספיק גברים בכפר, או אין מספיק דירות במדינה. מה עושים אז? מוכיחים בעזרת העיקרון הזה משפטים מתמטיים. במאמר הזה ניתן דוגמה יפה, הוכחה של מיכה פרלס, מתמטיקאי ירושלמי." />
+<meta property="og:description" content="בעולמנו זה כולם רוצים להשתדך: נשים לגברים, גברים לנשים, דיירים לדירות. אלא שלפעמים אין מספיק איברים בצד אחד של השידוך - אין מספיק גברים בכפר, או אין מספיק דירות במדינה. מה עושים אז? מוכיחים בעזרת העיקרון הזה משפטים מתמטיים. במאמר הזה ניתן דוגמה יפה, הוכחה של מיכה פרלס, מתמטיקאי ירושלמי." />
+<link rel="canonical" href="/2015/04/01/musical_chairs_principle/" />
+<meta property="og:url" content="/2015/04/01/musical_chairs_principle/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-04-01T00:04:46+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-04-01T00:04:46+03:00","datePublished":"2015-04-01T00:04:46+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/04/01/musical_chairs_principle/"},"url":"/2015/04/01/musical_chairs_principle/","description":"בעולמנו זה כולם רוצים להשתדך: נשים לגברים, גברים לנשים, דיירים לדירות. אלא שלפעמים אין מספיק איברים בצד אחד של השידוך - אין מספיק גברים בכפר, או אין מספיק דירות במדינה. מה עושים אז? מוכיחים בעזרת העיקרון הזה משפטים מתמטיים. במאמר הזה ניתן דוגמה יפה, הוכחה של מיכה פרלס, מתמטיקאי ירושלמי.","headline":"עקרון הכיסאות המוזיקליים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/04/01/thrackle-conjecture/">&laquo; השערת ה-Thrackle</a>
+    
+    
+      <a class="next" href="/2015/04/01/editor-14/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">עקרון הכיסאות המוזיקליים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-04-01T00:04:46+03:00" itemprop="datePublished">Apr 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אנה ליזהטוב</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  בגיליון הקודם סיפרנו על עקרון שובך היונים: אם יש יותר יונים מתאים, שתיים מהן תצטרכנה להצטופף באותו תא. עיקרון פשוט עוד יותר הוא בכיוון ההפוך: אם יש פחות יונים מאשר תאים, לפחות תא אחד יישאר ריק. כפי שאם יש פחות כיסאות מאנשים במשחק הכיסאות המוזיקליים יהיה אדם ללא כיסא (את השם "עקרון הכיסאות המוזיקליים" הציע המתמטיקאי דן עמיר).  או, שאם קונים $latex 99$ שלגונים ל-ִ$latex 100$ ילדים, יהיה ילד שלא יקבל שלגון. פשוט? ובכן, כמו במקרה של עקרון שובך היונים, תלוי איך משתמשים בזה. הנה משפט שנראה פשוט, אבל איני מכיר לו שום הוכחה פשוטה.
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  משפט: בהינתן נקודות במישור וקטעים המחברים ביניהן, אם יש יותר קטעים מנקודות אזי בין הקטעים הנתונים יש שניים שאינם נפגשים.
+</p>
+
+<p style="direction: rtl;">
+  אם מספרם של הקטעים שווה למספר הנקודות, ייתכן מאוד שכל שני קטעים ייפגשו. בכל אחת משתי הדוגמאות שלהלן, למשל, יש $latex 5$ נקודות ו-$latex 5$ קטעים, וכל שני קטעים נפגשים, אם בקצותיהם ואם בנקודות שבתוכם:
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-2312" src="http://net-gar.net/wp-content/uploads/2015/03/1-CH-300x152.png" alt="1-CH" width="300" height="152" /> <img class="aligncenter size-medium wp-image-2313" src="http://net-gar.net/wp-content/uploads/2015/03/2-CH-300x152.png" alt="2-CH" width="300" height="152" />
+</p>
+
+<p style="direction: rtl;">
+  אבל אם $latex 5$ קטעים יעברו בין $latex 4$ נקודות (כך שיש יותר קטעים מנקודות) שניים מביניהם יהיו "זרים" (לא נפגשים). למשל:
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-2315" src="http://net-gar.net/wp-content/uploads/2015/03/3-CH-300x152.png" alt="3-CH" width="300" height="152" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  כאן יש יותר קטעים מנקודות – $latex 5$ קטעים כנגד $latex 4$ נקודות. המשפט אומר שבמקרה כזה יש שני קטעים שאינם נפגשים. ואומנם כך הוא – הקטע $latex AD$ אינו פוגש את הקטע $latex BC$.
+</p>
+
+<p style="direction: rtl;">
+  בציור יש שני קטעים שאינם נפגשים – $latex AD$ ו-$latex BC$. (גם $latex AC$ ו-$latex BD$ אינם נפגשים). אבל זוהי רק דוגמה, ואילו אנו רוצים להוכיח זאת בצורה כללית. ההוכחה האלגנטית הבאה, של המתמטיקאי הישראלי מיכה פֶּרְלֶס, משתמשת בעקרון הכיסאות המוזיקליים.
+</p>
+
+<p style="direction: rtl;">
+  פרלס אוהב לתאר את הוכחתו במונחים של כינים שמטילות ביצים על שערות. בכל נקודה עומדת כינה. לכל קטע ("שערה") שהכינה רואה באותה נקודה, הכינה מסתכלת לאורך הקטע, ומטילה עליו ביצה, בסמוך לנקודה שבה היא יושבת, בתנאי הבא: שכאשר היא מסתכלת מן הקצה הזה בכיוון ימין מן הקטע, היא אינה רואה קטע אחר שיוצא מאותה נקודה. "ראייה" היא בזווית קטנה או שווה ל-$latex 180$ מעלות, ו"לא לראות" פירושו שעד לקטע הבא יש זווית גדולה מ-$latex 180$ מעלות. למשל, בדוגמה שלנו הכינה העומדת ב-$latex A$ תטיל ביצה על הקטע $latex AD$, משום שכשהיא מסתכלת בכיוון $latex D$ היא אינה רואה מימינה קטע שיוצא מ-$latex A$. הכינה העומדת ב-$latex B$ תטיל ביצה על ,$latex BC$ הכינה העומדת ב-$latex C$ תטיל ביצה על $latex CA$, והכינה שעומדת ב-$latex D$ תטיל ביצה על $latex BD$. בקצה $latex D$ של הקטע $latex AD$, לעומת זאת, לא תוטל ביצה, משום שהכינה העומדת ב-$latex D$ רואה מימינו של $latex AD$ את הקטע $latex DB$.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-2318" src="http://net-gar.net/wp-content/uploads/2015/03/4-CH-300x152.png" alt="4-CH" width="300" height="152" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+   הכינה העומדת ב-$latex A$ מטילה ביצה על הקטע $latex AD$, משום שכשהיא מביטה מימין ל-$latex D$ היא אינה רואה קטע – עליה להסתובב ביותר מ-$latex 180$ מעלות עד לקטע הבא, $latex AC$.
+</p>
+
+<p style="direction: rtl;">
+  ההבחנה המכרעת היא זו: <strong>כל כינה מטילה לכל היותר ביצה אחת</strong>.
+</p>
+
+<p style="direction: rtl;">
+  כלומר, הכינה מטילה רק על לכל היותר קטע אחד היוצא מן הנקודה שבה היא עומדת. פירוש הדבר שמכל הקטעים היוצאים מן הנקודה, פרט אולי לאחד, אפשר לראות קטע מצד ימין (ולכן לא תוטל עליהם ביצה). הסיבה פשוטה ביותר: כדי שקטע א' לא יראה מימינו קטע אחר, הזווית בין א' לקטע הבא (עם כיוון השעון) היוצא מאותה נקודה חייבת להיות גדולה מ-$latex 180$ מעלות. אבל לא תיתכנה שתי זוויות גדולות מ-$latex 180$ מעלות באותה נקודה, ולכן ייתכן רק קטע אחד, לכל היותר, שאינו רואה מימינו קטע אחר. ואכן, בדוגמה שבציור, למשל, ליד כל נקודה מוטלת ביצה אחת בדיוק.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-2319" src="http://net-gar.net/wp-content/uploads/2015/03/5-CH-300x169.png" alt="5-CH" width="300" height="169" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  ליד כל נקודה הוטלה ביצה אחת. מכיוון שיש $latex 5$ קטעים ורק $latex 4$ נקודות, יש קטע, $latex AB$, שעליו לא הוטלה ביצה.
+</p>
+
+<p style="direction: rtl;">
+  עתה נוכל להפעיל את עקרון הכיסאות המוזיקליים. כיוון שליד כל נקודה יש לכל היותר ביצה אחת, מספר הביצים אינו עולה על מספר הנקודות. על פי הנתון, יש יותר קטעים מאשר נקודות, ולכן גם יותר קטעים מאשר ביצים (בדוגמה יש $latex 5$ קטעים, ו-$latex 4$ סימונים). כשנפעיל את עקרון הכיסאות המוזיקליים נקבל שיש קטע (שאותו נציין, נאמר, כ-$latex XY$) שבאף אחד מקצותיו לא הוטלה ביצה (זהו ה"ילד שלא קיבל שלגון"). העובדה שהקטע לא סומן בביצה בקצה $latex X$ משמעה שאפשר לראות מימינו, בנקודה $latex X$, קטע $latex XU$ מן הקטעים הנתונים; העובדה שהוא לא סומן בצד של $latex Y$ פירושה שבנקודה $latex Y$ יש קטע $latex YV$ שנמצא מימינו של $latex XY$. אבל אז הקטעים $latex XU$ ו-$latex YV$ אינם נפגשים!
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-2320" src="http://net-gar.net/wp-content/uploads/2015/03/6-CH-300x169.png" alt="6-CH" width="300" height="169" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  על הקטע $latex XY$ לא הוטלה ביצה. הסיבה: הכינה ב-$latex X$ רואה מימין ל-$latex XY$ את הקטע $latex XU$, והכינה ב-$latex Y$ רואה מימין ל-$latex XY$ את הקטע $latex YV$. הקטעים $latex XU$ ו-$latex YV$ אינם נפגשים, והם אם כן זוג הקטעים המבוקש.
+</p>
+
+<p style="direction: rtl;">
+  בדוגמה שלעיל, על הקטע $latex AB$ לא הוטלה ביצה. בקצה $latex A$ אין ביצה, משום ש-$latex AD$ נמצא מימינו של $latex AB$, כאשר מסתכלים מכיוון הנקודה $latex A$; בקצה $latex B$ אין ביצה, משום ש-$latex BC$ נמצא מימינו של $latex AB$ כשמסתכלים מן הקצה $latex C$. ואכן, $latex AD$ ו-$latex BC$ אינם נפגשים.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/04/01/thrackle-conjecture/">&laquo; השערת ה-Thrackle</a>
+    
+    
+      <a class="next" href="/2015/04/01/editor-14/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/04/01/musical_chairs_principle/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

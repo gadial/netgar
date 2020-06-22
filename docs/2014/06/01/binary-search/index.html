@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>חיפוש בינארי | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="חיפוש בינארי" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="אתם בוודאי מכירים את המשחק ״21 שאלות״. מישהו בוחר דמות, או מקום, או אירוע, והמשתתפים אמורים לגלות את מה שחשב עליו בעזרת 21 שאלות. הכלל הוא שהתשובות צריכות להיות רק ״כן״ או ״לא״. אסור, למשל, לשאול ״על איזו דמות חשבת?״. המוזר הוא שזו אינה משימה בלתי אפשרית. למעשה בדרך כלל מצליחים. איך זה יכול להיות?" />
+<meta property="og:description" content="אתם בוודאי מכירים את המשחק ״21 שאלות״. מישהו בוחר דמות, או מקום, או אירוע, והמשתתפים אמורים לגלות את מה שחשב עליו בעזרת 21 שאלות. הכלל הוא שהתשובות צריכות להיות רק ״כן״ או ״לא״. אסור, למשל, לשאול ״על איזו דמות חשבת?״. המוזר הוא שזו אינה משימה בלתי אפשרית. למעשה בדרך כלל מצליחים. איך זה יכול להיות?" />
+<link rel="canonical" href="/2014/06/01/binary-search/" />
+<meta property="og:url" content="/2014/06/01/binary-search/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-06-01T01:16:26+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-06-01T01:16:26+03:00","datePublished":"2014-06-01T01:16:26+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/06/01/binary-search/"},"url":"/2014/06/01/binary-search/","description":"אתם בוודאי מכירים את המשחק ״21 שאלות״. מישהו בוחר דמות, או מקום, או אירוע, והמשתתפים אמורים לגלות את מה שחשב עליו בעזרת 21 שאלות. הכלל הוא שהתשובות צריכות להיות רק ״כן״ או ״לא״. אסור, למשל, לשאול ״על איזו דמות חשבת?״. המוזר הוא שזו אינה משימה בלתי אפשרית. למעשה בדרך כלל מצליחים. איך זה יכול להיות?","headline":"חיפוש בינארי","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/06/01/weighted-average-probability-expectation-and-constant-width-curves/">&laquo; ממוצע משוקלל, הסתברות, תוחלת ועקומים בעלי רוחב קבוע</a>
+    
+    
+      <a class="next" href="/2014/06/01/polynomial-with-prime-values/">פולינום בעל ערכים ראשוניים &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">חיפוש בינארי</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-06-01T01:16:26+03:00" itemprop="datePublished">Jun 1, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אמיר יהודיוף</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;" align="center">
+  הקדמה:
+</p>
+
+<p style="direction: rtl;">
+  אתם בוודאי מכירים את המשחק ״21 שאלות״. מישהו בוחר דמות, או מקום, או אירוע, והמשתתפים אמורים לגלות את מה שחשב עליו בעזרת 21 שאלות. הכלל הוא שהתשובות צריכות להיות רק ״כן״ או ״לא״. אסור, למשל, לשאול ״על איזו דמות חשבת?״.
+</p>
+
+<p style="direction: rtl;">
+  המוזר הוא שזו אינה משימה בלתי אפשרית. למעשה בדרך כלל מצליחים. איך זה יכול להיות? יש כל כך הרבה דמויות בעולם, זמרים וציירים, סופרים ושחקנים, ובכל זאת אפשר לגלות את הדמות, כשכל המידע הניתן הוא ״כן״ או ״לא״. מהו הסוד?
+</p>
+
+<p style="direction: rtl;">
+  הסוד טמון בשיטה שבעזרתה אנחנו מצליחים לבטא מספר ענקי כמו מיליון בעזרת שבע ספרות בלבד. וברעיון שעליו דיברנו כשסיפרנו על סדרות גיאומטריות: שסדרות גיאומטריות גדלות מהר מאוד אם המנה שלהן גדולה מ־1, וקטנות מהר מאוד אם המנה קטנה מ־1. הוא נקרא ״חיפוש בינארי״.
+</p>
+
+<p style="direction: rtl;">
+  חיפוש בינארי לא רק עוזר לשחק משחקים, אלא גם בפתרון בעיות בחיים. דמיינו, לדוגמא, מצב בו ישנה רשימה של $latex {4}$ פעילויות חברתיות אפשריות, נאמר: אוכל, סרט, ים ובריכה. ושאתם מעוניינים לתאם עם חבריכם את הפעילות למחר. כמה שאלות כן-לא נדרשות על מנת לדעת מהי הפעילות העדיפה עליהם? באופן דומה, דמיינו שאתם רוצים לברר מספר טלפון של אדם שזה אתה פגשתם. כמה שאלות כן-לא דרושות על מנת להשיג זאת?
+</p>
+
+<p style="direction: rtl;">
+  הצעד הראשון שנעשה יהיה להגדיר את הבעיה באופן מתמטי. הגדרה זו תאפשר לנו לדון בבבעיה באופן מדויק. בהמשך נשתמש בטיעונים לוגיים מסוגים שונים כדי לספק תשובה מדוייקת לשאלה שמעניינת אותנו. מצד אחד נראה שכדי ללמוד על חברינו, השיחות עמהם לא יכולות להיות קצרות מדי. מצד שני נלמד כיצד לשאול שאלות באופן שבו המידע שכל תשובה מוסיפה הוא משמעותי. בעיות דומות נחקרות גם היום ברחבי העולם, עם מוטיבציות שקשורות לחישוב, תקשורת, ומדע בכלל.
+</p>
+
+<p style="direction: rtl;" align="center">
+  הגדרות:
+</p>
+
+<p style="direction: rtl;">
+  נתחיל בהגדרת את חוקי המשחק, ובתיאור מופשט שלו. את רשימת האפשרויות נחליף במספרים
+</p>
+
+<p style="direction: rtl;" align="center">
+  $latex \displaystyle .1,2,3,\ldots,n$
+</p>
+
+<p style="direction: rtl;">
+  כל מספר ברשימה מתאים לאחת הדמויות האפשריות, או לאחת הפעילויות האפשריות, או לאחד ממספרי הטלפון האפשריים. נניח שלחברנו ידוע מספר $latex {X}$ מתוך רשימת המספרים, ואנו לא יודעים מהו $latex {X}$. כמו כן נניח כי אנו יכולים לשאול את חברנו כל שאלת כן-לא העולה על רוחנו. למשל, "האם $latex {X}$ הוא לפחות 12?״. השאלה שתנחה אותנו היא:
+</p>
+
+<p style="direction: rtl;" align="center">
+  מהו המספר הקטן ביותר $latex {Q}$ של שאלות כן-לא הדרושות כדי לדעת מהו $latex {X}$?
+</p>
+
+<p style="direction: rtl;">
+  שאלת מחקר זו מופיעה באופן טבעי בהקשרים שונים, והתשובה לה מעניינת הן מבחינה תאורטית והן מבחינה מעשית.
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">המשפט המתמטי הבא מתאר את התשובה לשאלה, ונוכיחו בהמשך.</span>
+</p>
+
+<p style="direction: rtl;">
+  משפט: לכל מספר $latex {n}$ טבעי, מתקיים $latex {.2^{Q-1} &lt; n \leq 2^{Q}}$
+</p>
+
+<p style="direction: rtl;">
+  כדי להבין את המשפט טוב יותר, נתבונן בגרף 1 שמתאר את הקשר בין מספר השאלות $latex {Q}$ ומספר האפשרויות $latex {n}$ עבור ערכי $latex {n}$ בין $latex {1}$ ל $latex {200}$.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-1079" src="http://net-gar.net/wp-content/uploads/2014/05/QnSort-300x225.png" alt="QnSort" width="300" height="225" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <span style="font-size: 14px; line-height: 1.5em;">גרף $latex {:1}$ קשר בין מספר שאלות מינימלי למספר האפשרויות</span>
+</p>
+
+<p style="direction: rtl;">
+  הגרף מראה למשל שאם ישנן 20 אפשרויות $latex {(n=20)}$ אז נזדקק ל $latex {5}$ שאלות, ואם $latex {n=200}$ אז נזדקק ל $latex {8}$ שאלות. כמו כן, ניתן לראות שהתלות בין $latex {Q}$ ל $latex {n}$ אינה לינארית, כלומר אינה מתוארת על ידי קו ישר. סוג הקשר בין $latex {Q}$ ל $latex {n}$ נקרא קשר לוגריתמי. המשפט גם מתאר כמה שאלות כן-לא דרושות על מנת לגלות מספר טלפון בן שבע ספרות: דרושות בסך הכל עשרים וארבע שאלות! מהן השאלות? זאת נראה בהמשך (באופן מופשט).
+</p>
+
+<p style="direction: rtl;" align="center">
+  הוכחת המשפט:
+</p>
+
+<p style="direction: rtl;">
+  להוכחה שני חלקים שונים. אי השיוויון השמאלי משמעותו מציאת רשימת שאלות קצרה שמבטיחה שלאחר שנשאל את כולה נדע את המידע החבוי $latex {X}$. אי השיוויון הימני משמעותו שאם רשימת השאלות קצרה מדי אז בסיומה עדיין תהיה חוסר וודאות לגבי הערך המדויק של $latex {X}$.
+</p>
+
+<p style="direction: rtl;" align="center">
+  אי השיוויון הימני: מעט שאלות לא מספיקות
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">נתחיל בלהוכיח את הטענה הבאה: לכל $latex {L \geq 0}$ טבעי, ולכל רשימת שאלות כן-לא באורך $latex {L}$, ישנה קבוצה בגודל לפחות $latex {n/2^L}$ של מספרים בין $latex {1}$ ל $latex {n}$ שרשימת השאלות לא מבדילה בניהם (כלומר כך שהתשובות לכל $latex {L}$ השאלות הן זהות לכל המספרים בקבוצה).</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="text-decoration: underline;">הוכחת הטענה: </span><span style="font-size: 14px; line-height: 1.5em;"> עבור $latex {L=0}$, טענה זו כמובן נכונה כי לא נשאלה אף שאלה ו $latex {2^0=1}$. עבור $latex {L=1}$, קבוצת האפשרויות מתחלקת לשני חלקים בהתאם לתשובה לשאלה שנשאלה. אחד משני החלקים חייב להיות לכן בגודל לפחות חצי, כלומר בגודל לפחות $latex {n/2}$. נבחר חלק זה. עבור $latex {L=2}$, נתבונן בחלק שנבחר לאחר השאלה הראשונה וגודלו לפחות $latex {n/2}$. נשים לב שלאחת התשובות לשאלה השניה יש תשובה שלה מתאימים לפחות $latex {\frac{1}{2} \cdot n/2 = n/2^2}$ אפשרויות, וכן הלאה.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="text-decoration: underline;"> מסקנה מהטענה: </span> אם $latex {2^L &lt; n}$ אז בכל רשימה של $latex {L}$ שאלות ישנם לפחות שני מספרים שונים $latex {(n/2^L &gt; 1)}$ שהשאלות לא מבדילות בניהם. אם כך, בכמות כזו של שאלות לא נצליח באופן וודאי לגלות את ערך $latex {X}$. לכן, $latex {2^Q \geq n}$.
+</p>
+
+<p style="direction: rtl;" align="center">
+  אי השיוויון השמאלי: בחירת השאלות
+</p>
+
+<p style="direction: rtl;">
+  עלינו למצוא סדרת שאלות מתאימה. הרעיון הוא להשתמש בחיפוש בינארי, המתבצע כך: ישנם $latex {n}$ מספרים. נגדיר $latex {M}$ להיות הטבעי הקטן ביותר כך ש $latex {n \leq 2^M}$. מינימליות $latex {M}$ גוררת ש $latex {2^{M-1} &lt; n}$. נסביר כיצד לגלות את $latex {X}$ בעזרת $latex {M}$ שאלות כן-לא. בכך נסיים ההוכחה.
+</p>
+
+<p style="direction: rtl;">
+  השאלה הראשונה שנשאל היא ״האם $latex {X&lt;(1/2) \cdot 2^{M}}$?״. אם התשובה היא כן, נמשיך ונשאל ״האם $latex {X&lt;(1/4) \cdot 2^{M}}$?״ ואחרת נשאל ״האם $latex {X&lt;(3/4) \cdot 2^M}$?״. וכן הלאה. ניתן לראות שלאחר השאלה הראשונה כמות האפשרויות ל $latex {X}$ היא לכל היותר $latex {\frac{1}{2} \cdot 2^M = 2^{M-1}}$. לאחר השאלה השניה הכמות קטנה ל $latex {2^{M-2}}$. באופן כללי, לאחר $latex {L}$ שאלות כמות האפשרויות תהיה $latex {2^{M-L}}$. לאחר $latex {M}$ שאלות כמות האפשרויות היא $latex {2^{M-M} = 1}$, כלומר נדע את $latex {X}$ בוודאות.
+</p>
+
+<p style="direction: rtl;" align="center">
+  ייצוג בינארי:
+</p>
+
+<p style="direction: rtl;">
+  לאחר שהבנו דבר מה לגבי שאילת שאלות, נדבר בקצרה על שפה או ייצוג של מילים, מספרים ומושגים באופן בינארי.
+</p>
+
+<p style="direction: rtl;">
+  ייצוג עשרוני של מספר הוא דבר מוכר לכולם. לכל כפולה של עשר יש ספרה משלה: ספרת אחדות $latex {10^0 = 1}$, ספרת עשרות $latex {10^1 = 10}$, ספרת מאות $latex {10^2 = 100}$&#8230; והסימון $latex {106}$ מייצג את המספר $latex {1 \times 100 + 0 \times 10 + 6 \times 1}$.
+</p>
+
+<p style="direction: rtl;">
+  באופן דומה, ניתן לייצג מספר בינארית, בבסיס שתיים במקום בבסיס עשר. במקום עשר ספרות, ישנן רק שתיים: $latex {0,1}$. בייצוג זה ישנה ספרה שמתאימה ל $latex {2^0 = 1}$, ספרה שמתאימה ל $latex {2^1 = 2}$, ספרה שמתאימה ל $latex {2^2 = 4}$&#8230; והסימון $latex {101}$ מייצג למשל את $latex {1 \times 4 + 0 \times 2 + 1 \times 1}$, כלומר את המספר חמש.
+</p>
+
+<p style="direction: rtl;">
+  מה הקשר לשאלות כן-לא? ובכן ניתן לפרש את הספרה $latex {1}$ כ״לא״ ואת הספרה $latex {0}$ כ״כן״. עם פרשנות זו, ייצוג בינארי מתאים בדיוק לתשובות המתקבלות בחיפוש הבינארי שדיברנו עליו. למשל אם $latex {n=8}$ ו $latex {X = 5}$, נשאל ״האם $latex {X &lt; 4}$?״ והתשובה תהיה ״לא״. תשובה זו מתאימה ל $latex {1}$ השמאלי בייצוג הבינארי של חמש. נמשיך ונשאל ״האם $latex {X &lt; 6}$?״ והתשובה ״כן״ מתאימה ל $latex {0}$. לסיום, התשובה ל ״האם $latex {X&lt;5}$?״ היא ״לא״ ומתאימה ל $latex {1}$ הימני.
+</p>
+
+<p style="direction: rtl;">
+  באופן מעט יותר כללי, תיארנו קשר בין הייצוג הבינארי של מספר לבין תשובות לשאלות כן-לא לגביו. אם למספר יש $latex {21}$ ספרות בייצוג הבינארי, אז ניתן למצוא אותו בפשטות על ידי שאילת $latex {21}$ שאלות: ״האם הספרה הראשונה היא $latex {0}$?״, ״האם הספרה השניה היא $latex {0}$?״, וכן הלאה. יש קשר ישיר בין הייצוג הבינארי של מספר ובין התשובות לרשימת השאלות הזו. מכך נסיק שבאמצעות $latex {21}$ שאלות אפשר לתאר $latex {2^{21} = 2,097,152}$ דברים! לשם השוואה, מספר המילים במילון בשפה העברית הוא קטן בהרבה, ומוערך להיות פחות מ $latex {100,000}$.
+</p>
+
+<p style="direction: rtl;">
+  נסיים במחשבה על כפות ידינו. בדרך כלל משתמשים באצבעות כדי לייצג מספרים בין אחד לעשר. עכשיו כשלמדנו מעט, אנחנו מבינים שעם חמש האצבעות של כף יד אחת ניתן לייצג בפשטות $latex {2^5 = 32}$ מספרים. תנסו. כמה אפשר עם כל עשר האצבעות?
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/06/01/weighted-average-probability-expectation-and-constant-width-curves/">&laquo; ממוצע משוקלל, הסתברות, תוחלת ועקומים בעלי רוחב קבוע</a>
+    
+    
+      <a class="next" href="/2014/06/01/polynomial-with-prime-values/">פולינום בעל ערכים ראשוניים &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/06/01/binary-search/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

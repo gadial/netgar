@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>חישוב 2√ | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="חישוב 2√" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה." />
+<meta property="og:description" content="פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה." />
+<link rel="canonical" href="/2015/11/30/computing-sqrt-2/" />
+<meta property="og:url" content="/2015/11/30/computing-sqrt-2/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-11-30T22:02:07+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-11-30T22:02:07+02:00","datePublished":"2015-11-30T22:02:07+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/11/30/computing-sqrt-2/"},"url":"/2015/11/30/computing-sqrt-2/","description":"פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה.","headline":"חישוב 2√","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/11/30/logic-thinking-about-math-thinking/">&laquo; לוגיקה - לחשוב על החשיבה המתמטית</a>
+    
+    
+      <a class="next" href="/2015/11/30/editor-21/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">חישוב 2√</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-11-30T22:02:07+02:00" itemprop="datePublished">Nov 30, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">דוד בלנק</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl; text-align: right;">
+  כולנו מכירים את משפט פיתאגוראס, האומר שריבוע היתר במשולש ישר זווית שווה לסכום ריבועי הצלעות האחרות. המשפט הזה היה ידוע (כעובדה אמפירית לפחות) מאות שנים לפני פיתאגוראס, אך הוא היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע $latex A$ של ריבוע כלשהו ואורך האלכסון שלו $latex B$ אינם <span style="text-decoration: underline;">בני השוואה</span> - כלומר, אין מספרים שלמים חיוביים $latex m$ ו-$latex n$ כך ש-$latex n\cdot A=m\cdot B$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נקבע את יחידת האורך שלנו להיות יחידה אחת, ממשפט פיתאגוראס נמצא שריבוע אורך האלכסון בריבוע זה שווה ל-$latex 2$, ומכאן נקבל את הניסוח המודרני לתגלית של פיתאגוראס:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">משפט:</span></strong> אין $latex p$ ו-$latex q$ שלמים חיוביים כך ש-$latex \sqrt{2}=p/q$ - כלומר, $latex \sqrt{2}$ אינו מספר רציונאלי.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">הוכחה:</span></strong> נניח בדרך השלילה שיש מספרים שלמים $latex p,q$ כאלה, ולכן מתקיים:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (1) \quad ~2q^{2}~=~p^{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם יש ל-$latex p$ ו-$latex q$ גורם משותף $latex 1 \lt d$, אפשר לצמצמו, ולכן מותר להניח ש-$latex p$ ו-$latex q$ זרים. אך מ-(1) אנו רואים ש-$latex p^{2}$ זוגי, ולכן $latex p$ זוגי (מדוע?). נאמר ש-$latex p=2k$ עבור $latex k$ טבעי: אז
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex ,~2q^{2}~=~p^{2}~=~(2k)^{2}~=~4k^{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כלומר $latex q^{2}=2k^{2}$, ולכן $latex q$ עצמו זוגי - בסתירה לכך ש-$latex p$ ו-$latex q$ זרים. ∎
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  למרות שאי-אפשר לבטא את $latex \sqrt{2}$ <em>במדוייק</em> באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <span style="text-decoration: underline;"><strong>השיטה:</strong></span> יהי $latex x$ מספר רציונאלי חיובי כלשהו, ונניח למען הפשטות ש-$latex 1 \lt x$. אנו נבנה שתי סדרות $latex (a_{n})_{n=0}^{\infty}$ ו-$latex (b_{n})_{n=0}^{\infty}$ של קירובים רציונאליים חיוביים ל-$latex \sqrt{x}$, באופן שיתקיים:
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (א) $latex a_{n}^{2} \lt x \lt b_{n}^{2}$ (כלומר, $latex a_{n} \lt \sqrt{x} \lt b_{n}$) לכל $latex n$ טבעי.
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (ב) $latex a_{n} \lt a_{n+1}$ ו-$latex b_{n} \gt b_{n+1}$ לכל $latex n$ טבעי (כלומר, כל סדרה מונוטונית).
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (ג) $latex b_{n}-\sqrt{x} \lt \epsilon$, אז $latex \sqrt{x}-a_{n} \lt \epsilon$ ו-$latex b_{n+1}-\sqrt{x} \lt \epsilon/2$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">שימו לב:</span></strong> שתי הדרישות הראשונות ביחד אומרות שהסדרה $latex a_{1},a_{2},a_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמטה, ואילו הסדרה $latex b_{1},b_{2},b_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמעלה. יתר על כן, שתי הסדרות האלה מונוטוניות - כלומר, בכל פעם הזוג $latex (a_{n+1},b_{n+1})$ הוא קירוב טוב יותר ל-$latex \sqrt{x}$ מאשר הזוג $latex (a_{n},b_{n})$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אולם אפשר למצוא שתי סדרות כאלה בלי להתאמץ הרבה: למשל, יכולנו לבחור בתור הקירובים ל-$latex \sqrt{2}$ <em>מלמטה</em> את $latex 1, \ 1.1,\ 1.11,\ 1.111$, וכן הלאה, ובתור הקירובים ל-$latex \sqrt{2}$ <em>מלמעלה</em> את $latex 2, \ 1.9,\ 1.89,\ 1.889$, וכן הלאה,
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מה שחסר בבחירות אלה הוא מה שנותנת דרישה (ג): שהסדרות אכן מתקרבות <em>כרצוננו</em> ל-$latex \sqrt{x}$. זאת נקודה קצת עדינה, משום שאין לנו דרך לחשב את $latex \sqrt{x}$ עצמו ולהשוות אליו את הקירובים שלנו. אנו משתמשים איפוא במה שהיוונים כינו <em>שיטת המיצוי</em>: אנו מייצרים שתי סדרות של קירובים, ודואגים לכך שסדרה אחת תמיד <em>קטנה</em> מ-$latex \sqrt{x}$, והשניה תמיד <em>גדולה</em> מ-$latex \sqrt{x}$. זה מה שאומרת דרישה (א): שימו לב שהיא מנוסחת באמצעות $latex x$ (שהוא מספר רציונאלי, לפי ההנחה), ואינה מזכירה את $latex \sqrt{x}$. בעצם אנו מנצלים כאן רק את העובדה שפונקציית ההעלאה הריבוע היא מונוטונית עבור מספרים אי-שליליים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם בנוסף לכך נבטיח שהקירובים מלמטה ומלמעלה <em>מתקרבים זה לזה כרצוננו</em> - כפי שקורה בדרישה (ג) - הרי שמרחק כל אחד מהם מהמספר המבוקש $latex \sqrt{x}$ אינו יכול להיות גדול מההפרש בינהם.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong>אפשר לנסח זאת כך</strong>: אם אתה הולך ברחובות מוסקבה, מסתכל מלפניך ורואה קצין של הק.ג.ב, מסתכל מאחוריך ורואה קצין של הק.ג.ב. - אז לאן שהם הולכים, לך גם אתה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <span style="text-decoration: underline;"><strong>יישום השיטה:</strong></span> הבנייה נעשית באינדוקציה, החל מ-$latex a_{0}=1$ ו-$latex b_{0}=x$. בשלב ה-$latex n$ נגדיר
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (2) \quad ~b_{n+1}:=\frac{a_{n}+b_{n}}{2}\ \ \ \text{-ו} \ \ a_{n+1}:=\frac{x}{b_{n+1}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  שימו לב ש-$latex b_{n+1}$ הוא הממוצע <em>החשבוני</em> של שני הקירובים הקודמים $latex a_{n}$ ו-$latex b_{n}$, ואילו הממוצע ההנדסי שלהם הוא $latex \sqrt{a_{n}\cdot b_{n}}=\sqrt{x}$ לכל $latex n$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מכיוון שלכל שני מספרים ממשיים חיוביים $latex a$ ו-$latex b$ מתקיים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~a^{2}-2ab+b^{2}~=~(a-b)^{2}~\geq~0$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הרי ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~(a+b)^{2}~=~a^{2}+2ab+b^{2}~\geq~4ab$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לכן אם נחלק ב-$latex 4$ ונוציא שורש ריבועי נמצא ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (3) \quad ,~\frac{a+b}{2}~\geq~\sqrt{ab}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כלומר, הוכחנו את העובדה הבאה המעניינת כשלעצמה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">משפט:</span></strong> הממוצע החשבוני תמיד גדול או שווה לממוצע ההנדסי (ויש שוויון רק כאשר $latex a=b$).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מכאן נובע (א), כי $latex b_{n+1}:=\frac{a_{n}+b_{n}}{2} \gt \sqrt{a_{n}b_{n}}=\sqrt{x}$, ולכן $latex a_{n+1}:=\frac{x}{b_{n+1}} \lt \sqrt{x}$ לכל $latex n$. אבל אז בוודאי $latex b_{n+1} \lt b_{n}$, כי הממוצע של שני מספרים קטן מהגדול מבינהם; ולכן $latex a_{n+1} \gt a_{n}$ (על-ידי חלוקת $latex x$ באי-השוויון הקודם).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לבסוף, אם $latex b_{n}-\sqrt{x} \lt \varepsilon$, אז
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~\sqrt{x}-a_{n}=\frac{\sqrt{x}}{b_{n}}(b_{n}-\sqrt{x}) \lt \frac{\sqrt{x}}{b_{n}}\cdot\varepsilon \lt \varepsilon$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle .~b_{n+1}-\sqrt{x}:=\frac{a_{n}+b_{n}-2\sqrt{x}}{2} \lt \frac{b_{n}-\sqrt{x}}{2} \lt \frac{\varepsilon}{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">דוגמא:</span></strong> עבור $latex x=2$ נקבל את הקירובים הבאים ל-$latex \sqrt{2}$:
+</p>
+
+<table style="direction: ltr; width: 90%;">
+  <tr>
+    <td style="border: none;">
+      $latex b_{0}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 2$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{0}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{1}=\frac{1+2}{2}=\frac{3}{2}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.5$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{1}=\frac{2}{b_{1}}=\frac{4}{3}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.3333\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{2}=\frac{3}{4}+\frac{2}{3}=\frac{17}{12}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.41666\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{2}=\frac{2}{b_{2}}=\frac{24}{17}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.4117647\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{3}=\frac{17}{24}+\frac{24}{34}=\frac{577}{408}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414215686\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{3}=\frac{2}{b_{3}}=\frac{816}{577}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414211438\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{4}=\frac{577}{816}+\frac{816}{1154}=\frac{665857}{470832}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.4142135623747\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{4}=\frac{2}{b_{4}}=\frac{941664}{665857}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414213562372\dotsc$
+    </td>
+  </tr>
+</table>
+
+<p style="direction: rtl; text-align: right;">
+  בקירוב האחרון אנו רואים ש-$latex a_{4}$ ו-$latex b_{4}$ מסכימות עד לספרה ה-$latex 11$ אחרי הנקודה העשרונית - כלומר, ההפרש בינהם קטן מ-$latex 10^{-11}=0.00000000001$. בפרט זה אומר ששתים-עשרה הספרות הראשונות בפיתוח העשרוני של $latex \sqrt{2}$ הן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 1.41421356237$
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/11/30/logic-thinking-about-math-thinking/">&laquo; לוגיקה - לחשוב על החשיבה המתמטית</a>
+    
+    
+      <a class="next" href="/2015/11/30/editor-21/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/11/30/computing-sqrt-2/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

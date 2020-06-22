@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>על החישוב של π | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="על החישוב של π" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="כידוע נהוג להשתמש באות היוונית π לסמן את היחס בין היקף של מעגל לקוטרו, בהיותה האות הראשונה של המילה היוונית περιφέρεια, שפירושה ״היקף״. מאמר זה של יוסף גיליס מתוך ״גליונות למתמטיקה״ מתאר דרכים שונות לקירוב וחישוב ערכו של π." />
+<meta property="og:description" content="כידוע נהוג להשתמש באות היוונית π לסמן את היחס בין היקף של מעגל לקוטרו, בהיותה האות הראשונה של המילה היוונית περιφέρεια, שפירושה ״היקף״. מאמר זה של יוסף גיליס מתוך ״גליונות למתמטיקה״ מתאר דרכים שונות לקירוב וחישוב ערכו של π." />
+<link rel="canonical" href="/2015/09/30/on-computing-pi/" />
+<meta property="og:url" content="/2015/09/30/on-computing-pi/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-09-30T22:01:59+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-09-30T22:01:59+03:00","datePublished":"2015-09-30T22:01:59+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/09/30/on-computing-pi/"},"url":"/2015/09/30/on-computing-pi/","description":"כידוע נהוג להשתמש באות היוונית π לסמן את היחס בין היקף של מעגל לקוטרו, בהיותה האות הראשונה של המילה היוונית περιφέρεια, שפירושה ״היקף״. מאמר זה של יוסף גיליס מתוך ״גליונות למתמטיקה״ מתאר דרכים שונות לקירוב וחישוב ערכו של π.","headline":"על החישוב של π","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/09/30/riddles-11/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/09/30/topology/">טופולוגיה &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">על החישוב של π</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-09-30T22:01:59+03:00" itemprop="datePublished">Sep 30, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">יוסף גיליס</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl; text-align: right;">
+  כידוע נהוג להשתמש באות היוונית $latex \pi$ לסמן את היחס בין היקף של מעגל לקוטרו, בהיותה האות הראשונה של המילה היוונית περιφέρεια, שפירושה ״היקף״.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בימי קדם התקבלו בתרבויות שונות קירובים והערכות שונים לגבי ערכו של $latex \pi$, אבל ארכימדס היה הראשון שניסה באופן מדעי לחשב את ערכו המדויק. שיטתו תוארה כבר במאמר בחוברת קודמת של עתון זה (כרך 5, מסי 4) ולא נכנס כאן לפרטים. הגישה העיקרית היתה לחסום מצולעים משוכללים במעגל וגם לחסום את המעגל במצולעים כאלה. ארכימדס ידע לחשב את שטחי המצולעים האלה ומאחר ששטח המעגל גדול מזה של כל מצולע שחסום בו וקטן משטח המצולע החוסם אותו, הצליח ארכימדס לקבוע גבולות שביניהם נמצא $latex \pi$. במיוחד הוכיח כי
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 3\frac{10}{71} \lt \pi \lt 3\frac{1}{7}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  באופן עקרוני ניתן להמשיך לפי שיטתו של ארכימדס ולחשב את $latex \pi$ לכל דיוק שנרצה, אבל החישובים נעשים מסובכים מאד. חסרון שני בשיטת ארכימדס הוא שאי אפשר להסיק ממנה נוסחה מפורשת עבור $latex \pi$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  רוב המאמצים לחשב את $latex \pi$ בתקופה האחרונה התבססו על נוסחה המיוחסת למתמטיקאי הגרמני ליבניץ (G.W. Leibnitz).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הנוסחה היא:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (1) \quad \arctan{x} = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \frac{x^9}{9} \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם $latex -1 \lt x \leq 1$, כאשר $latex \arctan{x}$ נמדד ברדיאנים. נדחה את הוכחת נוסחה זו לסוף המאמר ובינתיים נראה איך להסיק ממנה מסקנות.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נציב $latex x=1$, נקבל מיד כי
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \frac{\pi}{4} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \frac{1}{11} + \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אבל באיזה אין תועלת רבה. כי כדי לחשב את $latex \pi$ לפי נוסחה זו עד לדיוק של 10 ספרות, נצטרך להביא בחשבון לפחות שני מיליארד אברים של הטור. כי הרי אם נפסיק את הסיכום אחרי $latex 2N$ אברים, ז.א. באבר $latex -\frac{1}{4N-1}$, תהיה שארית הטור
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle (\frac{1}{4N+1} - \frac{1}{4N+3}) + (\frac{1}{4N+5} - \frac{1}{4N+7}) + \dots$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle = \frac{2}{(4N+1)(4N+3)} + \frac{2}{(4N+5)(4N+7)} + \dots$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \gt \frac{2}{(4N+2)^2} + \frac{2}{(4N+6)^2} + \dots$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle = \frac{1}{2} [ \frac{1}{(2N+1)^2} + \frac{1}{(2N+3)^2} + \dots ] $
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \gt \frac{1}{2} [ \frac{1}{(2N+2)^2} + \frac{1}{(2N+4)^2} + \dots ] $
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle = \frac{1}{8} [ \frac{1}{(N+1)^2} + \frac{1}{(N+2)^2} + \dots ] $
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  וניתן להוכיח, אם כי לא נציג כאן את ההוכחה, כי הנוסחה האחרונה בסוגריים ערכה בערך $latex \frac{1}{N}$. ראינו איפוא כי אם ניקח $latex 2N$ אברים מהטור ניתקל בשגיאה של לפחות $latex \frac{1}{8N}$. כדי להשיג דיוק של 10 ספרות דרוש כי
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \frac{1}{8N} \lt 10^{-10}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן $latex N \gt 10^9$, ז.א. שידרשו, כפי שאמרנו, לפחות $latex 2 \cdot 10^9$ אברים. מאידך ידוע כי, עבור כל $latex \alpha, \beta$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (2) \quad \tan{(\alpha + \beta)} = \frac{\tan{\alpha} + \tan{\beta}}{1 - \tan{\alpha} \tan{\beta}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נכתוב $latex \tan{\alpha} = a$, $latex \tan{\beta} = b$ ובכן $latex \alpha = \arctan{a}$, $latex \beta = \arctan{b}$ נקבל
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (3) \quad \arctan{a} + \arctan{b} = \arctan{\frac{a+b}{1-ab}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  במיוחד, אם ניקח $latex a=\frac{1}{2}$, $latex b = \frac{1}{3}$, נקבל
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \arctan{\frac{1}{2}} + \arctan{\frac{1}{3}} = \arctan{\frac{\frac{1}{2}+\frac{1}{3}}{1-\frac{1}{6}}} = \arctan{1} = \frac{1}{4}\pi$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מהטור של לייבניץ יוצא עכשיו:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (4) \quad \frac{1}{4}\pi = (\frac{1}{2} - \frac{1}{3}\cdot \frac{1}{2^3} + \frac{1}{5} \cdot \frac{1}{2^5} - \frac{1}{7} \cdot \frac{1}{2^7} + \frac{1}{9} \cdot \frac{1}{2^9} \dots)$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad + (\frac{1}{3} - \frac{1}{3}\cdot \frac{1}{3^3} + \frac{1}{5} \cdot \frac{1}{3^5} + \frac{1}{5} \cdot \frac{1}{3^5} - \frac{1}{7} \cdot \frac{1}{3^7} \dots)$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  שני הטורים האלה הם מכשירים יעילים למדי למטרות חישוב נומרי. נניח שנסכם את $latex 2N$ האברים הראשונים של הטור הראשון. השארית תהיה
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \frac{1}{4N+1} \cdot \frac{1}{2^{4N+1}} - \frac{1}{4N+3} \cdot \frac{1}{2^{4N+3}} + \frac{1}{4N+5} \cdot \frac{1}{2^{4N+5}} \dots$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle = \frac{1}{4N+1} \cdot \frac{1}{2^{4N+1}} - [ \frac{1}{4N+3} \cdot \frac{1}{2^{4N+3}} - \frac{1}{4N+5} \cdot \frac{1}{2^{4N+5}} ] \dots$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \lt \frac{1}{4N+1} \cdot \frac{1}{2^{4N+1}}$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \lt \frac{1}{4N \cdot 2^{4N+1}} = \frac{1}{N \cdot 2^{4N+3}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נוכל איפוא לקבל דיוק של 10 ספרות אם
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle N \cdot 2^{4N+3} \gt 10^{10}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  וזה יתקיים, כפי שאפשר לברר בקלות, אם $latex N \gt 7$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  יוצא כי מספיק לקחת 14 אברים מהטור הראשון (ואפילו פחות מהטור השני) להשיג דיוק של 10 ספרות. למעשה ניתן להוכיח בדרך דומה כי, באופן כללי ההפרש בין הסכום של k האברים הראשונים של הטור (1) לבין הערך המדויק של $latex \arctan{x}$, כאשר $latex -1 \lt x \lt 1$, הוא קטן מ-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \frac{x^{2k}}{2k(1-x^2)}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נסתכל עכשיו בנוסחה (3) ונציב $latex a = b = \frac{1}{5}$. נקבל
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 2 \arctan{\frac{1}{5}} = \arctan{\frac{\frac{1}{5}}{1-\frac{1}{25}}} = \arctan{\frac{5}{12}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 4 \arctan{\frac{1}{5}} = 2 \arctan{\frac{5}{12}} = \arctan{\frac{\frac{5}{6}}{1-\frac{25}{144}}} = \arctan{\frac{120}{119}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מאידך, בהסתמך שוב על (3), קיים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \arctan{1} + \arctan{\frac{1}{239}} = \arctan{\frac{1+\frac{1}{239}}{1-\frac{1}{239}}} = \arctan{\frac{120}{119}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ומכאן ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (5) \quad \frac{1}{4} \pi = \arctan{1} = 4 \arctan{\frac{1}{5}} - \arctan{\frac{1}{239}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נציב $latex x=\frac{1}{5}$ ב-(1) נראה, לפי האמור לעיל, שנקבל דיוק של 10 ספרות אם ניקח k אברים כך ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \frac{(\frac{1}{5})^{2k}}{2k \cdot \frac{24}{25}} \lt 10^{-10}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולזה מספיק ש-$latex k \gt 7$. באשר לטור (1) כאשר $latex x = \frac{1}{239}$, קל לראות כי 3 אברים יספיקו. ההצבה (5) מאפשרת איפוא לחשב את $latex \pi$ בדיוק רב בעבודה קלה יחסית. בעזרת הנוסחה (4) הצליח המתמטיקאי האנגלי יוהן מצ׳ין (John Machin) כבר בשנה 1706 לחשב את $latex \pi$ עד לספרה ה-100. קיימות מספר רב של נוסחאות אלטרנטיביות, ביניהם זו של אוילר (L. Euler) משנת 1779, והיא
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (6) \quad \frac{1}{4} \pi = 5 \arctan{\frac{1}{7}} + 2 \arctan{\frac{3}{79}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  המתמטיקאי שנקס (W. Shanks) המשיך במאמצים האלה ובשנת 1873 פרסם רשימה של 707 הספרות הראשונות בפיתוח העשרוני של $latex \pi$. עם פיתוחם של מחשבים אלקטרוניים לבשה בעית החישוב צורה חדשה. עכשיו יכול כל תלמיד תיכון היודע תכנות לחשב את $latex \pi$ עד לדיוק של מליוני ספרות תוך כמה דקות.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בהקשר זה נזכיר מקרה מבדר במקצת. בשנת 1937 התקיימה בפאריז (בירת צרפת) תערוכה גדולה ואחד הביתנים בה היה ״ביתן המדע״. לשם קישוט בבנין זה שמו על ארבעה הקירות מסביב את 707 הספרות של $latex \pi$ שהיו ידועות עד אז. הבנין קיים, על כל קישוטיו, עד ליום הזה ומשמש כ״מוזיאון המדע״. אבל לפני כשלושים שנה, כאשר התחילו להשתמש במחשבים אלקטרוניים חישבו את $latex \pi$ לדיוק של כמה אלפי ספרות ואחת העובדות שהתגלו היתה שבחישוביו של שנקס היתה כנראה טעות והספרות אחרי הספרה ה-135 אינן נכונות!
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בסוף נזכיר שתי גישות אחרות לחישוב של $latex \pi$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  א. המתמטיקאי האנגלי ברונקר (Brouncker) הוכיח בשנת 1658 את הנוסחה הבאה:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (7) \quad \frac{4}{\pi} = 1 + \cfrac{1}{2 + \cfrac{9}{2 + \cfrac{25}{2+ \cfrac{49}{2 + \cfrac{81}{2+ \cfrac{121}{2 + \dots}}}}}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לא נוכל להוכיח נוסחה זו כאן ואנו מצטטים אותה בעיקר מפני שהיא כל כך שונה מאלה שניתנו למעלה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ב. הנוסחה השניה הומצאה ע״י המתמטיקאי הצרפתי ויטה (F. Vieta) שחי במאה ה-16. הוא יצא מהעובדה כי
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \sin{\alpha} = 2 \cos{\frac{\alpha}{2}} \cdot \sin{\frac{\alpha}{2}}$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \quad = 2 \cos{\frac{\alpha}{2}} (2 \cos{\frac{\alpha}{4}} \sin{\frac{\alpha}{4}})$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \quad = 2^2 \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{4}} \sin{\frac{\alpha}{4}}$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \quad = 2^2 \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{4}} (2 \cos{\frac{\alpha}{8}} \sin{\frac{\alpha}{8}})$
+</p>
+
+<p style="direction: rtl; text-align: left; padding-left: 170px;">
+  $latex \displaystyle \quad = 2^3 \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{4}} \cos{\frac{\alpha}{8}} \sin{\frac{\alpha}{8}}, \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  רואים כי ניתן להמשיך בדרך זו ובאופן כללי,
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \sin{\alpha} = 2^n \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{2^2}} \cos{\frac{\alpha}{2^3}} \cdots \cos{\frac{\alpha}{2^n}} \sin{\frac{\alpha}{2^n}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  דהיינו:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{2^2}} \cos{\frac{\alpha}{2^3}} \cdots \cos{\frac{\alpha}{2^n}} = \frac{\sin{\alpha}}{2^n \sin{\frac{\alpha}{2^n}}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אבל ידוע כי $latex \frac{\sin{\theta}}{\theta}$ שואף לערך הגבולי 1 כאשר $latex \theta$ שואף ל-0. מכאן שכאשר $latex n$ גדל לקראת אינסוף ישאף
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 2^n \sin{\frac{\alpha}{2^n}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  שהוא אינו אלא
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \alpha \cdot \frac{\sin{\frac{\alpha}{2^n}}}{\frac{\alpha}{2^n}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לערך הגבולי $latex \alpha$. מהשיקולים האלה הסיק ויטה את הנוסחה
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (8) \quad \frac{\sin{\alpha}}{\alpha} = \cos{\frac{\alpha}{2}} \cos{\frac{\alpha}{2^2}} \cos{\frac{\alpha}{2^3}} \cos{\frac{\alpha}{2^4}} \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נציב ב-(8) $latex \alpha = \frac{\pi}{2}$ וניזכר כי $latex \sin{\frac{\pi}{2}} = 1$, נקבל
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (9) \quad \frac{2}{\pi} = \cos{\frac{\pi}{2^2}} \cos{\frac{\pi}{2^3}} \cos{\frac{\pi}{2^4}} \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אבל, עבור כל זווית $latex \theta$, קיים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\theta} = 2 \cos^{2}\frac{\theta}{2} - 1$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (10) \quad \cos{\frac{\theta}{2}} = \sqrt{\frac{1 + \cos{\theta}}{2}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כולנו יודעים כי
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\frac{\pi}{2^2}} = \frac{1}{\sqrt{2}} = \sqrt{\frac{2}{4}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן, לפי (10),
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\frac{\pi}{2^3}} = \sqrt{\frac{1 + \frac{1}{\sqrt{2}}}{2}} = \sqrt{\frac{2 + \sqrt{2}}{4}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נמשיך, נקבל
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\frac{\pi}{2^4}} = \sqrt{\frac{1 + \sqrt{\frac{2+\sqrt{2}}{4}}}{2}} = \sqrt{\frac{2 + \sqrt{2 + \sqrt{2}}}{4}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ובאותה דרך
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \cos{\frac{\pi}{2^5}} = \sqrt{\frac{2 + \sqrt{2 + \sqrt{2 + \sqrt{2}}}}{4}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  וכו׳.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נציב את כל אלה ב-(9) ונקבל את נוסחת ויטה
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \frac{2}{\pi} = \sqrt{\frac{2}{4} \sqrt{\frac{2 + \sqrt{2}}{4}} \sqrt{\frac{2 + \sqrt{2 + \sqrt{2}}}{4}} \cdots}$
+</p>
+
+<h4 style="direction: rtl; text-align: right;">
+  <span style="text-decoration: underline;"> הוכחת הנוסחה (1)</span>
+</h4>
+
+<p style="direction: rtl; text-align: right;">
+  ההוכחה הפשוטה ביותר מתבססת על חשבון אינטגרלי: נניח כי $latex 0 \lt x \lt 1$. אזי
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \arctan{x} = \int_0^x \frac{\text{d}u}{1+u^2} = \int_0^x (1 - u^2 + u^4 - u^6 + \dots) {d}u = x - \frac{x^3}{3} + \frac{x^5}{5} - \frac{x^7}{7} + \dots$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ברור שהפיתוח של $latex \frac{1}{1+u^2}$ בטור הנדסי אפשרי אך ורק אם $latex u^2 \lt 1$ ולכן התנאי $latex 0 \leq x \lt 1$ היה דרוש. נוסף על זה הנחנו שהאינטגרל של סכום של טור אינסופי שווה לסכום האינטגרלים של אברי הטור. דבר זה אינו נכון תמיד אבל ניתן לאשר כי הוא קיים במקרה זה. המעבר ל-$latex x$ שלילי הוא מידי מאחר שגם $latex \arctan{x}$ וגם נוסחת ליבניץ מחליפים את סימנם כאשר מציבים $latex -x$ במקום $latex x$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/09/30/riddles-11/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/09/30/topology/">טופולוגיה &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/09/30/on-computing-pi/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

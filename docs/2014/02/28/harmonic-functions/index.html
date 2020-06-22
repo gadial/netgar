@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>פונקציות הרמוניות | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="פונקציות הרמוניות" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="דמייני דיסקת מתכת (נאמר מצילה של מערכת תופים) ששפתה מחוממת - בכל נקודה של השפה נשמרת טמפרטורה קבועה כלשהי (המשתנה מנקודה לנקודה). כיצד יתפשט החום מהשפה אל המרכז? ולאיזה טמפרטורה תגיע כל נקודה של הדיסקה?" />
+<meta property="og:description" content="דמייני דיסקת מתכת (נאמר מצילה של מערכת תופים) ששפתה מחוממת - בכל נקודה של השפה נשמרת טמפרטורה קבועה כלשהי (המשתנה מנקודה לנקודה). כיצד יתפשט החום מהשפה אל המרכז? ולאיזה טמפרטורה תגיע כל נקודה של הדיסקה?" />
+<link rel="canonical" href="/2014/02/28/harmonic-functions/" />
+<meta property="og:url" content="/2014/02/28/harmonic-functions/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-02-28T00:46:46+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-02-28T00:46:46+02:00","datePublished":"2014-02-28T00:46:46+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/02/28/harmonic-functions/"},"url":"/2014/02/28/harmonic-functions/","description":"דמייני דיסקת מתכת (נאמר מצילה של מערכת תופים) ששפתה מחוממת - בכל נקודה של השפה נשמרת טמפרטורה קבועה כלשהי (המשתנה מנקודה לנקודה). כיצד יתפשט החום מהשפה אל המרכז? ולאיזה טמפרטורה תגיע כל נקודה של הדיסקה?","headline":"פונקציות הרמוניות","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/02/28/imaginary-numbers-reality-or-fantasy/">&laquo; מציאות או דמיון - על ההתאזרחות של המספרים המרוכבים</a>
+    
+    
+      <a class="next" href="/2014/02/28/paul-turan/">פול טוראן &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">פונקציות הרמוניות</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-02-28T00:46:46+02:00" itemprop="datePublished">Feb 28, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אורי בדר</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  <span style="line-height: 1.5em;">דמייני דיסקת מתכת (נאמר מצילה של מערכת תופים) ששפתה מחוממת - בכל נקודה של השפה נשמרת טמפרטורה קבועה כלשהי (המשתנה מנקודה לנקודה). כיצד יתפשט החום מהשפה אל המרכז? ולאיזה טמפרטורה תגיע כל נקודה של הדיסקה?</span>
+</p>
+
+<p style="direction: rtl;">
+  פרשנות מתמטית לשאלה הראשונה ניתנה ע"י המתמטיקאי פורייה, אשר ניסח את משוואת החום בראשית המאה ה-$latex {19}$. המתמטיקאי פואסון הראה איך לפתור את השאלה השנייה. שניהם נסמכו על עבודות קודמות של  לפלס$latex {^1}$  שחקר מחלקה של פונקציות הנקראות "הרמוניות" - פונקציות שערכן בכל נקודה ונקודה הנו ממוצע הערכים שמסביב. הטמפרטורה, כפונקציה על הדיסקה, לאחר שנסתיים תהליך התפשטות החום מהקצוות למרכז, מהווה פונקציה הרמונית.
+</p>
+
+<p style="direction: rtl;">
+  על מנת לדון בפונקציות הרמוניות על דיסקה עלינו להשתמש בכלים של משוואות דיפרנציאליות. אנו נמנע מכך וננסה להבין פונקציות הרמוניות על מערכת סופית. בציור הבא $latex {140}$ ערוגות. עבור $latex {40}$ מתוכן - ערוגות השפה - נבחרו ערכים מספריים (הרשומים בתוכן).
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <b><img class="aligncenter  wp-image-585" alt="פונקציה הרמונית ציור 1א" src="http://net-gar.net/wp-content/uploads/2014/02/ציור-1א-נ-996x1024.jpg" width="598" height="614" /></b>
+</p>
+
+<p style="direction: rtl;">
+  האם תוכלי לרשום מספרים בערוגות הפנימיות כך שהערך בכל ערוגה פנימית ישווה לממוצע הערכים בארבע שכנותיה? אם כן, בכמה דרכים שונות תוכלי לעשות זאת?
+</p>
+
+<p style="direction: rtl;">
+  <b> מערכת משוואות ליניאריות </b>
+</p>
+
+<p style="direction: rtl;">
+  אם נגדיר את ערכי הערוגות הריקות כמשתנים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <b><img class="aligncenter  wp-image-586" alt="ציור 2א נ" src="http://net-gar.net/wp-content/uploads/2014/02/ציור-2א-נ-1024x1021.jpg" width="614" height="613" /></b>
+</p>
+
+<p style="direction: rtl;">
+  נוכל לרשום $latex {100}$ משוואות ב- $latex {100}$ נעלמים, לדוגמא:
+</p>
+
+<p style="direction: rtl;" align="center">
+  $latex \displaystyle .X_{1,2}=\frac{1}{4}*2+\frac{1}{4}X_{2,2}+\frac{1}{4}X_{1,3}+\frac{1}{4}X_{1,1} \quad ,X_{5,5}=\frac{1}{4}X_{4,5}+\frac{1}{4}X_{5,6}+\frac{1}{4}X_{6,5}+\frac{1}{4}X_{5,4} $
+</p>
+
+<p style="direction: rtl;">
+  תלמיד חטיבת ביניים חרוץ ובעל זמן פנוי יכול לרשום את כולן ולנסות לפתור אותן. האם יצליח?
+</p>
+
+<p style="direction: rtl;">
+  מערכת המשוואות שירשום התלמיד נקראת "מערכת משוואות ליניאריות לא הומוגנית". "לא הומוגנית" מפני שישנם "איברים חופשיים" במערכת- ערכי השפה (בדוגמא לעיל, המספר $latex {\frac{1}{2}=\frac{1}{4}*2}$ המופיע במשוואה השנייה). אם נאפס אותם (נחליף את המשוואה השנייה שבדוגמא במשוואה $latex {X_{1,2}=\frac{1}{4}X_{2,2}+\frac{1}{4}X_{1,3}+\frac{1}{4}X_{1,1}}$ וכדומה), נקבל מערכת משוואות "הומוגנית".
+</p>
+
+<p style="direction: rtl;">
+  המערכת ההומוגנית מתארת את הבעיה הבאה.
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <b><img class="aligncenter  wp-image-587" alt="ציור 1ג נ" src="http://net-gar.net/wp-content/uploads/2014/02/ציור-1ג-נ-989x1024.jpg" width="593" height="614" /></b>
+</p>
+
+<p style="direction: rtl;">
+  בעיה זו קלה לפתרון - אם נרשום $latex {0}$ בכל הערוגות נקבל פתרון כשר. פתרון זה נקרא "טריוויאלי"$latex {^2}$ . נותרה שאלת יחידות הפתרון: האם יתכן פתרון לא טריוויאלי?
+</p>
+
+<p style="direction: rtl;">
+  <em>טענה: למערכת המשוואות ההומוגנית הנ"ל אין פתרון לא טריוויאלי.</em>
+</p>
+
+<p style="direction: rtl;">
+  הוכחה: בהינתן פתרון כלשהו, נביט בערוגה המקבלת את הערך הגדול היותר. ערך זה הינו ממוצע הערכים השכנים. נובע שגם הערוגות השכנות מקבלות כולן ערך זה וגם שכנותיהן וגם שכנות שכנותיהן וכך הלאה. בקיצור, נובע שכל הערוגות שוות בערכן וערך זה, חייב להזדהות עם ערך השפה, $latex {0}$.
+</p>
+
+<p style="direction: rtl;">
+  התחום המתמטי העוסק בפתרון מערכות של משוואות ליניאריות נקרא אלגברה ליניארית והוא נלמד בשנה הראשונה באוניברסיטה. אחד המשפטים הראשונים שנלמדים הוא המשפט הבא:
+</p>
+
+<p style="direction: rtl;">
+  <em>בהינתן מערכת משוואות לא הומוגנית, אם למערכת ההומוגניות המתאימה$latex {^3}$  אין פתרונות פרט לפתרון הטריוויאלי אז למערכת הלא הומוגנית קיים פתרון והוא יחידי.</em>
+</p>
+
+<p style="direction: rtl;">
+  קל להשתכנע שפתרון, אם קיים, הוא יחיד: אם קיימים שני פתרונות למערכת הלא-הומוגנית הרי שהפרשם הנו פתרון למערכת ההומוגנית ולפיכך $latex {0}$ בכל מקום.
+</p>
+
+<p style="direction: rtl;">
+  מדוע אם כן קיים פתרון? לא נוכיח כאן את המשפט במקרה הכללי$latex {^4}$  אבל ננסה להסביר זאת במספר אפנים עבור הבעיה שלנו.
+</p>
+
+<p style="direction: rtl;">
+  <b> ערסל קפיצים </b>
+</p>
+
+<p style="direction: rtl;">
+  נדמיין לעצמנו כעת כי הציור מתאר רשת קפיצים - כל מקטע בין שתי ערוגות הנו קפיץ והקפיצים מחוברים לחישוקים - הערוגות. מתקבלת כך סבכה של קפיצים וחישוקים ולה $latex {40}$ חישוקים בקצותיה. זוהי רשת קפיצים אידיאלית: החישוקים חסרי גודל, לקפיצים מימד אורך בלבד והאנרגיה האצורה בכל קפיץ נתונה ע"י הנוסחא $latex {\frac{1}{2}kx^2}$, כאשר $latex {k}$ קבוע כלשהו ו-$latex {x}$ מציין את אורך הקפיץ (על פי חוק הוק (Hooke) הנלמד בשיעורי הפיזיקה). אם לא נתפוס את החישוקים שבקצוות, תתכווץ הרשת לנקודה&#8230; נתקע באדמה $latex {40}$ מוטות עץ במבנה רבוע המתאים לשפת סבכת הקפיצים. נשחיל את החישוקים שבקצוות על מוטות העץ ונקבע אותם, כל אחד בגובה המתאים לערך השפה הנתון בערוגה המתאימה. נקבל "ערסל קפיצים משופע" כבציור.
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <img class="aligncenter size-medium wp-image-590" alt="ציור 2" src="http://net-gar.net/wp-content/uploads/2014/02/ציור-2-300x215.png" width="300" height="215" />איור: יואב מורג
+</p>
+
+<p style="direction: rtl;">
+  הערסל בוודאי ירטוט קצת לאחר שנחבר אותו למוטות, אך לאחר זמן מה יתייצב. האמנם? למה? ובאיזה גובה יהיה כל חישוק?
+</p>
+
+<p style="direction: rtl;">
+  "עקרון האנרגיה המינימלית" אומר שמערכת פיזיקלית תתאזן במצב בו האנרגיה הכוללת שבה תהיה מינימלית. עדות ויזואלית יפה לעקרון זה ניתן כאשר טובלים מסגרת מתכת באמבט מי סבון ומרימים אותה (בזהירות).
+</p>
+
+<p style="text-align: center;">
+  <img class="aligncenter size-medium wp-image-745" alt="תמונה 5 (1)" src="http://net-gar.net/wp-content/uploads/2014/02/תמונה-5-11-300x225.jpg" width="300" height="225" />צילום: ליהי דהן
+</p>
+
+<p style="direction: rtl;">
+  תמונה זו מזכירה במעט את הציור לעיל, ולא במקרה. על פי עקרון האנרגיה המינימלית הערסל יתאזן במצב בו סכום האנרגיות האצורות בקפיצים יהיה מינימלי$latex {^5}$ .
+</p>
+
+<p style="direction: rtl;">
+  כיצד תשתנה האנרגיה הפוטנציאלית הכוללת האצורה בסבכת הקפיצים אם נשנה את גובהו של חישוק פנימי בודד ונקבע את כל שאר החישוקים במקומם? אם נרשום את האנרגיה הכוללת כפונקציה של גובהו של אותו חישוק בודד, מתי היא תהיה מינימלית? (רמז: השתמש בחוק הוק ובמשפט פיתגורס. גזור את הביטוי שקבלת.)
+</p>
+
+<p style="direction: rtl;">
+  לא קשה לוודא אם כן שקיים מצב יחיד בו האנרגיה הפוטנציאלית של ערסל הקפיצים שלנו תהיה מינימלית, ואם נרשום בכל ערוגה את גובהו של החישוק המתאים כאשר הערסל מאוזן במצב זה, יתקבל פתרון לבעייתנו.
+</p>
+
+<p style="direction: rtl;">
+  הוכחנו אם כן שקיים פתרון לבעיה, אבל האם פתרנו אותה?
+</p>
+
+<p style="direction: rtl;">
+  <b> מקצה שיפורים </b>
+</p>
+
+<p style="direction: rtl;">
+  נחזור כעת בדמיוננו לערסל הרוטט, לפני שהתאזן. ניתן לחשוב על תנודותיו כעל תהליך המתכנס אל הפתרון המבוקש. בתחילת התהליך הערסל מונח ברובו על הארץ ורק קצותיו מחוברים למוטות בגבהים שונים - במצב זה אצורה אנרגיה רבה בקפיצים שבקצוות. אנרגיה זו מומרת לאנרגיה קינטית (הערסל מתרומם ונע למעלה) המומרת שוב לאנרגיה פוטנציאלית (הקפיצים הולכים ונמתחים) וחוזר חלילה. לאט-לאט מאבדת המערכת אנרגיה, עקב חיכוך הערסל עם האוויר, ומתקרבת למצבה המאוזן בו דנו בסעיף הקודם. זהו תהליך מסובך.
+</p>
+
+<p style="direction: rtl;">
+  נשווה בדמיוננו תהליך פשוט יותר$latex {^6}$ . לשם כך נניח לערסל וננסה לתאר את פתרון הבעיה כגבולו של תהליך אינסופי הניתן ע"י סדרה של ניחושי פתרון ושיפורם ההדרגתי. ראשית נרשום 0 בכל הערוגות הפנימיות. אחרי שנייה נחליף את הרשום בכל ערוגה וערוגה (בו זמנית) בממוצע הערכים שהיו רשומים בשכנותיה. בשנייה הבאה נעשה זאת שוב. ושוב. ושוב&#8230;
+</p>
+
+<p style="direction: rtl;">
+  באופן פורמלי נגדיר לכל $latex {i}$ ולכל $latex {j}$ בין $latex {1}$ ל-$latex {10}$, $latex {X^0_{i,j}=0}$ (האינדקס $latex {0}$ בראש המשתנה רומז שזהו הערך בזמן $latex {0}$), ונגדיר את $latex {X^n_{i,j}}$ כממוצע ערכי השכנים בזמן $latex {n-1}$:
+</p>
+
+<p style="direction: rtl;" align="center">
+  $latex \displaystyle X^n_{1,2}=\frac{1}{4}*2+\frac{1}{4}X^{n-1}_{2,2}+\frac{1}{4}X^{n-1}_{1,3}+\frac{1}{4}X^{n-1}_{1,1}   ,$
+</p>
+
+<p style="direction: rtl;" align="center">
+  $latex \displaystyle X^n_{5,5}=\frac{1}{4}X^{n-1}_{4,5}+\frac{1}{4}X^{n-1}_{5,6}+\frac{1}{4}X^{n-1}_{6,5}+\frac{1}{4}X^{n-1}_{5,4} $
+</p>
+
+<p style="direction: rtl;">
+  לדוגמא (בדוק): $latex {X^0_{5,5}=0}$, $latex {X^1_{5,5}=0}$ ו- $latex {X^2_{5,5}=0}$ בעוד ש- $latex {X^0_{1,2}=0}$, $latex {X^1_{1,2}=\frac{1}{2}}$ ו- $latex {X^2_{1,2}=\frac{9}{16}}$.
+</p>
+
+<p style="direction: rtl;">
+  נשים לב שבכל רגע נתון ערך הערוגה קטן מממוצע ערכי שכנותיה (התוכל להוכיח זאת? זכור שערכי השפה שלנו אי שליליים). נובע שהערכים בכל ערוגה הולכים ועולים, ולפיכך הולכים ומתכנסים לערך גבולי. ערך גבולי זה חייב להוות פתרון לבעייתנו.
+</p>
+
+<p style="direction: rtl;">
+  יופי, הבעיה פתורה. כן? לא! באמצעות התהליך שלנו נוכל למצוא קירוב לפתרון, אך לעולם לא נמצא את הפתרון עצמו&#8230; איך נוכל לדעת עד כמה אנחנו קרובים לפתרון?
+</p>
+
+<p style="direction: rtl;">
+  <b> צבא הנמלים </b>
+</p>
+
+<p style="direction: rtl;">
+  נבצע כעת ניסוי מחשבתי נוסף. נדמיין צבא של נמלים היושב בערוגה $latex {(2,3)}$. כל מהלך הניסוי מלכת הנמלים יושבת במקומה אך שאר הנמלים מטיילות על פני גן השבילים המתפצלים שלנו. בהתחלה יושבות כלן בערוגה $latex {(2,3)}$. בשנייה הראשונה $latex {\frac{1}{4}}$ מהנמלים צועדות למעלה, $latex {\frac{1}{4}}$ ימינה, $latex {\frac{1}{4}}$ למטה ו- $latex {\frac{1}{4}}$ שמאלה. בשנייה השנייה, מתוך הנמלים שפנו למעלה, $latex {\frac{1}{4}}$ שוב פונות למעלה, $latex {\frac{1}{4}}$ ימינה, $latex {\frac{1}{4}}$ למטה ו- $latex {\frac{1}{4}}$ שמאלה, וכך גם יתר הנמלים. וכך בכל שנייה ושנייה. נמלה עוצרת כאשר היא מגיעה לשפה, ומדווחת למלכה מהו ערך השפה אליו הגיעה. המלכה מחשבת בכל שניה ושניה מהו ממוצע ערכי השפה המדווחים. לאיזה ערך תגיע המלכה בסוף היום? נכון מאד, $latex {X^{86,400}_{2,3}}$.
+</p>
+
+<p style="direction: rtl;">
+  הצבא צועד בסך בשיטה ובמשמעת. להבדיל, אם נבחר בנמלה אחת באקראי ונתמקד רק בה, יראה לנו מסלול צעידתה אקראי לחלוטין. אפשר לדמיין כאילו בכל שנייה היא מפילה גורל על מנת להחליט מה יהיה צעדה הבא$latex {^7}$ . אם נמלה ממשיכה לשוטט בין הערוגות הפנימיות לאחר $latex {86,400}$ שניות הרי שהיא חסרת מזל באופן קיצוני. לפיכך, בסוף היום תדווחנה כבר כמעט כל הנמלים על ערכים למלכה.
+</p>
+
+<p style="direction: rtl;">
+  ואם תעצור המלכה את הניסוי אחרי יומיים, או אחרי שנה, האם תקבל ממוצעים שונים בהרבה מזה שתקבל בסופו של יום אחד? נקודת המבט ההסתברותית מאפשרת לנו לענות על שאלה זו: הפרש הממוצעים לא יעלה על התרומה המקסימלית לממוצע אשר עשויות להרים הנמלים שעדיין לא הגיעו לשפה בסוף היום, דהיינו ערך השפה המקסימלי ($latex {9}$) כפול ההסתברות לכך שנמלה תהיה חסרת מזל באופן קיצוני. זהו גודל קטן ביותר, כפי שהקורא יכול בקלות להעריך.
+</p>
+
+<p style="direction: rtl;">
+  כעת בידינו גם דרך נוספת לראות שהגודל $latex {X^{86,400}_{2,3}}$ מקרב את פתרון הבעיה: אם תעצור המלכה את הניסוי אחרי יום ושנייה תקבל ערך ממוצע הקרוב מאד לערך שתקבל אם תעצרו אחרי יום בלבד; מצד שני, ערך זה ישווה לממוצע הערכים אותם תקבלנה בניסויים דומים מלכות השוכנות בערוגות השכנות - אפשר לחשוב על הניסוי הנערך ע"י מלכת $latex {(2,3)}$ כעל ארבעה ניסויים הנערכים שנייה מאוחר יותר ע"י מלכות $latex {(1,3)}$, $latex {(2,2)}$, $latex {(3,3)}$ ו- $latex {(2,4)}$.
+</p>
+
+<p style="direction: rtl;">
+  אחרי ניסוי מוצלח שכזה אנחנו יכולים לנוח בסיפוק ולהיות מרוצים מעצמנו – מצאנו קירוב טוב מאד לפתרון הבעיה. למעשה עיון נוסף יאפשר לנו לראות שאם נעצור את הניסוי אחרי יומיים הקירוב שלנו יהיה טוב עד כדי כך שנוכל באמצעותו לדעת מהו פתרון הבעיה בודאות מלאה! איך? למה? זאת נשאיר לקורא. לפני שנפרד נסב רק את תשומת ליבו לכך שערכי השפה שבחרנו הנם מספרים שלמים - נובע שהערכים הפנימיים יהיו בהכרח מספרים רציונליים. מה אפשר לאמר על המכנה המשותף שלהם?
+</p>
+
+<hr />
+
+<p style="direction: rtl;">
+  <em>$latex {^1}$ מתמטיקאי ואסטרונום צרפתי. מסופר שלפלס נשאל ע"י נפוליאון הכיצד בעבודתו על יציבותה של מערכת השמש אין כל איזכור לאלוהים. "אין לי שום צורך בהנחה הזאת" ענה לפלס ביובש.</em>
+</p>
+
+<p style="direction: rtl;">
+  <em>$latex {^2}$ בשפת המתמטיקאים "טריוויאלי" = "מובן מאליו".</em>
+</p>
+
+<p style="direction: rtl;">
+  <em>$latex {^3}$ מערכת המשוואות המתקבלת כאשר מאפסים את האיברים החופשיים במערכת הנתונה.</em>
+</p>
+
+<p style="direction: rtl;">
+  <em>$latex {^4}$ על מנת להוכיח את המשפט יש לחשוב על ה"איברים החופשיים" כפונקציה של הצבות ערכים במשתנים. לכל הצבה(של $latex {100}$ ערכים) תתאים רשימה(וקטור) של $latex {100}$ מספרים שאם הם יהיו האיברים החופשיים המשוואות תסופקנה. תמונתה של הפונקציה הנה תת מרחב $latex {100}$-מימדי של מרחב $latex {100}$ מימדי&#8230;</em>
+</p>
+
+<p style="direction: rtl;">
+  <em><span style="line-height: 1.5em;">$latex {^5}$ בדיוננו אנו מתעלמים מהכבידה. למעשה, לערסל הקפיצים משקל, ומשקלו משפיע על שיווי המשקל אליו יגיע. על מנת לקבל מושג לגבי הבעיה אותה עלינו לפתור אם ניקח בחשבון את אפקט הכבידה, נסי למצוא מה הפונקציה שאת הגרף שלה מתאר חוט חשמל</span><span style="line-height: 1.5em;"> המתוח (לא מאוד) בין שני עמודי חשמל.</span></em>
+</p>
+
+<p style="direction: rtl;">
+  <em>$latex {^6}$ בתהליך הפשוט המבוקש הערסל לא רוטט - הוא פשוט מתמתח ונפרש אט אט מגובה הקרקע ועד למצבו המאוזן. מבחינה פיזיקלית אפשר לקרב תהליך זה ע"י הגדלת החיכוך - אפשר להשקיע את הערסל בבריכת מים. או בבריכת דבש&#8230; ברשות הקורא אנו מעדיפים בשלב זה לזנוח את דימוי הערסל ולשוב לחיקה החמים של האלגברה.</em>
+</p>
+
+<p style="direction: rtl;">
+  <em>$latex {^7}$ המתמטיקאים מכנים התנהגות שכזו "הילוך שיכור".</em>
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/02/28/imaginary-numbers-reality-or-fantasy/">&laquo; מציאות או דמיון - על ההתאזרחות של המספרים המרוכבים</a>
+    
+    
+      <a class="next" href="/2014/02/28/paul-turan/">פול טוראן &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/02/28/harmonic-functions/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

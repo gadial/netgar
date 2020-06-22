@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>המספרים האלגבריים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="המספרים האלגבריים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="עולם המספרים התרחב והלך במרוצת ההיסטוריה. במאמר הזה נלמד על קבוצת מספרים שמכילה את קבוצת המספרים הרציונליים, ועם זאת אינה שווה לקבוצת כל המספרים הממשיים. אלה הם המספרים האלגבריים, הפתרונות של משוואות פולינומיאליות עם מקדמים שלמים. נפגוש כמה תכונות מעניינות של הקבוצה הזאת, למשל שסכום של שני מספרים אלגבריים הוא אלגברי ־ האם אתם יכולים להוכיח זאת לעצמכם?" />
+<meta property="og:description" content="עולם המספרים התרחב והלך במרוצת ההיסטוריה. במאמר הזה נלמד על קבוצת מספרים שמכילה את קבוצת המספרים הרציונליים, ועם זאת אינה שווה לקבוצת כל המספרים הממשיים. אלה הם המספרים האלגבריים, הפתרונות של משוואות פולינומיאליות עם מקדמים שלמים. נפגוש כמה תכונות מעניינות של הקבוצה הזאת, למשל שסכום של שני מספרים אלגבריים הוא אלגברי ־ האם אתם יכולים להוכיח זאת לעצמכם?" />
+<link rel="canonical" href="/2015/08/31/algebraic-numbers/" />
+<meta property="og:url" content="/2015/08/31/algebraic-numbers/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-08-31T22:02:59+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-08-31T22:02:59+03:00","datePublished":"2015-08-31T22:02:59+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/08/31/algebraic-numbers/"},"url":"/2015/08/31/algebraic-numbers/","description":"עולם המספרים התרחב והלך במרוצת ההיסטוריה. במאמר הזה נלמד על קבוצת מספרים שמכילה את קבוצת המספרים הרציונליים, ועם זאת אינה שווה לקבוצת כל המספרים הממשיים. אלה הם המספרים האלגבריים, הפתרונות של משוואות פולינומיאליות עם מקדמים שלמים. נפגוש כמה תכונות מעניינות של הקבוצה הזאת, למשל שסכום של שני מספרים אלגבריים הוא אלגברי ־ האם אתם יכולים להוכיח זאת לעצמכם?","headline":"המספרים האלגבריים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/08/31/problems-in-elementary-geometry/">&laquo; על בעיות אחדות בגיאומטריה אלמנטרית</a>
+    
+    
+      <a class="next" href="/2015/08/31/symmetry/">סימטריה &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">המספרים האלגבריים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-08-31T22:02:59+03:00" itemprop="datePublished">Aug 31, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">י. לויצקי</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  א. דוגמאות והגדרות
+</p>
+
+<p style="direction: rtl;">
+  המספר הרציונלי $latex \frac{3}{4}$ מקיים את המשוואה הקוית $latex x-\frac{3}{4}=0$; המספר הממשי האי-רציונלי $latex \sqrt{2}$ מקיים את המשוואה הריבועית $latex x^2 - 2 = 0$; המספר $latex \frac{\sqrt{5}}{2}$ שאף הוא אי רציונלי, מקיים את המשוואה מן המעלה הששית $latex 64x^6 -5 = 0$. קל להוכיח כי המשוואה מן המעלה השלישית $latex x^3 -3x^2+3x-3=0$ מתקיימת בשביל המספר $latex \sqrt[3]{2}+1$. המספר המדוגמה $latex \sqrt[4]{-3}$ מקיים את המשוואה הריבועית $latex x^4+3=0$ וכו׳.
+</p>
+
+<p style="direction: rtl;">
+  הצד השווה שבכל המשוואות הנ״ל הוא כי מקדמיהן הם מספרים רציונליים. אפשר גם להניח מראש - מבלי להגביל על ידי כך את הכלליות כי בכל משוואה כזאת מקדם החזקה העליונה של $latex x$ שווה ל-$latex 1$. כך למשל במקום להסתכל במשוואה $latex 64x^6-5=0$, יכולנו לעבור על ידי חלוק המתקדמים ב-$latex 64$ למשוואה $latex x^6 - \frac{5}{64}=0$, אשר אינה שונה מן הקודמת מבחינה עקרונית.
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>הגדרה</strong>: מספר המקיים משוואה שצורתה
+  </p>
+</blockquote>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (1) \quad x^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0 = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex a_{n-1}, \ldots, a_1, a_0 \quad ; \quad n \gt 1$ רציונליים
+</p>
+
+<p style="direction: rtl;">
+  נקרא בשם מספר אלגברי. מספר שאינו אלגברי נקרא מספר טרנסצנדנטי. מספר המקיים משוואה נקרא גם שורש של אותה משוואה.
+</p>
+
+<p style="direction: rtl;">
+  מספר טרנסצנדנטי אינו איפוא שורש של שום משוואה שצורתה $latex (1)$. כל מספר רציונלי $latex a$ הוא גם אלגברי, כי הרי הוא מקיים את המשוואה $latex x-a=0$ שהיא מטפוס המשוואה $latex (1)$. המספר $latex e$ (בסיס הלוגריתמים הטבעיים), המספר $latex \pi$ (היקף מעגל שקוטרו שווה ליחידה), וכן המספר $latex 2^{\sqrt{2}}$ הם דוגמאות למספרים טרנסצנדנטיים.
+</p>
+
+<p style="direction: rtl;">
+  הוכחותיהן של שלש עובדות אלו אינן קלות כל עיקר. את הראשונה מצא המתמטיקן הצרפתי ש. ארמיט בשנת 1873; את השניה ־ המתמטיקן הגרמני פ. לינדמן בשנת 1882; ואת השלישית - המתמטיקן היהודי א. גלפונד בשנת 1934.
+</p>
+
+<p style="direction: rtl;">
+  כל מספר אלגברי $latex a$ הוא שרשן המשותף של משוואות רבות לאין סוף מן הטפוס $latex (1)$. כך, למשל המספר $latex \sqrt{2}$ הוא שרשן של המשוואות $latex x^2 -2 =0$ ; $latex x^3-2x=0$ וכוי.
+</p>
+
+<p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  משפט והגדרה
+</p>
+
+<p style="direction: rtl;">
+  כל מספר אלגברי $latex \alpha$ מקיים משוואה אחת ויחידה מטפוס $latex (1)$ אשר מעלתה מזערית (קטנה ביותר). משוואה זו נקראת <span style="text-decoration: underline;">המשוואה המינימלית</span> של $latex \alpha$, ולמעלתה קוראים בשם <span style="text-decoration: underline;">המעלה</span> של המספר $latex \alpha$.
+</p>
+
+<p style="direction: rtl;">
+  להוכחת משפט זה נעיר כי עצם קיומה של משוואה מינימלית הוא דבר מובן מעצמו (למה?). עיקרו של הענין הוא להראות כי קיימת רק משוואת אחת כזאת. נניח איפוא כי המספר $latex \alpha$, שמעלתו $latex n$, מקיימת שתי משוואות שונות
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (2) \quad x^n + a_1 x^{n-1} + a_2 x^{n-2} + \ldots + a_{n-1} x + a_n = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad \quad x^n + b_1 x^{n-1} + b_2 x^{n-2} + \ldots + b_{n-1} x + b_n = 0$
+</p>
+
+<p style="direction: rtl;">
+  ע״י חיסור אנו מקבלים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (3) \quad (a_1 - b_1)x^{n-1} + (a_2 - b_2)x^{n-2} + \ldots + (a_{n-1} - b_{n-1})x + (a_n - b_n) = 0$
+</p>
+
+<p style="direction: rtl;">
+  ישנן שתי אפשרויות:
+</p>
+
+<p style="direction: rtl;">
+  1) כל $latex a_i$ שווה ל-$latex b_i$ המתאים ($latex i=1,2,\ldots,n$), במקרה זה שתי המשוואות ב-$latex (2)$ זהות, בניגוד להנחה.
+</p>
+
+<p style="direction: rtl;">
+  2) ישנו לפחות ערך אחד של $latex i$ כך ש- $latex a_i \neq b_i$. במקרה זה הרי $latex \alpha$ מקיים את המשוואה $latex (3)$ שמעלתה קטנה מ-$latex n$. זה סותר את הגדרת $latex n$ כמעלת המספר $latex \alpha$.
+</p>
+
+<p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  ב. מספרים אלגבריים ובניות גאומטריות
+</p>
+
+<p style="direction: rtl;">
+  במישור יהי נתון קטע $latex AB$. נתענין כאן בשאלה: איזו קטעים אפשר לבנות על ידי הקטע $latex AB$ בעזרת הסרגל והמחוגה? דוגמות לקטעים כאלה הם למשל קטע $latex CD$ החופף למחציתו של $latex AB$, או לחלק השלישי של $latex AB$ וכוי. נבחר את הקטע $latex AB$ כקטע היחידה ונמדוד את שאר קטעי המישור לפי יחידה זו. בסעיף זה נאמר בקצור: המספר הממשי החיובי $latex \alpha$ ניתן לבניה אם קטע $latex CD$ אשר אורכו (לפי היחידה שבחרנו) שווה ל־$latex \alpha$ ניתן לבניה על ידי הקטע $latex AB$ בעזרת הסרגל והמחוגה. כל מספר רציונלי חיובי וכל שורש רבועי מכל מספר כזה (כלומר $latex +\sqrt{r}$ באשר $latex r$ הוא מספר רציונלי) הם דוגמאות למספרים הנתנים לבניה. אין זה מקרה שבכל הדוגמות הללו המספרים הם אלגבריים, כי קיים המשפט הבא:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <strong>משפט</strong>: כל מספר הניתן לבניה הוא מספר אלגברי.
+  </p>
+</blockquote>
+
+<p style="direction: rtl;">
+  כמסקנה הגיונית מן המשפט הנ״ל נקבל:
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>משפט</strong>: מספר טרנסצנדנטי אינו ניתן לבניה.
+  </p>
+</blockquote>
+
+<p style="direction: rtl;">
+  יש להעיר כי אלגבריותו של מספר אינה תנאי מספיק לאפשרות בנייתו של המספר הזה, אלא תנאי הכרחי בלבד. כלומר, קיימים מספרים אלגבריים אשר בנייתם היא בלתי אפשרית. מרחיק לכת יותר מן המשפט הנ״ל הוא המשפט הבא:
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>משפט</strong>: כל מספר הניתן לבניה הוא מספר אלגברי שמעלתו $latex n$ היא חזקה של $latex 2$ ( כלומר $latex n = 2^m$ באשר $latex m$ מספר טבעי).
+  </p>
+</blockquote>
+
+<p style="direction: rtl;">
+  גם במשפט זה עדיין אין תנאי מספיק לאפשרות בנייתו של מספר. לא נטפל בהוכחתם של המשפטים שנסחנו בסעיף הנוכחי, ואף לא נדון כאן בשאלה: מה הוא התנאי ההכרחי והמספיק גם יחד לאפשרות בנייתם של המספרים? תפקיד הסעיף הזה הוא רק להאיר מבחינה גיאומטרית את חשיבותו של מושג המספר האלגברי. למטרה זו נביא עוד כסיום לסעיף הזה את בעית תרבוע המעגל.
+</p>
+
+<p style="direction: rtl;">
+  בעית תרבוע המעגל אשר בה טפלו לשוא היונים העתיקים ודורות רבים שבאו אחריהם היא:
+</p>
+
+<p style="direction: rtl;">
+  במישור נתון מעגל. בנה בעזרת סרגל ומחוגה בלבד רבוע אשר שטחו שווה לשטח המעגל. אם נבחר את רדיוס המעגל הנתון כקטע היחידה, ישווה שטחו של המעגל ל-$latex \pi$. אם נסמן ב $latex \alpha$ את אורך הצלע הרבוע, אשר שטחו שווה לשטח המעגל הנתון, נקבל את השוויון $latex a^2 = \pi$ או $latex a = \sqrt{\pi}$. על סמך משפטו של לינדמן על הטרנסצנדנטיות של $latex \pi$ נובע כי גם $latex \sqrt{\pi}$ הוא מספר טרדסצנדנטי. על סמך המשפט שנסחנו לעיל בנייתה של צלע שארכה $latex \sqrt{\pi}$ ולפיכך אף בנייתו של הרבוע המבוקש הן אפוא מן הנמנעות.
+</p>
+
+<p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  ג. משפט עזר על משוואות קויות
+</p>
+
+<p style="direction: rtl;">
+  למשוואה הקוית $latex 3x-5y=0$ בשני הנעלמים $latex (x,y)$ יש אין סוף פתרונות רציונליים כגון $latex (\frac{5}{3},1)$; $latex (\frac{10}{3},2)$ וכו׳
+</p>
+
+<p style="direction: rtl;">
+  אף למערכת משוואות כמו למשל,
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex x + y = 2z = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex 3x - y + z = 0$
+</p>
+
+<p style="direction: rtl;">
+  יש אינסוף פתרונות רציונליים, כי נוכל לחלץ אחד המשתנים מבין שתי המשוואות ואז נישאר עם משוואה אחת בשני נעלמים. ברור שנוכל להמשיך בטיעון כזה עד כל מספר של משתנים ומכאן המשפט הבא:
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>משפט</strong>: למערכת של $latex n$ משוואות לינאריות הומוגניות ($latex n \gt 1$) ב-($latex n+1$) נעלמים יש אינסוף פתרונות רציונליים.
+  </p>
+</blockquote>
+
+<p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  ד. תכונותיהם היסודיות של המספרים האלגבריים
+</p>
+
+<p style="direction: rtl;">
+  בסעיף הנוכחי נטפל בשאלה: מה נוכל לומר על סכומם, הבדלם, מכפלתם ומנתם של שני מספרים אלגבריים? בכוון זה נוכיח את המשפט הבא:
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>המשפט היסודי:</strong> יהיו $latex \alpha$ ו-$latex \beta$ מספרים אלגבריים, אז גם $latex \alpha + \beta$; $latex \alpha - \beta$ ; $latex \alpha \beta$ (ובאם $latex \beta$ שונה מ-$latex 0$) $latex \frac{\alpha}{\beta}$ הם מספרים אלגבריים. מעלותיהם של מספרים אלה שוות לכל היותר למכפלת המעלות של $latex \alpha$ ושל $latex \beta$.
+  </p>
+</blockquote>
+
+<p style="direction: rtl;">
+  <strong>הוכחה</strong> בהוכחת המשפט נצטמצם בהנחה שמעלותיהם של $latex \alpha$ ושל $latex \beta$ שוות ל-$latex 2$. טוב יעשה הקורא אם ישתדל להתקין לעצמו בעקבות האמור להלן את ההוכחה גם לגבי מעלות גבוהות יותר (ראה גם הדרכה לתרגיל ד). את ההוכחה נבצע בשלבים אחדים.
+</p>
+
+<p style="direction: rtl;">
+  I. יהי $latex \alpha$ מספר אלגבראי ממעלה שניה. אז בשביל כל מספר טבעי $latex n$ קיימים שני מספרים רציונליים $latex r$ ו-$latex s$ כך ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \alpha ^ n = r + s \alpha$
+</p>
+
+<p style="direction: rtl;">
+  נוכיח את המשפט הזה בדרך האינדוקציה. נניח כי $latex \alpha$ מקיים את המשוואה $latex \alpha ^2 + p \alpha + q = 0$. אזי קיים, עבור $latex n=2$, $latex \alpha ^ 2 = -q - p \alpha$.
+</p>
+
+<p style="direction: rtl;">
+  אם המשפט נכון עבור איזה $latex n$ שהוא, ז.א.
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (4) \quad \alpha ^n = r + s \alpha$
+</p>
+
+<p style="direction: rtl;">
+  אזי יהיה
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (5) \quad \alpha ^{n+1} = r \alpha + s \alpha ^ 2$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \quad = r \alpha + s (-q - p \alpha)$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \quad = -sq + (r - sp)\alpha$
+</p>
+
+<p style="direction: rtl;">
+  ז.א. שיהיה נכון גם עבור $latex n+1$
+</p>
+
+<p style="direction: rtl;">
+  מאידך עבור $latex 1$, $latex n=0$ יש לנו $latex \alpha ^ 0 = 1 + 0 \cdot \alpha$, $latex \alpha ^ 1 = 0 + 1 \cdot \alpha$
+</p>
+
+<p style="direction: rtl;">
+  II. יהיו $latex \alpha$ ו-$latex \beta$ מספרים אלגבריים, שניהם מן המעלה השניה, אז לכל ״מכפלת חזקות״$latex \alpha ^ n \beta ^ m$ ($latex n$ ו-$latex m$ מספרים טבעיים) אפשר למצוא $latex 4$ מספרים רציונליים $latex h, g, f, e$ כך ש
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (6) \quad \alpha ^ n \beta ^ m = e + f \alpha + g \beta + h \alpha \beta$
+</p>
+
+<p style="direction: rtl;">
+  ואמנם על סמך I נוכל לכתוב $latex \alpha ^ n = r + s \alpha$ ו-$latex \beta ^ m = p + q \beta$, כאשר $latex q, p, s, r$ הם מספרים רציונליים מתאימים. על ידי הכפלה נקבל את השויון
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (7) \quad \alpha ^ n \beta ^ m = pr + ps \alpha + qr \beta + qs \alpha \beta$
+</p>
+
+<p style="direction: rtl;">
+  אשר אם נציב בו $latex e = pr$; $latex f = ps$; $latex g = qr$; $latex h = qs$, יתן לנו את השויון $latex (6)$.
+</p>
+
+<p style="direction: rtl;">
+  III. יהיו $latex \alpha$ ו-$latex \beta$ מספרים אלגבריים, שניהם מן המעלה השניה. אז לכל מספר טבעי $latex n$ אפשר למצוא $latex 4$ מספרים רציונליים $latex h', g', f', e'$ כך ש
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (8) \quad (\alpha + \beta) ^ n = e' + f' \alpha + g' \beta + h' \beta$
+</p>
+
+<p style="direction: rtl;">
+  על סמך נוסחת הבינום נקבל תחילה
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (\alpha + \beta) ^ n = \alpha ^ n + \binom{n}{1} \alpha^{n-1} \beta + \ldots + \beta ^ n$
+</p>
+
+<p style="direction: rtl;">
+  בשביל כל אחד מן המחוברים $latex \binom{n}{i} \alpha^{n-i} \beta^{i}$ בסכום הזה קיימת על סמך II הצגה מן הטיפוס הדרוש. לפיכך יהיה זה נכון גם לגבי סכומם, מש״ל.
+</p>
+
+<p style="direction: rtl;">
+  IV. המשפט III קיים כמובן גם לגבי חזקות ההבדל $latex (\alpha - \beta)^n$
+</p>
+
+<p style="direction: rtl;">
+  V. יהיו $latex \alpha$ ו-$latex \beta$ מספרים אלגבריים שמעלתם היא $latex 2$. נסמן ב-$latex \gamma$ את אחד המספרים $latex \alpha + \beta$, $latex \alpha - \beta$, $latex \alpha \beta$. אזי $latex \gamma$ מקיים משוואה אלגברית שמעלתה שווה לכל היותר ל-$latex 4$. על סמך II, III, IV נוכל לכתוב:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (9) \quad 1 = \gamma ^ 0 = e_0 + f_0 \alpha + g_0 \beta + h_0 \alpha \beta$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad \gamma = e_1 + f_1 \alpha + g_1 \beta + h_1 \alpha \beta$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad \gamma ^ 2 = e_2 + f_2 \alpha + g_2 \beta + h_2 \alpha \beta$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad \gamma ^ 3 = e_3 + f_3 \alpha + g_3 \beta + h_3 \alpha \beta$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad \gamma ^ 4 = e_4 + f_4 \alpha + g_4 \beta + h_4 \alpha \beta$
+</p>
+
+<p style="direction: rtl;">
+  כאשר המקדמים הם מספרים רציונליים. עכשיו נחפש חמישה מספרים רציונליים $latex a_0$, $latex a_1$, $latex a_2$, $latex a_3$, $latex a_4$, אשר לא כלם ישוו ל-$latex 0$, ואשר יקיימו את השוויון
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (10) \quad a_0 + a_1 \gamma + a_2 \gamma ^ 2 + a_3 \gamma ^ 3 + a_4 \gamma ^ 4 = 0$
+</p>
+
+<p style="direction: rtl;">
+  אם נמצאם, תושלם הוכחת V. לשם כך נסתכל בארבע המשוואות ההומוגניות
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (11) \quad e_0 a_0 + e_1 a_1 + e_2 a_2 + e_3 a_3 + e_4 a_4 = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad f_0 a_0 + f_1 a_1 + f_2 a_2 + f_3 a_3 + f_4 a_4 = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad g_0 a_0 + g_1 a_1 + g_2 a_2 + g_3 a_3 + g_4 a_4 = 0$
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle \quad h_0 a_0 + h_1 a_1 + h_2 a_2 + h_3 a_3 + h_4 a_4 = 0$
+</p>
+
+<p style="direction: rtl;">
+  אשר בהן ישמשו $latex a_0, a_1, a_2, a_3, a_4$ כנעלמים.
+</p>
+
+<p style="direction: rtl;">
+  על סמך משפט העזר ג יש פתרונות רציונליים רבים לאין סוף המקיימים את המשוואות $latex (9)$. ברור (מדוע?) שכל פתרון כזה יקיים את השוויון $latex (10)$, מש״ל.
+</p>
+
+<p style="direction: rtl;">
+  VI. לסיום הוכחת המשפט היסודי עלינו עוד להראות: אם $latex \alpha$ ו-$latex \beta$ הם מספרים אלגבריים שמעלתם שווה ל-$latex 2$, אזי המנה $latex \alpha / \beta$ היא מספרי אלגברי שמעלתו אינה גבוהה מ-$latex 4$. להוכחת עובדה זו, תהי $latex x^2 + b_1 x + b_0 = 0$ המשוואה המינימלית של $latex \beta$, כלומר:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \beta ^ 2 + b_1 \beta + b_0 = 0$
+</p>
+
+<p style="direction: rtl;">
+  על ידי חלוק ב-$latex \beta ^ 2$ נקבל $latex 1+b_1 \frac{1}{\beta} + b_0 \frac{1}{\beta ^2}=0$ או במלים אחרות המספר $latex \frac{1}{\beta}$ מקיים את המשוואה
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex b_0 x ^ 2 + b x + 1 = 0$
+</p>
+
+<p style="direction: rtl;">
+  ולפיכך הוא מספר אלגברי אשר מעלתו אינה עולה על $latex 2$. לו היתה מעלתו שווה ל-$latex 1$ כי אז היה נובע כי גם מעלת $latex \beta$ היא $latex 1$ (הוכח!) בנגוד להנחה. מעלת $latex \frac{1}{\beta}$ היא איפוא בדיוק $latex 2$. על סמך V נובע עתה כי המספר $latex \alpha \frac{1}{\beta}$ כלומר $latex \frac{\alpha}{\beta}$ הוא אלגברי ומעלתו אינה עולה על $latex 4$, מש״ל.
+</p>
+
+<p style="direction: rtl; text-decoration: underline; font-weight: bold;">
+  ה. שדות מספרים
+</p>
+
+<p style="direction: rtl;">
+  בשם <span style="text-decoration: underline;">שדה-מספרים</span>, או בקצור <span style="text-decoration: underline;">שדה</span>, קוראים לכל תחום של מספרים המכיל עם כל שנים ממספריו גם את סכומם, הבדלם, מכפלתם ומנתם. על סמך האמור ב-ד, תחום המספרים האלגבריים הוא איפוא שדה. דוגמות אחרות הן: שדה המספרים הרציונליים, שדה המספרים הממשיים ושדה המספרים המרוכבים. חוץ מאלה יש עוד אין סוף שדות מספרים אחרים אשר ללימודם מוקדש חלק חשוב של האלגברה הגבוהה. שדה המספרים המרוכבים הוא כמובן הרחב בין כל השדות כי הרי בו נכללים כל המספרים. לעומתו מצטיין שדה המספרים הרציונליים דוקא בתכונת ה״מינימום״: הוא מוכל כשדה חלקי בכל שדה אחר. נסה למצוא הוכחה לעובדה זו! כדי לקבל מושג ברור על היקפו של שדה המספרים האלגבריים, אנו חייבים לענות על שאלה המתעוררת מיד עם הגדרת מושג המספר האלגברי והיא: האם לכל משוואה מטפוס $latex (1)$ קיימים מספרים המקיימים אותה? התשובה לשאלה זו היא חיובית, ונובעת כמסקנה ממשפט הידועה בשם המשפט היסודי של האלגברה, אשר הוכח תחילה ע״י המתמטיקן גאוס (1855-1777). משפט זה טוען כי קיימים שרשים לכל משוואה מטיפוס $latex (1)$,יהיו מקדמי המספרים אשר יהיו. אשר למספר השרשים השונים של משוואה כזאת, הרי הוא אינו עולה על מעלת המשוואה.
+</p>
+
+<p style="direction: rtl;">
+  נסתכל עתה במשוואה מטפוס $latex (1)$ אשר מקדמיה הם מספרים אלגבריים רצוניים (למשל: $latex x^4 - \sqrt{2} x^3 + 4 \sqrt{-75} x^2 + 3 = 0$). היתכן כי למשוואה כזו יהיו שרשים טרנסצנדנטיים? התשובה היא שלילית, כלומר קיים המשפט הבא:
+</p>
+
+<blockquote style="direction: rtl;">
+  <p>
+    <strong>משפט</strong>: אם מספר $latex \alpha$ מקיים משוואה מטפוס $latex (1)$ אשר מקדמיה הם מספרים אלגבריים, אך לא כלם רציונליים, אזי מקיים המספר הזה גם משוואה מטפוס $latex (1)$ אשר מקדמיה כלם מספרים רציונליים.
+  </p>
+</blockquote>
+
+<p style="direction: rtl;">
+  לא נטפל כאן בהוכחת המשפט הנ״ל, אם כי ההוכחה אפשרית בעזרת האמצעים אשר פתחנו ב-ד, אלא נסתפק בהערות אחדות אשר בעזרתן תתבלט חשיבותו של המשפט הזה.
+</p>
+
+<p style="direction: rtl;">
+  שדה מספרים ייקרא סגור באופן אלגברי (בקצור: סגור אלגברית) אם שרשי כל משוואה מטפוס $latex (1)$ אשר מקדמיה לקוחים מן השדה הזה, שייכים אף הם לשדה הנדון. אי אפשר איפוא ״לצאת״ משדה זה או להרחיבו ע״י פתירת משוואות אשר מקדמיהן נמצאים בתוכו. על סמך המשפט הנ״ל נובע, כי שדה המספרים האלגבריים הוא סגור אלגברית.
+</p>
+
+<p style="direction: rtl;">
+  לעומתו, שדה המספרים הרציונליים אינו סגור אלגברית, כי למשל למשוואה $latex x^2 - 2 = 0$ מקדמים רציונליים, אבל שרשיה הם אי-רציונליים. כן גם שדה המספרים הממשיים אינו סגור אלגברית, כי הרי מקדמי המשוואה $latex x^2+1=0$ הם ממשיים, אך שרשיה מדומים. חוץ משדה המספרים האלגבריים יש עוד שדות רבים לאין סוף הסגורים אלגברית. בין אלה מצטיין שדה המספרים האלגבריים בתכונת המינימום: כל שדה מספרים הסגור אלגברית מכיל את שדה המספרים האלגבריים.
+</p>
+
+<p style="direction: rtl;">
+  נסיים בכמה תרגילים, אשר אולי ירצה הקוראה לנסות בהם את כוחו.
+</p>
+
+<p style="direction: rtl;">
+  א) הוכח כי מעלת המספר האלגברי $latex \sqrt[3]{2}$ שווה ל-$latex 3$. הכלל תרגיל זה.
+</p>
+
+<p style="direction: rtl;">
+  ב) חשב את משוואותיהם של המספרים האלגבריים $latex \sqrt[3]{2} + 1$ ו-$latex \sqrt[3]{2} + \sqrt[3]{5}$.
+</p>
+
+<p style="direction: rtl;">
+  ג) הוכח כי המספר $latex \sqrt{2} + \sqrt{3}$ הוא אלגברי ומצא את משוואתו המינימלית.
+</p>
+
+<p style="direction: rtl;">
+  ד) הוכח את המשפט היסודי ב-ד בשביל המקרה שמעלות המספרים $latex \alpha$ ו-$latex \beta$ הן $latex 3$ ו-$latex 2$. רמז: אם מעלת $latex \alpha$ היא $latex 3$ תתקיים במקום הנוסחה $latex (3)$ שצורתה: $latex \alpha ^ n = r + s \alpha + t \alpha ^ 2$ במקום הנוסחה $latex (6)$ יש להוכיח: $latex \alpha ^ m \beta ^ n = e + f \alpha + g \beta + h \alpha \beta + k \alpha ^ 2 + \ell \alpha ^ 2 \beta$ וכו׳.
+</p>
+
+<p>ה) יהי $latex \alpha$ מספר אלגברי. הוכח כי מעלת $latex \alpha ^ m$ בשביל כל $latex m$ טבעי שווה לכל היותר למעלת $latex \alpha$.</p>
+
+<p style="direction: rtl;">
+  ו) אם $latex r$ מספר רציונלי ו-$latex \alpha$ מספר אלגברי רצוני, אז מעלת $latex \alpha + r$ שווה למעלת $latex \alpha$.
+</p>
+
+<p style="direction: rtl;">
+  ז) הוכח כי תחום המספרים הטרנסצנדנטיים הוא אין סופי. האם תחום זה הוא שדה?
+</p>
+
+<p style="direction: rtl;">
+  ח) הוכח כי תחום כל המספרים שצורתם $latex r + s \sqrt{2}$, באשר $latex r$ ו-$latex s$ הם רציונליים, הוא שדה. הוא הדין לגבי תחום המספרים $latex r+ s \sqrt[3]{2} + t \sqrt[3]{4}$ ($latex t, s, r$ רציונליים).
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/08/31/problems-in-elementary-geometry/">&laquo; על בעיות אחדות בגיאומטריה אלמנטרית</a>
+    
+    
+      <a class="next" href="/2015/08/31/symmetry/">סימטריה &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/08/31/algebraic-numbers/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

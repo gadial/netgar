@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>צ’ומפ צ’ומפ | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="צ’ומפ צ’ומפ" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="מה שהופך את המשחק הזה למעניין היא העובדה שאפשר להוכיח (בצורה פשוטה ביותר) שהשחקן שפותח תמיד יכול לנצח במשחק (בכל לוח, ובלי תלות בשאלה מה עושה השחקן השני), אבל ההוכחה הזו אינה קונסטרוקטיבית; היא אינה מצביעה כלל על הדרך שבה השחקן הזה צריך לשחק כדי לנצח.  " />
+<meta property="og:description" content="מה שהופך את המשחק הזה למעניין היא העובדה שאפשר להוכיח (בצורה פשוטה ביותר) שהשחקן שפותח תמיד יכול לנצח במשחק (בכל לוח, ובלי תלות בשאלה מה עושה השחקן השני), אבל ההוכחה הזו אינה קונסטרוקטיבית; היא אינה מצביעה כלל על הדרך שבה השחקן הזה צריך לשחק כדי לנצח.  " />
+<link rel="canonical" href="/2014/08/31/chomp-chomp/" />
+<meta property="og:url" content="/2014/08/31/chomp-chomp/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-08-31T21:05:20+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-08-31T21:05:20+03:00","datePublished":"2014-08-31T21:05:20+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/08/31/chomp-chomp/"},"url":"/2014/08/31/chomp-chomp/","description":"מה שהופך את המשחק הזה למעניין היא העובדה שאפשר להוכיח (בצורה פשוטה ביותר) שהשחקן שפותח תמיד יכול לנצח במשחק (בכל לוח, ובלי תלות בשאלה מה עושה השחקן השני), אבל ההוכחה הזו אינה קונסטרוקטיבית; היא אינה מצביעה כלל על הדרך שבה השחקן הזה צריך לשחק כדי לנצח.  ","headline":"צ’ומפ צ’ומפ","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/08/31/explaining-fundemental-theorem-of-calculus-to-a-child/">&laquo; איך להסביר לילד בגן את המשפט היסודי של החשבון האינטגרלי</a>
+    
+    
+      <a class="next" href="/2014/08/31/the-double-circle-cover-conjecture/">השערת הכיסוי הכפול במעגלים &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">צ&#39;ומפ צ&#39;ומפ</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-08-31T21:05:20+03:00" itemprop="datePublished">Aug 31, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">גדי אלכסנדרוביץ</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="color: #373737;">
+  מאמר זה עוסק בהוכחות לא קונסטרוקטיביות. הדוגמה שנביא במאמר זה הינו המשחק מטופש ותמים ביותר בשם <a style="font-weight: inherit; font-style: inherit; color: #1982d1;" href="http://en.wikipedia.org/wiki/Chomp">Chomp</a>.
+</p>
+
+<p style="color: #373737;">
+  המשחק הולך כך: לוח המשחק הוא מלבן הבנוי מריבועים (ממדי המלבן יכולים להשתנות ממשחק למשחק – זה מה שלכאורה מוסיף אתגר). ישנם שני שחקנים המשחקים לסירוגין. בכל סיבוב אחד השחקנים בוחר אחת מהמשבצות, ומסיר מהלוח אותה ואת כל המשבצות שנמצאות במלבן שהיא הפינה השמאלית התחתונה שלו – במילים אחרות, כל משבצת שנמצאת לימינה או מעליה.
+</p>
+
+<p style="color: #373737;">
+  המשבצת השמאלית התחתונה ביותר בלוח היא "מורעלת" – מי שלוקח אותה, הפסיד. לכן, מטרת המשחק היא לגרום ליריב לקחת אותה. בכך המשחק מזכיר מעט את המשחק "<a style="font-weight: inherit; font-style: inherit; color: #1982d1;" href="http://en.wikipedia.org/wiki/Nim">נים</a>", שגם בו המטרה היא לא להיות זה שלוקח את האובייקט האחרון.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter" src="http://www.gadial.net/wp-content/uploads/2007/08/chomp.png" alt="צ’ומפ" width="556" height="195" />
+</p>
+
+<p style="direction: rtl;">
+  מה שהופך את המשחק הזה למעניין היא העובדה שאפשר להוכיח (בצורה פשוטה ביותר) שהשחקן שפותח תמיד יכול לנצח במשחק (בכל לוח, ובלי תלות בשאלה מה עושה השחקן השני), אבל ההוכחה הזו אינה קונסטרוקטיבית; היא אינה מצביעה כלל על הדרך שבה השחקן הזה צריך לשחק כדי לנצח.
+</p>
+
+<p style="color: #373737;">
+  ההוכחה עצמה היא טריוויאלית, אבל היא מתבססת על משפט ידוע ומוכר מתורת המשחקים – משפט צרמלו. המשפט מוצג במספר וריאציות (שכולן די שונות מהנוסח המקורי של צרמלו עצמו), ואציג כאן אחת מהפשוטות שבהן, אשר ממנה נובע שב-Chomp אחד משני השחקנים בהכרח מסוגל לנצח בלי תלות במה שעושה היריב.
+</p>
+
+<p style="color: #373737;">
+  לפני כן כדאי לומר מילה או שתיים על המושג המתמטי של "משחק". בהגדרה מקושקשת משהו אפשר לומר ש"משחק" הוא כל סיטואציה בה משתתף אחד או יותר נוקט בסדרה של החלטות כדי להגיע לתוצאה שהיא אופטימלית בעיניו. מילת המפתח כאן היא "החלטה" – אם אין החלטות, המשחק די חסר טעם.
+</p>
+
+<p style="color: #373737;">
+  משחקים לשחקן יחיד לא חסרים, ושלוש הדוגמאות המוכרות של ימינו, באדיבותה של חברת מיקרוסופט, הן סוליטייר, פריסל ושולה המוקשים. עם זאת, העניין האמיתי מתעורר כאשר יש שני שחקנים או יותר – במצב זה, השחקן אינו תלוי רק בעצמו כדי לקבוע את תוצאת המשחק; הוא צריך להביא בחשבון גם את מה שהשחקנים האחרים יעשו.
+</p>
+
+<p style="color: #373737;">
+  כאשר רוצים לתאר משחק בצורה מתמטית, ישנן מספר דרכים לעשות זאת. גישה אחת, שנכנסת אל תוך המכניקות הפנימיות של המשחק, מתארת אותו בתור <a style="font-weight: inherit; font-style: inherit; color: #1982d1;" href="http://he.wikipedia.org/wiki/%D7%A2%D7%A5_%28%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%92%D7%A8%D7%A4%D7%99%D7%9D%29">עץ</a> מכוון שכל צומת בו מייצג סיטואציה אפשרית כלשהי במשחק (למשל, השורש שלו מייצג את המצב ההתחלתי של המשחק, והעלים את סוף המשחק) ויש קשת מצומת אחד לצומת שני אם בחירות השחקנים במצב שמגולם באב יכולות להוביל למצב שמגולם בבן (יש לשים לב כי גם לאותו מצב בלוח עשויים להיות כמה וכמה צמתים שונים בעץ, שכן צומת בעץ מייצג לא רק את המצב אלא גם את הדרך שבה הגענו אליו).
+</p>
+
+<p style="color: #373737;">
+  באמצעות דרך הייצוג הזו קל להוכיח את הגרסה שלנו של משפט צרמלו, שגורסת כי במשחק סופי (כזה שתמיד נגמר) לשני שחקנים שמשחקים לסירוגין, עם ידיעה גמורה, שבו התוצאות האפשריות היחידות הן ניצחון לאחד משני השחקנים (נקרא להם מעכשיו "הלבן" ו"השחור", כמו בשחמט, כדי לפשט, כאשר "הלבן" הוא זה שמתחיל), בהכרח אחד מהשחקנים מסוגל לכפות ניצחון בלי תלות במעשי השני.
+</p>
+
+<p style="color: #373737;">
+  המונח הבעייתי היחיד בניסוח המשפט הוא "ידיעה גמורה". משמעותו היא שבכל סיבוב השחקנים יודעים בדיוק היכן בעץ המשחק הם נמצאים, ואילו פעולות עליהם לנקוט כדי לעבור לצומת הבא. בפועל פירוש הדבר הוא שבמשחק אין מידע מוסתר (למשל, בטקטיקו מוסתרים מכל שחקן הכלים של השחקן השני, ובשולה המוקשים יש משבצות שלא ניתן לדעת את תוכנן וחייבים לנחש), ואין מימד של אקראיות (למשל, במונופול השחקנים מתקדמים על ידי הטלת קובייה). אפשר לסלק את האקראיות ולהישאר רק עם חוסר ודאות על ידי כך שחושבים על סדרת האקראיות כאילו כבר "נקבעה מראש" והיא פשוט לא ידועה, אך לא ניכנס לזה.
+</p>
+
+<p style="color: #373737;">
+  הדרך להוכיח שאחד משני השחקנים יכול לכפות ניצחון היא זו: ראשית, כל עלה בעץ מסמל ניצחון במשחק של אחד השחקנים (כי המשחק חייב להסתיים בניצחון). אם כן, נסמן ב-1 את העלים שמסמלים ניצחון של השחקן הלבן, וב-0 עלים שמסמלים ניצחון של השחור. כעת, באופן אינדוקטיבי, נסמן גם את שאר הצמתים בעץ במספרים: בהינתן צומת שמסמל סיטואציה במשחק בה תורו של השחקן הלבן, הסימון שבצומת יהיה פונקצית "או" של כל הבנים של הצומת (כלומר, 1 אם אחד מהם הוא 1, ו-0 אם כולם 0), ובהינתן צומת שמסמל את תורו של השחקן השחור, הפונקציה תהיה "וגם" (1 רק אם כולם 1, 0 אם אחד מהם 0).
+</p>
+
+<p style="color: #373737;">
+  בצורה הזו מסומן כל העץ, ובפרט השורש. אם השורש מסומן ב-1, הלבן יכול לכפות ניצחון. אם הוא מסומן ב-0, השחור יכול לכפות ניצחון.
+</p>
+
+<p style="color: #373737;">
+  למה? כי נניח שהשורש מסומן ב-1, וזה צומת שמסמל מהלך של הלבן (כי הלבן מתחיל). פירוש הדבר שלפחות אחד מבניו הוא 1. הוא יבחר במהלך במשחק שמביא אותו לבן הזה. עכשיו תור השחור. הוא בצומת שמסומן 1, ולכן <strong style="font-style: inherit;">כל</strong> בניו של הצומת הם 1, ולכן בלי קשר לשאלה מה יבחר לעשות השחקן השחור, הוא עדיין יגיע לצומת של 1. שוב תור השחקן הלבן, והוא שוב ימשיך לצומת שמסומן ב-1 וכן הלאה. האינוריאנטה נשמרת; המשחק תמיד נמצא בצומת שמסומן ב-1. מכיוון שהמשחק סופי, מתישהו יגיע הטיול בעץ לעלה, ובשל האינוריאנטה העלה יהיה מסומן ב-1 – כלומר, הלבן ניצח, בלי תלות במה שעשה השחור. החשיבות היחידה הייתה לבחירות שהלבן ביצע במהלך כל הטיול בעץ. לסדרה הכוללת של הבחירות שהיה עליו לבצע ("אם השחור ביצע את המהלך הזה, עשה כך וכך. אם השחור עשה דווקא את זה, אז עשה כך וכך וכך") קוראים <strong style="font-style: inherit;">אסטרטגיה</strong>.
+</p>
+
+<p style="color: #373737;">
+  אם השורש הוא 0, ההוכחה דומה; נסו לחשוב על הפרטים בעצמכם.
+</p>
+
+<p style="color: #373737;">
+  וכעת חזרה לצ'ומפ, כשאנחנו משוכנעים שאו הלבן יכול לכפות ניצחון, או השחור. אני רוצה להוכיח שבהכרח הלבן יכול לכפות ניצחון. ההוכחה היא כדלהלן:
+</p>
+
+<p style="color: #373737;">
+  נניח בשלילה שדווקא השחור יכול לכפות ניצחון, כלומר יש לו אסטרטגיה שמבטיחה ניצחון לכל פעולה של הלבן. בפרט, יש לו תגובה שתבטיח ניצחון למשחק של הלבן שבו הצעד הראשון הוא בחירת המשבצת הימנית העליונה בלוח.
+</p>
+
+<p style="color: #373737;">
+  כעת, אנחנו לא יודעים מה הצעד של השחור יהיה, ומה הוא המשך האסטרטגיה שלו, אבל אנחנו יודעים בודאות שהלבן יכול "לגנוב" אותם. איך? נניח לרגע שהמהלך של השחור מתחיל בבחירת המשבצת בקוארדינטה (2,3), ומכאן והלאה תגובה הולמת לכל מהלך של הלבן. אז הלבן יכול <strong style="font-style: inherit;">להתחיל</strong> את המשחק בכך שיבחר את הקוארדינטה (2,3), ומכאן והלאה יפעל על פי האסטרטגיה המנצחת של השחור.
+</p>
+
+<p style="color: #373737;">
+  מקור הכוח של הלבן הוא שבחירת הקוארדינטה (1,1) לא באמת משפיע על כלום. זה "מהלך סרק" – לא משנה איזה מהלך השחור יבצע כעת, הלוח בסיום המהלך הזה יהיה זהה ללוח שהלבן יכל להגיע אליו על ידי ביצוע אותו מהלך של השחור כבר בסיבוב הראשון.
+</p>
+
+<p style="color: #373737;">
+  אם, למשל, הלבן היה בוחר את (2,2) בסיבוב הראשון, התעלול לא היה פועל: השחור היה מסוגל לבחור משבצת כלשהי כך שהלוח אחרי בחירתה היה במצב שאליו הלבן לא מסוגל להגיע בסיבוב הראשון – נסו לחשוב על מהלך שכזה.
+</p>
+
+<p style="color: #373737;">
+  אם כן, הפרכנו את הטענה שלשחור יש אסטרטגיה מנצחת, ולכן על פי משפט צרמלו זהו הלבן שיש לו אסטרטגיה מנצחת, וגמרנו. רק מה? לא אמרנו שום דבר על <strong style="font-style: inherit;">מהי</strong> האסטרטגיה הזו – אפילו את המהלך הראשון שלה איננו יודעים. המשחק מכור מראש למרות שאין לנו מושג איך.
+</p>
+
+<p style="color: #373737;">
+  רק הערה כללית לסיום: משפט צרמלו שהוצג כאן תקף גם למשחקים עם תוצאת תיקו (ההכללה מיידית – תנו ערך 1 לניצחון של הלבן, 0 לתיקו ומינוס 1 לניצחון של השחור, ובחרו בצמתים פונקציות של "מקסימום" ללבן ו"מינימום" לשחור), ולכן תקף לשחמט ולדמקה. בכל הנוגע לשחמט, איש אינו יודע איזו מבין שלוש האפשרויות נכונה (האם הלבן יכול לכפות ניצחון, השחור יכול לכפות ניצחון, או כל אחד יכול לכפות תיקו) ומכיוון שעץ המשחק של שחמט הוא עצום בגודלו, גם לא סביר שפתרון יתגלה כל כך מהר, אבל דמקה כבר "<a style="font-weight: inherit; font-style: inherit; color: #1982d1;" href="http://www.cs.ualberta.ca/~chinook/">פוצחה</a>" בצורה הזו לא מזמן (או לפחות כך נטען) והוכח שכל שחקן בה מסוגל לכפות תיקו.
+</p>
+
+<p style="color: #373737;">
+  אני מודה שאיני יודע אם התגלית הזו משמחת או מדכאת אותי.
+</p>
+
+<p style="color: #373737;">
+  מאמר זה פורסם במקור בבלוג <a href="http://www.gadial.net/2007/08/14/chomp/" target="_blank" rel="noopener noreferrer">"לא מדויק"</a>
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/08/31/explaining-fundemental-theorem-of-calculus-to-a-child/">&laquo; איך להסביר לילד בגן את המשפט היסודי של החשבון האינטגרלי</a>
+    
+    
+      <a class="next" href="/2014/08/31/the-double-circle-cover-conjecture/">השערת הכיסוי הכפול במעגלים &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/08/31/chomp-chomp/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

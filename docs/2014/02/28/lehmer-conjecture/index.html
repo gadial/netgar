@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>השערת להמר | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="השערת להמר" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="חרגול עומד על שעון בשעה 12, ומתחיל לקפוץ, בדילוגים של מספרים שלמים. אם יקפוץ כל פעם שעה אחת, הוא יגיע כמובן לכל השעות השלמות. אם יקפוץ בדילוגים של 2, הוא יגיע רק לשעות הזוגיות. שאלה: אילו דילוגים יבטיחו שיגיע לכל סימוני השעות השלמות?" />
+<meta property="og:description" content="חרגול עומד על שעון בשעה 12, ומתחיל לקפוץ, בדילוגים של מספרים שלמים. אם יקפוץ כל פעם שעה אחת, הוא יגיע כמובן לכל השעות השלמות. אם יקפוץ בדילוגים של 2, הוא יגיע רק לשעות הזוגיות. שאלה: אילו דילוגים יבטיחו שיגיע לכל סימוני השעות השלמות?" />
+<link rel="canonical" href="/2014/02/28/lehmer-conjecture/" />
+<meta property="og:url" content="/2014/02/28/lehmer-conjecture/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-02-28T00:43:31+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-02-28T00:43:31+02:00","datePublished":"2014-02-28T00:43:31+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/02/28/lehmer-conjecture/"},"url":"/2014/02/28/lehmer-conjecture/","description":"חרגול עומד על שעון בשעה 12, ומתחיל לקפוץ, בדילוגים של מספרים שלמים. אם יקפוץ כל פעם שעה אחת, הוא יגיע כמובן לכל השעות השלמות. אם יקפוץ בדילוגים של 2, הוא יגיע רק לשעות הזוגיות. שאלה: אילו דילוגים יבטיחו שיגיע לכל סימוני השעות השלמות?","headline":"השערת להמר","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/02/28/edmund-landau-story-with-a-proof/">&laquo; אדמונד לנדאו: סיפור עם הוכחה</a>
+    
+    
+      <a class="next" href="/2014/02/28/imaginary-numbers-reality-or-fantasy/">מציאות או דמיון - על ההתאזרחות של המספרים המרוכבים &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">השערת להמר</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-02-28T00:43:31+02:00" itemprop="datePublished">Feb 28, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">יוסי כהן</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="text-align: right;">
+  חרגול עומד על שעון בשעה $latex {12}$, ומתחיל לקפוץ, בדילוגים של מספרים שלמים. אם יקפוץ כל פעם שעה אחת, הוא יגיע כמובן לכל השעות השלמות. אם יקפוץ בדילוגים של $latex {2}$, הוא יגיע רק לשעות הזוגיות. שאלה: אילו דילוגים יבטיחו שיגיע לכל סימוני השעות השלמות?
+</p>
+
+<p style="text-align: right;">
+  ניקח לדוגמה דילוג של 5. עקבו ובדקו אם אני צודק: הוא יגיע על פי סדר לשעות $latex {5, 10, 3, 8, 1, 6, 11, 4, 9, 2, 7}$ ואז יחזור לשעה $latex {12}$ (שהיא בעצם $latex {0}$). כלומר - בדילוגים של 5 אכן יעבור על פני כל השעות השלמות.
+</p>
+
+<p style="text-align: right;">
+  גם דילוגים של 7 טובים (זה בעצם לדלג 5, רק בכיוון ההפוך), וגם $latex {11}$ (שזה לדלג 1, נגד כיוון השעון). אלו המספרים היחידים - $latex {1, 5, 7, 11}$. מה משותף להם? אלה הם המספרים הקטנים מ-$latex {12}$ וזרים ל-$latex {12}$, שפירושו שאין להם ול-$latex {12}$ מחלק משותף גדול מ-$latex {1}$. מתברר שלמספרים הקטנים ממספר נתון וזרים לו יש תפקיד מיוחד. הם מעניינים. כדי לדבר עליהם, נצטרך כמה הגדרות.
+</p>
+
+<p style="text-align: right;">
+  <span style="text-decoration: underline;"><b>הגדרה</b>.</span> נאמר שמספר טבעי (כלומר מספר שלם לא שלילי) $latex {d}$ מחלק את המספר הטבעי $latex {n}$ אם קיים מספר $latex {m}$ כך ש-$latex {n=md}$. אם $latex {d}$ מחלק את $latex {n}$ נרשום $latex {d|n}$. אם לא, נסמן $latex {d\not | \ n}$.
+</p>
+
+<p style="text-align: right;">
+  למשל, $latex {5|15}$ אבל $latex {5\not | \ 13}$ . נזכיר שמספר ראשוני הוא מספר טבעי הגדול מ-$latex {1}$ שמחלקיו היחידים הם $latex {1}$ והוא עצמו. שישה המספרים הראשוניים הראשונים הם $latex {2, 3, 5, 7, 11, 13}$. מספר שאיננו ראשוני נקרא פריק.
+</p>
+
+<p style="text-align: right;">
+  <span style="text-decoration: underline;"><b>הגדרה</b>.</span> נאמר כי לשני מספרים טבעיים $latex {m}$ ו- $latex {n}$ יש מחלק משותף גדול מ-$latex {1}$ אם קיים $latex {d\neq1}$ כך ש-$latex {d|n}$ ו-$latex {d|m}$ . אם אין $latex {d}$ כזה אומרים ש-$latex {m}$ ו-$latex {n}$ זרים.
+</p>
+
+<p style="text-align: right;">
+  המתמטיקאי הגדול של המאה ה-$latex {18}$, לאונרד אוילר $latex {(1707 - 1783)}$ גילה שיש משמעות מיוחדת למספר המספרים הטבעיים הזרים ל-$latex {n}$ וקטנים ממנו. הוא סימן את המספר הזה ב-$latex {\varphi(n)}$. כיום קוראים למספר הזה "פונקציית אוילר", למשל, ראינו ש-$latex {\varphi(12)=4}$ , משום שהמספרים הקטנים מ-$latex {12}$ וזרים לו הם $latex {1, 5, 7}$ ו-$latex {11}$. הנה כמה ערכים נוספים: $latex {\varphi(2)=1}$, $latex {\varphi(3)=2}$, $latex {\varphi(4)=2}$ (כי המספרים הקטנים מ-4 וזרים לו הם 1 ו-3) $latex {\varphi(5)=4}$ , $latex {\varphi(6)=2}$, $latex {\varphi(7)=6}$. (שימו לב כי $latex {\varphi(5)=\varphi(12)=4}$ האם יש לכם עוד דוגמאות כאלה?)
+</p>
+
+<p style="text-align: right;">
+  עובדה פשוטה אם $latex {p}$ הוא מספר ראשוני, אז כל המספרים הקטנים ממנו זרים לו, ולכן $latex {\varphi(p)=p-1}$ . ומה בדבר פונקציית אוילר של מכפלת שני ראשוניים? נסו דוגמאות והיווכחו: לכל שני מספרים ראשוניים $latex {p}$ ו - $latex {q}$ מתקיים $latex {\varphi(pq)=(p-1)(q-1)}$ (האם תוכלו למצוא את $latex {\varphi(33)}$? $latex {\varphi(35)}$?) האם תוכלו למצוא שני מספרים $latex {m}$ ו-$latex {n}$ שעבורם $latex {\varphi(mn)\neq \varphi(m)\varphi(n)}$ האם תוכלו לנחש לאילו מספרים $latex {m}$ ו-$latex {n}$ כן מתקיים שוויון?
+</p>
+
+<p style="text-align: right;">
+  קל לראות שאם $latex {n}$ איננו מספר שאיננו ראשוני אז $latex {\varphi(n)\neq n-1}$. המתמטיקאי האמריקני דיק להמר ($latex {1905 - 1991}$ - להמר היה גם מחלוצי מדעי המחשב) שיער משהו חזק יותר.
+</p>
+
+<p style="text-align: right;">
+  <b>השערת להמר</b> $latex {(1932)}$ אם $latex {n}$ אינו ראשוני אז $latex {\varphi(n) \not | \   n-1}$.
+</p>
+
+<p style="text-align: right;">
+  שמונים שנים עברו מאז פרסם להמר את השערתו, וההתקדמות בהשערה מעטה. במאמר שבו הציג להמר את השערתו הוא ציין גם שקיימים שמונה מספרים טבעיים פריקים $latex {n}$ כך ש- $latex {\varphi(n)| n+1}$ .(האם תוכלו למצוא כמה כאלה? שימו לב למשל ש-$latex {15}$ הוא כזה). ההשערה כיום גורסת שאין יותר כאלה.
+</p>
+
+<p style="text-align: right;">
+  להוכחת השערת למר נוקטים כיום בשני כיוונים עיקריים:
+</p>
+
+<p style="text-align: right;">
+  1. רעיון שהתחיל איתו כבר להמר(באותו מאמר ששיער את ההשערה, ראה<strong>[1]</strong>): ניסיון להראות שאם קיימים $latex {n}$-ים כאלה אזי מספר הגורמים הראשוניים שלהם הוא גדול יחסית (התוצאה האחרונה מדברת על $latex {14}$ גורמים ראשוניים לפחות) .
+</p>
+
+<p style="text-align: right;">
+  2. רעיון של קרל פומרנץ(<strong>[2]</strong>) מעין הכללה: מציאת חסם עליון למספר ה- $latex {n}$ ים הקטנים מ-$latex {x}$ כך ש-$latex {\varphi(n)|n-a}$ ל- $latex {a}$ כלשהו (בהשערה המקורית $latex {a=1}$) התוצאה העדכנית מדברת על כך שיש לכל היותר $latex {\sqrt(x)}$ (בערך) כאלה.
+</p>
+
+<p style="text-align: left; direction: ltr;">
+  <span style="font-size: 10px;"><b style="line-height: 1.5em;">1. D. H. Lehmer, <i>On Euler's totient function</i>, Bull. Amer. Math. Soc., 38 (1932), 745-751.</b></span><br /> <span style="font-size: 10px;"><b>2. C. Pomerance, On the congruences $latex {\sigma(n)\equiv a (mod n)}$ and $latex {n\equiv a (mod \varphi(n))}$, Acta Arith. 26 (1975), 265–272.</b></span><br /> <span style="font-size: 10px;"><b>3. Richard K. Guy, Unsolved Problems in Number Theory, 3rd ed. springer, New York 2004.</b></span>
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/02/28/edmund-landau-story-with-a-proof/">&laquo; אדמונד לנדאו: סיפור עם הוכחה</a>
+    
+    
+      <a class="next" href="/2014/02/28/imaginary-numbers-reality-or-fantasy/">מציאות או דמיון - על ההתאזרחות של המספרים המרוכבים &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/02/28/lehmer-conjecture/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

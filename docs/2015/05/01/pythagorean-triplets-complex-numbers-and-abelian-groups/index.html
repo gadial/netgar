@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="שלשה פיתגורית היא שלשה של מספרים שלמים, שיכולים להיות ארכי הצלעות של משולש ישר זווית. ימיו של המושג הזה הוא כימי משפט פיתגורס, כלומר בערך מ-500 לפני הספירה. אבל עדיין אפשר למצוא עליו הרבה דברים מעניינים. למשל, האם יש אינסוף שלשות כאלה, שהן שונות מהותית (כלומר אינן פכולה אחת של האחרת במספר קבוע)? במאמר מוצגת גישה מרתקת לשאלה הזאת." />
+<meta property="og:description" content="שלשה פיתגורית היא שלשה של מספרים שלמים, שיכולים להיות ארכי הצלעות של משולש ישר זווית. ימיו של המושג הזה הוא כימי משפט פיתגורס, כלומר בערך מ-500 לפני הספירה. אבל עדיין אפשר למצוא עליו הרבה דברים מעניינים. למשל, האם יש אינסוף שלשות כאלה, שהן שונות מהותית (כלומר אינן פכולה אחת של האחרת במספר קבוע)? במאמר מוצגת גישה מרתקת לשאלה הזאת." />
+<link rel="canonical" href="/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/" />
+<meta property="og:url" content="/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-01T00:01:49+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-05-01T00:01:49+03:00","datePublished":"2015-05-01T00:01:49+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/"},"url":"/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/","description":"שלשה פיתגורית היא שלשה של מספרים שלמים, שיכולים להיות ארכי הצלעות של משולש ישר זווית. ימיו של המושג הזה הוא כימי משפט פיתגורס, כלומר בערך מ-500 לפני הספירה. אבל עדיין אפשר למצוא עליו הרבה דברים מעניינים. למשל, האם יש אינסוף שלשות כאלה, שהן שונות מהותית (כלומר אינן פכולה אחת של האחרת במספר קבוע)? במאמר מוצגת גישה מרתקת לשאלה הזאת.","headline":"שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/riddles-7/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/05/01/groups-part-2/">חבורות - חלק ב &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-05-01T00:01:49+03:00" itemprop="datePublished">May 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אמנון יקותיאלי</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="text-align: center;">
+  אמנון יקותיאלי<br /> המחלקה למתמטיקה<br /> אוניברסיטת בן גוריון<br /> amyekut@math.bgu.ac.il<br /> 03/04/2015
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  <span style="font-size: 14pt;"><b>1. שלשות פיתגוריות </b></span>
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  <b>שלשה פיתגורית</b> היא שלשה סדורה $latex {(a,b,c)}$ של מספרים שלמים חיוביים, אשר מקיימים את המשוואה
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  (1)
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  $latex \displaystyle .\ a^2 + b^2 = c^2 $
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  הסיבה לשם זה היא כי לפי משפט פיתגורס, אלו אורכי הצלעות במשולש ישר זוית. ליתר דיוק, בהנתן משולש ישר זוית עם בסיס באורך $latex {a}$ ואנך באורך $latex {b}$, אורך היתר של המשולש הוא $latex {c}$.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <img class="aligncenter  wp-image-2458" src="http://net-gar.net/wp-content/uploads/2015/04/p1-233x300.png" alt="p1" width="102" height="133" />
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  אומרים כי שתי שלשות פיתגוריות $latex {(a,b,c)}$ ו- $latex {(a',b',c')}$ הן <b>שקולות</b> אם המשולשים המתאימים דומים. זה אומר שיש מספר חיובי $latex {r}$ כך ש-
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  (2)
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <span style="color: #000000;">$latex \displaystyle (a', b', c') = (ra, rb, rc) $</span>
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  (מתיחת המשולש הראשון פי $latex {r}$),או
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  $latex \displaystyle (a', b', c') = (rb, ra, rc) $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  (מתיחה, והחלפה בין הבסיס והאנך). קל לראות כי המספר $latex {r}$ חייב להיות רציונלי.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  שלשה פיתגורית $latex {(a,b,c)}$ נקראת <b>מצומצמת</b> אם המחלק המשותף המירבי של שלושת המספרים הוא $latex {1}$. השלשה הזאת נקראת <b>מסודרת</b> אם $latex {a \leq b}$. קל לראות שכל שלשה פיתגורית $latex {(a,b,c)}$ שקולה לשלשה מצומצמת ומסודרת יחידה $latex {(a',b',c')}$.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>תרגיל 1.</b> תהי $latex {(a,b,c)}$ שלשה פיתגורית מצומצת ומסודרת. אז $latex {a &lt; b}$, וכן $latex {c}$ הוא איזוגי.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  הנה שאלה מעניינת:
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>שאלה 1. </b>האם יש אינסוף שלשות פיתגוריות מצומצמות ומסודרות?
+</p>
+
+<p style="direction: rtl;">
+  התשובה היא <b>כן</b>. דבר זה כבר היה ידוע ליוונים הקדמונים. ישנה נוסחה (המיוחסת לאויקלידס) להצגת כל השלשות הפיתגוריות, והיא מראה שיש אינסוף שלשות פיתגוריות מצומצמות ומסודרות. אולם הנוסחה הזאת מסורבלת למדי, ולכן לא נרשום אותה כאן. מי שמעוניין יכול למצוא את הנוסחה הזאת בקלות בחיפוש באינטרנט. לדוגמה:
+</p>
+
+<p dir="ltr" style="direction: rtl; text-align: left;">
+  <a href="http://en.wikipedia.org/wiki/Pythagorean_triple" target="_blank" rel="noopener noreferrer">http://en.wikipedia.org/wiki/Pythagorean_triple</a>
+</p>
+
+<p dir="ltr" style="direction: rtl; text-align: left;">
+  <a href="http://mathworld.wolfram.com/PythagoreanTriple.html" target="_blank" rel="noopener noreferrer">http://mathworld.wolfram.com/PythagoreanTriple.html</a>
+</p>
+
+<p style="direction: rtl;">
+  בהמשך נראה טיעון גיאומטרי יפה, אשר בעצם מתבסס על אותו רעיון כמו הנוסחה הישנה הזאת.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  עבור מספר שלם חיובי $latex {c}$, נסמן ב- $latex {PT}(c) $ את קבוצת השלשות הפיתגוריות המצומצמות המסודרות בעלות יתר $latex {c}$. ניסוח אחר של שאלה 1 הוא: האם ישנם אינסוף מספרים שלמים חיוביים $latex {c}$ כך שהקבוצה $latex {PT}(c) $ איננה ריקה? למשל, תרגיל 1 מראה לנו שהקבוצה $latex {PT}(c) $ היא ריקה אם $latex {c}$ הוא זוגי.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  שאלה יותר מעניינת היא:
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>שאלה 2.</b> בהנתן מספר שלם חיובי $latex {c}$, מהו גודל הקבוצה $latex {PT}(c) $?
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  במאה ה- 19 נמצאה נוסחה פשוטה למדי לחישוב הגודל של $latex {PT}(c)$. אבל ההוכחה המקובלת עקיפה ומסובכת למדי.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  שאלה עוד יותר מעניינת היא:
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>שאלה 3.</b> בהנתן מספר שלם חיובי $latex {c}$, האם יש דרך אפקטיבית לחשב את אברי הקבוצה $latex {PT}(c) $, כלומר למצוא את כל השלשות המצומצמות המסודרות $latex {(a,b,c)}$ עם יתר $latex {c}$?
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  לפני שנים אחדות מצאתי דרך (אולי חדשה - קשה לעקוב אחרי הספרות בנושא הוותיק הזה) אשר עונה בחיוב על כל שלוש השאלות. מטרת המאמר הזה היא להסביר חלק מן הדרך הזאת. פרטים נוספים (כולל תשובות לשאלות 2 ו-3) ניתן למצוא בגירסה הארוכה של המאמר - ראו הקישור בסוף.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <span style="font-size: 14pt;"><b>2. מספרים מרוכבים </b></span>
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  עובדה שהיתה ידועה מזמן, היא כי ניתן להצפין שלשות פיתגוריות כמספרים מרוכבים בעלי ערך מוחלט $latex {1}$. נתחיל משלשה פיתגורית מצומצמת $latex {(a,b,c)}$. נעבור למספר המרוכב
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle z := a + b \cdot \boldsymbol{i} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  אשר הערך המוחלט שלו הוא $latex {\lvert z \rvert = c}$. נתבונן במספר המרוכב
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  <span style="color: #000000;">(3)</span>
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <span style="color: #000000;">$latex \displaystyle .\ \zeta = r + s \cdot \boldsymbol{i} := \frac{z}{\lvert z \rvert} = \frac{a}{c} + \frac{b}{c} \cdot \boldsymbol{i} $</span>
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  זהו מספר מרוכב על מעגל היחידה ברביע הראשון, שונה מ- $latex {1}$ ומ- $latex {\boldsymbol{i}}$, עם קואורדינטות רציונליות $latex {r = \frac{a}{c}}$ ו- $latex {s = \frac{b}{c}}$. יתר על כן, אנו רואים כי השלשה $latex {(a,b,c)}$ הינה מסודרת אם"ם המספר המרוכב $latex {\zeta}$ נמצא בשמינית השניה של מעגל היחידה. ראה ציור 1.
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <img class="aligncenter  wp-image-2470" src="http://net-gar.net/wp-content/uploads/2015/04/p2-270x300.png" alt="p2" width="238" height="264" />
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  ציור 1
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  אפשר לשחזר את המספר המרוכב $latex {z}$, ולכן גם את השלשה הפיתגורית $latex {(a,b,c)}$, בקלות מתוך המספר המרוכב $latex {\zeta}$. עושים זאת ע"י סילוק המכנים מזוג המספרים הרציונליים $latex {(r,s) = (\frac{a}{c}, \frac{b}{c})}$.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  בהנתן מספר מרוכב $latex {\zeta}$ עם קואורדינטות ממשיות במעגל היחידה, השונה מארבע הנקודות המיוחדות $latex {\pm 1, \pm \boldsymbol{i}}$, נסמן ב- $latex {\operatorname{pt}(\zeta)}$ את השלשה הפיתגורית המצומצמת המסודרת היחידה $latex {(a,b,c)}$ אשר מתאימה למספר $latex {\zeta}$, כלומר שעבורה מתקיימת נוסחה (3).
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  קיבלנו פונקציה $latex {\operatorname{pt}}$ מקבוצת המספרים המרוכבים עם רכיבים רציונליים על מעגל היחידה (ללא ארבע הנקודות המיוחדות) אל קבוצת השלשות הפיתגוריות המצומצמות המסודרות. הפונקציה הזאת היא סורז'קטיבית (כלומר התמונה היא כל הקבוצה). כל שלשה פיתגורית מצומצמת מסודרת מתקבלת בדיוק $latex {8}$ פעמים כ- $latex {\operatorname{pt}(\zeta)}$, מאחר שבדיוק אחד מבין שמונה המספרים
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle \pm \zeta,\ \pm \boldsymbol{i} \cdot \zeta,\ \pm \bar{\zeta},\ \pm \boldsymbol{i} \cdot \bar{\zeta} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  נופל בשמינית השניה של מעגל היחידה. כמובן פרט למקרים המיוחדים $latex {\zeta = \pm 1, \pm \boldsymbol{i}}$. ראה ציור 2.
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <img class="aligncenter size-medium wp-image-2475" src="http://net-gar.net/wp-content/uploads/2015/04/p3-300x300.png" alt="p3" width="300" height="300" />
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  ציור 2
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  מסקנה: כדי להראות שיש אינסוף שלשות פיתגוריות מצומצמות מסודרות, מספיק להראות שיש אינסוף מספרים מרוכבים עם קואורדינטות רציונליות על מעגל היחידה.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  כעת אפשר להציג את ההוכחה הגיאומטרית לעובדה הישנה (הידועה עוד מימי היוונים העתיקים) לכך שיש אינסוף שלשות פיתגוריות מצומצמות מסודרות. כלומר, תשובה חיובית לשאלה 1. נסמן ב- $latex {S}^1$ את מעגל היחידה (הספרה החד-מימדית). נתבונן בהטלה הסטריאוגראפית מהמעגל לישר הממשי, עם מוקד בנקודה $latex {\boldsymbol{i}}$ (הקוטב הצפוני), כפי שמתואר בציור 3. זו הפונקציה הביז'קטיבית (חד-חד ערכית ועל)
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle f : {S}^1 - \{ \boldsymbol{i} \} \rightarrow \mathbb{R} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  השולחת את המספר המרוכב $latex {\zeta}$ למספר הממשי $latex {f(\zeta)}$, הנמצא על הקו הישר המחבר את $latex {\boldsymbol{i}}$ ו- $latex {\zeta}$. ראו ציור 3.
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <img class="aligncenter size-medium wp-image-2481" src="http://net-gar.net/wp-content/uploads/2015/04/p5-300x197.png" alt="p5" width="300" height="197" />
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  ציור 3
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>תרגיל 2.</b> להראות כי למספר המרוכב $latex {\zeta}$ על מעגל היחידה יש קואורדינטות רציונליות אם"ם המספר הממשי $latex {f(\zeta)}$ הוא רציונלי. (רמז: משולשים דומים.)
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  מאחר שיש אינסוף מספרים רציונליים, אנו רואים שישנן אינסוף נקודות רציונליות על מעגל היחידה.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b><span style="font-size: 14pt;">3. החבורה הכפלית של מעגל היחידה</span> </b>
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  קודם השתמשנו בסימון $latex {S}^1 $ עבור מעגל היחידה. כעת נעבור לסימון אחר לאותה קבוצה, המקובל בגיאומטריה אלגברית, והוא יהיה מועיל יותר עבורנו. מעתה נרשום
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle . \ G(\mathbb{R}) := {S}^1 = \{ \zeta \in \ \mathbb{C} \mid \, \lvert \zeta \rvert  = 1 \, \} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  הקבוצה $latex {G(\mathbb{R})}$ הינה חבורה אבלית תחת פעולת הכפל, משום ש-
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle \lvert \zeta_1 \cdot \zeta_2 \rvert = \lvert \zeta_1 \rvert \cdot  \lvert \zeta_2 \rvert  $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  ו-
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle . \ \lvert \zeta^{-1} \rvert  = \lvert \zeta \rvert  $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  תהי $latex {G(\mathbb{Q})}$ קבוצת האיברים ב- $latex {G(\mathbb{R})}$ עם קואורדינטות רציונליות, כלומר
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  <span style="color: #000000;">(4)</span>
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <span style="color: #000000;">$latex \displaystyle . \ G(\mathbb{Q}) := \{ \zeta = s + r \cdot \boldsymbol{i} \, \mid \, s, r \in \mathbb{Q}, \, s^2 + r^2 = 1 \} \subset G(\mathbb{R}) \subset \mathbb{C} $</span>
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  זוהי תת-חבורה, כי
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  $latex \displaystyle \begin{aligned} \zeta_1 \cdot \zeta_2 &amp; = (r_1 + s_1 \cdot \boldsymbol{i}) \cdot (r_2 + s_2 \cdot \boldsymbol{i}) \\ &amp; = (r_1 \cdot r_2 - s_1 \cdot s_2) + (r_1 \cdot s_2 + s_1 \cdot r_2) \cdot \boldsymbol{i} \end{aligned} $
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  ו-
+</p>
+
+<p dir="rtl" style="direction: rtl;" align="center">
+  $latex \displaystyle . \ \zeta^{-1} = s - r \cdot \boldsymbol{i} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  כדי לענות בחיוב על שאלה 1 (בדרך אחרת מזו שתוארה קודם לכן), אנחנו נראה כי החבורה האבלית $latex {G(\mathbb{Q})}$ היא אינסופית.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  תחילה נמצא את האיברים מסדר סופי בחבורה $latex {G(\mathbb{Q})}$. אלו הם שורשי היחידה: האיברים $latex {\zeta \in G(\mathbb{Q})}$ המקיימים $latex {\zeta^n = 1}$ לאיזה $latex {n}$ שלם חיובי. ידוע (מתורת המספרים האלגברית) כי יש בדיוק ארבעה כאלה:
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  (5)
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  <span style="color: #000000;">$latex \displaystyle .\ 1, \boldsymbol{i}, -1, -\boldsymbol{i} $</span>
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  לכן, אם ניקח איזשהו איבר $latex {\zeta}$ בחבורה $latex {G(\mathbb{Q})}$ השונה מארבעת המספרים האלו, הרי תת-החבורה הציקלית
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: center;">
+  $latex \displaystyle \{ \zeta^n \mid n \in \mathbb{Z} \} \subset G(\mathbb{Q}) $
+</p>
+
+<table class=" aligncenter" style="width: 256px; margin: 0 auto;">
+  <tr>
+    <td>
+      $latex {\operatorname{pt}(\zeta^n) = (a_n ,b_n ,c_n)}$
+    </td>
+    
+    <td>
+      $latex {\zeta^n}$
+    </td>
+    
+    <td>
+      $latex {n}$
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      $latex {(3,4,5)}$
+    </td>
+    
+    <td>
+      $latex {\frac{3}{5} + \frac{4}{5} \boldsymbol{i}}$
+    </td>
+    
+    <td>
+      1
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      $latex {(7, 24, 25)}$
+    </td>
+    
+    <td>
+      $latex {-\frac{7}{25} + \frac{24}{25} \boldsymbol{i}}$
+    </td>
+    
+    <td>
+      2
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      $latex {(44, 117, 125)}$
+    </td>
+    
+    <td>
+      $latex {-\frac{117}{125} + \frac{44}{125} \boldsymbol{i}}$
+    </td>
+    
+    <td>
+      3
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      $latex {(336, 527, 625)}$
+    </td>
+    
+    <td>
+      $latex {-\frac{527}{625} - \frac{336}{625} \boldsymbol{i}}$
+    </td>
+    
+    <td style="text-align: left;">
+      4
+    </td>
+  </tr>
+</table>
+
+<p dir="rtl" style="text-align: center;">
+   טבלה 1
+</p>
+
+<p dir="rtl" style="direction: rtl; text-align: right;">
+  תהיה אינסופית. הבה נראה שיש איברים כאלה.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  ניקח את השלשה הפיתגורית המוכרת $latex {(3,4,5)}$. האיבר המתאים ב- $latex {G(\mathbb{Q})}$ הינו
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  (6)
+</p>
+
+<p dir="rtl" style="text-align: center;">
+  $latex \displaystyle .\ \zeta := \frac{3}{5} + \frac{4}{5} \cdot \boldsymbol{i} $
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  מאחר ש- $latex {\zeta}$ איננו אחד המספרים ב-(5), הרי זהו איבר מסדר אינסופי!
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  בטבלה 1 רשמנו את החזקות החיוביות הראשונות של המספר $latex {\zeta}$ מנוסחה (6), ואת השלשות הפיתגוריות המצומצמות המסודרות המתאימות.
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  הערה: את החומר הדרוש מתורת המספרים האלגברית אפשר למצוא בספר  Algebra, by M. Artin, Prentice-Hall.
+</p>
+
+<p style="direction: rtl;">
+  <b>תרגיל 3. </b>מצא שלשה פיתגורית מצומצמת מסודרת עם יתר $latex {c = 3125}$. (רמז: להמשיך את טבלה 1.)
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>תרגיל 4. </b> מצא שלשות פיתגוריות מצומצמות מסודרות עם יתרים $latex {169}$ ו- $latex {2197}$. (רמז: להתחיל מהשלשה $latex {(5, 12, 13)}$, למצוא את המספר המרוכב $latex {\zeta}$ המתאים, כמו בנוסחה (6), ואז להכין טבלה כדוגמת טבלה 1.)
+</p>
+
+<p dir="rtl" style="direction: rtl;">
+  <b>תרגיל 5. </b>מצא שלשה פיתגורית מצומצמת מסודרת עם יתר $latex {65}$. (רמז: $latex {65 = 5 \cdot 13}$, ו- $latex {G(\mathbb{Q})}$ היא חבורה.)
+</p>
+
+<p dir="ltr" style="direction: rtl; text-align: right;">
+  ניתן לתת תיאור מלא של החבורה $latex {G(\mathbb{Q})}$, וכך גם לקבל תאור מלא של כל השלשות הפיתגוריות המצומצמות המסודרות. אולם לשם כך יש לדעת אלגברה יותר מתקדמת. כל זה מופיע בגירסה הארוכה יותר של מאמר זה, בקישור:
+</p>
+
+<p style="direction: rtl; text-align: left;">
+  <a href="http://www.math.bgu.ac.il/~amyekut/popular/pythagoras.pdf" target="_blank" rel="noopener noreferrer">http://www.math.bgu.ac.il/~amyekut/popular/pythagoras.pdf</a>
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/riddles-7/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/05/01/groups-part-2/">חבורות - חלק ב &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>נטגר | עיתון מתמטי לנוער</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="נטגר" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="עיתון מתמטי לנוער" />
+<meta property="og:description" content="עיתון מתמטי לנוער" />
+<link rel="canonical" href="/issues/21/" />
+<meta property="og:url" content="/issues/21/" />
+<meta property="og:site_name" content="נטגר" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"/issues/21/","description":"עיתון מתמטי לנוער","headline":"נטגר","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <h1>נטגר גליון 21</h1>
+
+
+    <hr>
+    <h2>דבר העורך</h2>
+    <h3>רון אהרוני</h3>
+    <p style="direction: rtl; text-align: right;">
+  בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. פעם היו מלמדים זאת בבית ספר תיכון - האם אתם מאמינים? השני הוא תרומה של אנה ליזהטוב (כבר אמרנו: אם היא לא הייתה קיימת היה צריך להמציא אותה), על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה. זהו תחום שנדמה שיש בו ניחוח פילוסופי אבל מי שמבין אותו באמת יודע שבדיוק ההפך, הוא מראה שהחשיבה האנושית היא חלק מן העולם הפיזיקלי.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ועכשיו אני רוצה לשתף אתכם במחשבותי. אנחנו רוצים לעשות פסק זמן, כדי לחשוב לאן הוליך את העיתון. חברי המערכת מרגישים לפעמים כקול קורא במדבר. לפי כמות התגובות שמגיעות (כלומר, לא מגיעות), ולפי כמות החידות שנפתרות (כלומר, לא נפתרות, לפחות לא שולחים לנו הרבה פתרונות) נראה שאין עניין רב. האם זוהי תוצאה של שינוי תרבותי כללי? או שמא אופי העיתון אינו מושך קוראים? האם תוכלו, הקוראים, לשלוח לנו את דעותיכם? לאן יש לקחת את העיתון? האם התדירות גבוהה מדי? האם נחוצים מאמרים יותר פופולריים, או להפך - יותר ספציפיים?
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בכל מקרה, זמנית אנחנו מפסיקים את הוצאת העיתון, עד שנגיע להחלטה בכיוון כלשהו. אנחנו נעדכן את הגיליון הזה בתגובותיכם. אנא עקבו לראות אם תגובותיכם התפרסמו.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ובינתיים - תודה לכל העושים במלאכה. אורי פרץ ומיכאל ליטבק, שהיו ממונים על הצדדים המחשוביים של הפרויקט. לדני לובזנס שערך את מדור החידות. יוסי כהן, שהיה האחראי והדוחף, אליהו לוי ואנה ליזהטוב שהתמידו כתורמי מאמרים, ולשאר המתמטיקאים שתרמו מזמנם ומן הידע שלהם.
+</p>
+
+
+    <hr>
+    <h2>חישוב 2√</h2>
+    <h3>דוד בלנק</h3>
+    <p style="direction: rtl; text-align: right;">
+  כולנו מכירים את משפט פיתאגוראס, האומר שריבוע היתר במשולש ישר זווית שווה לסכום ריבועי הצלעות האחרות. המשפט הזה היה ידוע (כעובדה אמפירית לפחות) מאות שנים לפני פיתאגוראס, אך הוא היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע $latex A$ של ריבוע כלשהו ואורך האלכסון שלו $latex B$ אינם <span style="text-decoration: underline;">בני השוואה</span> - כלומר, אין מספרים שלמים חיוביים $latex m$ ו-$latex n$ כך ש-$latex n\cdot A=m\cdot B$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם נקבע את יחידת האורך שלנו להיות יחידה אחת, ממשפט פיתאגוראס נמצא שריבוע אורך האלכסון בריבוע זה שווה ל-$latex 2$, ומכאן נקבל את הניסוח המודרני לתגלית של פיתאגוראס:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">משפט:</span></strong> אין $latex p$ ו-$latex q$ שלמים חיוביים כך ש-$latex \sqrt{2}=p/q$ - כלומר, $latex \sqrt{2}$ אינו מספר רציונאלי.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">הוכחה:</span></strong> נניח בדרך השלילה שיש מספרים שלמים $latex p,q$ כאלה, ולכן מתקיים:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (1) \quad ~2q^{2}~=~p^{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם יש ל-$latex p$ ו-$latex q$ גורם משותף $latex 1 \lt d$, אפשר לצמצמו, ולכן מותר להניח ש-$latex p$ ו-$latex q$ זרים. אך מ-(1) אנו רואים ש-$latex p^{2}$ זוגי, ולכן $latex p$ זוגי (מדוע?). נאמר ש-$latex p=2k$ עבור $latex k$ טבעי: אז
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex ,~2q^{2}~=~p^{2}~=~(2k)^{2}~=~4k^{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כלומר $latex q^{2}=2k^{2}$, ולכן $latex q$ עצמו זוגי - בסתירה לכך ש-$latex p$ ו-$latex q$ זרים. ∎
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  למרות שאי-אפשר לבטא את $latex \sqrt{2}$ <em>במדוייק</em> באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <span style="text-decoration: underline;"><strong>השיטה:</strong></span> יהי $latex x$ מספר רציונאלי חיובי כלשהו, ונניח למען הפשטות ש-$latex 1 \lt x$. אנו נבנה שתי סדרות $latex (a_{n})_{n=0}^{\infty}$ ו-$latex (b_{n})_{n=0}^{\infty}$ של קירובים רציונאליים חיוביים ל-$latex \sqrt{x}$, באופן שיתקיים:
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (א) $latex a_{n}^{2} \lt x \lt b_{n}^{2}$ (כלומר, $latex a_{n} \lt \sqrt{x} \lt b_{n}$) לכל $latex n$ טבעי.
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (ב) $latex a_{n} \lt a_{n+1}$ ו-$latex b_{n} \gt b_{n+1}$ לכל $latex n$ טבעי (כלומר, כל סדרה מונוטונית).
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 15px;">
+  (ג) $latex b_{n}-\sqrt{x} \lt \epsilon$, אז $latex \sqrt{x}-a_{n} \lt \epsilon$ ו-$latex b_{n+1}-\sqrt{x} \lt \epsilon/2$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">שימו לב:</span></strong> שתי הדרישות הראשונות ביחד אומרות שהסדרה $latex a_{1},a_{2},a_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמטה, ואילו הסדרה $latex b_{1},b_{2},b_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמעלה. יתר על כן, שתי הסדרות האלה מונוטוניות - כלומר, בכל פעם הזוג $latex (a_{n+1},b_{n+1})$ הוא קירוב טוב יותר ל-$latex \sqrt{x}$ מאשר הזוג $latex (a_{n},b_{n})$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אולם אפשר למצוא שתי סדרות כאלה בלי להתאמץ הרבה: למשל, יכולנו לבחור בתור הקירובים ל-$latex \sqrt{2}$ <em>מלמטה</em> את $latex 1, \ 1.1,\ 1.11,\ 1.111$, וכן הלאה, ובתור הקירובים ל-$latex \sqrt{2}$ <em>מלמעלה</em> את $latex 2, \ 1.9,\ 1.89,\ 1.889$, וכן הלאה,
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מה שחסר בבחירות אלה הוא מה שנותנת דרישה (ג): שהסדרות אכן מתקרבות <em>כרצוננו</em> ל-$latex \sqrt{x}$. זאת נקודה קצת עדינה, משום שאין לנו דרך לחשב את $latex \sqrt{x}$ עצמו ולהשוות אליו את הקירובים שלנו. אנו משתמשים איפוא במה שהיוונים כינו <em>שיטת המיצוי</em>: אנו מייצרים שתי סדרות של קירובים, ודואגים לכך שסדרה אחת תמיד <em>קטנה</em> מ-$latex \sqrt{x}$, והשניה תמיד <em>גדולה</em> מ-$latex \sqrt{x}$. זה מה שאומרת דרישה (א): שימו לב שהיא מנוסחת באמצעות $latex x$ (שהוא מספר רציונאלי, לפי ההנחה), ואינה מזכירה את $latex \sqrt{x}$. בעצם אנו מנצלים כאן רק את העובדה שפונקציית ההעלאה הריבוע היא מונוטונית עבור מספרים אי-שליליים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם בנוסף לכך נבטיח שהקירובים מלמטה ומלמעלה <em>מתקרבים זה לזה כרצוננו</em> - כפי שקורה בדרישה (ג) - הרי שמרחק כל אחד מהם מהמספר המבוקש $latex \sqrt{x}$ אינו יכול להיות גדול מההפרש בינהם.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong>אפשר לנסח זאת כך</strong>: אם אתה הולך ברחובות מוסקבה, מסתכל מלפניך ורואה קצין של הק.ג.ב, מסתכל מאחוריך ורואה קצין של הק.ג.ב. - אז לאן שהם הולכים, לך גם אתה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <span style="text-decoration: underline;"><strong>יישום השיטה:</strong></span> הבנייה נעשית באינדוקציה, החל מ-$latex a_{0}=1$ ו-$latex b_{0}=x$. בשלב ה-$latex n$ נגדיר
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (2) \quad ~b_{n+1}:=\frac{a_{n}+b_{n}}{2}\ \ \ \text{-ו} \ \ a_{n+1}:=\frac{x}{b_{n+1}}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  שימו לב ש-$latex b_{n+1}$ הוא הממוצע <em>החשבוני</em> של שני הקירובים הקודמים $latex a_{n}$ ו-$latex b_{n}$, ואילו הממוצע ההנדסי שלהם הוא $latex \sqrt{a_{n}\cdot b_{n}}=\sqrt{x}$ לכל $latex n$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מכיוון שלכל שני מספרים ממשיים חיוביים $latex a$ ו-$latex b$ מתקיים
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~a^{2}-2ab+b^{2}~=~(a-b)^{2}~\geq~0$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הרי ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~(a+b)^{2}~=~a^{2}+2ab+b^{2}~\geq~4ab$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לכן אם נחלק ב-$latex 4$ ונוציא שורש ריבועי נמצא ש-
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle (3) \quad ,~\frac{a+b}{2}~\geq~\sqrt{ab}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כלומר, הוכחנו את העובדה הבאה המעניינת כשלעצמה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">משפט:</span></strong> הממוצע החשבוני תמיד גדול או שווה לממוצע ההנדסי (ויש שוויון רק כאשר $latex a=b$).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מכאן נובע (א), כי $latex b_{n+1}:=\frac{a_{n}+b_{n}}{2} \gt \sqrt{a_{n}b_{n}}=\sqrt{x}$, ולכן $latex a_{n+1}:=\frac{x}{b_{n+1}} \lt \sqrt{x}$ לכל $latex n$. אבל אז בוודאי $latex b_{n+1} \lt b_{n}$, כי הממוצע של שני מספרים קטן מהגדול מבינהם; ולכן $latex a_{n+1} \gt a_{n}$ (על-ידי חלוקת $latex x$ באי-השוויון הקודם).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לבסוף, אם $latex b_{n}-\sqrt{x} \lt \varepsilon$, אז
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle ,~\sqrt{x}-a_{n}=\frac{\sqrt{x}}{b_{n}}(b_{n}-\sqrt{x}) \lt \frac{\sqrt{x}}{b_{n}}\cdot\varepsilon \lt \varepsilon$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ולכן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle .~b_{n+1}-\sqrt{x}:=\frac{a_{n}+b_{n}-2\sqrt{x}}{2} \lt \frac{b_{n}-\sqrt{x}}{2} \lt \frac{\varepsilon}{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><span style="text-decoration: underline;">דוגמא:</span></strong> עבור $latex x=2$ נקבל את הקירובים הבאים ל-$latex \sqrt{2}$:
+</p>
+
+<table style="direction: ltr; width: 90%;">
+  <tr>
+    <td style="border: none;">
+      $latex b_{0}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 2$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{0}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{1}=\frac{1+2}{2}=\frac{3}{2}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.5$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{1}=\frac{2}{b_{1}}=\frac{4}{3}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.3333\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{2}=\frac{3}{4}+\frac{2}{3}=\frac{17}{12}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.41666\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{2}=\frac{2}{b_{2}}=\frac{24}{17}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.4117647\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{3}=\frac{17}{24}+\frac{24}{34}=\frac{577}{408}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414215686\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{3}=\frac{2}{b_{3}}=\frac{816}{577}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414211438\dotsc$
+    </td>
+  </tr>
+  
+  <tr>
+    <td style="border: none;">
+      $latex b_{4}=\frac{577}{816}+\frac{816}{1154}=\frac{665857}{470832}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.4142135623747\dotsc$
+    </td>
+    
+    <td style="border: none;">
+      $latex a_{4}=\frac{2}{b_{4}}=\frac{941664}{665857}=$
+    </td>
+    
+    <td style="border: none;">
+      $latex 1.414213562372\dotsc$
+    </td>
+  </tr>
+</table>
+
+<p style="direction: rtl; text-align: right;">
+  בקירוב האחרון אנו רואים ש-$latex a_{4}$ ו-$latex b_{4}$ מסכימות עד לספרה ה-$latex 11$ אחרי הנקודה העשרונית - כלומר, ההפרש בינהם קטן מ-$latex 10^{-11}=0.00000000001$. בפרט זה אומר ששתים-עשרה הספרות הראשונות בפיתוח העשרוני של $latex \sqrt{2}$ הן
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex \displaystyle 1.41421356237$
+</p>
+
+
+    <hr>
+    <h2>לוגיקה - לחשוב על החשיבה המתמטית</h2>
+    <h3>אנה ליזהטוב</h3>
+    <p style="direction: rtl; text-align: right;">
+  <a href="http://net-gar.net/%d7%9e%d7%94-%d7%96%d7%95-%d7%9c%d7%95%d7%92%d7%99%d7%a7%d7%94-%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%aa/">בגיליון נטגר הקודם</a> סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג'ורג' בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  "איך חושבים", אתם בוודאי חושבים לעצמכם, היא שאלה ערטילאית. מה זה "איך חושבים"? לגמרי לא ברור. אולי זוהי הסיבה שהלוגיקה הייתה רדומה כל כך הרבה זמן. צריך לפרוט זאת לשאלות קונקרטיות, ובול אכן עשה את הצעד הראשון: הוא הראה איך אפשר לעשות פורמליזציה לטענות מתמטיים פשוטות, שמכילות רק קשרים פשוטים בין טענות, כמו "ו" או "או".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  זו הייתה חוליה נוספת בשרשרת של מהפכות שפרויד קרא להן "מהפכות קופרניקאיות", כלומר כאלה שמשנות את תפיסת האדם את עצמו, מראיית עצמו כמרכז היקום להבנה שהוא אינו אלא חלק מן העולם הפיזיקלי, חלק שאולי מעניין במיוחד את עצמו אבל אינו ייחודי כפי שנדמה לו. פרויד הבחין בשלוש מהפכות קופרניקאיות. הראשונה היא הקוסמולוגיה של קופרניקוס עצמו, שהבין שכדור הארץ אינו מרכז היקום בשום מובן אפשרי. השנייה היא תורת האבולוציה של דרווין, שלימד אותנו כי אף אם האדם הוא החבר האינטליגנטי ביותר בממלכת החי, הוא כפוף לאותם חוקים שלהם מצייתים שאר חברי הממלכה. את המהפכה השלישית ייחס פרויד, שמעולם לא סבל מעודף צניעות, לעצמו. תורתו, הפסיכואנליזה, הבהירה שגם בממלכה האחרונה שנותרה לכאורה לשליטתו הבלעדית של האדם, נפשו שלו עצמו, אין הוא מלך יחיד. עמקי נפשו אינם נגישים לו יותר מאשר לסובבים אותו, וייתכן שדווקא את מאווייו שלו הוא מכיר פחות מאשר את העולם החיצוני.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  פרויד דיבר לראשונה על מהפכות קופרניקאיות ב-1914, בסדרת הרצאות שנשא באוניברסיטת וינה. אבל באותו זמן כבר החלו לנוע גלגליה של מהפכה רביעית, חשובה עוד יותר משלוש קודמותיה משום שהובילה להמצאת המחשב. זו הייתה התובנה שאפילו הדבר שנראה ייחודי מכל לאדם - החשיבה המופשטת, אינה אלא חלק מן העולם הפיזיקלי. מאמצע המאה התשע- עשרה החלה לחלחל ההבנה שגם החשיבה המופשטת אינה אלא תהליך פיזיקלי, כמו תנועתם של גופים או זרימה של מים. אפשר לתאר אותה במונחים מכאניים, והיא יכולה להיות גם נחלתה של מכונה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  באופן לא מפתיע, זרעיו של המפנה נזרעו באנגליה של המהפכה התעשייתית. בעקבות ניצחונן המוחץ של המכונות החלו הוגים לייחס מכאניוּת לכל תופעות העולם, ובהן האנושיות. מקצת ההוגים היו תיאורטיקנים, כמו קרל מרקס, שהחיל מושגים דטרמיניסטיים על תהליכים חברתיים, והיו גם שניסו ליישם זאת בפועל. המפורסם שבהם היה צ'רלס בבג' ($latex Charles ~~Babbage$), שנהוג לייחס לו את הבנייה (על הנייר) של המחשב הראשון. ב-1820 הוא פירסם תוכנית לבנייתה של מכונת חישוב שיתרונה הגדול הוא שהיא ניתנת לתכנות, ואפילו השיג מימון ממשלתי להרכבתה. את מלאכת ההרכבה המעשית לא השלים מעולם, אבל בסוף המאה העשרים הושלמה המלאכה במוזיאון המדע הבריטי, והתברר שבבג' לא רימה. המכונה פעלה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  את ניצחונה הגדול ביותר נחלה המהפכה המחשבתית הזאת דווקא במתמטיקה. החשיבה המתמטית היא המופשטת ביותר מבין סוגי החשיבה, אבל גם המאורגנת ביותר, ולכן אפשר לחקור אותה בצורה מתמטית. כאמור, הראשון שעשה זאת בצורה שיטתית היה ג'ורג' בול. הוא הראה איך לעשות פורמליזציה של טענות מתמטיות. ואכן, טענות מתמטיות הן לבני הבניין שמהן בונים מגדלים מתמטיים. אבל לבנים עדיין אינן יוצרות בית. נחוץ מלט שיחבר אותן למבנים בעלי משמעות. את התפקיד הזה ממלאות ההוכחות. הוכחות הן גולת הכותרת של הפעילות המתמטית. הן מוודאות מה נכון, אבל חשוב מכך, הן עדות להבנה. "הוכחה לא נועדה להראות לנו שמשפט מתמטי הוא נכון. כוונתה להראות לנו למה הוא נכון," אמר המתמטיקאי האמריקני רלף בואז $latex (Ralph ~Boas)$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  היה זה פילוסוף-מתמטיקאי גרמני בשם גוטלוב פְרֶגֶה $latex (Gottlob~~ Frege)$ שעשה את הצעד האמיץ הבא: להראות שגם הוכחות אפשר לחקור בצורה מתמטית-פורמלית. הדבר הראשון שפרגה עשה היה להעשיר את השפה המתמטית. הוא הוסיף סימן ל"לכול". הסימון שלו הוחלף מאז, וכיום משתמשים בסימון $latex \forall$, שהוא $latex A$ הפוכה, ונגזר מן המילה "$latex All$", או "$latex Alles$" הגרמני. למשל, $latex \forall x(x \ge 0)$ אומר ש"כל מספר גדול או שווה מ-$latex 0$" – טענה נכונה במספרים הטבעיים. מאוחר יותר הוכנס גם סימון ל"קיים" – $latex \exists$, היפוכה של $latex E$, הגזורה מ-$latex Exists$. למשל, $latex \exists x(x \lt 1)$ אומר "קיים מספר קטן מ-$latex 1$" (שוב, טענה נכונה במספרים הטבעיים, משום שאכן קיים מספר כזה, הלוא הוא 0).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בשפה החדשה אפשר להביע כל טענה מתמטית מוכרת, ומכאן היה פרגה יכול להמריא למשימה הבאה: הגדרה מהי הוכחה. כל מי שראה מימיו הוכחות מתמטיות מכיר את התכונה העיקרית שלהן: הליניאריות. הן בנויות לבנה על גבי לבנה. זו היתה הגדרתו של פרגה ל"הוכחה":
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong>הוכחה היא סדרה של טענות, שכל אחת נובעת מאלה שהופיעו לפניה.</strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בכך אין חידוש גדול. האופי הנדבכי של הוכחות הוא כאמור עניין ידוע. תגליתו המפתיעה של פרגה היתה ש"נביעה" היא מושג פשוט. משחק ההוכחה אינו כה מסובך כפי שנדמה. הוא מתנהל בסך הכול על פי שני כללים. הכלל הראשון, שניסח כבר אריסטו, נקרא "ניתוק רישא". אם בסדרת הטענות שמרכיבות את ההוכחה מופיעה, למשל, הטענה "אם היום יום שלישי, אז יורד גשם", ומופיעה גם הטענה "היום יום שלישי", אתם יכולים להוסיף בבטחה לסדרה את הטענה "יורד גשם". אם הוכחתם "אם א' אז ב'" וגם הוכחתם את א', הרי הוכחתם את ב'.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הכלל השני אינו מסובך יותר, אבל הוא מפתיע במקצת. הוא נקרא "הכללה", והוא אומר כך: נניח שהוכחתם ש-"יוסי הוא בן תמותה", ונניח שלא השתמשתם בשום תכונה מיוחדת של יוסי מלבד היותו בן אדם. אם עשיתם זאת, הוכחתם בעצם שכל אדם הוא בן תמותה. הרי ההוכחה תקפה לכל אדם. בניסוח פורמלי, הכלל הוא זה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם בסדרת הטענות שמהווה הוכחה הגעתם לתכונה כלשהי (נקרא לה $latex P$) של עצם $latex x$, הרי אתם רשאים להוסיף לסדרת הנוסחאות נוסחה חדשה, שגם היא הוכחה בזאת: "לכל $latex x$ מתקיימת התכונה $latex P$", ובסימון המתמטי – $latex \forall x P$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  למעשה, מבחינתנו לא חשוב מהם בדיוק כללי ההוכחה, אלא רק שהם פשוטים וספורים. פירוש הדבר הוא שמשחק ההוכחה פשוט מאוד. אם מגיע אליכם אדם ובידיו סדרת טענות שהוא אומר כי היא הוכחה, קל מאוד לבדוק זאת. לבנות הוכחה – זה כבר סיפור אחר. קל יותר לזהות עצם כ"מחט", לאחר שהציגו אותו בפניכם, מאשר למצוא את המחט בערמת שחת.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כל אחד משני כללי ההיסק – ניתוק הרישא וההכללה – מוכיח נוסחאות על פי נוסחאות קודמות. אבל לא די בכך. כדור הארץ עומד כידוע על גבו של צב – אבל על מה עומד הצב? הרי צריך להתחיל ממקום כלשהו, מטענות שאינן נובעות מטענות קודמות. אלה הן האקסיומות, הנחות מוצא שעל יסודותיהן אפשר לבנות את הבניין. פרגה הגדיר כמה אקסיומות בסיסיות, שנכונות בכל תחום. למשל, "אם היום יום שלישי אז היום יום שלישי", או בצורה פורמלית $latex \alpha \rightarrow \alpha$. "כל דבר גורר את עצמו". או כלל אחר: אם לא נכון שלא נכון שהיום יום שלישי, אז היום יום שלישי. "לא לא" משמעו "כן", ובניסוח פורמלי: $latex \sim\sim \alpha \rightarrow \alpha$. שפירושו "אם לא נכון שלא $latex \alpha$ אז $latex \alpha$ נכונה".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נוסף על האקסיומות הכלליות, לכל תחום מתמטי יש האקסיומות המיוחדות לו. בגיאומטריה, למשל, האקסיומות יהיו טענות כמו "דרך כל שתי נקודות עובר רק קו ישר אחד" (את המילים האלה צריך לתרגם, כמובן, לנוסחאות). בתורת המספרים, כל מערכת אקסיומות סבירה תכיל בוודאי את האקסיומה שאם מוסיפים 0 למספר, הוא לא משתנה, ופורמלית - $latex \forall x (x+0=x)$. הגדרתו של פרגה להוכחה היא אפוא זו: הוכחה היא סדרת נוסחאות שכל אחת מהן היא או אקסיומה, או נובעת על פי אחד משני כללי ההיסק מנוסחאות קודמות. להשלמת ההגדרה נחוץ לומר עוד דבר אחד: מה מוכיחה סדרת הנוסחאות הזאת? פשוט: את הנוסחה האחרונה שבה, את "שורת המחץ".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הרעיונות החדשים של פרגה היו כה מהפכניים, שאף אחד לא התייחס אליהם ברצינות. מישהו אחד שכן התייחס היה גיאורג קנטור, מהפכן בעצמו, שבנה במו ידיו את תורת הקבוצות המודרנית. הוא כתב על ספרו של פרגה מאמר קטילה. פרגה נעשה מר נפש ומסוגר. באחרית ימיו גם לקה באנטישמיות קשה (ייתכן שהיה לכך קשר לעובדה שקנטור היה יהודי). למזלה של המתמטיקה, הייתה לברטראנד ראסל האגלי בילדותו אומנת גרמנייה, ובזכותה הוא ידע גרמנית. כך הגיע, כעשרים שנים מאורח יותר, לקרוא את כתביו של פרגה. הוא הבין את חשיבות המהפכה החדשה, ופרסם אותה דרך ספר שכתב עם ידידו ומורו וויטהד ($latex Whitehead$). הספר, שנקרא "עקרונות המתמטיקה" ($latex Principia ~Mathematica$), היה נקודת מפנה. מאותו רגע הפכה הלוגיקה המתמטית לענף מרכזי. וזה היה פתח למהלכים מרחיקי לכת, שבסופו של דבר הובילו להמצאת המחשב.
+</p>
+
+
+    <hr>
+    <h2>חידות</h2>
+    <h3>דניאל לובזנס</h3>
+    <p style="direction: rtl; text-align: right;">
+  לחידות המוצגות בגיליון זה יפורסמו רמזים בגיליון הבא ופתרונות מלאים בזה שלאחריו. נשמח לקבל את פתרונותיכם באמצעות המקום המיועד לכך בתחתית העמוד עד <strong>24.12.2015 </strong>, אנא ציינו את שמכם, היישוב בו אתם גרים, שם ביה"ס שלכם והכיתה בה אתם לומדים. בגיליון הבא יפורסמו שמות הפותרים נכונה, וכן יובאו פתרונות יפים שייכתבו על ידכם.
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <strong><u>חידה 1 –איך לחלק את העוגה המשולשת?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אורה ובני מחלקים ביניהם עוגה (שניתן להניח כי היא בגובה ומרקם אחיד, כך שכל אחד רוצה לקבל שטח גדול יותר של העוגה) לפי הכלל הבא: אורה בוחרת נקודה כלשהיא על גבי העוגה, ובני רשאי לחתוך את העוגה בקו ישר העובר דרך הנקודה שסימנה אורה אח"כ בני בוחר לעצמו את אחד החלקים והשני ניתן לאורה. בני ואורה בוחרים את מיקום הנקודה וכוון הקו כדי לקבל מקסימום משטח העוגה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ברור שאם העוגה עגולה, הבחירה של אורה היא מרכז העיגול, וכל קו שיעביר בני יבטיח לו בדיוק חצי מהעוגה וגם אורה תקבל חצי עוגה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  החידה היא מה קורה כשלעוגה צורת משולש? מהי הנקודה הטובה ביותר שתבחר אורה? איך יעביר בני את קו החיתוך? בהנחה ששניהם עושים את הבחירות הטובות ביותר, איזה חלק מהעוגה יקבל בני ואיזה יישאר לאורה?
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <strong><u>חידה 2–איך ליצור רבוע מרבוע ומשולש?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <img class="aligncenter wp-image-3557" src="http://net-gar.net/wp-content/uploads/2015/11/puzzles1_dec15.png" alt="puzzles1_dec15" width="511" height="206" />
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נתון ריבוע ומשולש ישר זווית ושווה שוקים הקטן בשטחו משטח הרבוע. איך ניתן לחתוך את הרבוע ל3 חלקים ע"י קוים ישרים, ואת המשולש ל2 חלקים ע"י קו ישר אחד, ומחמשת החלקים להרכיב ריבוע?
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <strong><u>חידה 3– מה הדרך הקצרה של הנמלה לטיפת הדבש?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <img class="aligncenter wp-image-3558" src="http://net-gar.net/wp-content/uploads/2015/11/puzzles2_dec15.png" alt="puzzles2_dec15" width="228" height="220" />
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נתונה כוס זכוכית בעלת צורה גלילית, בקוטר 8 ס"מ ובגובה 8 ס"מ. על התחתית סמוך לדופן, בתוך הכוס, יש טיפת דבש. מחוץ לכוס, סמוך לתחתית, בנקודה המרוחקת ביותר מטיפת הדבש נמצאת נמלה. מה הדרך הקצרה ביותר של הנמלה לטיפת הדבש? מה אורכה?
+</p>
+
+<h2 style="direction: rtl; text-align: right;">
+</h2>
+
+<h2 style="direction: rtl; text-align: right;">
+  רמזים לחידות מגיליון נובמבר 2015
+</h2>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 1 – איך לחלק את המחרוזת?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  חברו את המחרוזת בקצותיה ליצירת מעגל. השתמשו בשיטה דומה לזו של הוכחת המקרה החד ממדי של משפט בורסוק-אולם המופיע ב<a href="http://net-gar.net/%d7%98%d7%95%d7%a4%d7%95%d7%9c%d7%95%d7%92%d7%99%d7%94/">מאמרו של רון אהרוני</a> בגיליון אוקטובר 2015.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 2– איך למצוא את הדרך הנכונה?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  יש למצוא דרך שהשאלה "תעבור" פעמיים דרך שני משיבים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 3– סידור אבני דומינו?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כמה פעמים מופיע כל מספר?
+</p>
+
+<h2 style="direction: rtl; text-align: right;">
+  פתרון החידות גיליון אוקטובר 2015
+</h2>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 1 –שמיכת טלאים</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הפתרון לחידה – שימו לב לשלשה הפיתגוריאנית $latex 13^2 = 12^2 + 5^2$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <img class="aligncenter wp-image-3559" src="http://net-gar.net/wp-content/uploads/2015/11/puzzles3_dec15-1024x430.png" alt="puzzles3_dec15" width="632" height="265" />
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם היה אפשרי לפתור את החידה ע"י חלוקת הרבוע הגדול ל 3 חלקים בלבד, הרי שבחלק אחד תהינה 2 פינות של הרבוע הגדול שהמרחק (האנכי או האופקי) ביניהן הוא 13 בעוד ברבוע הנוצר לאחר החלוקה המרחק המקסימלי הוא 12. תנו דעתכם שבבעיה זו ניתן לסובב את החלקים החתוכים בכפולות של 90 מעלות בלבד.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  את הפתרון ניתן להכליל לכל השלשות הפיתאגוריאניות מהצורה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex \displaystyle (2m^2 + 2m)^2 + (2m+1)^2 = (2m^2 + 2m + 1)^2$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  השרטוטים הבאים מתארים את חלוקת הרבוע הגדול והרכבת רבוע שאורך צלעו קטן ב 1 משלשה החלקים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <img class="aligncenter wp-image-3560" src="http://net-gar.net/wp-content/uploads/2015/11/puzzles4_dec15.png" alt="puzzles4_dec15" width="532" height="496" />
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <img class="aligncenter wp-image-3566" src="http://net-gar.net/wp-content/uploads/2015/11/sol1_last-drawing.jpg" alt="sol1_last drawing" width="414" height="414" />
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 2–איזו ספרה חסרה?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נחשב את המספר מודולו 9.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  קל לראות:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex 2^2 = 4 \pmod{9}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex 2^4 = 7 \pmod{9}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex 2^8 = 4 \pmod{9}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex 2^{16} = 7 \pmod{9}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מאחר ו: $latex 2^{29} = 2^{16} \cdot 2^8 \cdot 2^4 \cdot 2^1 = 7 \cdot 4 \cdot 7 \cdot 2 = 5 \pmod{9}$ ונתון שבתוצאה מופיעות כל הספרות פרט לאחת – הספרה החסרה היא 4 (סכום כל הספרות 1..9 הוא 0 מודולו 9).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong><u>חידה 3– איזה מספרים ניתן לרשום כסכום של רצף של מספרים טבעיים?</u></strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  להלן פתרונו של עומר שמחי (בתיקונים קלים):
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  פתרון: כל מספר שאינו חזקה אי שלילית של 2.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הוכחה:   ראשית נשים לב כי אם מספר הוא סכום של רצף טבעיים (לפחות שניים) אזי הוא מהצורה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex M = k + (k+1) + \dots + (k+n-1)$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כאשר $latex k$ הוא המספר הטבעי הראשון ועוד $latex n-1$ מספר החוברים ברצף.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  קל לראות מסכום סדרה חשבונית ש:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex \displaystyle d = 1, a_1 = k \Rightarrow M = \frac{n \cdot (2k + 1 \cdot (n-1))}{2} = \frac{n \cdot (n + (2k-1))}{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ראשית נראה כי כל מספר אי זוגי $latex M$ (שאינו 1 כמובן) ניתן להצגה כסכום רצף טבעיים:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  $latex n=2 \Rightarrow M = 2k + 1, \forall k \in \mathbb{N}$ וזהו ביטוי לכל מספר אי זוגי גדול מאחד כמובן.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כעת נראה כי אם $latex M = 2^r, \forall r \in \mathbb{N} \cup \{0\}$ לא ניתן לבטא כסכום כנ"ל:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נשווה: $latex 2^r = \frac{n \cdot (n + 2k - 1)}{2}$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אולם אם $latex n (\gt 2)$ אי זוגי אזי נקבל סתירה כי אז לחזקה של 2 אמור להיות מחלק אי זוגי גדול מ1, ואם $latex n$ זוגי אזי $latex n + 2k-1$ אי זוגי ושוב סתירה מאותה סיבה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  לכן חזקה טבעית של 2 או המספר 1 לא ניתנים לייצוג כנ"ל.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כעת נותר להוכיח שכל זוגי שאינו חזקה של 2, דהיינו: $latex M = 2^r t, t \equiv 1 \pmod{2}, r \in \mathbb{N}$ ניתן להצגה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כלומר, נחפש $latex n$ ו $latex k$ כך ש: $latex 2^r t = \frac{n \cdot (n + 2k - 1)}{2} \Leftrightarrow 2^{r+1} t = n \cdot (n + 2k - 1)$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כעת, נפריד לשני מקרים:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  (1): $latex t \gt 2^{r+1}$:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נציב: $latex n = 2^{r+1} \Rightarrow t = n + 2k - 1 = 2^{r+1} + 2k - 1$
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  היות ש$latex k$ ניתן לבחירה חופשית, הרי שכל אי זוגי $latex t$ שמקיים את תנאי אי השיוויון כמובן יתקבל בצורה כזו.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  (2): $latex t \lt 2^{r+1}$:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נבחר: $latex n = t \Rightarrow 2^{r+1} = n + 2k - 1= 2k + t -1 $
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  ושוב היות ש$latex t$ אי זוגי ו$latex k$ ניתן לבחירה חופשית נקבל שוב שאפשר לקבל כל חזקה של 2 שמקיימת את אי השוויון בצורה כזו בבחירה מתאימה של $latex k$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  מש״ל.
+</p>
+
+<h2 style="direction: rtl; text-align: right;">
+  שמות הפותרים נכונה את החידות מגיליון נובמבר 2015
+</h2>
+
+<p style="direction: rtl; text-align: right;">
+  תומר שני, חניתה, בי"ס סולם צור כתה י"ב – כל החידות!
+</p>
+
+<p style="direction: rtl;">
+  [contact-form-7 id="463" title="חידות"]
+</p>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>הוכחת אי-רציונליות של שורשים של מספרים שלמים באמצעות קיפולי נייר | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="הוכחת אי-רציונליות של שורשים של מספרים שלמים באמצעות קיפולי נייר" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="מתמטיקאי בשם היפאסוס, חבר באסכולה הפיתגוריאנית (המאה החמישית לפני הספירה) הוכיח שלא קיימת מנה של שני טבעיים שהריבוע שלה הוא 2. בלשון ימינו אומרים שהוא מצא שהשורש של 2 איננו רציונלי. על פי האגדה הוא שילם על תגלית זו בחייו, משום שהפיתגוריאנים האמינו שכל גודל חשוב הוא רציונלי. במאמר הזה מתארים המחברים הוכחה יפה של ג&#39;ון קונווי (מתמטיקאי אנגלי שעובד בפרינסטון) לאי הרציונליות של שורש 2, בעזרת קיפולי נייר." />
+<meta property="og:description" content="מתמטיקאי בשם היפאסוס, חבר באסכולה הפיתגוריאנית (המאה החמישית לפני הספירה) הוכיח שלא קיימת מנה של שני טבעיים שהריבוע שלה הוא 2. בלשון ימינו אומרים שהוא מצא שהשורש של 2 איננו רציונלי. על פי האגדה הוא שילם על תגלית זו בחייו, משום שהפיתגוריאנים האמינו שכל גודל חשוב הוא רציונלי. במאמר הזה מתארים המחברים הוכחה יפה של ג&#39;ון קונווי (מתמטיקאי אנגלי שעובד בפרינסטון) לאי הרציונליות של שורש 2, בעזרת קיפולי נייר." />
+<link rel="canonical" href="/2014/09/30/proving-irrationality-of-integer-squares-using-origami/" />
+<meta property="og:url" content="/2014/09/30/proving-irrationality-of-integer-squares-using-origami/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-09-30T23:23:10+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-09-30T23:23:10+03:00","datePublished":"2014-09-30T23:23:10+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/09/30/proving-irrationality-of-integer-squares-using-origami/"},"url":"/2014/09/30/proving-irrationality-of-integer-squares-using-origami/","description":"מתמטיקאי בשם היפאסוס, חבר באסכולה הפיתגוריאנית (המאה החמישית לפני הספירה) הוכיח שלא קיימת מנה של שני טבעיים שהריבוע שלה הוא 2. בלשון ימינו אומרים שהוא מצא שהשורש של 2 איננו רציונלי. על פי האגדה הוא שילם על תגלית זו בחייו, משום שהפיתגוריאנים האמינו שכל גודל חשוב הוא רציונלי. במאמר הזה מתארים המחברים הוכחה יפה של ג&#39;ון קונווי (מתמטיקאי אנגלי שעובד בפרינסטון) לאי הרציונליות של שורש 2, בעזרת קיפולי נייר.","headline":"הוכחת אי-רציונליות של שורשים של מספרים שלמים באמצעות קיפולי נייר","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/09/30/biological-clocks-synchronization/">&laquo; סינכרון שעונים ביולוגיים</a>
+    
+    
+      <a class="next" href="/2014/09/30/editor-8/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">הוכחת אי-רציונליות של שורשים של מספרים שלמים באמצעות קיפולי נייר</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-09-30T23:23:10+03:00" itemprop="datePublished">Sep 30, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אלי ברגר, אליהו לוי, מיכאל צוויקל</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  שורש ריבועי (או בקיצור פשוט שורש) הוא הפעולה ההפוכה לכפל מספר בעצמו. אם $latex {\frac{4}{3} * \frac{4}{3} = \frac{16}{9}}$ אז השורש של שש עשרה תשיעיות הוא ארבעה שלישים. למה בכלל נחוצה הפעולה הזאת? מדוע  אי אפשר להסתפק בחיבור, חיסור, כפל וחילוק? אחד מתחומי המתמטיקה שבו יש שימוש נרחב בשורש הוא הגיאומטריה. בפרט הוצאת שורש מופיעה כשמפעילים את משפט פיתגורס. משפט פיתגורס אומר שבמשולש ישר זווית ריבוע היתר שווה לסכום של ריבועי שני הניצבים. פירוש הדבר הוא שאם ידוע לנו מה אורך שני הניצבים ואנחנו רוצים למצוא את אורך היתר, אנחנו מחשבים את הסכום של ריבועי שני הניצבים ואז מוציאים שורש.
+</p>
+
+<p style="direction: rtl;">
+  משפט פיתגורס קרוי על שם מתמטיקאי יווני בשם פיתגורס שחי כ- $latex {500}$ שנה לפני הספירה ואסף סביבו קבוצת אנשים שנקראה "האסכולה הפיתגוראית". באסכולה זו מצאו את משפט פיתגורס ובעזרתו גילו למשל שאם אורכי הניצבים במשולש ישר זווית הם $latex {3}$ מטרים ו- $latex {4}$ מטרים, אזי אורך היתר הוא $latex {5}$ מטרים. (כמובן, היוונים לא השתמשו במטרים אלא ביחידות מרחק אחרות.) ועכשיו נשאלת השאלה: אם אורך כל אחד מהניצבים הוא מטר אחד, מה האורך (במטרים) של היתר? לפי משפט פיתגורס, זהו המספר שהריבוע שלו הוא $latex {2}$.
+</p>
+
+<p style="direction: rtl;">
+  אבל מהו המספר הזה? בימינו פשוט עונים לשאלה הזו בתשובה "שורש $latex {2}$" ומסמנים $latex {\sqrt{2}}$, אבל חברי האסכולה הפיתגוראית לא הסתפקו בתשובה כזו. הם רצו לדעת כמה המספר הזה בדיוק. זה מספר גדול מאחד וקטן מ- $latex {2}$. אולי אחד וחצי? לא בדיוק. אחד וחצי כפול עצמו זה $latex {2}$ ורבע. קרוב ל- $latex {2}$ אבל לא בדיוק. אז צריך פחות מאחד וחצי. אולי $latex {7}$ חמישיות? זה יותר מוצלח. הריבוע של $latex {7}$ חמישיות הוא $latex {49}$ חלקי $latex {25}$. מתקרב ל- $latex {2}$ אבל עדיין לא בדיוק. חברי האסכולה חיפשו פתרון מדויק. מנה של שני מספרים טבעיים שמכפלתה בעצמה נותנת בדיוק את המספר $latex {2}$.
+</p>
+
+<p style="direction: rtl;">
+  האם הצליחו? לא בדיוק. או אולי יותר נכון להגיד שבדיוק להיפך. אנחנו יודעים בוודאות שהם לא הצליחו למצוא מנה כזו, אבל האגדה מספרת (כי אין תיעוד רב לדיוני האסכולה) שאחד מחברי האסכולה בשם היפאסוס הצליח לעשות דבר אחר: להוכיח <span style="text-decoration: underline;">שלא קיימת</span> מנה של שני טבעיים שהריבוע שלה הוא $latex {2}$. בלשון ימינו אומרים שהוא מצא שהשורש של $latex {2}$ איננו רציונלי. כלומר השורש של $latex {2}$ גם הוא סוג של מספר, אך הוא שונה מהמספרים שהכירו עד אז. למספרים שהכירו עד אז שהם מנה של שני שלמים קוראים רציונליים ולמספרים כמו שורש $latex {2}$ שאינם כאלה קוראים אי-רציונליים.
+</p>
+
+<p style="direction: rtl;">
+  איך גמלו להיפאסוס על הישגו? לא בהערכה רבה. לפי אחת האגדות הוא גורש מהאסכולה ולפי אחרת הוא הוצא להורג. אולי בצדק. הרי במקום לבצע את המשימה, הוא מצא תירוץ לא לעשותה. הרי גם בימינו מצפים לעשייה ולעמידה במשימה ולא להתחמקות. אבל דווקא הוכחה שמשימה היא בלתי אפשרית נחשבת לעתים כהישג חשוב לא פחות מביצוע המשימה ולפעמים אף יותר. מדוע? כי באופן מפתיע דווקא הוכחות שדבר הוא בלתי אפשרי נוטות להיות יותר יצירתיות ויותר מחכימות. על מנת להוכיח שמשימה שהוטלה עלי בלתי אפשרית, לא מספיק שאגיד "אני לא עושה ובכך מוכיח שאי-אפשר". אני צריך להראות שחוסר ההצלחה שלי נבע ממשהו מעבר לעצלות שלי או לחוסר התושייה שלי. עלי לקחת בחשבון את כל האפשרויות שעמדו בפני ולהראות שבכולן כולן הייתי נכשל במשימה. וזה דורש לא מעט כושר הפשטה, כי עלי לחשוב בעת ובעונה אחת על אפשרויות רבות. לפעמים אף קורה שכאשר מגלים שדבר מה במתמטיקה הוא בלתי אפשרי, התגלית הזו פותחת דלת לתחום חדש בעל שימושים מפתיעים.
+</p>
+
+<p style="direction: rtl;">
+  אחת הדרכים להראות שדבר הוא בלתי אפשרי היא בדרך השלילה. אני מניח שהדבר אפשרי ואז מסיק מזה בדרך כלשהי סתירה משהו שלא יכול להיות. וכאן נכנס הדבר שהופך הוכחות של אי אפשרות לכל כך יצירתיות. אפשר לחפש את הסתירה בכל מקום שרוצים. ואכן ישנן הוכחות רבות ששורש $latex {2}$ איננו רציונלי. כל אחת מהן מוצאת את הסתירה במקום אחר. מה שנראה כאן הוא איך להשתמש לצורך כך ברעיון לא צפוי: קיפולי נייר. מקור ההוכחה שניתן כאן היא ככל הנראה במתמטיקאי ג'ון קונווי (John Conway)  מאוניברסיטת פרינסטון.
+</p>
+
+<p style="direction: rtl;">
+  בואו נעזוב רגע בצד את השורשים ואת הרציונליים וננסה את האתגר הבא: נותנים לנו משולש מנייר ואנחנו רוצים בעזרת קיפולי נייר ליצור משולש קטן יותר שדומה למשולש המקורי, כלומר עם אותן שלוש זוויות אבל אורך הצלעות קטן יותר ביחס קבוע. יש כמה דרכים לעשות את זה, אבל אנחנו נתמקד כאן בשני סוגים של משולשים שעבורם אפשר לעשות את זה על-ידי קיפול יחיד:
+</p>
+
+<p style="direction: rtl;">
+  1. משולשים ישרי זווית,
+</p>
+
+<p style="direction: rtl;">
+  2. משולשים שווי שוקיים שבהם אורך השוקיים ארוך מהבסיס.
+</p>
+
+<p style="direction: rtl;">
+  במקרה של משולש ישר זווית, נגזור את צורתו מנייר ונניח על שולחן. נתחיל לבצע את הקיפול בזה שנעביר אחד הניצבים ( $latex {BC}$ בציור כאן) כך שהוא מונח בדיוק מעל היתר ($latex {AB}$ בציור כאן). נחזיק את הניצב הזה במקום הזה ונלחץ בעדינות על כל המשולש לתוך השולחן. אז נוצר קטע ( $latex {BB'}$ בציור כאן). אם נפתח בחזרה את המשולש ניראה שהקטע החדש שיחסית אליו התבצע הקיפול הוא למעשה חוצה הזווית של $latex {\angle ABC}$.  כעת המשולשים $latex {ABC}$ ו-$latex {AB'C'}$ הם דומים.  בשניהם זווית ישרה ולשניהם אותה זווית בקודקוד $latex {A}$, לכן הם דומים.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-1532" src="http://net-gar.net/wp-content/uploads/2014/09/Angle1-300x191.png" alt="Angle1" width="300" height="191" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <strong>איור1: קיפול ישר זווית</strong>
+</p>
+
+<p style="direction: rtl;">
+  במקרה של משולש שווה שוקיים, שבו אורך השוקיים ארוך מהבסיס נקפל במשולש הגזור מנייר את אחת השוקים (בציור זה השוק $latex {AC}$) על עצמה, תוך שהקודקוד שאינו בשוק זו (קודקוד $latex {B}$ בציור) נשאר במקומו. הקיפול יוצר זווית ישרה בנקודה על השוק שקופלה (נקודה $latex {E}$ בציור) והקודקוד $latex {A}$ נוחת בקיפול על נקודה אחרת על השוק (נקודה $latex {D}$ בציור). אם נפתח חזרה את הנייר, נראה שהקטע $latex {BE}$ שיחסית אליו התבצע הקיפול הוא למעשה הגובה מהקודקוד $latex {B}$ לשוק $latex {AC}$. המשולשים $latex {ABC}$  ו- $latex {ADB}$ שניהם שווי שוקיים ולשניהם אותה זווית בקודקוד $latex {A}$, ולכן הם דומים.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-1533" src="http://net-gar.net/wp-content/uploads/2014/09/Angle11-296x300.png" alt="Angle1" width="296" height="300" />
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  <strong>איור 2: קיפול שווה שוקיים</strong>
+</p>
+
+<p style="direction: rtl;">
+   עכשיו הזמן להכניס את ההנחה ששורש $latex {2}$ הוא מספר רציונלי ונראה איך זה מביא לסתירה. אנחנו מניחים ששורש $latex {2}$ הוא מספר רציונלי, כלומר הוא מנה של שני מספרים שלמים, כלומר יש משולש ישר זווית ושווה שוקיים שכל צלעותיו באורך שהוא מספר שלם של מילימטרים. כעת נבצע על המשולש הזה קיפול ישר זווית (המשולש הזה אמנם גם שווה שוקיים, אבל אי אפשר לבצע עליו קיפול שווה שוקיים כי הבסיס ארוך יותר מהשוקיים) בואו נתבונן כעת באיור 1. אנחנו יודעים שאורך כל אחת מהצלעות $latex {AB}$, $latex {BC}$, $latex {AC}$ הוא שלם (כלומר מספר שלם של מילימטרים). אנחנו יודעים שהצלע $latex {BC}$ נוחתת אחרי הקיפול על הקטע $latex {BC'}$ ולכן גם האורך של הקטע הזה הוא שלם. מכאן שגם האורך $latex {AC' = AB-BC'}$ הוא שלם. עכשיו בואו ניזכר שהמשולש $latex {AB'C'}$ דומה למשולש $latex {ABC}$ ומכיוון שבמשולש $latex {ABC}$מתקיים $latex {AC = BC}$ אותו דבר קורה גם במשולש $latex {AB'C'}$ כלומר $latex {AC' = B'C'}$, כלומר קיבלנו שגם האורך $latex {B'C'}$ הוא שלם. עכשיו הזמן שוב להשתמש במסקנות מהקיפול. הקטע $latex {B'C}$ נחת בקיפול על הקטע $latex {B'C'}$ ולכן גם לו יש אורך שלם. ולבסוף, גם האורך  $latex {AB' = AC-B'C}$  הוא שלם. לסיכום קיבלנו שגם המשולש $latex {AB'C'}$ מורכב משלוש צלעות שאורך כל אחת מהן הוא מספר שלם של מילימטרים.
+</p>
+
+<p style="direction: rtl;">
+  אז איפה הסתירה כאן? הסתירה היא שלא צריך לעצור כאן. אפשר לקחת את המשולש הקטן $latex {AB'C'}$ ולבצע עליו את אותו קיפול ושוב לקבל משולש דומה לו  $latex {AB"C"}$ שהוא יותר קטן אבל עדיין כל אורך כל אחת מהצלעות הוא מספר שלם של מילימטרים. ואפשר לחזור על זה שוב ושוב ושוב עד אינסוף. נקבל משולשים קטנים יותר ויותר אבל כולם באורך שהוא מספר שלם של מילימטר. אבל זה לא יכול להיות. אי אפשר למצוא סדרה אינסופית של מספרים טבעיים שיורדת עוד ועוד. בשלב כלשהו נהיה חייבים להגיע לאורכים של פחות ממילימטר, וזה עומד בסתירה למה שהראינו עכשיו שכל הזמן נשמרת התכונה שאורך כל אחת מהצלעות היא מספר שלם (וחיובי כמובן) של מילימטרים.
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-medium wp-image-1535" src="http://net-gar.net/wp-content/uploads/2014/09/Angle12-300x215.png" alt="Angle1" width="300" height="215" />
+</p>
+
+<p style="direction: rtl;">
+  בזה למעשה סיימנו את ההוכחה ששורש $latex {2}$ איננו רציונלי. אבל אם הגענו עד הנה עם הרעיון הזה של קיפולי נייר, בואו ננסה להוכיח איתו עוד דברים. הדבר הבא שנוכיח הוא שחתך הזהב הוא אי-רציונלי. חתך הזהב הוא פתרון המשוואה $latex { x - \frac{1}{x} = 1}$ יש למשוואה שני פתרונות, אבל אנחנו מעוניינים בחיובי מביניהם. כדאי לציין שיתכן שדווקא חתך הזהב היה המספר הראשון שלגביו הוכיח היפאסוס שהוא אי-רציונלי. למעשה אפשר לפתור את המשוואה הריבועית ולחשב $latex {(\sqrt{5} +1)/2}$. לכן ברגע שנוכיח ש- $latex {x}$ הוא אירציונלי, נוכיח שגם $latex {\sqrt{5}}$ הוא אי-רציונלי.
+</p>
+
+<p style="direction: rtl;">
+  אז כמו קודם נניח בשלילה ש- $latex {x}$ רציונלי, כלומר יש שני מספרים שלמים $latex {a,b}$ כך ש- $latex {x = b/a}$. כעת ניצור משולש שווה שוקיים שבו אורך השוקיים בו הוא $latex {b}$ מילימטר ואורך הבסיס הוא $latex {a}$ מילימטר. עכשיו נבצע על המשולש קיפול שווה שוקיים. בואו נתבונן כעת באיור 2. במשולש $latex {ABC}$ היחס בין השוק לבסיס הוא $latex {x}$, ולכן גם במשולש הדומה לו $latex {ADB}$ היחס בין השוק לבסיס הוא $latex {x}$. קיבלנו אם כן, $latex {AD=a/x}$. כעת אפשר לחשב
+</p>
+
+<p style="direction: rtl;">
+   $latex {CD = b-AD = a(x - \frac{1}{x}) = a}$
+</p>
+
+<p style="direction: rtl;">
+  שזה אומר בין יתר הדברים שהאורך של $latex {CD}$ הוא מספר שלם של מילימטרים, ולכן גם האורך $latex {AC = b- CD}$ הוא מספר שלם של מילימטרים. ושוב חוזר אותו טיעון כמו בהוכחה הקודמת. היה לנו משולש שאורך כל צלע בו הוא מספר שלם של מילימטרים ויצרנו משולש קטן ממנו ודומה שגם בו אורך כל צלע הוא מספר שלם של מילימטרים ואנחנו יכולים להמשיך בתהליך הזה עוד ועוד וזה לא יכול להיות.
+</p>
+
+<p style="direction: rtl;">
+  בואו נעשה סיכום ביניים. הוכחנו שהשורשים של $latex {2}$ ושל $latex {5}$ הם לא רציונליים. מה לגבי השורשים של מספרים שלמים אחרים? יש שני כיוונים לחשוב על זה. או לנסות רעיון שונה לגמרי או לנסות לראות אם אפשר להכליל עוד את הרעיונות שהיו לנו עד עכשיו. יש המון רעיונות שונים לגמרי שעובדים, אבל בואו נישאר בקיפולי נייר ונראה אם אפשר בשינויים קטנים בהוכחות להשיג קצת יותר.
+</p>
+
+<p style="direction: rtl;">
+  לשם כך צריך לעבור שוב על ההוכחות ולמצוא בהן דברים שאפשר לשנות. נסתכל למשל על ההוכחה לעיל שחתך הזהב אינו רציונלי. היה לנו טיעון כזה "ידוע ש- $latex {AB}$ שלם וידוע $latex {CD=AB}$ ולכן $latex {CD}$ שלם". אבל לא היינו צריכים בשביל זה ש- $latex {CD=AB}$. מספיק היה אילו ידענו שאורך $latex {CD}$ שווה למספר שלם כפול $latex {AB}$. גם בהוכחה ששורש $latex {2}$ הוא אי-רציונלי היה דבר דומה. היה לנו טיעון שאמר "ידוע ש- $latex {AC'}$ שלם וידוע  $latex {B'C' = AC'}$, כלומר קיבלנו שגם האורך $latex {B'C'}$ הוא שלם." גם פה לא היינו צריכים את השיוויון $latex {B'C' = AC}$, והיה מספיק אילו ידענו ש-$latex {B'C' = nAC}$, עבור מספר $latex {n}$ שלם מסוים. עוד דבר שאפשר לשים לב אליו בהוכחה הוא שקודם מסיקים ש- $latex {B'C'}$ שלם ואחר-כך מסיקים ש- $latex {AB'}$  שלם. אילו היינו יכולים בדרך כלשהי להסיק ישירות ש- $latex {AB'}$ שלם היינו יכולים להפוך את סדר החישובים ולהסיק ש- $latex {B'C'}$ שלם. במשפטים הבאים נוציא לפועל את כל הרעיונות הללו.
+</p>
+
+<p style="direction: rtl;">
+  <strong>משפט: לכל מספר $latex {n}$</strong><strong> טבעי, הפתרון החיובי למשואה $latex {x - \frac{1}{x} = n}$</strong><strong> </strong><strong> איננו רציונלי.</strong>
+</p>
+
+<p style="direction: rtl;">
+   <strong>הוכחה: </strong>נניח בשלילה ש- $latex {x}$ רציונלי, כלומר יש שני מספרים שלמים $latex {a,b}$ כך ש- $latex {x = b/a}$. כעת ניצור משולש שווה שוקיים שבו אורך השוקיים בו הוא $latex {b}$ מילימטר ואורך הבסיס הוא $latex {a}$ מילימטר. עכשיו נבצע על המשולש קיפול שווה שוקיים. כדאי עכשיו להתבונן באיור 2. במשולש $latex {ABC}$ היחס בין השוק לבסיס הוא $latex {x}$, ולכן גם במשולש הדומה לו $latex {ADB}$ היס בין השוק לבסיס הוא $latex {x}$. קיבלנו $latex {AD=a/x}$. ואפשר לחשב
+</p>
+
+<p style="direction: rtl;">
+  $latex {CD = b-AD = a(x - \frac{1}{x}) = na}$
+</p>
+
+<p style="direction: rtl;">
+  כלומר האורך של $latex {CD}$ הוא מספר שלם של מילימטרים, ולכן גם האורך $latex {AD=b-CD}$  הוא מספר שלם של מילימטרים. ושוב יצרנו משולש דומה למקורי אבל קטן ממנו שגם בו אורך כל צלע הוא מספר שלם של מילימטרים ואנחנו יכולים להמשיך בתהליך הזה עד אינסוף ולהגיע לסתירה.
+</p>
+
+<p style="direction: rtl;">
+  <strong>הערה: </strong>אפשר לפתור את המשוואה ולקבל $latex {x = \frac{\sqrt{4+n^2}+n}{2}}$ , כך שלמעשה הוכחנו ששורש של מספר מהצורה $latex {n^2 +4}$ לעולם איננו שלם.
+</p>
+
+<p style="direction: rtl;">
+  <strong>משפט: לכל מספר $latex {n}$</strong><strong> טבעי, השורש של המספר $latex {n^2 +1}$</strong><strong> איננו רציונלי.</strong>
+</p>
+
+<p style="direction: rtl;">
+  <strong>הערה: </strong>למעשה אפשר להוכיח את המשפט הזה כמסקנה מהמשפט הקודם בלי קיפולי נייר בכלל, אבל נשאיר את זה כאתגר לקורא וניתן הוכחה עם קיפולי נייר.
+</p>
+
+<p style="direction: rtl;">
+  <strong>הוכחה:</strong> נשים לב שלפי משפט פיתגורס, אם במשולש ישר זווית אורך אחד הניצבים הוא פי $latex {n}$ מהניצב השני, אזי אורך היתר הוא פי שורש של $latex {n^2 +1}$ מהניצב הקצר. אם מניחים שהשורש הזה הוא שלם, אזי אפשר ליצור משולש כזה שבו אורך כל הצלעות הוא מספר שלם של מילימטרים. כעת נבצע קיפול ישר זווית כמו באיור 1, אבל בניגוד לאיור, הניצב $latex {BC}$ הוא הארוך יותר במקרה שלנו. הצלע $latex {BC}$ נוחתת אחרי הקיפול על הקטע $latex {BC'}$ ולכן גם האורך של הקטע הזה הוא שלם. מכאן שגם האורך $latex {AC' = AB-BC'}$  הוא שלם. עכשיו בואו ניזכר שהמשולש $latex {AB'C'}$ דומה למשולש $latex {ABC}$ ומכיוון שבמשולש $latex {ABC}$ מתקיים $latex { nAC=BC}$ אותו דבר קורה גם במשולש $latex {AB'C'}$  כלומר  $latex {nAC'=B'C'}$, כלומר קיבלנו שגם האורך $latex {B'C'}$ הוא שלם. הקטע $latex {B'C}$ נחת בקיפול על הקטע $latex {B'C'}$ ולכן גם לו יש אורך שלם. ולבסוף, גם האורך $latex {AB' = AC-B'C}$ הוא שלם. לסיכום קיבלנו שגם המשולש $latex {AB'C'}$ מורכב משלוש צלעות שאורך כל אחת מהן הוא מספר שלם של מילימטרים, וכשחוזרים על זה שוב ושוב זה מוביל לסתירה.
+</p>
+
+<p style="direction: rtl;">
+  <strong> </strong><strong>משפט: לכל מספר $latex {n}$</strong><strong> טבעי, השורש של המספר $latex {n^2 -1}$</strong><strong> איננו רציונלי.</strong>
+</p>
+
+<p style="direction: rtl;">
+  <strong style="font-size: 13px;">הוכחה:</strong><span style="font-size: 13px;"> נשים לב שלפי משפט פיתגורס, אם במשולש ישר זווית אורך היתר הוא פי $latex {n}$ מאחד הניצבים, אזי אורך הניצב השני הוא פי שורש של $latex {n^2 -1}$</span><span style="font-size: 13px;"> מהניצב הראשון. אם מניחים שהשורש הזה הוא שלם, אזי אפשר ליצור משולש כזה שבו אורך כל הצלעות הוא מספר שלם של מילימטרים. כעת נבצע קיפול ישר זווית כמו באיור 1, כלומר $latex {AB = nAC}$</span>. כמו קודם האורך של $latex {BC'}$ הוא שלם כי $latex {BC=BC'}$, וגם האורך $latex {AC' = AB-BC'}$ הוא שלם. המשולש $latex {AB'C'}$  דומה למשולש $latex {ABC}$ ומכיוון שבמשולש $latex {ABC}$ מתקיים $latex { nAB=AC}$ אותו דבר קורה גם במשולש $latex {AB'C'}$ כלומר $latex { AB' = nAC' }$, כלומר קיבלנו שגם האורך $latex {AB'}$ הוא שלם. כעת נחשב
+</p>
+
+<p style="direction: rtl;">
+   $latex {B'C' = B'C = AC-AB'}$
+</p>
+
+<p style="direction: rtl;">
+  ולכן גם האורך הזה הוא מספר שלם של מילימטרים. שוב קיבלנו שגם המשולש $latex {AB'C'}$ מורכב משלוש צלעות שאורך כל אחת מהן הוא מספר שלם של מילימטרים, וכשחוזרים על זה שוב ושוב זה מוביל לסתירה.
+</p>
+
+<p style="direction: rtl;">
+  הערה: מאמר זה מבוסס על מאמר של המחבר השלישי, המופיע בכתובת
+</p>
+
+<p style="direction: rtl;">
+  http://www2.math.technion.ac.il/~mcwikel/paperfold.pdf
+</p>
+
+<p style="direction: rtl;">
+  המאמר המקורי מכיל נושאים נוספים.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/09/30/biological-clocks-synchronization/">&laquo; סינכרון שעונים ביולוגיים</a>
+    
+    
+      <a class="next" href="/2014/09/30/editor-8/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/09/30/proving-irrationality-of-integer-squares-using-origami/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

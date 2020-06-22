@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-22T16:29:26+03:00</updated><id>/feed.xml</id><title type="html">נטגר</title><subtitle>עיתון מתמטי לנוער</subtitle><entry><title type="html">דבר העורך</title><link href="/2015/11/30/editor-21/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-30T22:03:13+02:00</published><updated>2015-11-30T22:03:13+02:00</updated><id>/2015/11/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-21</id><content type="html" xml:base="/2015/11/30/editor-21/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. פעם היו מלמדים זאת בבית ספר תיכון - האם אתם מאמינים? השני הוא תרומה של אנה ליזהטוב (כבר אמרנו: אם היא לא הייתה קיימת היה צריך להמציא אותה), על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה. זהו תחום שנדמה שיש בו ניחוח פילוסופי אבל מי שמבין אותו באמת יודע שבדיוק ההפך, הוא מראה שהחשיבה האנושית היא חלק מן העולם הפיזיקלי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ועכשיו אני רוצה לשתף אתכם במחשבותי. אנחנו רוצים לעשות פסק זמן, כדי לחשוב לאן הוליך את העיתון. חברי המערכת מרגישים לפעמים כקול קורא במדבר. לפי כמות התגובות שמגיעות (כלומר, לא מגיעות), ולפי כמות החידות שנפתרות (כלומר, לא נפתרות, לפחות לא שולחים לנו הרבה פתרונות) נראה שאין עניין רב. האם זוהי תוצאה של שינוי תרבותי כללי? או שמא אופי העיתון אינו מושך קוראים? האם תוכלו, הקוראים, לשלוח לנו את דעותיכם? לאן יש לקחת את העיתון? האם התדירות גבוהה מדי? האם נחוצים מאמרים יותר פופולריים, או להפך - יותר ספציפיים?
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בכל מקרה, זמנית אנחנו מפסיקים את הוצאת העיתון, עד שנגיע להחלטה בכיוון כלשהו. אנחנו נעדכן את הגיליון הזה בתגובותיכם. אנא עקבו לראות אם תגובותיכם התפרסמו.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ובינתיים - תודה לכל העושים במלאכה. אורי פרץ ומיכאל ליטבק, שהיו ממונים על הצדדים המחשוביים של הפרויקט. לדני לובזנס שערך את מדור החידות. יוסי כהן, שהיה האחראי והדוחף, אליהו לוי ואנה ליזהטוב שהתמידו כתורמי מאמרים, ולשאר המתמטיקאים שתרמו מזמנם ומן הידע שלהם.
+&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. השני הוא תרומה של אנה ליזהטוב על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה.</summary></entry><entry><title type="html">חישוב 2√</title><link href="/2015/11/30/computing-sqrt-2/" rel="alternate" type="text/html" title="חישוב 2√" /><published>2015-11-30T22:02:07+02:00</published><updated>2015-11-30T22:02:07+02:00</updated><id>/2015/11/30/%D7%97%D7%99%D7%A9%D7%95%D7%91-2e2889a</id><content type="html" xml:base="/2015/11/30/computing-sqrt-2/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כולנו מכירים את משפט פיתאגוראס, האומר שריבוע היתר במשולש ישר זווית שווה לסכום ריבועי הצלעות האחרות. המשפט הזה היה ידוע (כעובדה אמפירית לפחות) מאות שנים לפני פיתאגוראס, אך הוא היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע $latex A$ של ריבוע כלשהו ואורך האלכסון שלו $latex B$ אינם &lt;span style=&quot;text-decoration: underline;&quot;&gt;בני השוואה&lt;/span&gt; - כלומר, אין מספרים שלמים חיוביים $latex m$ ו-$latex n$ כך ש-$latex n\cdot A=m\cdot B$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם נקבע את יחידת האורך שלנו להיות יחידה אחת, ממשפט פיתאגוראס נמצא שריבוע אורך האלכסון בריבוע זה שווה ל-$latex 2$, ומכאן נקבל את הניסוח המודרני לתגלית של פיתאגוראס:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;משפט:&lt;/span&gt;&lt;/strong&gt; אין $latex p$ ו-$latex q$ שלמים חיוביים כך ש-$latex \sqrt{2}=p/q$ - כלומר, $latex \sqrt{2}$ אינו מספר רציונאלי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;הוכחה:&lt;/span&gt;&lt;/strong&gt; נניח בדרך השלילה שיש מספרים שלמים $latex p,q$ כאלה, ולכן מתקיים:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (1) \quad ~2q^{2}~=~p^{2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם יש ל-$latex p$ ו-$latex q$ גורם משותף $latex 1 \lt d$, אפשר לצמצמו, ולכן מותר להניח ש-$latex p$ ו-$latex q$ זרים. אך מ-(1) אנו רואים ש-$latex p^{2}$ זוגי, ולכן $latex p$ זוגי (מדוע?). נאמר ש-$latex p=2k$ עבור $latex k$ טבעי: אז
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex ,~2q^{2}~=~p^{2}~=~(2k)^{2}~=~4k^{2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כלומר $latex q^{2}=2k^{2}$, ולכן $latex q$ עצמו זוגי - בסתירה לכך ש-$latex p$ ו-$latex q$ זרים. ∎
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  למרות שאי-אפשר לבטא את $latex \sqrt{2}$ &lt;em&gt;במדוייק&lt;/em&gt; באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;span style=&quot;text-decoration: underline;&quot;&gt;&lt;strong&gt;השיטה:&lt;/strong&gt;&lt;/span&gt; יהי $latex x$ מספר רציונאלי חיובי כלשהו, ונניח למען הפשטות ש-$latex 1 \lt x$. אנו נבנה שתי סדרות $latex (a_{n})_{n=0}^{\infty}$ ו-$latex (b_{n})_{n=0}^{\infty}$ של קירובים רציונאליים חיוביים ל-$latex \sqrt{x}$, באופן שיתקיים:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right; padding-right: 15px;&quot;&gt;
+  (א) $latex a_{n}^{2} \lt x \lt b_{n}^{2}$ (כלומר, $latex a_{n} \lt \sqrt{x} \lt b_{n}$) לכל $latex n$ טבעי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right; padding-right: 15px;&quot;&gt;
+  (ב) $latex a_{n} \lt a_{n+1}$ ו-$latex b_{n} \gt b_{n+1}$ לכל $latex n$ טבעי (כלומר, כל סדרה מונוטונית).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right; padding-right: 15px;&quot;&gt;
+  (ג) $latex b_{n}-\sqrt{x} \lt \epsilon$, אז $latex \sqrt{x}-a_{n} \lt \epsilon$ ו-$latex b_{n+1}-\sqrt{x} \lt \epsilon/2$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;שימו לב:&lt;/span&gt;&lt;/strong&gt; שתי הדרישות הראשונות ביחד אומרות שהסדרה $latex a_{1},a_{2},a_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמטה, ואילו הסדרה $latex b_{1},b_{2},b_{3},\dotsc$ מקרבת את $latex \sqrt{x}$ מלמעלה. יתר על כן, שתי הסדרות האלה מונוטוניות - כלומר, בכל פעם הזוג $latex (a_{n+1},b_{n+1})$ הוא קירוב טוב יותר ל-$latex \sqrt{x}$ מאשר הזוג $latex (a_{n},b_{n})$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אולם אפשר למצוא שתי סדרות כאלה בלי להתאמץ הרבה: למשל, יכולנו לבחור בתור הקירובים ל-$latex \sqrt{2}$ &lt;em&gt;מלמטה&lt;/em&gt; את $latex 1, \ 1.1,\ 1.11,\ 1.111$, וכן הלאה, ובתור הקירובים ל-$latex \sqrt{2}$ &lt;em&gt;מלמעלה&lt;/em&gt; את $latex 2, \ 1.9,\ 1.89,\ 1.889$, וכן הלאה,
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מה שחסר בבחירות אלה הוא מה שנותנת דרישה (ג): שהסדרות אכן מתקרבות &lt;em&gt;כרצוננו&lt;/em&gt; ל-$latex \sqrt{x}$. זאת נקודה קצת עדינה, משום שאין לנו דרך לחשב את $latex \sqrt{x}$ עצמו ולהשוות אליו את הקירובים שלנו. אנו משתמשים איפוא במה שהיוונים כינו &lt;em&gt;שיטת המיצוי&lt;/em&gt;: אנו מייצרים שתי סדרות של קירובים, ודואגים לכך שסדרה אחת תמיד &lt;em&gt;קטנה&lt;/em&gt; מ-$latex \sqrt{x}$, והשניה תמיד &lt;em&gt;גדולה&lt;/em&gt; מ-$latex \sqrt{x}$. זה מה שאומרת דרישה (א): שימו לב שהיא מנוסחת באמצעות $latex x$ (שהוא מספר רציונאלי, לפי ההנחה), ואינה מזכירה את $latex \sqrt{x}$. בעצם אנו מנצלים כאן רק את העובדה שפונקציית ההעלאה הריבוע היא מונוטונית עבור מספרים אי-שליליים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם בנוסף לכך נבטיח שהקירובים מלמטה ומלמעלה &lt;em&gt;מתקרבים זה לזה כרצוננו&lt;/em&gt; - כפי שקורה בדרישה (ג) - הרי שמרחק כל אחד מהם מהמספר המבוקש $latex \sqrt{x}$ אינו יכול להיות גדול מההפרש בינהם.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;אפשר לנסח זאת כך&lt;/strong&gt;: אם אתה הולך ברחובות מוסקבה, מסתכל מלפניך ורואה קצין של הק.ג.ב, מסתכל מאחוריך ורואה קצין של הק.ג.ב. - אז לאן שהם הולכים, לך גם אתה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;span style=&quot;text-decoration: underline;&quot;&gt;&lt;strong&gt;יישום השיטה:&lt;/strong&gt;&lt;/span&gt; הבנייה נעשית באינדוקציה, החל מ-$latex a_{0}=1$ ו-$latex b_{0}=x$. בשלב ה-$latex n$ נגדיר
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (2) \quad ~b_{n+1}:=\frac{a_{n}+b_{n}}{2}\ \ \ \text{-ו} \ \ a_{n+1}:=\frac{x}{b_{n+1}}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שימו לב ש-$latex b_{n+1}$ הוא הממוצע &lt;em&gt;החשבוני&lt;/em&gt; של שני הקירובים הקודמים $latex a_{n}$ ו-$latex b_{n}$, ואילו הממוצע ההנדסי שלהם הוא $latex \sqrt{a_{n}\cdot b_{n}}=\sqrt{x}$ לכל $latex n$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מכיוון שלכל שני מספרים ממשיים חיוביים $latex a$ ו-$latex b$ מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle ,~a^{2}-2ab+b^{2}~=~(a-b)^{2}~\geq~0$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הרי ש-
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle ,~(a+b)^{2}~=~a^{2}+2ab+b^{2}~\geq~4ab$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לכן אם נחלק ב-$latex 4$ ונוציא שורש ריבועי נמצא ש-
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (3) \quad ,~\frac{a+b}{2}~\geq~\sqrt{ab}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כלומר, הוכחנו את העובדה הבאה המעניינת כשלעצמה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;משפט:&lt;/span&gt;&lt;/strong&gt; הממוצע החשבוני תמיד גדול או שווה לממוצע ההנדסי (ויש שוויון רק כאשר $latex a=b$).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מכאן נובע (א), כי $latex b_{n+1}:=\frac{a_{n}+b_{n}}{2} \gt \sqrt{a_{n}b_{n}}=\sqrt{x}$, ולכן $latex a_{n+1}:=\frac{x}{b_{n+1}} \lt \sqrt{x}$ לכל $latex n$. אבל אז בוודאי $latex b_{n+1} \lt b_{n}$, כי הממוצע של שני מספרים קטן מהגדול מבינהם; ולכן $latex a_{n+1} \gt a_{n}$ (על-ידי חלוקת $latex x$ באי-השוויון הקודם).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לבסוף, אם $latex b_{n}-\sqrt{x} \lt \varepsilon$, אז
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle ,~\sqrt{x}-a_{n}=\frac{\sqrt{x}}{b_{n}}(b_{n}-\sqrt{x}) \lt \frac{\sqrt{x}}{b_{n}}\cdot\varepsilon \lt \varepsilon$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ולכן
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle .~b_{n+1}-\sqrt{x}:=\frac{a_{n}+b_{n}-2\sqrt{x}}{2} \lt \frac{b_{n}-\sqrt{x}}{2} \lt \frac{\varepsilon}{2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;דוגמא:&lt;/span&gt;&lt;/strong&gt; עבור $latex x=2$ נקבל את הקירובים הבאים ל-$latex \sqrt{2}$:
+&lt;/p&gt;
+
+&lt;table style=&quot;direction: ltr; width: 90%;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex b_{0}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 2$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex a_{0}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1$
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex b_{1}=\frac{1+2}{2}=\frac{3}{2}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.5$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex a_{1}=\frac{2}{b_{1}}=\frac{4}{3}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.3333\dotsc$
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex b_{2}=\frac{3}{4}+\frac{2}{3}=\frac{17}{12}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.41666\dotsc$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex a_{2}=\frac{2}{b_{2}}=\frac{24}{17}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.4117647\dotsc$
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex b_{3}=\frac{17}{24}+\frac{24}{34}=\frac{577}{408}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.414215686\dotsc$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex a_{3}=\frac{2}{b_{3}}=\frac{816}{577}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.414211438\dotsc$
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex b_{4}=\frac{577}{816}+\frac{816}{1154}=\frac{665857}{470832}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.4142135623747\dotsc$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex a_{4}=\frac{2}{b_{4}}=\frac{941664}{665857}=$
+    &lt;/td&gt;
+    
+    &lt;td style=&quot;border: none;&quot;&gt;
+      $latex 1.414213562372\dotsc$
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בקירוב האחרון אנו רואים ש-$latex a_{4}$ ו-$latex b_{4}$ מסכימות עד לספרה ה-$latex 11$ אחרי הנקודה העשרונית - כלומר, ההפרש בינהם קטן מ-$latex 10^{-11}=0.00000000001$. בפרט זה אומר ששתים-עשרה הספרות הראשונות בפיתוח העשרוני של $latex \sqrt{2}$ הן
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle 1.41421356237$
+&lt;/p&gt;</content><author><name>[&quot;דוד בלנק&quot;]</name></author><summary type="html">פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה.</summary></entry><entry><title type="html">לוגיקה - לחשוב על החשיבה המתמטית</title><link href="/2015/11/30/logic-thinking-about-math-thinking/" rel="alternate" type="text/html" title="לוגיקה - לחשוב על החשיבה המתמטית" /><published>2015-11-30T22:01:44+02:00</published><updated>2015-11-30T22:01:44+02:00</updated><id>/2015/11/30/%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9C%D7%97%D7%A9%D7%95%D7%91-%D7%A2%D7%9C-%D7%94%D7%97%D7%A9%D7%99%D7%91%D7%94-%D7%94%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/2015/11/30/logic-thinking-about-math-thinking/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;a href=&quot;http://net-gar.net/%d7%9e%d7%94-%d7%96%d7%95-%d7%9c%d7%95%d7%92%d7%99%d7%a7%d7%94-%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%aa/&quot;&gt;בגיליון נטגר הקודם&lt;/a&gt; סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג'ורג' בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &quot;איך חושבים&quot;, אתם בוודאי חושבים לעצמכם, היא שאלה ערטילאית. מה זה &quot;איך חושבים&quot;? לגמרי לא ברור. אולי זוהי הסיבה שהלוגיקה הייתה רדומה כל כך הרבה זמן. צריך לפרוט זאת לשאלות קונקרטיות, ובול אכן עשה את הצעד הראשון: הוא הראה איך אפשר לעשות פורמליזציה לטענות מתמטיים פשוטות, שמכילות רק קשרים פשוטים בין טענות, כמו &quot;ו&quot; או &quot;או&quot;.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  זו הייתה חוליה נוספת בשרשרת של מהפכות שפרויד קרא להן &quot;מהפכות קופרניקאיות&quot;, כלומר כאלה שמשנות את תפיסת האדם את עצמו, מראיית עצמו כמרכז היקום להבנה שהוא אינו אלא חלק מן העולם הפיזיקלי, חלק שאולי מעניין במיוחד את עצמו אבל אינו ייחודי כפי שנדמה לו. פרויד הבחין בשלוש מהפכות קופרניקאיות. הראשונה היא הקוסמולוגיה של קופרניקוס עצמו, שהבין שכדור הארץ אינו מרכז היקום בשום מובן אפשרי. השנייה היא תורת האבולוציה של דרווין, שלימד אותנו כי אף אם האדם הוא החבר האינטליגנטי ביותר בממלכת החי, הוא כפוף לאותם חוקים שלהם מצייתים שאר חברי הממלכה. את המהפכה השלישית ייחס פרויד, שמעולם לא סבל מעודף צניעות, לעצמו. תורתו, הפסיכואנליזה, הבהירה שגם בממלכה האחרונה שנותרה לכאורה לשליטתו הבלעדית של האדם, נפשו שלו עצמו, אין הוא מלך יחיד. עמקי נפשו אינם נגישים לו יותר מאשר לסובבים אותו, וייתכן שדווקא את מאווייו שלו הוא מכיר פחות מאשר את העולם החיצוני.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  פרויד דיבר לראשונה על מהפכות קופרניקאיות ב-1914, בסדרת הרצאות שנשא באוניברסיטת וינה. אבל באותו זמן כבר החלו לנוע גלגליה של מהפכה רביעית, חשובה עוד יותר משלוש קודמותיה משום שהובילה להמצאת המחשב. זו הייתה התובנה שאפילו הדבר שנראה ייחודי מכל לאדם - החשיבה המופשטת, אינה אלא חלק מן העולם הפיזיקלי. מאמצע המאה התשע- עשרה החלה לחלחל ההבנה שגם החשיבה המופשטת אינה אלא תהליך פיזיקלי, כמו תנועתם של גופים או זרימה של מים. אפשר לתאר אותה במונחים מכאניים, והיא יכולה להיות גם נחלתה של מכונה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  באופן לא מפתיע, זרעיו של המפנה נזרעו באנגליה של המהפכה התעשייתית. בעקבות ניצחונן המוחץ של המכונות החלו הוגים לייחס מכאניוּת לכל תופעות העולם, ובהן האנושיות. מקצת ההוגים היו תיאורטיקנים, כמו קרל מרקס, שהחיל מושגים דטרמיניסטיים על תהליכים חברתיים, והיו גם שניסו ליישם זאת בפועל. המפורסם שבהם היה צ'רלס בבג' ($latex Charles ~~Babbage$), שנהוג לייחס לו את הבנייה (על הנייר) של המחשב הראשון. ב-1820 הוא פירסם תוכנית לבנייתה של מכונת חישוב שיתרונה הגדול הוא שהיא ניתנת לתכנות, ואפילו השיג מימון ממשלתי להרכבתה. את מלאכת ההרכבה המעשית לא השלים מעולם, אבל בסוף המאה העשרים הושלמה המלאכה במוזיאון המדע הבריטי, והתברר שבבג' לא רימה. המכונה פעלה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  את ניצחונה הגדול ביותר נחלה המהפכה המחשבתית הזאת דווקא במתמטיקה. החשיבה המתמטית היא המופשטת ביותר מבין סוגי החשיבה, אבל גם המאורגנת ביותר, ולכן אפשר לחקור אותה בצורה מתמטית. כאמור, הראשון שעשה זאת בצורה שיטתית היה ג'ורג' בול. הוא הראה איך לעשות פורמליזציה של טענות מתמטיות. ואכן, טענות מתמטיות הן לבני הבניין שמהן בונים מגדלים מתמטיים. אבל לבנים עדיין אינן יוצרות בית. נחוץ מלט שיחבר אותן למבנים בעלי משמעות. את התפקיד הזה ממלאות ההוכחות. הוכחות הן גולת הכותרת של הפעילות המתמטית. הן מוודאות מה נכון, אבל חשוב מכך, הן עדות להבנה. &quot;הוכחה לא נועדה להראות לנו שמשפט מתמטי הוא נכון. כוונתה להראות לנו למה הוא נכון,&quot; אמר המתמטיקאי האמריקני רלף בואז $latex (Ralph ~Boas)$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  היה זה פילוסוף-מתמטיקאי גרמני בשם גוטלוב פְרֶגֶה $latex (Gottlob~~ Frege)$ שעשה את הצעד האמיץ הבא: להראות שגם הוכחות אפשר לחקור בצורה מתמטית-פורמלית. הדבר הראשון שפרגה עשה היה להעשיר את השפה המתמטית. הוא הוסיף סימן ל&quot;לכול&quot;. הסימון שלו הוחלף מאז, וכיום משתמשים בסימון $latex \forall$, שהוא $latex A$ הפוכה, ונגזר מן המילה &quot;$latex All$&quot;, או &quot;$latex Alles$&quot; הגרמני. למשל, $latex \forall x(x \ge 0)$ אומר ש&quot;כל מספר גדול או שווה מ-$latex 0$&quot; – טענה נכונה במספרים הטבעיים. מאוחר יותר הוכנס גם סימון ל&quot;קיים&quot; – $latex \exists$, היפוכה של $latex E$, הגזורה מ-$latex Exists$. למשל, $latex \exists x(x \lt 1)$ אומר &quot;קיים מספר קטן מ-$latex 1$&quot; (שוב, טענה נכונה במספרים הטבעיים, משום שאכן קיים מספר כזה, הלוא הוא 0).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בשפה החדשה אפשר להביע כל טענה מתמטית מוכרת, ומכאן היה פרגה יכול להמריא למשימה הבאה: הגדרה מהי הוכחה. כל מי שראה מימיו הוכחות מתמטיות מכיר את התכונה העיקרית שלהן: הליניאריות. הן בנויות לבנה על גבי לבנה. זו היתה הגדרתו של פרגה ל&quot;הוכחה&quot;:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;הוכחה היא סדרה של טענות, שכל אחת נובעת מאלה שהופיעו לפניה.&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בכך אין חידוש גדול. האופי הנדבכי של הוכחות הוא כאמור עניין ידוע. תגליתו המפתיעה של פרגה היתה ש&quot;נביעה&quot; היא מושג פשוט. משחק ההוכחה אינו כה מסובך כפי שנדמה. הוא מתנהל בסך הכול על פי שני כללים. הכלל הראשון, שניסח כבר אריסטו, נקרא &quot;ניתוק רישא&quot;. אם בסדרת הטענות שמרכיבות את ההוכחה מופיעה, למשל, הטענה &quot;אם היום יום שלישי, אז יורד גשם&quot;, ומופיעה גם הטענה &quot;היום יום שלישי&quot;, אתם יכולים להוסיף בבטחה לסדרה את הטענה &quot;יורד גשם&quot;. אם הוכחתם &quot;אם א' אז ב'&quot; וגם הוכחתם את א', הרי הוכחתם את ב'.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הכלל השני אינו מסובך יותר, אבל הוא מפתיע במקצת. הוא נקרא &quot;הכללה&quot;, והוא אומר כך: נניח שהוכחתם ש-&quot;יוסי הוא בן תמותה&quot;, ונניח שלא השתמשתם בשום תכונה מיוחדת של יוסי מלבד היותו בן אדם. אם עשיתם זאת, הוכחתם בעצם שכל אדם הוא בן תמותה. הרי ההוכחה תקפה לכל אדם. בניסוח פורמלי, הכלל הוא זה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם בסדרת הטענות שמהווה הוכחה הגעתם לתכונה כלשהי (נקרא לה $latex P$) של עצם $latex x$, הרי אתם רשאים להוסיף לסדרת הנוסחאות נוסחה חדשה, שגם היא הוכחה בזאת: &quot;לכל $latex x$ מתקיימת התכונה $latex P$&quot;, ובסימון המתמטי – $latex \forall x P$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  למעשה, מבחינתנו לא חשוב מהם בדיוק כללי ההוכחה, אלא רק שהם פשוטים וספורים. פירוש הדבר הוא שמשחק ההוכחה פשוט מאוד. אם מגיע אליכם אדם ובידיו סדרת טענות שהוא אומר כי היא הוכחה, קל מאוד לבדוק זאת. לבנות הוכחה – זה כבר סיפור אחר. קל יותר לזהות עצם כ&quot;מחט&quot;, לאחר שהציגו אותו בפניכם, מאשר למצוא את המחט בערמת שחת.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כל אחד משני כללי ההיסק – ניתוק הרישא וההכללה – מוכיח נוסחאות על פי נוסחאות קודמות. אבל לא די בכך. כדור הארץ עומד כידוע על גבו של צב – אבל על מה עומד הצב? הרי צריך להתחיל ממקום כלשהו, מטענות שאינן נובעות מטענות קודמות. אלה הן האקסיומות, הנחות מוצא שעל יסודותיהן אפשר לבנות את הבניין. פרגה הגדיר כמה אקסיומות בסיסיות, שנכונות בכל תחום. למשל, &quot;אם היום יום שלישי אז היום יום שלישי&quot;, או בצורה פורמלית $latex \alpha \rightarrow \alpha$. &quot;כל דבר גורר את עצמו&quot;. או כלל אחר: אם לא נכון שלא נכון שהיום יום שלישי, אז היום יום שלישי. &quot;לא לא&quot; משמעו &quot;כן&quot;, ובניסוח פורמלי: $latex \sim\sim \alpha \rightarrow \alpha$. שפירושו &quot;אם לא נכון שלא $latex \alpha$ אז $latex \alpha$ נכונה&quot;.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נוסף על האקסיומות הכלליות, לכל תחום מתמטי יש האקסיומות המיוחדות לו. בגיאומטריה, למשל, האקסיומות יהיו טענות כמו &quot;דרך כל שתי נקודות עובר רק קו ישר אחד&quot; (את המילים האלה צריך לתרגם, כמובן, לנוסחאות). בתורת המספרים, כל מערכת אקסיומות סבירה תכיל בוודאי את האקסיומה שאם מוסיפים 0 למספר, הוא לא משתנה, ופורמלית - $latex \forall x (x+0=x)$. הגדרתו של פרגה להוכחה היא אפוא זו: הוכחה היא סדרת נוסחאות שכל אחת מהן היא או אקסיומה, או נובעת על פי אחד משני כללי ההיסק מנוסחאות קודמות. להשלמת ההגדרה נחוץ לומר עוד דבר אחד: מה מוכיחה סדרת הנוסחאות הזאת? פשוט: את הנוסחה האחרונה שבה, את &quot;שורת המחץ&quot;.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הרעיונות החדשים של פרגה היו כה מהפכניים, שאף אחד לא התייחס אליהם ברצינות. מישהו אחד שכן התייחס היה גיאורג קנטור, מהפכן בעצמו, שבנה במו ידיו את תורת הקבוצות המודרנית. הוא כתב על ספרו של פרגה מאמר קטילה. פרגה נעשה מר נפש ומסוגר. באחרית ימיו גם לקה באנטישמיות קשה (ייתכן שהיה לכך קשר לעובדה שקנטור היה יהודי). למזלה של המתמטיקה, הייתה לברטראנד ראסל האגלי בילדותו אומנת גרמנייה, ובזכותה הוא ידע גרמנית. כך הגיע, כעשרים שנים מאורח יותר, לקרוא את כתביו של פרגה. הוא הבין את חשיבות המהפכה החדשה, ופרסם אותה דרך ספר שכתב עם ידידו ומורו וויטהד ($latex Whitehead$). הספר, שנקרא &quot;עקרונות המתמטיקה&quot; ($latex Principia ~Mathematica$), היה נקודת מפנה. מאותו רגע הפכה הלוגיקה המתמטית לענף מרכזי. וזה היה פתח למהלכים מרחיקי לכת, שבסופו של דבר הובילו להמצאת המחשב.
+&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.</summary></entry><entry><title type="html">חידות</title><link href="/2015/11/30/riddles-13/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-30T22:00:35+02:00</published><updated>2015-11-30T22:00:35+02:00</updated><id>/2015/11/30/%D7%97%D7%99%D7%93%D7%95%D7%AA-13</id><content type="html" xml:base="/2015/11/30/riddles-13/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לחידות המוצגות בגיליון זה יפורסמו רמזים בגיליון הבא ופתרונות מלאים בזה שלאחריו. נשמח לקבל את פתרונותיכם באמצעות המקום המיועד לכך בתחתית העמוד עד &lt;strong&gt;24.12.2015 &lt;/strong&gt;, אנא ציינו את שמכם, היישוב בו אתם גרים, שם ביה&quot;ס שלכם והכיתה בה אתם לומדים. בגיליון הבא יפורסמו שמות הפותרים נכונה, וכן יובאו פתרונות יפים שייכתבו על ידכם.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1 –איך לחלק את העוגה המשולשת?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אורה ובני מחלקים ביניהם עוגה (שניתן להניח כי היא בגובה ומרקם אחיד, כך שכל אחד רוצה לקבל שטח גדול יותר של העוגה) לפי הכלל הבא: אורה בוחרת נקודה כלשהיא על גבי העוגה, ובני רשאי לחתוך את העוגה בקו ישר העובר דרך הנקודה שסימנה אורה אח&quot;כ בני בוחר לעצמו את אחד החלקים והשני ניתן לאורה. בני ואורה בוחרים את מיקום הנקודה וכוון הקו כדי לקבל מקסימום משטח העוגה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ברור שאם העוגה עגולה, הבחירה של אורה היא מרכז העיגול, וכל קו שיעביר בני יבטיח לו בדיוק חצי מהעוגה וגם אורה תקבל חצי עוגה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  החידה היא מה קורה כשלעוגה צורת משולש? מהי הנקודה הטובה ביותר שתבחר אורה? איך יעביר בני את קו החיתוך? בהנחה ששניהם עושים את הבחירות הטובות ביותר, איזה חלק מהעוגה יקבל בני ואיזה יישאר לאורה?
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2–איך ליצור רבוע מרבוע ומשולש?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3557&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles1_dec15.png&quot; alt=&quot;puzzles1_dec15&quot; width=&quot;511&quot; height=&quot;206&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נתון ריבוע ומשולש ישר זווית ושווה שוקים הקטן בשטחו משטח הרבוע. איך ניתן לחתוך את הרבוע ל3 חלקים ע&quot;י קוים ישרים, ואת המשולש ל2 חלקים ע&quot;י קו ישר אחד, ומחמשת החלקים להרכיב ריבוע?
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3– מה הדרך הקצרה של הנמלה לטיפת הדבש?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3558&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles2_dec15.png&quot; alt=&quot;puzzles2_dec15&quot; width=&quot;228&quot; height=&quot;220&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נתונה כוס זכוכית בעלת צורה גלילית, בקוטר 8 ס&quot;מ ובגובה 8 ס&quot;מ. על התחתית סמוך לדופן, בתוך הכוס, יש טיפת דבש. מחוץ לכוס, סמוך לתחתית, בנקודה המרוחקת ביותר מטיפת הדבש נמצאת נמלה. מה הדרך הקצרה ביותר של הנמלה לטיפת הדבש? מה אורכה?
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/h2&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  רמזים לחידות מגיליון נובמבר 2015
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1 – איך לחלק את המחרוזת?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  חברו את המחרוזת בקצותיה ליצירת מעגל. השתמשו בשיטה דומה לזו של הוכחת המקרה החד ממדי של משפט בורסוק-אולם המופיע ב&lt;a href=&quot;http://net-gar.net/%d7%98%d7%95%d7%a4%d7%95%d7%9c%d7%95%d7%92%d7%99%d7%94/&quot;&gt;מאמרו של רון אהרוני&lt;/a&gt; בגיליון אוקטובר 2015.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2– איך למצוא את הדרך הנכונה?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  יש למצוא דרך שהשאלה &quot;תעבור&quot; פעמיים דרך שני משיבים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3– סידור אבני דומינו?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כמה פעמים מופיע כל מספר?
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  פתרון החידות גיליון אוקטובר 2015
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1 –שמיכת טלאים&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הפתרון לחידה – שימו לב לשלשה הפיתגוריאנית $latex 13^2 = 12^2 + 5^2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3559&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles3_dec15-1024x430.png&quot; alt=&quot;puzzles3_dec15&quot; width=&quot;632&quot; height=&quot;265&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם היה אפשרי לפתור את החידה ע&quot;י חלוקת הרבוע הגדול ל 3 חלקים בלבד, הרי שבחלק אחד תהינה 2 פינות של הרבוע הגדול שהמרחק (האנכי או האופקי) ביניהן הוא 13 בעוד ברבוע הנוצר לאחר החלוקה המרחק המקסימלי הוא 12. תנו דעתכם שבבעיה זו ניתן לסובב את החלקים החתוכים בכפולות של 90 מעלות בלבד.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  את הפתרון ניתן להכליל לכל השלשות הפיתאגוריאניות מהצורה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex \displaystyle (2m^2 + 2m)^2 + (2m+1)^2 = (2m^2 + 2m + 1)^2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  השרטוטים הבאים מתארים את חלוקת הרבוע הגדול והרכבת רבוע שאורך צלעו קטן ב 1 משלשה החלקים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3560&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles4_dec15.png&quot; alt=&quot;puzzles4_dec15&quot; width=&quot;532&quot; height=&quot;496&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3566&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/sol1_last-drawing.jpg&quot; alt=&quot;sol1_last drawing&quot; width=&quot;414&quot; height=&quot;414&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2–איזו ספרה חסרה?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נחשב את המספר מודולו 9.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  קל לראות:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 2^2 = 4 \pmod{9}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 2^4 = 7 \pmod{9}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 2^8 = 4 \pmod{9}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 2^{16} = 7 \pmod{9}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מאחר ו: $latex 2^{29} = 2^{16} \cdot 2^8 \cdot 2^4 \cdot 2^1 = 7 \cdot 4 \cdot 7 \cdot 2 = 5 \pmod{9}$ ונתון שבתוצאה מופיעות כל הספרות פרט לאחת – הספרה החסרה היא 4 (סכום כל הספרות 1..9 הוא 0 מודולו 9).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3– איזה מספרים ניתן לרשום כסכום של רצף של מספרים טבעיים?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  להלן פתרונו של עומר שמחי (בתיקונים קלים):
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  פתרון: כל מספר שאינו חזקה אי שלילית של 2.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הוכחה:   ראשית נשים לב כי אם מספר הוא סכום של רצף טבעיים (לפחות שניים) אזי הוא מהצורה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex M = k + (k+1) + \dots + (k+n-1)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כאשר $latex k$ הוא המספר הטבעי הראשון ועוד $latex n-1$ מספר החוברים ברצף.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  קל לראות מסכום סדרה חשבונית ש:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex \displaystyle d = 1, a_1 = k \Rightarrow M = \frac{n \cdot (2k + 1 \cdot (n-1))}{2} = \frac{n \cdot (n + (2k-1))}{2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ראשית נראה כי כל מספר אי זוגי $latex M$ (שאינו 1 כמובן) ניתן להצגה כסכום רצף טבעיים:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex n=2 \Rightarrow M = 2k + 1, \forall k \in \mathbb{N}$ וזהו ביטוי לכל מספר אי זוגי גדול מאחד כמובן.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כעת נראה כי אם $latex M = 2^r, \forall r \in \mathbb{N} \cup \{0\}$ לא ניתן לבטא כסכום כנ&quot;ל:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נשווה: $latex 2^r = \frac{n \cdot (n + 2k - 1)}{2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אולם אם $latex n (\gt 2)$ אי זוגי אזי נקבל סתירה כי אז לחזקה של 2 אמור להיות מחלק אי זוגי גדול מ1, ואם $latex n$ זוגי אזי $latex n + 2k-1$ אי זוגי ושוב סתירה מאותה סיבה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לכן חזקה טבעית של 2 או המספר 1 לא ניתנים לייצוג כנ&quot;ל.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כעת נותר להוכיח שכל זוגי שאינו חזקה של 2, דהיינו: $latex M = 2^r t, t \equiv 1 \pmod{2}, r \in \mathbb{N}$ ניתן להצגה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כלומר, נחפש $latex n$ ו $latex k$ כך ש: $latex 2^r t = \frac{n \cdot (n + 2k - 1)}{2} \Leftrightarrow 2^{r+1} t = n \cdot (n + 2k - 1)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כעת, נפריד לשני מקרים:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (1): $latex t \gt 2^{r+1}$:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נציב: $latex n = 2^{r+1} \Rightarrow t = n + 2k - 1 = 2^{r+1} + 2k - 1$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  היות ש$latex k$ ניתן לבחירה חופשית, הרי שכל אי זוגי $latex t$ שמקיים את תנאי אי השיוויון כמובן יתקבל בצורה כזו.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (2): $latex t \lt 2^{r+1}$:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נבחר: $latex n = t \Rightarrow 2^{r+1} = n + 2k - 1= 2k + t -1 $
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ושוב היות ש$latex t$ אי זוגי ו$latex k$ ניתן לבחירה חופשית נקבל שוב שאפשר לקבל כל חזקה של 2 שמקיימת את אי השוויון בצורה כזו בבחירה מתאימה של $latex k$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מש״ל.
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שמות הפותרים נכונה את החידות מגיליון נובמבר 2015
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  תומר שני, חניתה, בי&quot;ס סולם צור כתה י&quot;ב – כל החידות!
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl;&quot;&gt;
+  [contact-form-7 id=&quot;463&quot; title=&quot;חידות&quot;]
+&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/2015/11/01/editor-20/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-01T11:46:35+02:00</published><updated>2015-11-01T11:46:35+02:00</updated><id>/2015/11/01/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-20</id><content type="html" xml:base="/2015/11/01/editor-20/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אחד הדברים היפים במתמטיקה הוא חיבור של תחומים שונים. בגיליון הנוכחי יש לנו דוגמה יפה לכך - פתרון בעיה קומבינטורית בעזרת טורי חזקות. הרעיון המקורי היה של אוילר, והוא נקרא &quot;פונקציות יוצרות&quot;. פרופ' רוס פינסקי מן הטכניון הסכים לכתוב מאמר על הנושא - אנחנו מקווים שתיהנו, וכמו כן אנחנו מקווים להוסיף מאמרי המשך בנושא בעתיד.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אנה ליזהטוב תרמה גם היא מאמר, על אחד מתחומי המתמטיקה החידתיים ביותר, הלוגיקה המתמטית. זוהי המתמטיקה של המתמטיקה, כלומר חקר מתמטי של החקירה המתמטית. מעניין, לא? ובמיוחד מעניין מה כבר אפשר לומר בנושא. מתברר שיש הרבה מאוד מה לומר.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ויש לנו גם ראיון עם מתמטיקאי - מן הדמויות המוכרות והצבעוניות ביותר בעולם המתמטי של ימינו - מתמטיקאי ישראלי המתגורר בארצות הברית, דורון ציילברגר. לדורון יש דעות נחרצות ומקוריות על &quot;מה זו מתמטיקה&quot;, ולאן מועדות פניה של&lt;br /&gt; המתמטיקה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בברכת הנאה,
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  העורך.
+&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">אחד הדברים היפים במתמטיקה הוא חיבור של תחומים שונים. בגיליון הנוכחי יש לנו דוגמה יפה לכך – פתרון בעיה קומבינטורית בעזרת טורי חזקות. אנה ליזהטוב תרמה גם היא מאמר, על אחד מתחומי המתמטיקה החידתיים ביותר, הלוגיקה המתמטית. ויש לנו גם ראיון עם מתמטיקאי – מן הדמויות המוכרות והצבעוניות ביותר בעולם המתמטי של ימינו – מתמטיקאי ישראלי המתגורר בארצות הברית, דורון ציילברגר.</summary></entry><entry><title type="html">חישוב מספרי Fibonacci בעזרת פונקציות יוצרות</title><link href="/2015/11/01/computing-fibonacci-using-generating-functions/" rel="alternate" type="text/html" title="חישוב מספרי Fibonacci בעזרת פונקציות יוצרות" /><published>2015-11-01T11:45:24+02:00</published><updated>2015-11-01T11:45:24+02:00</updated><id>/2015/11/01/%D7%97%D7%99%D7%A9%D7%95%D7%91-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99-fibonacci-%D7%91%D7%A2%D7%96%D7%A8%D7%AA-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%99%D7%95%D7%A6%D7%A8%D7%95%D7%AA</id><content type="html" xml:base="/2015/11/01/computing-fibonacci-using-generating-functions/">&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  1 ההגדרה של סדרת פיבונצ׳י
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  סדרת פיבונצ'י $latex \{f_n\}_{n=0}^\infty$ היא אחת הסדרות המפורסמות ביותר במתמטיקה. מגדירים $latex f_0=0$ ו-$latex f_1=1$, ואז עבור $latex n\ge2$, מגדירים את הסדרה לפי נוסחת נסיגה:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (1) \quad f_n=f_{n-1}+f_{n-2}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  במילים, כל איבר מתקבל כסכום שני קודמיו. לכן, למשל, $latex f_2=f_1+f_0=1+0=1$, $latex f_3=f_2+f_1=1+1=2$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שלושה עשר המספרים הראשונים בסדרת פיבונצ'י הם:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle 0,1,1,2,3,5,8,13,21,34,55,89,144$
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  2 פונקציות יוצרות
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי $latex f_n$ בסדרת פיבונצ'י. למטרה זו ננצל כלי הנקרא &lt;em&gt;פונקציות יוצרות&lt;/em&gt;. אבל תחילה, עלינו להזכיר מספר עובדות בנוגע לטור גיאומטרי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נתבונן בטור
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle \sum_{n=0}^\infty y^n=1+y+y^2+\cdots$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כאשר $latex y$ הוא מספר ממשי. טור נקרא &lt;em&gt;גיאומטרי &lt;/em&gt;כאשר היחס בין כל איבר לקודמו הוא קבוע, ואכן כך אצלנו: $latex \frac{y^{n+1}}{y^n}=y$ לכל $latex n$. נסמן
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle S_n=\sum_{i=0}^ny^i=1+y+y^2+\cdots +y^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מתקיים $latex yS_n=y(1+y+\cdots+y^n)=y+y^2+\cdots+y^{n+1}$. לכן,
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (1-y)S_n=S_n-yS_n=1-y^{n+1}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם $latex y\neq1$, נוכל לחלק ומתקבל $latex S_n=\frac{1-y^{n+1}}{1-y}$. אם $latex |y| \lt 1$, אז כש- $latex n$ שואף ל-$latex \infty$, $latex y^{n+1}$ שואף ל-0, ואנו מגיעים למסקנה כי אם $latex |y| \lt 1$ אז
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (2) \quad \sum_{n=0}^\infty y^n=\lim_{n\to\infty} S_n=\lim_{n\to\infty}\frac{1-y^{n+1}}{1-y}=\frac1{1-y}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אבל אם $latex y&amp;gt;1$, אז כש- $latex n$ שואף ל-$latex \infty$, $latex y^{n+1}$ שואף ל-$latex \infty$, ואנו מגיעים למסקנה כי
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle \sum_{n=0}^\infty y^n=\lim_{n\to\infty} S_n=\lim_{n\to\infty}\frac{y^{n+1}-1}{y-1}=\infty$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם $latex y=1$, ברור ש- $latex \sum_{n=0}^\infty y^n=\infty$. הקורא יכול לחקור את המקרה ש- $latex y \lt -1$; לא נצטרך את המקרה הזה כאן. כעת נציג את הכלי של פונקציות יוצרות. אנו בונים פונקציה $latex F(x)$ לפי הנוסחה
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (3) \quad F(x)=\sum_{n=0}^\infty f_nx^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כאשר $latex \{f_n\}_{n=0}^\infty$ היא סדרת פיבונצ'י. טור כזה נקרא &lt;em&gt;טור חזקות&lt;/em&gt;. מכיוון ש- $latex f_0=0$, מתקיים $latex F(x)=\sum_{n=0}^\infty f_nx^n=\sum_{n=1}^\infty f_nx^n$. שימו לב כי הטור שמגדיר את $latex F(x)$ אינו טור גיאומטרי; אכן היחס בין האיבר ה- $latex n$-י לאיבר ה-$latex (n+1)$-י בו הוא $latex \frac{f_{n+1}}{f_n}x=\frac{f_{n+1}x^{n+1}}{f_n x^n}$, וזה תלוי ב- $latex n$, כלומר אינו מספר קבוע.
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+   3 פרק לפדנטים שבינינו - מדוע טור החזקות מתכנס
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אנחנו נרצה לפעול על טור החזקות שבנוסחה (3), ואת הפעולות האלה צריך להצדיק. מתמטיקה, אחרי הכל, היא מקצוע מדויק!
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ברור שהפונקציה $latex x^n$ עולה עבור $latex x\ge0$; כלומר אם $latex x_2\gt x_1 \ge 0$,אז מתקיים $latex x_2^n&amp;gt;x_1^n$. לכן גם $latex F(x)$ היא פונקציה עולה עבור $latex x\ge0$ (כיוון ש- $latex f_n&amp;gt;0$ לכל $latex n$.) בפרט, אם $latex F(x_0)=\infty$, עבור איזה $latex x_0&amp;gt;0$, אז בהכרח $latex F(x)=\infty$ עבור כל $latex x \gt x_0$. או באופן שקול, אם $latex F(x_1) \lt \infty$, עבור איזה $latex x_1 \gt 0$, אז בהכרח $latex F(x) \lt \infty$, עבור כל $latex x$ המקיים $latex 0 \le x \lt x_1$. מזה נובע שאחת משלוש האפשריות הבאות בתוקף:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (1) קיים $latex R\ge0$ כך ש- $latex F(x) \lt \infty$, עבור $latex 0 \le x \lt R$, ו- $latex F(x)=\infty$, עבור $latex x \gt R$ (לא נדבר כאן מה קורה עבור $latex x=R$);
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (2) $latex F(x)=\infty$ עבור כל $latex x \gt 0$;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (3) $latex F(x) \lt \infty$ עבור כל $latex x\ge0$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  במקרה הראשון אנו מגדירים $latex R=0$ ובמקרה השלישי $latex R=\infty$. המספר $latex R$ נקרא &lt;em&gt;רדיוס ההתכנסות&lt;/em&gt; של טור החזקות. (אם $latex F(x) \lt \infty$, אנו אומרים שהטור &lt;em&gt;מתכנס&lt;/em&gt; עבור ה- $latex x$ הזה, ואם $latex F(x)=\infty$, אומרים שהטור &lt;em&gt;מתבדר&lt;/em&gt; עבור ה- $latex x$ הזה.) חשוב לציין שכל הנ&quot;ל נוגע למקרה שבו איברי הטור חיוביים; אחרת הסיפור יותר מסובך.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  תפקידנו הראשון הוא להראות ש- $latex R \gt 0$; אחרת כל הפעולות האלגבריות שנפעיל בהמשך תהיינה חסרות משמעות. (יש טורים עם $latex R=0$; כלומר טורים שאינם מתכנסים עבור אף $latex x \gt 0$; למשל $latex \sum_{n=1}^\infty n!x^n$.) בשלב הזה, נעשה חישוב גס כדי להראות ש- $latex R \gt 0$. (עד תום המאמר נקבל את $latex R$ במדויק.) הסדרה $latex \{f_n\}_{n=0}^\infty$ עולה; כלומר $latex f_{n+1} \gt f_n$ לכל $latex n$. (זה נראה מובן מאליו ואפשר להוכיח אותו באינדוקציה). אז $latex f_n=f_{n-1}+f_{n-2} \lt 2f_{n-1}$. לאור זה, איברי הסדרה $latex \{g_n\}_{n=0}^\infty$, המקיימת $latex g_0=0$, $latex g_1=1$, ו- $latex g_n=2g_{n-1}$, עבור $latex n\ge2$, הם גדולים מאיברי הסדרה המקורית $latex \{f_n\}_{n=0}^\infty$; כלומר, $latex g_n\ge f_n$, לכל $latex n\ge0$. (נסו להוכיח את זה באינדוקציה: מתקיים $latex g_0\ge f_0$ ו- $latex g_1\ge f_1$; כעת נניח ש- $latex g_n\ge f_n$ ובעזרת הנחה זו וההגדרות של הטורים ($latex f_n=f_{n-1}+f_{n-2},\ g_n=2g_{n-1}$), הוכיחו כי $latex g_{n+1}\ge f_{n+1}$.)
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מכיוון ש- $latex g_n\ge f_n\ge0$, על פי השוואה נובע שאם $latex \sum_{n=1}^\infty g_nx^n \lt \infty$, עבור איזה $latex x \gt 0$, אז בהכרח $latex \sum_{n=0}^\infty f_nx^n \lt \infty$ עבור אותו $latex x$. הסדרה $latex \{g_n\}_{n=1}^\infty$ פשוטה לחישוב: $latex \ g_3=2g_2=2^2\ ,g_2=2g_1=2 $ ובאופן כללי $latex g_n=2^{n-1}=\frac12 2^n$, עבור $latex n\ge1$. לכן מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle \sum_{n=0}^\infty g_nx^n=\sum_{n=1}^\infty g_nx^n=\sum_{n=1}^\infty \frac122^nx^n=\frac12\sum_{n=1}^\infty (2x)^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אבל זה טור גיאומטרי! לכן הטור מתכנס אם $latex |2x| \lt 1$, ואז בפרט עבור $latex 0 \le x \lt \frac12$. לכן, על פי השוואה, הטור שלנו גם הוא מתכנס עבור $latex 0 \le x \lt \frac12$. אז הוכחנו ש- $latex R\ge\frac12$; כלומר ש- $latex F(x) \lt \infty$ לפחות עבור $latex 0\le x \lt \frac12$.
+&lt;/p&gt;
+
+&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  4 ועכשיו לעיקר - איך מקבלים נוסחה למספרי פיבונצ'י מן הפונקציה היוצרת שלהם?
+&lt;/h2&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כעת נבצע כמה פעולות אלגבריות פשוטות שתובלנה לנוסחה מפורשת ל- $latex F$ (במקום במונחים של טור אינסופי). נכפול ב- $latex x^n$ בשני צדדי (1):
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (4) \quad f_nx^n=f_{n-1}x^n+f_{n-2}x^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  עכשיו נסכם את שני צדדי (4) על $latex n$ מ- 2 ל- $latex \infty$:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (5) \quad \sum_{n=2}^\infty f_nx^n=\sum_{n=2}^\infty f_{n-1}x^n+\sum_{n=2}^\infty f_{n-2}x^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (6) \quad \sum_{n=2}^\infty f_nx^n=\sum_{n=1}^\infty f_nx^n-f_1x=F(x)-f_1x=F(x)-x$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (7) \quad \sum_{n=2}^\infty f_{n-1}x^n=x\sum_{n=2}^\infty f_{n-1}x^{n-1}=x\sum_{n=1}^\infty f_nx^n=xF(x)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (8) \quad \sum_{n=2}^\infty f_{n-2}x^n=x^2\sum_{n=2}^\infty f_{n-2}x^{n-2}=x^2\sum_{n=0}^\infty f_nx^n=x^2F(x)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מ- (5)-(8) נובע כי $latex F(x)-x=xF(x)+x^2F(x)$; או
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (9) \quad (1-x-x^2)F(x)=x$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כאן המקום להזכיר כי אנו יודעים ש- $latex F(x) \lt \infty$ עבור $latex 0\le x \lt \frac12$.משום כך כל האלגברה הנ&quot;ל היא &quot;כשרה&quot; עבור $latex 0\le x \lt \frac12$. וכך קיבלנו נוסחה ל-$latex F(x)$:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (10) \quad sum_{n=0}^\infty f_nx^n=F(x)=\frac x{1-x-x^2}, \ 0\le x&amp;lt;\frac12$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם נדע לפתח את הפונקציה $latex \frac{x}{1-x-x^2}$ לטור חזקות, כלומר נדע את המקדמים, נדע את מספרי פיבונצ'י. מתברר שלא כל כך קשה לפתח את הפונקציה הזאת לטור חזקות. עושים זאת בעזרת שיטה שנקראת &lt;em&gt;שברים חלקיים&lt;/em&gt;.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הצעד הראשון בשיטה הזאת הוא לפרק את המכנה לגורמים ליניאריים. את זה אתם בוודאי יודעים לעשות - זה מצריך פתרון של המשוואה הריבועית $latex x^2+x-1=0$. לפי הנוסחה לפתרון משוואה ריבועית, השורשים של $latex x^2+x-1$ הם $latex \frac{-1 \pm\sqrt5}2$; נסמן
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle r^+=\frac{-1+\sqrt5}2\approx.618,\ \ r^-=\frac{-1-\sqrt5}2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  קל לחשב:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle r^-r^+=(\frac{-1-\sqrt5}2)(\frac{-1+\sqrt5}2)=-1$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  (הדבר נובע גם מנוסחת ויאטה &amp;#8212; מכפלת השורשים היא האיבר החופשי.)
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מכאן נובע ש: $latex (x-r^+)(x-r^-)=-r^-r^+(x-r^+)(x-r^-)=-(xr^-+1)(xr^++1)$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כעת נשתמש בשיטת השברים החלקיים כדי להציג את הפונקציה $latex \frac x{1-x-x^2}$ כטור חזקות עם מקדמים מפורשים. מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle x^2+x-1=(x-r^+)(x-r^-)=-(xr^-+1)(xr^++1)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לכן מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (11) \quad \frac x{1-x-x^2}=\frac x{(xr^-+1)(xr^++1)}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נרשום
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (12) \quad \frac x{(xr^-+1)(xr^++1)}=\frac \alpha{xr^-+1}+\frac \beta{xr^++1}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שיטת השברים החלקיים אומרת שבהכרח קיימים $latex \alpha$ ו-$latex \beta$ שמקיימים את השוויון הזה. ואמנם, אנחנו נמצא אותם. מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle \frac \alpha{xr^-+1}+\frac \beta{xr^++1}=\frac{x(\alpha r^++\beta r^-)+(\alpha+\beta)}{(xr^-+1)(xr^++1)}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לכן
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle \frac x{(xr^-+1)(xr^++1)}=\frac{x(\alpha r^++\beta r^-)+(\alpha+\beta)}{(xr^-+1)(xr^++1)}$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  על פי השוואת מקדמים, אפשר להסיק כי $latex \alpha r^++\beta r^-=1$ ו- $latex \alpha+\beta=0$. פותרים את שתי המשוואות האלה ומקבלים $latex \alpha=\frac1{r^+-r^-}=\frac1{\sqrt5}$ ו- $latex \beta=\frac1{r^-r^+}=-\frac1{\sqrt5}$. אנו מציבים עבור $latex \alpha$ ו- $latex \beta$ ב- (12) ומשתמשים ב- (11) כדי לקבל
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (13) \quad \frac x{1-x-x^2}=\frac1{\sqrt5}\Big(\frac1{1+xr^-}-\frac1{1+xr^+}\Big)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נתבונן ב- $latex \frac1{1+xr^-} = \frac1{1-(-xr^-)}$. אם נסמן $latex y=-xr^-$, נוכל ליישם את (2) ל- $latex \frac1{1+xr^-}$ אם $latex x$ מקיים $latex |-xr^-|&amp;lt;1$; כלומר, אם
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle |x| \lt \frac1{|r^-|}=\frac2{1+\sqrt{5}}=\frac{\sqrt{5}-1}2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  באופן דומה, אם נסמן $latex y=-xr^+$, נוכל ליישם את (2) ל- $latex \frac1{1+xr^+}$ אם $latex x$ מקיים $latex |-xr^+| \lt 1$; כלומר, אם
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle |x| \lt \frac1{|r^+|}=\frac2{-1+\sqrt{5}}=\frac{\sqrt{5}+1}2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מכיוון ש-$latex \frac{\sqrt{5}+1}2 \gt \frac{\sqrt{5}-1}2$, נוכל ליישם את (2) גם ל- $latex \frac1{1+xr^-}$ וגם ל- $latex \frac1{1+xr^+}$ עבור $latex x$ שמקיים $latex |x| \lt \frac{\sqrt{5}-1}2$. אז מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (14) \quad \frac1{1+xr^-}=\sum_{n=0}^\infty(-xr^-)^n=\sum_{n=0}^\infty(\frac{1+\sqrt5}2)^nx^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ו-
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (15) \quad \frac1{1+xr^+}=\sum_{n=0}^\infty(-xr^+)^n=\sum_{n=0}^\infty(\frac{1-\sqrt5}2)^nx^n$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מ- (13)-(15) אנו מגיעים למסקנה כי
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (16) \quad \frac x{1-x-x^2}=\sum_{n=0}^\infty\frac1{\sqrt5}\Big((\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n \Big)x^n, \ 0\le x \lt \frac{\sqrt{5}-1}2$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם נשווה את (10) ו- (16), נוכל להסיק ש:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle (17) \quad \sum_{n=0}^\infty f_nx^n=\sum_{n=0}^\infty\frac1{\sqrt5}\Big((\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)\Big)x^n,\ 0\le x \lt \frac12$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  עכשיו אנו מזכירים משפט יסודי מחדו&quot;א.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;em&gt;תהיינה $latex \{a_n\}_{n=0}^\infty$ ו- $latex \{b_n\}_{n=0}^\infty$ סדרות ויהא $latex C \gt 0$. נניח שטור החזקות $latex \sum_{n=0}^\infty a_nx^n$ מתכנס עבור $latex 0\le x \lt C$, ושמתקיים $latex \sum_{n=0}^\infty a_nx^n=\sum_{n=0}^\infty b_nx^n$, עבור $latex 0\le x \lt C$. אזי $latex a_n=b_n$ לכל $latex n$.&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מיישמים את המשפט הנ&quot;ל ל- (17), כאשר $latex a_n=f_n$, $latex b_n=\frac1{\sqrt5}\Big((\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)\Big)$ ו-$latex C=\frac12$; המסקנה היא שהנוסחה המפורשת עבור האיבר ה- $latex n$-י בסדרת פיבונצ'י היא
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle f_n=\frac1{\sqrt5}\Big((\frac{1+\sqrt5}2)^n-(\frac{1-\sqrt5}2)^n\Big)$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  עכשיו שיש בידינו נוסחה מפורשת ל- $latex f_n$, נוכל להראות בקלות שרדיוס ההתכנסות האמיתי של $latex \sum_{n=0}^\infty f_nx^n$ הוא $latex \frac2{1+\sqrt{5}}\approx.618$. אנו משאירים את זה לקורא - הטור $latex \sum_{n=0}^\infty f_nx^n$ הוא הפרש של שני טורים גיאומטריים. רצוי להדגיש כמה חשוב היה הצד הראשון בהוכחתנו - חישוב גס המראה שרדיוס ההתכנסות הוא חיובי אפשר לנו להפעיל את המשפט הנ&quot;ל עם $latex C=\frac12$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שימו לב כי $latex \frac{1+\sqrt5}2\approx1.618$ ו- $latex \frac{1-\sqrt5}2\approx-.618$.מכיוון ש- $latex \frac{1-\sqrt5}2 \lt 0$, הסימן של $latex (\frac{1-\sqrt5}2)^n$ מתחלף - שלילי עבור $latex n$ אי-זוגי וחיובי עבור $latex n$ זוגי. הרבה יותר חשוב, שימו לב כי לכל $latex n\ge0$ מתקיים
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  $latex \displaystyle |\frac1{\sqrt{5}}(\frac{1-\sqrt5}2)^n|\le \frac1{\sqrt{5}} \lt \frac12$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לכן, מכיוון ש- $latex f_n$ הוא מספר שלם, נובע כי $latex f_n$ הוא המספר השלם הקרוב ביותר ל- $latex \frac1{\sqrt5}(\frac{1+\sqrt5}2)^n$. למשל, חישוב במחשבון מגלה כי $latex \frac1{\sqrt5}(\frac{1+\sqrt5}2)^{50}\approx12586269024.99998$; לכן $latex f_{50}=12,586,269,025$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אכן הפונקציה $latex F(x)=\frac x{1-x-x^2}$ &quot;יצרה&quot; לנו את מספרי פיבונצ'י!
+&lt;/p&gt;</content><author><name>[&quot;רוס פינסקי&quot;]</name></author><summary type="html">סדרת פיבונצ’י היא אחת הסדרות המפורסמות ביותר במתמטיקה. במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי בסדרת פיבונצ’י בעזרת כלי הנקרא פונקציות יוצרות.</summary></entry><entry><title type="html">מה זו לוגיקה מתמטית</title><link href="/2015/11/01/what-is-mathematica-logic/" rel="alternate" type="text/html" title="מה זו לוגיקה מתמטית" /><published>2015-11-01T11:44:28+02:00</published><updated>2015-11-01T11:44:28+02:00</updated><id>/2015/11/01/%D7%9E%D7%94-%D7%96%D7%95-%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/2015/11/01/what-is-mathematica-logic/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מהי המתמטיקה?
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &quot;המדע של הצורה והמספר&quot;, אומרת אחת ההגדרות המפורסמות ביותר. כלומר - גיאומטריה ומספרים. האמנם? לא אנסה במאמר הזה להגדיר מהי המתמטיקה (כדאי שתנסו בעצמכם!) אבל אראה לכם בו שהטענה הזאת אינה נכונה. המאמר הזה הוא ראשון בסדרת מאמרים על תחום מתמטי שמפריך בקיומו את ההגדרה הזאת: הוא אינו עוסק לא בצורות ולא במספרים. זוהי הלוגיקה המתמטית - אחד החידתיים ביותר בין תחומי המתמטיקה. תחום שלא ברור איך יכולים בכלל להיאמר בו דברי טעם. אבל נאמרים, ועוד איך.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הלוגיקה המתמטית היא המתמטיקה של המתמטיקה. כפי שאיש משוואות דיפרנציאליות מסתכל בזרימה בצינורות, מוצא את המשוואות הדיפרנציאליות שעל פיהן הנוזלים בצינור מתנהגים ואחר כך חוקר את המשוואות האלה, כך הלוגיקאי מסתכל במתמטיקאים, כיצד הם יושבים במשרדיהם, מחדדים את עפרונותיהם, בוהים בלוח שלפניהם, מתגרדים בראשם - ועושים מתמטיקה. אכן, כפי שאתם יכולים לנחש, על החלק של הגירוד בפדחת הלוגיקאי מדלג. במקום זאת הוא מסתכל במה שהמתמטיקאי כותב במחברתו.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  במשך כאלפיים שנים אכן הייתה הלוגיקה המתמטית מקצוע דל ביותר. היחיד שהתייחס אליה ממש היה אריסטו, שקבע כמה כללי היסק. כלומר, כללים שבעזרתם אפשר להסיק ממשפטים מסוימים משפטים אחרים. המפורסם ביניהם היה &quot;ניתוק הרישא&quot;, או ביוונית &quot;מודוס פוננס&quot; (&quot;MODUS PONENS&quot;). הכלל הזה אומר שאם הצלחתם להוכיח ש&quot;אם היום יום שלישי אז חייב לרדת גשם&quot;, ובמקביל הצלחתם להוכיח גם ש&quot;היום יום שלישי&quot;, אתם יכולים להסיק ש&quot;היום יורד גשם&quot;. את המשפט &quot;אם $latex \ldots$ אז&quot; מסמנים בלוגיקה על ידי חץ:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex \alpha \to \beta$ פירושו &quot;אם $latex \alpha$ אז $latex \beta$&quot;. מיהם $latex \alpha$ ו-$latex \beta$? ובכן, כל שתי טענות. אפשר להציב במקומם כל טענות שתרצו. ניתוק הרישא אומר אם כן: אם הצלחתם להוכיח ש-$latex \alpha \to \beta$ וגם $latex \alpha$, הרי הוכחתם בזאת $latex \beta$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  חוכמה גדולה? לא נראה כך, לפחות ממבט ראשון. אבל כאן טמונים כבר הזרעים של מקצוע הלוגיקה. הרעיון הבסיסי, של להסתכל על המשפטים שהמתמטיקאים אומרים כעל מחרוזות של תווים (אותיות) ולשחק עם המחרוזות האלה על פי כללים קבועים וידועים, נמצא כבר כאן. הכללים האלה הם פורמליים, כלומר נוגעים למבנה המשפט (מה שנקרא בלוגיקה &quot;תחביר&quot;) ולא למשמעות המשפט.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ובכל זאת, איך ממשיכים? &quot;אי אפשר להמשיך&quot;, אמר הפילוסוף עמנואל קאנט בסביבות שנת 1800. &quot;על מה שאמר אריסטו על הלוגיקה אין להוסיף אפילו מילה אחת&quot;. קאנט הקדיש את כל הקריירה הפילוסופית שלו לעשות דבר אחד - להוכיח שמה שיש הוא בדיוק מה שצריך להיות. חוקי הגיאומטריה, כך אמר, אינם יכולים להיות שונים מאלה של הגיאומטריה האוקלידית: כחמישים שנים אחר כך יבהירו גאוס ובויוי שהגיאומטריה יכולה להיות שונה מאוד, וכעבור חמישים שנים נוספות יראה איינשטיין שהעולם מציית דווקא לחוקיה של גיאומטריה לא אוקלידית. קאנט ניסה להראות שחייבת להיות סיבתיות בעולם (אחרת לא נוכל בכלל לחשוב - והרי אנחנו חושבים), ושאת חוקי המוסר אפשר להסיק מכלל אוניברסלי (הוא התעלם מכך שחוקי המוסר של חברות שונות הם שונים מאוד). כך הוא גם טען שהלוגיקה של אריסטו היא בדיוק מה שצריך להיות - המילה האחרונה. אבל לא כדאי לקחת פילוסופים יותר מדי ברצינות כשהם מדברים על מתמטיקה. לא עברו חמישים שנים מאז שאמר קאנט את מה שאמר על הלוגיקה, וגלגליה של מהפכה לוגית החלו לנוע.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הצעד הראשון נעשה בידי לוגיקאי אנגלי בשם ג'ורג' בול. לבול לא היו חיים קלים. כנער נאלץ לפרנס את משפחתו בשיעורים פרטיים, וכך לא למד בצורה מסודרת בעצמו: הוא היה אוטודידקט. לאחר קריירה לא ארוכה מת בגיל כחמישים מדלקת ריאות, שהוחמרה בטיפולים של אמבטיות קרות בהמלצת אשתו שהאמינה ש&quot;התרופה צריכה להיות דומה לגורם למחלה&quot;.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3442&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/George_Boole_color.jpg&quot; alt=&quot;&quot; width=&quot;188&quot; height=&quot;252&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  ג׳ורג׳ בול, 1815 - 1864
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  על כל זאת פיצתה אותו אלת המתמטיקה במתנה גדולה: ייסוד תחום חדש. בול הבין שאפשר לחקור את הדרך בה מצרפים משפטים מתמטיים זה לזה, על ידי פעולות פשוטות. הפעולות הפשוטות ביותר הן &quot;או&quot; ו-&quot;ו&quot;, שמסומנות ב-$latex \vee$ ו-$latex \wedge$, בהתאמה. כך, $latex \alpha \vee \beta$ משמעה $latex \alpha$ או $latex \beta$, שהיא טענה נכונה (כך מגדירים) בתנאי שלפחות אחת משתי הטענות נכונות. הטענה $latex \alpha \wedge \beta$, לעומת זאת, נכונה (ושוב זה עניין של הגדרה) אם שתי הטענות נכונות. הסימן &quot;$latex \to$&quot; מסמן כאמור, גרירה, והטענה $latex \alpha \to \beta$ נכונה (כך מגדירים) אם $latex \beta$ נכונה, או $latex \alpha$ לא נכונה. במילים אחרות, הטענה $latex \alpha \to \beta$ אינה נכונה רק במקרה אחד: כאשר $latex \alpha$ נכונה ו-$latex \beta$ אינה נכונה. לשלילה מותאם הסימן $latex \sim$. $latex \sim \alpha$ משמעו &quot;לא נכון ש- $latex \alpha$&quot;.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  עתה אפשר לומר דברים מעניינים על הנוסחאות. למשל, שקילות בין נוסחאות. מה פירוש &quot;שקילות&quot;? שתי נוסחאות שמכילות משתנים לוגיים נקראות שקולות אם הן מקבלות אותו ערך אמת לכל הצבה של ערכים למשתנים. הנה שתי דוגמאות:
+&lt;/p&gt;
+
+&lt;li style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  1. הנוסחה $latex \sim \sim p$ שקולה לנוסחה $latex p$. פירוש הדבר הוא שבין אם $latex p$ מקבל ערך אמת &quot;נכון&quot; ובין אם הוא מקבל ערך אמת &quot;לא נכון&quot;, $latex p$ ו-$latex \sim \sim p$ מקבלות אותו ערך אמת (&quot;נכון&quot; אם $latex p$ נכון, ולא נכון אם לא.)
+&lt;/li&gt;
+&lt;li style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    2. $latex \sim (p \vee q)$ שקולה ל-$latex \sim p \wedge \sim q$. יש ארבע אפשרויות לבחירת ערכי אמת לשני המשתנים. בדקו שבכל אחת מהן שתי הנוסחאות מקבלות אותו ערך אמת. או, פשוט חישבו על המשמעות של &quot;לא נכון ש-א' או ב' &quot; ותיווכחו שפירושו שגם א' לא נכון, וגם ב' לא נכון. החוק הזה נקרא &quot;חוק דה מורגן&quot;.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    יש עוד חוק של דה מורגן - $latex \sim (p \wedge q)$ שקולה ל - למה? השלימו את החסר, ונסו גם להסיק את החוק השני מן הראשון, בעזרת החוק על $latex \sim \sim \alpha$.
+  &lt;/p&gt;
+&lt;/li&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  זו הייתה התקדמות גדולה - אמנם זה לא מורכב במיוחד, אבל יש כאן מהפכה מושגית. הסתכלות חדשה על המשחק המתמטי. המתמטיקאים, כך אמר בול, הם שחקנים שלוח המשחק שלהם הוא שרשראות של נוסחאות. והנכונות של נוסחה מורכבת מוגדרת על פי הנכונות של המרכיבים האטומיים שלה (אלה שאינם ניתנים לחלוקה) שלה - בדוגמאות שלעיל המרכיבים האטומיים היו $latex p$ ו-$latex q$.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ועדיין, רוב המתמטיקאים לא התרגשו. הם חיכו שדבר מה עמוק ייאמר על התורה החדשה. היו נחוצות עוד התפתחויות כדי שהתחום יגיע לבשלות. הראשונה בהן נעשתה ברבע האחרון של המאה התשע עשרה, בידי לוגיקאי בשם פרגה ($latex Gottlob~~Frege$). הוא עשה שני דברים מהותיים. האחד - הוא הוסיף ממד לנוסחאות, בדמות סימן חדש, שהוחלף מאז ב: $latex \forall$. הסימן הזה אומר &quot;לכל&quot;, והוא דורש משתנה: $latex \forall x$ משמעו לכל ערך של המשתנה $latex x$. למשל, בתורת המספרים אפשר לכתוב את הנוסחה $latex \forall x (x \ge 0)$ - שבאינטרפרטציה הרגילה של הסימן $latex \ge$ ושל הסימן $latex 0$ זוהי טענה נכונה (באינטרפרטציה הרגילה הסימן $latex 0$ מותאם למספר $latex 0$).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מאוחר יותר הוסיף מתמטיקאי בשם פאנו סימן נוסף - $latex \exists$, שמשמעו &quot;קיים&quot;. פרגה הסתדר בלעדיו - כיצד? הוא שם לב לכך שאת הטענה &quot;קיים משהו&quot; אפשר לבטא בעזרת &quot;לכל&quot;. &quot;קיים בארץ אדם שאוהב לשים חרדל על העוגה שלו&quot; שקול ל-&quot;לא כל אדם בארץ לא אוהב לשים חרדל על העוגה שלו&quot;. ובאופן כללי -
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הנוסחה  $latex \exists x (P(x))$ שקולה לנוסחה  $latex \sim(\forall x \sim P(x))$. כאן $latex P(x)$ היא תכונה כלשהי של המשתנה $latex x$ - למשל לאהוב עוגה עם חרדל.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אבל זה היה רק צעד ראשון של פרגה. היה לו צעד חשוב הרבה יותר - הוא הגדיר בצורה מדויקת מהי &quot;הוכחה מתמטית&quot;. וזה היה כבר באמת הישג גדול. אספר עליו במאמר הבא בסדרה.
+&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">מהי המתמטיקה? &quot;המדע של הצורה והמספר&quot;, אומרת אחת ההגדרות המפורסמות ביותר. המאמר הזה הוא ראשון בסדרת מאמרים על תחום מתמטי שמפריך בקיומו את ההגדרה הזאת: הוא לא עוסק לא בצורות ולא במספרים. זוהי הלוגיקה המתמטית - אחד החידתיים ביותר בין תחומי המתמטיקה.</summary></entry><entry><title type="html">ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג’רזי</title><link href="/2015/11/01/doron-zeilberger-interview/" rel="alternate" type="text/html" title="ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג'רזי" /><published>2015-11-01T11:43:21+02:00</published><updated>2015-11-01T11:43:21+02:00</updated><id>/2015/11/01/%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A2%D7%9D-%D7%93%D7%95%D7%A8%D7%95%D7%9F-%D7%A6%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%92%D7%A8-%D7%9E%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA-%D7%A8</id><content type="html" xml:base="/2015/11/01/doron-zeilberger-interview/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  פרופ' ציילברגר הוא מתמטיקאי ידוע ומוכר בשל הישגיו בתחום המנייה הקומבינטורית. אבל לא פחות מכך הוא מפורסם בשל פריצת הדרך שלו בכתיבת תוכניות מחשב שמגלות בעצמן משפטים מתמטיים, במיוחד זהויות קומבינטוריות. את דעתו, שבסופו של דבר המחשבים יוכלו למלא לא רק את מקומם של מחשבי חשבונות אלא גם של מתמטיקאים, הוא מפיץ בדרכים שונות. בראיון הזה ניסינו להתחקות אחרי התפתחותו כמתמטיקאי ולשמוע מעט מדעותיו.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;מתי נוכחת לדעת שאתה רוצה להיות מתמטיקאי?&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נולדתי בחיפה ב-1950, אך מייד עם היוולדי עברה המשפחה לקריית מוצקין. שם גרתי, עם הורי ועם אחי הצעיר, עד גיל 14, ואז עברנו לחולון. עד לכיתה ו' לא הייתי טוב במיוחד במתמטיקה, וגם לא אהבתי אותה במיוחד. הדברים השתנו בכיתה ז', שבה פגשתי במורה כריזמטית ומעוררת השראה בשם דבורה שגב, שעשתה את המתמטיקה לכיף.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כל קיץ נסעתי עם אחי הקטן (לבדנו!) לירושלים לבקר את &quot;דודה גיטי&quot; ובעלה, &quot;דוד הנס&quot;. דודי הנס, שהיה עורך דין, היה גם אסטרונום חובב, ובזכותו התחלתי לקרוא את עיתון האגודה הישראלית לחובבי אסטרונומיה. הייתי משוכנע שכאשר אגדל אהיה אסטרונום.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הדודים מירושלים היו &quot;יקים&quot;, וחתמו על עיתון גרמני בשם &quot;שטרן&quot;. אני הייתי מנסה את החידות המתמטיות שם, של השלמת ספרות בתרגילי חשבון. נעשיתי טוב מאוד בזה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בכיתה ח' היו שתי נקודות מפנה. האחת – קראתי את הספר &quot;מתמטיקה למיליון&quot; של הוגבן, מכריכה לכריכה, ולימדתי את עצמי את כל המתמטיקה שהייתה שם, כולל החשבון הדיפרנציאלי, גיאומטריית המישור והמרחב, וסטטיסטיקה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  עוד יותר חשוב מכך, בנו של הנס היה חתום על הסב-סבא של &quot;נטגר&quot;, &quot;גיליונות מתמטיקה&quot;, בעריכתו של פרופ' גיליס המנוח. היו שם הרבה מאמרים מרתקים, בחלקם הגדול כתובים בידי גיליס עצמו, ובמיוחד היו שם בעיות, שאותן ניסיתי לפתור, די בהצלחה. זו הייתה הנקודה שבה באמת התאהבתי במתמטיקה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בתיכון אהבתי מתמטיקה כל כך שהתעלמתי מכל שאר המקצועות. התמכרתי ל&quot;גיליונות מתמטיקה&quot;, וקראתי מאמרים מתקדמים במתמטיקה. כתוצאה מהזנחת המקצועות האחרים נזרקתי מבית הספר בכיתה י'. למגינת ליבם של הורי החלטתי לפתוח בקריירה של נער שליחויות. עשיתי זאת כשנה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אחרי השנה הזאת אבי, שהיה מורה לאנגלית, עשה שנת שבתון באוניברסיטת קיימברידג'. שם למדתי לבגרות אנגלית – למזלי באנגליה מותר היה להתמחות, ואני עשיתי בחינות רק במתמטיקה עיונית, מתמטיקה שימושית (בשתיהן הצלחתי) ובפיזיקה (שם עברתי בקושי).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כשחזרתי לארץ הייתה לי חצי שנת חופש לפני הגיוס, ואני ביקשתי מפרופ' גיליס שיקבלני לעבודת קיץ. למזלי הוא קיבל אותי, ואני הייתי אמור לעזור לתלמיד דוקטורט שלו בתכנות. לשם כך (למזלי, כפי שיתברר) למדתי את שפת התכנות פורטרן, אלא שמכיוון שעשיתי גם דברים מעבר למה שתלמיד הדוקטורט דרש הוא פיטר אותי. עברתי אז לעבוד עם נירה דין, לימים פרופסורית באוניברסיטת תל אביב, ויחד איתה ועם תלמיד מחקר אחר כתבנו מאמר שעבורי היה הראשון בקריירה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בפברואר 1969 התגייסתי לחיל התותחנים. שם השתמשתי בידע המתמטי שלי לחישוב מסלולי פגזים – בכך נכנסתי קצת לצרות, משום שחברי דבקו בשיטות גרפיות. בעת שירותי בסיני נרשמתי ללימודים בהתכתבות באוניברסיטת לונדון, וסיימתי את התואר שם, בהצטיינות, תוך כדי שירותי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  החלטתי לחזור למכון וייצמן, לעשות דוקטורט. בחרתי כמנחה בהרי דים, חבר סגל צעיר בפקולטה. סיימתי את הדוקטורט ארבע שנים אחר כך, בגיל 26, שהוא גיל צעיר לישראלי ששירת בצבא.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3438 &quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/Doron_Zeilberger_circa_2005-228x300.jpg&quot; alt=&quot;&quot; width=&quot;199&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;מהם הסיפוקים בחייו של מתמטיקאי? האם יש גם נקודות צל?&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    חברי סגל של אוניברסיטאות הם בעלי מזל: הם מקבלים משכורת לעשות מה שהם אוהבים. למי שאינו אוהב ללמד יש קצת בעיה, אבל אני, ואינני היחיד בכך, אוהב ללמד. נקודה בעייתית אחרת היא התחרות האקדמית, והלחץ על אקדמאים בשלבים המוקדמים, לפני שהם מקבלים קביעות. אבל מן הרגע שאתה מקבל קביעות, אתה חופשי. לפעמים יש גם בעיה של שיפוט מאמרים – לא אחת קורה שהשופט של מאמר בכלל לא מבין במה מדובר.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    אבל במקרה שלי, לפחות, הבנתי בשלב כלשהו שאינני חייב להשתתף במשחק. כיום אפשר לפרסם את המאמרים באינטרנט, במיוחד ב&quot;ארכיב&quot; (arXiv), שבו אפשר לשים את המאמרים שלך והם נקראים על ידי הקהילה.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;אילו מתמטיקאים השפיעו עליך במיוחד?&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    רבים! כבר הזכרתי את יוסף גיליס. גם הרי דים, המנחה שלי, שהיה איש אנליזה יוצא דופן, השפיע עלי, אף על פי שערקתי מן האנליזה למתמטיקה דיסקרטית (שם נרדף ל&quot;קומבינטוריקה&quot;). מתמטיקאי אחר שהשפיע עלי היה יקר קנאי, שלימד אותי את תאוריית ה-D-מודולים של ברנשטיין (עובד כיום באוניברסיטת תל אביב), שהייתה בסופו של דבר אבן הפינה של מה שקרוי כיום &quot;תורת ההוכחה האלגוריתמית של וילף-ציילברגר&quot;. וילף היה המורה שלי בקומבינטוריקה, ולמדתי גם מן המתמטיקאים הצרפתיים פואטה וויינו (Foata, Vienot).
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;מה המקום של היופי בעבודתך?&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    יופי הוא רק בעומקים הרדודים. המתמטיקה היפה ביותר היא כזו בגלל פשטותה. כשם שאדם יפה הוא הנאה לעין, גם מתמטיקה יפה היא הנאה לשכל, אבל אסור לתת לה משקל מעבר למה שיש לה. מטרתה של המתמטיקה היא לגלות ידע שהוא עמוק, משמעותי ושימושי. המתמטיקה שמייצר המחשב, כזו שאני והמחשבים שלי עושים, היא לעתים קרובות מכוערת לשכל האנושי, אבל בעיני זה דווקא הופך אותה ליפה עוד יותר – יופי שמעבר ליופי הרגיל.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;דף הויקיפדיה שלך אומר שאתה &quot;אולטרא-פיניטיסט&quot; – מה זה אומר?&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    כשם שאתה (רון אהרוני) טוען שהבעיות הפילוסופיות כולן מקורן בטעות של בניית מושגים על דרך ההתייחסות העצמית, כך גם לי יש מריבה עם מושג האינסוף. מושג האינסוף הביא תועלת, אבל עוד יותר מכך גרם לנזק. אני סבור שאם מושג האינסוף יוחלף במושג &quot;אינסוף&quot; (עם מרכאות כפולות), שפירושו שזהו מושג שנדון בתוך תורות שמדברות רק על אובייקטים סופיים, אפשר לשכתב את כל המתמטיקה במונחים סופיים, והשאר אינו ראוי שייעשה!
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;לבסוף, אנא ספר לנו על דעותיך השנויות במחלוקת על עתיד המתמטיקה, ואיך היא צריכה להיעשות.&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    המתמטיקה המוכרת לנו היא כזו משום שהיא נעשית על ידי בני אנוש, עם נייר ועיפרון. משהו נוסף שמעכב את התפתחותה הוא הדעה הדתית-פנאטית, שכל ידע מתמטי צריך להיות מוכח בצורה מדויקת. כל זה ייעלם בקרוב. השימוש במחשבים ירחיב את האופקים המתמטיים שלנו כמעט עד אינסוף. כשזה יקרה, נזנח את רעיון ה&quot;ביטחון המלא&quot;, ונלמד לחיות עם עובדות שהן רק 99.99999999999999999999999999% בטוחות.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    &lt;strong&gt;האם יש לך עצה למתמטיקאי מתחיל, או גם לא כל כך מתחיל?&lt;/strong&gt;
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    למד או למדי איך לתכנת מחשב, היטב! הטוב ביותר הוא להכיר תוכנות על, כמו Maple , או Mathematica, או התוכנה החדשה והחינמית Sage. כשאתה מנסה לפתור בעיה, היפטר מן הגישה הילדותית שעליך לפתור אותה בעצמך. מוטב שתחשוב איך תלמד מחשב לפתור אותה. בסופו של דבר, התוכנית תצליח לפתור גם בעיות קשות הרבה יותר, ששום בן אנוש לא יצליח לפתור.
+  &lt;/p&gt;
+  
+  &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+    כמובן, בזמנך הפנוי אתה יכול להשתעשע גם בפתרון הבעיה בדרך הישנה, בעצמך. אבל זה צריך להיות שעשוע, כמו סודוקו. ועל זה אינך אמור לקבל משכורת.
+  &lt;/p&gt;
+&lt;/p&gt;</content><author><name>[&quot;רון אהרוני&quot;]</name></author><summary type="html">פרופ' ציילברגר הוא מתמטיקאי ידוע ומוכר בשל הישגיו בתחום המנייה הקומבינטורית. אבל לא פחות מכך הוא מפורסם בשל פריצת הדרך שלו בכתיבת תוכניות מחשב שמגלות בעצמן משפטים מתמטיים, במיוחד זהויות קומבינטוריות. את דעתו, שבסופו של דבר המחשבים יוכלו למלא לא רק את מקומם של מחשבי חשבונות אלא גם של מתמטיקאים, הוא מפיץ בדרכים שונות. בראיון הזה ניסינו להתחקות אחרי התפתחותו כמתמטיקאי ולשמוע מעט מדעותיו.</summary></entry><entry><title type="html">חידות</title><link href="/2015/11/01/riddles-12/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-01T11:42:25+02:00</published><updated>2015-11-01T11:42:25+02:00</updated><id>/2015/11/01/%D7%97%D7%99%D7%93%D7%95%D7%AA-12</id><content type="html" xml:base="/2015/11/01/riddles-12/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  לחידות המוצגות בגיליון זה יפורסמו רמזים בגיליון הבא ופתרונות מלאים בזה שלאחריו. נשמח לקבל את פתרונותיכם באמצעות המקום המיועד לכך בתחתית העמוד עד &lt;strong&gt;24.11.2015&lt;/strong&gt; , אנא ציינו את שמכם, היישוב בו אתם גרים, שם ביה&quot;ס שלכם והכיתה בה אתם לומדים. בגיליון הבא יפורסמו שמות הפותרים נכונה, וכן יובאו פתרונות יפים שייכתבו על ידכם.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1–איך לחלק את המחרוזת?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3427&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles1_nov15.png&quot; alt=&quot;puzzles1_nov15&quot; width=&quot;660&quot; height=&quot;130&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שני גנבים רוצים להתחלק בשללם, מחרוזת שבה מושחלים בזה אחר זה $latex 2n$ ספירים ו $latex 2m$ אזמרגדים (באיור $latex n=1, m=3$). אבני החן מסודרות באפן שרירותי על המחרוזת, יש להראות כי לכל סידור נתן לחתוך את המחרוזת ל3 חלקים כך שגנב אחד יקבל את החלק המרכזי עם $latex n$ ספירים ו $latex m$ אזמרגדים, ובחלקו של השני יהיו 2 החלקים הקיצוניים, גם הם עם $latex n$ ספירים ו $latex m$ אזמרגדים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  זה מקרה פרטי של הבעיה המוצגת בגיליון הקודם של &quot;נטגר&quot; במאמרו של רון אהרוני על טופולוגיה, הבעיה הכללית דורשת שימוש במשפט בורסוק-אולם. לעומת זאת החידה שבה יש רק שני סוגי חרוזים, המופיעה במדור זה ניתנת לפתרון פשוט, שגם נותן לגנבים אלגוריתם למציאת נקודות החיתוך.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2–איך למצוא את הדרך הנכונה?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  חידה זו הוצעה בשעתו ע&quot;י מרטין גרדנר. לאלו שאינם מכירים, מצפה אתגר.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  תייר מגיע לאי שבו יש שני שבטים: האחד של דוברי אמת – על כל שאלה עונים את התשובה הנכונה. ואחד של דוברי שקר – על כל שאלה נותנים תשובה שקרית, במיוחד אם התשובה הנכונה היא &quot;כן&quot; הם אומרים &quot;לא&quot;, ולהפך אם התשובה הנכונה היא &quot;לא&quot; הם אומרים &quot;כן&quot;. אנשי אחד מהשבטים חובשים כובעים ואנשי השבט השני מסתובבים גלויי ראש.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  התייר מגיע לצומת ממנו מתפצלות שתי דרכים האחת ימינה והשנייה שמאלה, ידוע לו שרק אחת הדרכים מובילה לארמון המלך. בצומת נצבים שני תושבי האי, האחד עם כובע על ראשו והשני גלוי ראש.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מותר לתייר לשאול שאלה אחת בלבד, שהתשובה עליה היא כן או לא, השאלה יכולה להיות מופנית לאחד מתושבי האי בלבד. מה ישאל התייר כדי למצוא את דרכו לארמון?
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3– סידור אבני דומינו?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3428&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles2_nov15.png&quot; alt=&quot;puzzles2_nov15&quot; width=&quot;290&quot; height=&quot;167&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  משחק דומינו רגיל מורכב מ 28 אבני משחק על כל אחת מהן זוג מספרים שכל אחד מהם בין 0 ל 6 . מופיעים כל זוגות המספרים האפשריים וכל אבני הדומינו שונות זו מזו . בוודאי ידוע לכם שאפשר לסדר את כל אבני הדומינו בשרשרת אחת שבה המספרים הנושקים זה לזה זהים. הציור מראה קטע של שרשרת כזו (עם האבנים: $latex \dots$ 5:6,6:4,4:3,3:5)
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  האם במשחק דומינו מורחב שבו המספרים על האבנים הם בין 0 ל 9 (סה&quot;כ 55 אבני משחק) גם כן ניתן לסדר את האבנים בשרשרת אחת שבה המספרים הנושקים זה לזה זהים?
+&lt;/p&gt;
+
+&lt;h3 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  רמזים לחידות מגיליון אוקטובר 2015
+&lt;/h3&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1–שמיכת טלאים&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נסו לפתור חידה פשוטה יותר שמיכה מרובעת של 25 ריבועים לחלק ל 2 שמיכות 3X3 ו 4X4, בחלוקה של השמיכה הגדולה ל 4 חלקים – הכלילו את התוצאה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2–איזו ספרה חסרה?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  חשבו את המספר מודולו 9.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3– איזה מספרים ניתן לרשום כסכום של רצף של מספרים טבעיים?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  הראו כי אי אפשר לרשום מספרים שהם חזקות של 2 כסכום של רצף.
+&lt;/p&gt;
+
+&lt;h3 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  פתרון החידות גיליון ספטמבר 2015
+&lt;/h3&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 1 –כמה פירמידות?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3497 size-full&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/Screen-Shot-2015-11-08-at-11.09.15.png&quot; alt=&quot;&quot; width=&quot;247&quot; height=&quot;208&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כמובן שכל התמורות של 6 המקצועות, $latex 6!$ , ייצרו הרבה מאד עותקים של אותה פירמידה כשהיא מסובבת. אחת הדרכים לספור נכון את הפירמידות השונות זה להסתכל על צבעי המקצועות המנוגדים (למשל $latex OC$ ו $latex AB$ ) ברור שכל צביעה שבה למקצוע הצהוב יהיה קדקוד משותף עם המקצוע האדום אי אפשר יהיה להתאים ע&quot;י סבוב לפירמידה המצוירת למעלה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  בשלב ראשון נבדוק כמה זוגות שונים מהצורה $latex \left\{a,b\right\},\left\{c,d\right\},\left\{e,f\right\}$ נתן ליצר מ 6 הצבעים $latex (a,b,c,d,e,f)$. קל לראות כי מספר זה שווה ל: $latex \frac{C_2^6 \cdot C_2^4 \cdot C_2^2}{3!} = \frac{\frac{6 \cdot 5}{2} \cdot \frac{4 \cdot 3}{2} \cdot 1}{6} = 15$ המכנה נובע מכך שסדר הזוגות לא משנה.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  כל שלשה של זוגות צבעים (של מקצועות מנוגדים) יכולה לכאורה לצבוע את הפירמידה ב 8 דרכים, אך בדיקה פשוטה מראה כי מדובר רק בשתי אפשרויות. האיור הבא מתאר את 8 האפשרויות לשלשה (צהוב-סגול, שחור-כחול, אדום-ירוק)
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;img class=&quot;aligncenter wp-image-3430&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles3_nov15.png&quot; alt=&quot;puzzles3_nov15&quot; width=&quot;572&quot; height=&quot;237&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  זה נותן לנו 30 אפשריות. מאידך השרטוט בראש החידה מייצג למעשה שני שיקופים של פירמידה, אם נחשוב שהמשולש $latex ABC$ נמצא במישור, הנקודה $latex O$ יכולה להימצא מעליו או מתחתיו וליצור בצורה כזו שתי פירמידות שונות (שאי אפשר לעבור מאחת לשנייה ע&quot;י סבוב כלשהוא). כלומר סה&quot;כ יש 60 אפשרויות.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+   לגבי בניית פירמידה מ6 מקצועות באורכים שונים $latex a_1 \lt a_2 \lt a_3 \lt a_4 \lt a_5 \lt a_6$. לכאורה צריך לבדוק את אי שוויון המשולש לגבי כל 3 אורכים. כלומר לכל $latex i,j,k$ צריך להתקיים $latex a_i + a_j \gt a_k$. אבל מאחר והקטעים מסודרים לפי אורכם מספיק לבדוק אי שוויון אחד בלבד: $latex a_1 + a_2 \gt a_6$ !
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 2–האם ניתן לכסות לוח שחמט פגום ב 31 אבני דומינו?&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אבן דומינו תמיד מכסה משבצת אחת שחורה ומשבצת אחת לבנה, לכן 31 אבני דומינו יכסו 31 משבצות שחורות ו 31 משבצות לבנות. בלוח השח הפגום יש 30 משבצות לבנות ו 32 שחורות, לכן זה בלתי אפשרי.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;strong&gt;&lt;u&gt;חידה 3 – בפרוס שנת תשע&quot;ו&lt;/u&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  קודם כל יש לתת את הדעת שההפרש בין השנה בלוח העברי לשנה בלוח הגרגוריאני יכול להיות 3760 (בין 1 ינואר ל כ&quot;ט באלול) או 3761 (בין א' תשרי ל 31 דצמבר).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אם נסמן ב $latex a^2$ את השנה לפי הלוח העברי, וב $latex b^2$ את השנה לפי הלוח הגרגוריאני.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  נשתמש בשוויון $latex a^2-b^2 = (a+b) \cdot (a-b)$ ונקבל שהמכפלה בצד ימין של המשוואה היא הגורמים של ההפרש בין ערכי השנים בלוחות השונים. מפרוק לגורמים נקבל:
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 3761 = 1 \cdot 3761$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  $latex 3760 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 5 \cdot 47$
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ומכאן קל למצוא שאם נדרוש שההפרש בין השנים יהיה 3761 יהיה פתרון אחד בלבד (שנצטרך לחכות לו מיליוני שנים): השנה לפי הלוח העברי תהיה 3,538,161 –ואז השנה לפי הלוח הגרגוריאני תהיה 3,534,400.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  במקרה השני, יש לתת את הדעת שלפתרונות שלמים שני הגורמים חייבים להיות זוגיים, קיימים 6 פתרונות אפשריים.
+&lt;/p&gt;
+
+&lt;table style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;tr&gt;
+    &lt;th colspan=&quot;2&quot;&gt;
+      מחלקים
+    &lt;/th&gt;
+    
+    &lt;th&gt;
+      שנה עברית
+    &lt;/th&gt;
+    
+    &lt;th&gt;
+      שנה גרגוריאנית
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      40
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      94
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      4489
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      729
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      20
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      188
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      10816
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      7056
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      10
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      376
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      37249
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      33489
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      8
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      470
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      57121
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      53361
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      4
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      940
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      222784
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      219024
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      2
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      1880
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      885481
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      881721
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  המצב שבו השנים לפי שני הלוחות היו רבועים שלמים קרה לפני למעלה מאלף שנה בשנת &lt;strong&gt;ד'תפ&quot;ט&lt;/strong&gt; שהיא שנת 729.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  ואילו לאירוע הקרוב ביותר בעתיד נצטרך להמתין יותר מחמשת אלפים שנים לשנת &lt;strong&gt;י'תתט&quot;ז&lt;/strong&gt; שהיא שנת 7056.
+&lt;/p&gt;
+
+&lt;h3 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  שמות הפותרים נכונה את החידות מגיליון אוקטובר 2015
+&lt;/h3&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אלעד צליק – כל החידות!
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  &lt;span lang=&quot;HE&quot;&gt;עומר שמחי, מסיים י&quot;ב, קריית טבעון&lt;/span&gt;&lt;span lang=&quot;HE&quot;&gt; - &lt;/span&gt;&lt;span lang=&quot;HE&quot;&gt;חידות מספר 2 ו-3.&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl;&quot;&gt;
+  [contact-form-7 id=&quot;463&quot; title=&quot;חידות&quot;]
+&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/2015/09/30/editor-19/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-09-30T22:04:08+03:00</published><updated>2015-09-30T22:04:08+03:00</updated><id>/2015/09/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-19</id><content type="html" xml:base="/2015/09/30/editor-19/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אנחנו חוזרים לנושא אהוב עלינו (ונראה שגם עליכם, הקוראים) של השערות. במאמר של כותבינו הותיק, אליהו לוי, יסופר על השערות שלכל אחת מהן הוכרז פרס של מיליון דולרים.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  מתוך הספר ״מתמטיקה, שירה ויופי״ מובא הפעם פרק על תחום מתמטי שנקרא ״טופולוגיה״, המדע של יריעות גומי (מממד כלשהו!).
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  אנחנו חוזרים ל״גליונות למתמטיקה״ הישן והטוב, ומביאים מאמר מאת מתמטיקאי שהשקיע רבות בנוער, והיה העורך של ״גליונות למתמטיקה״ - יוסף גיליס.
+&lt;/p&gt;
+
+&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+  וכמובן - החידות של דני.
+&lt;/p&gt;</content><author><name>[&quot;&quot;]</name></author><summary type="html">אנחנו חוזרים לנושא אהוב עלינו של השערות. במאמר של אליהו לוי יסופר על השערות שלכל אחת מהן הוכרז פרס של מיליון דולרים. מתוך ״מתמטיקה, שירה ויופי״ מובא הפעם פרק על תחום מתמטי שנקרא ״טופולוגיה״, המדע של יריעות גומי. בנוסף, אנחנו מביאים מאמר של יוסף גיליס מ״גליונות למתמטיקה״ הישן והטוב, וכמובן - החידות של דני. קריאה מהנה.</summary></entry></feed>

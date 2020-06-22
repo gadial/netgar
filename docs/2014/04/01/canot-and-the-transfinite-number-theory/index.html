@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>קנטור ותורת המספרים העל־סופיים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="קנטור ותורת המספרים העל־סופיים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="על הדברים הבסיסיים ביותר בחיים שלנו אנחנו לא חושבים בכלל. אנחנו מניחים אותם כמובנים מאליהם. כך גם במתמטיקה – האם אי פעם שאלתם את עצמכם מה זה &quot;מספר&quot;? המושג הזה טבוע כה עמוק בחשיבה שלנו שאנחנו מניחים שהוא חלק בלתי נפרד מן העולם. מין מושג בסיסי שאין תוהים על קנקנו.בסוף המאה התשע עשרה – מאוחר מאוד בהיסטוריה של המתמטיקה – שאל את עצמו מתמטיקאי גרמני בשם גיאורג קנטור את השאלה הזאת בדיוק.." />
+<meta property="og:description" content="על הדברים הבסיסיים ביותר בחיים שלנו אנחנו לא חושבים בכלל. אנחנו מניחים אותם כמובנים מאליהם. כך גם במתמטיקה – האם אי פעם שאלתם את עצמכם מה זה &quot;מספר&quot;? המושג הזה טבוע כה עמוק בחשיבה שלנו שאנחנו מניחים שהוא חלק בלתי נפרד מן העולם. מין מושג בסיסי שאין תוהים על קנקנו.בסוף המאה התשע עשרה – מאוחר מאוד בהיסטוריה של המתמטיקה – שאל את עצמו מתמטיקאי גרמני בשם גיאורג קנטור את השאלה הזאת בדיוק.." />
+<link rel="canonical" href="/2014/04/01/canot-and-the-transfinite-number-theory/" />
+<meta property="og:url" content="/2014/04/01/canot-and-the-transfinite-number-theory/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-04-01T00:18:34+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-04-01T00:18:34+03:00","datePublished":"2014-04-01T00:18:34+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/04/01/canot-and-the-transfinite-number-theory/"},"url":"/2014/04/01/canot-and-the-transfinite-number-theory/","description":"על הדברים הבסיסיים ביותר בחיים שלנו אנחנו לא חושבים בכלל. אנחנו מניחים אותם כמובנים מאליהם. כך גם במתמטיקה – האם אי פעם שאלתם את עצמכם מה זה &quot;מספר&quot;? המושג הזה טבוע כה עמוק בחשיבה שלנו שאנחנו מניחים שהוא חלק בלתי נפרד מן העולם. מין מושג בסיסי שאין תוהים על קנקנו.בסוף המאה התשע עשרה – מאוחר מאוד בהיסטוריה של המתמטיקה – שאל את עצמו מתמטיקאי גרמני בשם גיאורג קנטור את השאלה הזאת בדיוק..","headline":"קנטור ותורת המספרים העל־סופיים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/04/01/my-prespective-on-teaching/">&laquo; תפיסת ההוראה שלי</a>
+    
+    
+      <a class="next" href="/2014/04/01/artin-conjecture/">השערת ארטין &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">קנטור ותורת המספרים העל־סופיים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-04-01T00:18:34+03:00" itemprop="datePublished">Apr 1, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אריה חינקיס</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p dir="RTL">
+  על הדברים הבסיסיים ביותר בחיים שלנו אנחנו לא חושבים בכלל. אנחנו מניחים אותם כמובנים מאליהם. כך גם במתמטיקה – האם אי פעם שאלתם את עצמכם מה זה "מספר"? המושג הזה טבוע כה עמוק בחשיבה שלנו שאנחנו מניחים שהוא חלק בלתי נפרד מן העולם. מין מושג בסיסי שאין תוהים על קנקנו.
+</p>
+
+<p dir="RTL">
+  בסוף המאה התשע עשרה – מאוחר מאוד בהיסטוריה של המתמטיקה – שאל את עצמו מתמטיקאי גרמני בשם גיאורג קנטור את השאלה הזאת. הוא הגיע למסקנות מעניינות. את מהלך החקירה הזה התחיל קנטור דווקא מן האינסוף.  הוא הרחיב את מושג המספר לאינסוף. הוא ידע "למנות" גם קבוצות אינסופיות.
+</p>
+
+<p dir="RTL">
+  כל ילד מכיר את המספרים 1, 2, 3, &#8230;  מאוחר יותר הוא לומד שקוראים למספרים האלה "מספרים טבעיים". הנה מה שקנטור אמר עליהם:
+</p>
+
+<p dir="RTL">
+  "זה בלתי הגיוני לדבר על המספר הגדול ביותר באוסף המספרים הטבעיים, לעומת זאת אין זה בלתי מתקבל על הדעת לחשוב על מספר חדש, נקרא לו ω, אשר יבטא את העובדה שהאוסף כולו נתון על־פי כלל מסוים בסידורו הטבעי."
+</p>
+
+<p dir="RTL">
+  פירוש רש"י: ω "מונה" יחד את כל המספרים הטבעיים. כפי שמספר ימי השבוע הוא 7, כך מספר המספרים הטבעיים הוא ω. וכפי ש-7 בא אחרי המספרים 0, 1, 2, 3, 4, 5, 6 (שמספרם הוא 7), כך גם ω בא אחרי המספרים 0, 1, 2, 3, … כקוריוז, קנטור לא התחיל את הספירה מ-0.
+</p>
+
+<p dir="RTL">
+   ω היא האות האחרונה באלפבית היווני,  ושמה "אומגה". את המספר ω הציב קנטור לאחר כל המספרים הטבעיים. קוריוז נוסף: בתחילה קנטור השתמש בסמל $latex \infty $, שבמתמטיקה המודרנית משמש רק כמשהו ששואפים אליו, ולא מגיעים אליו. אחר כך הבין את הבלבול שבכך, ושינה את הסימון.
+</p>
+
+<p dir="RTL">
+  גם ω אינו סוף דבר. כדי לעקוב אחרי הסדרות שלו, היה קנטור צריך להמשיך. אחרי  ω הוא הוסיף למנות: ω+1, ω+2, ω+3, &#8230; וכן הלאה. למספרים האלה קרא קנטור המספרים העל־סופיים.
+</p>
+
+<p dir="RTL">
+  אתם בוודאי שואלים את עצמכם: בשביל מה זה טוב? לפעמים מספיק יופי, לא נחוץ לדרוש תועלת. במקרה זה, למרבה ההפתעה, מתברר שהדבר גם מועיל. קנטור פיתח את התורה שלו כדי להוכיח משפטים במתמטיקה קלאסית.
+</p>
+
+<p dir="RTL">
+  אבל בואו נעצור לרגע, ונערוך היכרות עם קנטור האדם.
+</p>
+
+<p dir="RTL">
+  גיאורג פרדיננד לודויג פיליפ קנטור (1845-1918) נולד בסנט פטרסבורג אשר ברוסיה. אביו היה ממשפחה שמוצאה יהודי, כנראה מאנוסי פורטוגל, אך הוא למד במוסדות של הכנסיה הלותרנית. הוא היה איש עסקים מצליח מאד, שייצג חברות מסחריות מבריטניה וגם שימש כברוקר בבורסה המקומית. מלבד זאת היה גם אדם משכיל בתחומים רבים. אימו של קנטור היתה קתולית, ממשפחת Böhm ששמה מעיד על מוצאה מבוהמיה, אזור בצ'כיה של היום. יתכן שגם האם היתה ממוצא יהודי. משפחת האם הוציאה מקירבה דורות רבים של אמנים ואנשי מדע ובעיקר מוזיקאים. גיאורג לא הכזיב את המסורת הזאת: הוא היה צייר מחונן וכנר משובח.
+</p>
+
+<p dir="RTL">
+  כאשר גיאורג היה בן 11 עברה המשפחה להתגורר בגרמניה עקב מחלתו של האב. מילדותו הביע קנטור את המשאלה להיות מתמטיקאי אך אביו העדיף שיהיה לו מקצוע מפרנס. לכן, כהכנה ללימודי הנדסה, קנטור נשלח לבית ספר מקצועי במסגרת של פנימיה. הוא הצטיין בכל המקצועות ובעיקר במתמטיקה. את לימודיו סיים עם תעודה שאפשרה לו ללמוד מדעי הטבע. הוא שב וביקש את הסכמת אביו ללמוד מתמטיקה, ולבסוף האב נעתר . זמן קצר לאחר מכן נפטר האב והוריש למשפחתו כחצי מליון מארק, סכום עצום במושגי הזמן ההוא. הדבר אפשר לקנטור חיים נוחים למרות משכורתו הצנועה בהמשך חייו.
+</p>
+
+<p dir="RTL">
+  קנטור החל ללמוד מתמטיקה באוניברסיטת ברלין בהיותו בן 18 וסיים אותה לאחר 4 שנים בתואר דוקטור. שיטת ההוראה באותה תקופה היתה שונה מן הנהוג כיום וקבלת תואר דוקטור היתה מהירה, אבל לא מספיקהלצורך קבלת משרת מרצה באוניברסיטה. לשם כך היה על המועמד לכתוב ה עבודת דוקטורט נוספת. קנטור הכין עבודה כזו ובשנת 1869 הוא התקבל כפרופסור זוטר באוניברסיטת האלה (Halle) בגרמניה. זאת, לאו דווקא מבחירתו: באותה תקופה שובצו כל המרצים באוניברסיטאות בגרמניה על-ידי משרד החינוך הגרמני. בין לבין עשה קנטור תעודת הוראה והיה במשך שנה מורה בבית ספר לבנות בברלין.
+</p>
+
+<p dir="RTL">
+  בנקודה זו של סיפורנו נחזור אל המספרים העל־סופיים.  לסיפור חייו של קנטור, הלא פשוט בכלל ודי טראגי, נחזור במאמר הבא.
+</p>
+
+<p dir="RTL">
+  בתחילה לא ראה קנטור במספרים העל־סופיים מספרים, אלא סימנים שמאפשרים לו לסמן איברים בסדרות ארוכות. תחום מחקרו היה טורי פורייה (Fourier), שהם סכומים אינסופיים של פונקציות דמויות גל. באחד ממחקריו הוא נתקל בסדרות אינסופיות  של נקודות על הישר הממשי. סדרות כאלה אי אפשר לסמן באותיות האלף בית – הרי יש רק מספר סופי של אותיות כאלה. לכן צריך למספר אותן – נקודה מספר 1, נקודה מספר 2, נקודה מספר 3, וכו'. יש שהסדרה מתקרבת למספר מסוים – "מתכנסת לגבול", כך קוראים לזה. בבעיה שבה עסק, קנטור היה צריך להמשיך: לאחר שמגיעים לגבול ממשיכים בסדרה חדשה. אם כן, צריך לתת מספר גם לגבול. קנטור בחר לתת לו מספר חדש, שמסומן באות ω.   אם אתם שואלים מדוע קנטור היהודי בחר דווקא באות יוונית, אל דאגה: בהמשך מחקריו קנטור השתמש גם באות מן האלפבית העברי. במקרה זה, דווקא האות הראשונה, אלף. על כך במאמר הבא.
+</p>
+
+<p dir="RTL">
+    אחרי  ω  המשיך קנטור ומנה: ω+3, ω+2, ω+1, &#8230; וכן הלאה. ואיך נקרא לנקודה שכל הנקודות החדשות מתקרבות (שואפות) אליה? התשובה מתבקשת: נקרא לה ω+ω.
+</p>
+
+<p dir="RTL">
+  אחר כך יכולה לבוא סדרה נוספת של מספרים, שהגבול שלה הוא ω+ω+ω, וכן הלאה. מועיל להנהיג כאן קיצור:
+</p>
+
+<p dir="RTL">
+  ω5, ω4, ω+ω+ω=ω3, ω+ω=ω2, &#8230; וכן הלאה. וגם הנקודות האלה, - ω5, ω4, ω3, ω2,  ω מתקרבות לגבול. כיצד נסמן אותו? די טבעי -   ω·ω או בקיצור ω<sup>2</sup>.
+</p>
+
+<p dir="RTL">
+  אלה הם המספרים העל־סופיים, או בשם אחר שלהם, "מספרים סודרים". ליתר דיוק זוהי ראשית הבנייה שלהם. עוד שלבים רבים לפנינו. בין השאר, הגדרת פעולות בין המספרים החדשים והשוואה בין גדליהם.  לכל אלה נגיע בגליונות הבאים.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/04/01/my-prespective-on-teaching/">&laquo; תפיסת ההוראה שלי</a>
+    
+    
+      <a class="next" href="/2014/04/01/artin-conjecture/">השערת ארטין &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/04/01/canot-and-the-transfinite-number-theory/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

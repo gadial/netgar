@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>פולינום בעל ערכים ראשוניים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="פולינום בעל ערכים ראשוניים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="בספר בתורת המספרים של טום אפוסטול (Apostol) מסתתרת שאלה שנראית תמימה, מצא את השלם הקטן ביותר x ≥ 0 כך ש- ƒ(x) = x² + x +41  פריק. נזכיר שמספר טבעי נקרא &quot;פריק&quot; אם הוא מכפלת מספרים קטנים ממנו (כלומר – &quot;פריק&quot; פירושו &quot;לא ראשוני&quot;). בבדיקה מגלים שפולינום זה מקבל ערכים ראשוניים עבור כל  x=1,2,...,39 , ורק בעבור x=40  מתקבל ערך פריק." />
+<meta property="og:description" content="בספר בתורת המספרים של טום אפוסטול (Apostol) מסתתרת שאלה שנראית תמימה, מצא את השלם הקטן ביותר x ≥ 0 כך ש- ƒ(x) = x² + x +41  פריק. נזכיר שמספר טבעי נקרא &quot;פריק&quot; אם הוא מכפלת מספרים קטנים ממנו (כלומר – &quot;פריק&quot; פירושו &quot;לא ראשוני&quot;). בבדיקה מגלים שפולינום זה מקבל ערכים ראשוניים עבור כל  x=1,2,...,39 , ורק בעבור x=40  מתקבל ערך פריק." />
+<link rel="canonical" href="/2014/06/01/polynomial-with-prime-values/" />
+<meta property="og:url" content="/2014/06/01/polynomial-with-prime-values/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-06-01T01:20:28+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-06-01T01:20:28+03:00","datePublished":"2014-06-01T01:20:28+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/06/01/polynomial-with-prime-values/"},"url":"/2014/06/01/polynomial-with-prime-values/","description":"בספר בתורת המספרים של טום אפוסטול (Apostol) מסתתרת שאלה שנראית תמימה, מצא את השלם הקטן ביותר x ≥ 0 כך ש- ƒ(x) = x² + x +41  פריק. נזכיר שמספר טבעי נקרא &quot;פריק&quot; אם הוא מכפלת מספרים קטנים ממנו (כלומר – &quot;פריק&quot; פירושו &quot;לא ראשוני&quot;). בבדיקה מגלים שפולינום זה מקבל ערכים ראשוניים עבור כל  x=1,2,...,39 , ורק בעבור x=40  מתקבל ערך פריק.","headline":"פולינום בעל ערכים ראשוניים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/06/01/binary-search/">&laquo; חיפוש בינארי</a>
+    
+    
+      <a class="next" href="/2014/06/01/editor-5/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">פולינום בעל ערכים ראשוניים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-06-01T01:20:28+03:00" itemprop="datePublished">Jun 1, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">יוסי כהן</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">בספר בתורת המספרים של טום אפוסטול (Apostol) מסתתרת שאלה שנראית תמימה:</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">מצא את השלם הקטן ביותר $latex { x \ge 0}$ כך ש-</span><span style="font-size: 14px; line-height: 1.5em;">$latex { f(x) = x^2 + x +41 }$ פריק.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">נזכיר שמספר טבעי נקרא "פריק" אם הוא מכפלת מספרים קטנים ממנו (כלומר – "פריק" פירושו "לא ראשוני"). </span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">בבדיקה מגלים שפולינום זה מקבל ערכים ראשוניים עבור כל $latex { x=1,2,\dots,39 }$ , ורק בעבור</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;"> $latex { x=40}$  מתקבל ערך פריק. זה לא מפתיע שבערך $latex { x=40}$ </span><span style="font-size: 14px; line-height: 1.5em;">מתקבל ערך פריק שהרי לכל פולינום מהצורה $latex { f(x) = x^2 + x +A }$ </span><span style="font-size: 14px; line-height: 1.5em;">מקבלים כי $latex { f(A-1) = A^2 }$. מה שמפתיע הוא שכל הערכים לפני הם ראשוניים. האם אתם מכירים עוד פולינומים כאלה מהצורה $latex { f(x) = x^2 + x +A }$ שנותנים ערכים ראשוניים לכל המספרים הטבעיים הקטנים מ- $latex { A-1 }$ ?</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">ברור ש-  $latex { f(x) = x^2 + x +2 }$ מקיים זאת, וגם הצבה של  $latex {  3, 5,  11,  17 }$ במקום  $latex { A }$ נותנת אותה תכונה. האם יש ערכים נוספים של $latex { A }$ שעבורם הדבר נכון? ואם לא מה מיוחד בערכי $latex { A }$ הללו?</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">במאמר הזה אני רוצה לספר, בלי הוכחה, על תשובה מפתיעה שניתנה עוד לפני כמאה שנה: יש רק מספר סופי של ערכי $latex { A }$ שעבורם הדבר נכון. התכונה נכונה רק כאשר $latex {A = \frac{d+1}{4}}$, עבור $latex { d = 7,11,19,43,67,163  }$.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">לא נסביר את רעיון ההוכחה המקורי. נביא רעיון הוכחה אלמנטרי יותר שעושה שימוש במושג שאריות ריבועיות מודולו מספר ראשוני $latex { p }$. כדי להסביר מושג זה נבהיר לדוגמה כי השאריות הריבועיות השונות מאפס מודולו $latex { 5 }$ הן $latex { 1 }$ ו-$latex { 4 }$, משום ש:</span>
+</p>
+
+<p style="direction: rtl;">
+  $latex { 1^2 = 1 }$
+</p>
+
+<p style="direction: rtl;">
+  $latex { 2^2 = 4 }$
+</p>
+
+<p style="direction: rtl;">
+  $latex { 3^2 = 4 }$
+</p>
+
+<p style="direction: rtl;">
+  $latex { 4^2 = 1 }$
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">שימו לב שמספיק היה לקחת את החזקות הריבועיות של $latex { 1 }$ ו- $latex { 2 }$. יש לכך סיבה: בשאריות מ-$latex { 5 }$, מתקיים  $latex { 3=-2 }$ ו-$latex { 4=-1 }$. משום כך$latex { 3^2 = (-2)^2 = 2^2 }$  (בשאריות מ-$latex { 5 }$). מאותה סיבה מספיק לקחת את כל החזקות הריבועיות של $latex { 1,2, \dots \frac{p-1}{2} }$ מודולו $latex { p }$. כלומר מספר השאריות הריבועיות הוא לכל היותר $latex { p/2 }$, ולמעשה הוא בדיוק $latex { p/2 }$, משום שכל שארית מתקבלת בדיוק פעמיים, משום שלמשוואה ריבועית מן הסוג $latex { x^2 = k }$ מודולו $latex { p }$ יש לכל היותר שני פתרונות (כמו למשוואות ריבועיות מעל הממשיים)</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">נסתכל כעת על $latex { p=7 }$. הריבועים הם </span>
+</p>
+
+<p style="direction: rtl;">
+  $latex { 1^2 = 1 }$
+</p>
+
+<p style="direction: rtl;">
+  $latex { 2^2 = 4 }$
+</p>
+
+<p style="direction: rtl;">
+  $latex { 3^2 = 2 }$
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">כלומר הריבועים מודולו $latex { 7 }$ הם: $latex { 1,2,4 }$. </span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">שימו לב ש-$latex { 2 }$ הוא גם ריבוע מודולו $latex { 7 }$ והוא עצמו ראשוני. אומרים אז ש- $latex { 2 }$ הוא ריבוע ראשוני מודולו $latex { 7 }$.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">באופן דומה, הריבועים מודולו $latex { 11 }$ הם $latex { 1,3,4,5,9 }$. שימו לב כי $latex { 3 }$ ו-$latex { 5 }$ הם ריבועים ראשוניים מודולו $latex { 11 }$. אפשר להראות שלכל ראשוני $latex { p }$ קיימים "הרבה" ראשוניים שהם ריבועים מודולו $latex { p }$. שאלה מעניינת בתורת המספרים היא: בהינתן ראשוני $latex { p }$, מהו הריבוע הראשוני הקטן ביותר </span><span style="font-size: 14px; line-height: 1.5em;">$latex { \ell(p) }$?</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">הבעיה הזו פתוחה כבר מראשית המאה הקודמת. ההשערה היא שהמספר מאוד קטן. מה שיודעים בשלב זה להוכיח הוא שעבור $latex { p }$ מספיק גדול סדר הגודל של  $latex { \ell(p) }$ הוא $latex { \sqrt{p}}$. אכן, הרבה פחות מן החסם הפשוט $latex { p/2 }$.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">כעת, אנחנו יכולים לחבר את הבעיה הזו עם הבעיה שפתחנו בה. מתברר שאפשר להוכיח את המשפט הבא:</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">$latex { E_d(x) =  x^2 + x + \frac{d+1}{4} }$ הוא ראשוני לכל $latex { d = 0,1, \dots \frac{d+1}{4}-2 }$  אם ורק אם $latex { d }$ ראשוני ומתקיים $latex { \ell(d) = \frac{d+1}{4} }$.</span>
+</p>
+
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em;">כיוון שיודעים להוכיח שעבור $latex { d }$ ראשוני סדר הגודל של $latex { \ell(d) }$ הוא $latex { \sqrt{d}}$ , של-p גדול הוא הרבה יותר קטן מאשר $latex { (p+1)/4 }$, ברור כי יש מספר סופי של פולינומים כאלה. למעשה, נכון דבר מפתיע: אין עוד פולינומים כאלה, נוסף לאלה שצויינו לעיל!</span>
+</p>
+
+<p style="direction: rtl;">
+  Apostol, Tom M. Introduction to Analytic Number Theory (1976). New York-Heidelberg-Berlin, Springer-Verlag
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/06/01/binary-search/">&laquo; חיפוש בינארי</a>
+    
+    
+      <a class="next" href="/2014/06/01/editor-5/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/06/01/polynomial-with-prime-values/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

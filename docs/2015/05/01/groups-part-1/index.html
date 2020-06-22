@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>חבורות - חלק א | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="חבורות - חלק א" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק." />
+<meta property="og:description" content="האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק." />
+<link rel="canonical" href="/2015/05/01/groups-part-1/" />
+<meta property="og:url" content="/2015/05/01/groups-part-1/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-01T00:03:48+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-05-01T00:03:48+03:00","datePublished":"2015-05-01T00:03:48+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/05/01/groups-part-1/"},"url":"/2015/05/01/groups-part-1/","description":"האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק.","headline":"חבורות - חלק א","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/groups-part-2/">&laquo; חבורות - חלק ב</a>
+    
+    
+      <a class="next" href="/2015/05/01/editor-15/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">חבורות - חלק א</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-05-01T00:03:48+03:00" itemprop="datePublished">May 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אנה ליזהטוב</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p dir="rtl" style="text-align: right;">
+  <span style="font-size: 14pt;"><b>1. מה זו אלגברה</b></span>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  אתם לומדים אלגברה מזה הרבה שנים. קרוב לוודאי שמכיתה ז'. האם אתם חושבים שאתם יכולים להגדיר מהי? מה זו אלגברה?
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  לשאלה הזאת אין תשובה אחת ברורה. אבל באופן כללי הנה התשובה: האלגברה עושה הפשטה של מושג המספר.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  צריך להבין: מספרים הם כבר בעצמם עניין מופשט. חישבו: מה זה $latex {3}$? זוהי הפשטה משלושה תפוחים, שלושה עפרונות ושלושה אנשים. המתמטיקה "גילתה" שמבחינה חשבונית כולם מתנהגים אותו דבר, למשל אם $latex {3}$ תפוחים ועוד $latex {2}$ תפוחים הם $latex {5}$ תפוחים אז גם $latex {3}$ עפרונות ועוד $latex {2}$ עפרונות הם $latex {5}$ עפרונות. אפשר לחסוך (כל הפשטה חוסכת מאמץ!) ולכתוב באופן כללי: $latex {3+2=5}$. זה יהיה נכון גם לאנשים, ולכסאות, וזה יהיה נכון גם מחר.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  האלגברה הוא שלב ההפשטה הבא: דיבור על מספרים כלליים. לשם כך המציאו שמות כלליים - ה-$latex {x}$ וה-$latex {y}$ המפורסמים. בעזרתם אפשר לכתוב חוקים כלליים, כמו $latex {(x+1)^2=x^2+2x+1}$. זהו חוק שנכון לכל מספר.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  זוהי האלגברה התיכונית. היא פותחה על ידי הערבים, החל מן המאה ה-$latex {11}$, והובאה לאירופה על ידי המתמטיקאי האיטלקי פיבונצ'י. המשכו של הסיפור הוא באלגברה הליניארית, שאותה המציאו במאה התשע עשרה. תפגשו בה כשתגיעו לאוניברסיטה. כמבוא של מבוא, אספר לכם שזהו כלי, שבין השאר מאפשר גישה מופשטת לפתרון מערכות של משוואות ליניאריות (כלומר משוואות שבהן כל הנעלמים מופיעים בחזקה $latex {1}$). מדוע גם לה קוראים "אלגברה"? לא רק בגלל זה שהיא מדברת על משוואות, אלא גם משום שהיא צעד נוסף של הפשטה: לא דיבור על מספרים כלליים, אלא על מבנים כלליים. קבוצות של איברים עם פעולות, ממש כמו שהמספרים הממשיים הם קבוצה של איברים עם פעולות.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  בסוף המאה השמונה עשרה ובתחילת המאה התשע עשרה התחילו לחקור מבנה כללי אחר, שמחקה בתכונותיו את המספרים השלמים. זוהי החבורה. המפתחים הראשונים שלו היו הצרפתים לגרנז' וגלואה, והנורווגי אבל ($latex {Abel}$). אבל וגלואה מתו בגילים צעירים מאוד - אבל מת משחפת בגיל $latex {26}$ וגלואה בגיל $latex {20}$, בדו קרב. הם השתמשו בחבורות כדי לחקור פתרונות של משוואות ממעלות גבוהות. בעזרת הכלי הזה הם הוכיחו, למשל, שאי אפשר למצוא פתרון כללי למשוואות ממעלה $latex {5}$ או יותר. מאז המושג הזה התברר כשימושי בהרבה מאוד תחומים. למשל, תורת החלקיקים האלמנטריים מבוססת עליו.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  <b><span style="font-size: 14pt;">2. חבורות</span> </b>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  חבורה היא קבוצה עם פעולה אחת. כמו השלמים, עם פעולת החיבור (בינתיים אין מדברים על פעולה נוספת, כמו כפל). אתם בוודאי תוהים: אבל בשלמים יש גם חיסור! איך אפשר לדבר על חיבור בלי לדבר על חיסור! ובכן, יהיה לנו חיסור. אבל אנחנו נבטא אותו בעזרת החיבור, ובעזרת מה שמקביל ל"מינוס של מספר". במקום $latex {3-5}$ נכתוב $latex {3+(-5)}$. הנה ההגדרה הפורמלית.
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>הגדרה 2.1 </b><em>חבורה ($latex {group}$) היא קבוצה $latex {G}$ עם פעולה שאפשר לסמן אותה ב-$latex {\cdot}$ או ב-$latex {\times}$ או ללא סימון בכלל (ואז היא נקראת "כפל"), או ב-$latex {+}$ (ואז היא נקראת "חיבור"), שמקיימת שלושה תנאים:</em>
+  </p>
+  
+  <ol>
+    <li>
+      אסוציאטיביות: לכל שלושה איברים $latex {a,b,c}$ מתקיים $latex {(ab)c=a(bc)}$ (כלומר - אין זה חשוב באיזה סדר מבצעים את הפעולות. שימו לב - ייתכן מאוד שסדר האיברים כן משנה, כלומר $latex {ab\neq ba}$.)
+    </li>
+    <li>
+      קיום איבר אדיש, שמסומן ב-$latex {e}$ (מן המילה הגרמנית $latex {egal}$, שמקורה צרפתי, ופירושה "אותו דבר", או "אדיש"), שכפל בו אינו משנה את האיבר. כלומר, לכל איבר $latex {x}$ מתקיים $latex {xe =ex=x}$. (מכיוון שהפעולה אינה דווקא קומוטטיבית, צריכים לציין במפורש שגם $latex {xe =x}$ וגם $latex {ex=x}$.)
+    </li>
+    <li>
+      קיום הפיך: לכל איבר $latex {x}$ קיים הופכי מימין, איבר $latex {g}$ ש-$latex {xg=e}$, וקיים הופכי משמאל, כלומר איבר $latex {h}$ ש-$latex {hx=e}$.
+    </li>
+  </ol>
+  
+  <p>
+    &nbsp;
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  בסימון מדויק יותר, החבורה היא זוג של קבוצה ופעולה. זוג כזה מסמנים ב-$latex {(G,\cdot)}$, או $latex {(G,+)}$, בהתאם לסימן שמציין את הפעולה.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  מספר האיברים בחבורה נקרא ה"סדר" (או הגודל) של החבורה.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  קיום ההופכי היא תכונה מועילה מאוד של פעולות: זהו כמו כפתור ה-$latex {backspace}$ במקלדת.
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>למה 2.2</b> <em>ההופכי מימין שווה להופכי משמאל. </em>
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  הוכחה: יהיה $latex {g}$ הופכי מימין של $latex {x}$, ו-$latex {h}$ הופכי משמאל. נתבונן בביטוי $latex {hxg}$. בגלל האסוציאטיביות אפשר לכתוב אותו כך, בלי סוגריים, ולשים את הסוגריים איך שרוצים. בדרך אחת לשים סוגריים מקבלים $latex {(hx)g=eg=g}$, ובדרך השנייה מקבלים $latex {h(xg)=he=h}$. אם כן, $latex {g=h}$.
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>הגדרה 2.3</b> <em>החבורה $latex {G}$ נקראת קומוטטיבית, או אבלית (על שמו של $latex {Niels~~Henrik~~ Abel}$, מתמטיקאי נורווגי שכבר הוזכר לעיל, וחי בין השנים $latex {1802}$ ו-$latex {1829}$) אם הפעולה קומוטטיבית, כלומר $latex {ab=ba}$ לכל שני איברים $latex {a}$ ו-$latex {b}$ בחבורה.</em>
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  מוסכמה: אם מסמנים את פעולת החבורה ב-$latex {+}$, הכוונה היא שהחבורה קומוטטיבית. ההפך אינו נכון: לפעמים מסמנים את הפעולה ככפל גם בחבורות קומוטטיביות.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  אם סימן הפעולה הוא כפל, מסמנים את ההופכי של איבר $latex {a }$ ב-$latex {a^{-1}}$, ואם הסימן הוא חיבור מסמנים את ההופכי ב-$latex {-a}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  כמה דוגמאות לחבורות קומוטטיביות:
+</p>
+
+<ol dir="rtl" style="text-align: right;">
+  <li>
+    $latex {(\mathbb{Z},+)}$, כלומר המספרים השלמים עם פעולת החיבור (הסימון $latex {\mathbb{Z}}$ בא מ-$latex {Zahle}$, שפירושו בגרמנית "מספר"). האיבר האדיש הוא כמובן $latex {0}$.
+  </li>
+  <li>
+    $latex {(\mathbb{Q},+)}$ - הרציונליים עם פעולת החיבור. $latex {\mathbb{Q}}$ בא מ-"$latex {quotient}$", שפירושו "מנה" - מספר רציונלי הוא מנה של שני מספרים שלמים.
+  </li>
+  <li>
+    $latex {~(\mathbb{R},+)}$ ( "$latex {Reals}$" פירושו "ממשיים").
+  </li>
+  <li>
+    $latex {~(\mathbb{C},+)}$ ($latex {"Complex"}$), המרוכבים עם פעולת החיבור.
+  </li>
+  <li>
+    ~את קבוצת הרציונליים שמרחיקים ממנה את $latex {0}$ מסמנים ב-$latex {\mathbb{Q}^*}$. הזוג $latex {(\mathbb{Q}^*,\times)}$, כלומר הרציונליים בלי ה-$latex {0}$ עם פעולת הכפל, היא חבורה. בדומה, $latex {,~(\mathbb{R}^*,\times),(\mathbb{C}^*,\times)}$ (הממשיים בלי $latex {0}$ והמרוכבים בלי $latex {0}$, עם פעולת הכפל) הן חבורות.
+  </li>
+  <li>
+    חבורת המספרים המרוכבים בעלי ערך מוחלט $latex {1}$ עם כפל.
+  </li>
+  <li>
+    $latex {\mathbb{R}^n}$ עם פעולת החיבור.
+  </li>
+  <li>
+    קבוצת המטריצות הלא סינגולריות מסדר $latex {n \times n}$ עם פעולת הכפל.החבורה האחרונה היא הדוגמה הראשונה שלנו לחבורה לא אבלית. כפל מטריצות, כידוע, אינו קומוטטיבי.
+  </li>
+</ol>
+
+<blockquote>
+  <p dir="rtl" style="text-align: right;">
+  <strong>תרגיל: </strong>האם הקבוצה $latex {G=\left\{ x\in\mathbb{Q}|x&gt;0\right\} }$ מהווה חבורה ביחס לפעולה $latex {a*b=\frac{ab}{2}}$?
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  <strong>פתרון:</strong>
+</p>
+
+  <ol dir="rtl" style="text-align: right;">
+  <li>
+    סגירות: אם $latex {a,b\in\mathbb{Q}}$ אז $latex {a*b=\frac{ab}{2}\in\mathbb{Q}}$ וגם כיוון ש- $latex {\frac{ab}{2}&gt;0}$ לכן $latex {a*b\in G}$.
+  </li>
+  <li>
+    אסוציאטיביות: <p align="center">
+      $latex \displaystyle \left(a*b\right)*c=\left(\frac{ab}{2}\right)*c=\frac{\frac{ab}{2}c}{2}=\frac{a\frac{bc}{2}}{2}=a*\left(\frac{bc}{2}\right)a*\left(b*c\right) $
+    </p>
+  </li>
+  
+  <li>
+    איבר יחידה: יהי $latex {a\in G}$, מחפשים $latex {e\in G}$ כך ש- $latex {a*e=a}$ <p align="center">
+      $latex \displaystyle a*e=\frac{ae}{2}=a\Rightarrow\frac{e}{2}=1\Rightarrow e=2 $
+    </p>
+    
+    <p>
+      ניתן לצמצם כיוון שידוע ש-$latex {a\neq0}$ ומספיק לבדוק רק כיוון אחד כי הפעולה היא קומוטטיבית.&lt;/li&gt; 
+      
+      <li>
+        איבר הפכי: לכל $latex {a\in G}$ מחפשים $latex {b\in G}$ כך ש- $latex {a*b=2}$, כלומר $latex {\frac{ab}{2}=2}$, כלומר $latex {b=\frac{4}{a}\in G}$.
+      </li>&lt;/ol&gt; 
+      
+      <p dir="rtl" style="text-align: right;">
+        לכן $latex {G}$ חבורה.
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        <strong>תרגיל:</strong>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        נגדיר $latex {G=\left\{ z\in\mathbb{C}|\left|z\right|=1\right\} }$ עם פעולת הכפל ב-$latex {\mathbb{C}}$. האם $latex {G}$ חבורה?
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        אם כן, האם היא אבלית?
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        <strong>פתרון:</strong>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        $latex {G}$ מייצגת בעצם את כל הנקודות על מעגל היחידה. כל מספר מרוכב על מעגל היחידה הוא מהצורה $latex {z=cis\alpha}$.
+      </p>
+      
+      <ol dir="rtl" style="text-align: right;">
+        <li>
+          יהיו $latex {z=cis\alpha,w=cis\beta\in G}$, אז $latex {zw=cis\left(\alpha+\beta\right)\in G}$.
+        </li>
+        <li>
+          אסוציאטיביות נובעת מאסוציאטיביות ב- $latex {\mathbb{C}}$.
+        </li>
+        <li>
+          יחידה: $latex {1\in G}$ ולכל $latex {z\in G}$ מתקיים $latex {z\cdot1=z}$.
+        </li>
+        <li>
+          הופכי: לכל $latex {z\in G}$ מתקיים $latex {z^{-1}=\frac{1}{z}=\frac{\bar{z}}{\left|z\right|}=\bar{z}}$
+        </li>
+      </ol>
+      
+      <p dir="rtl" style="text-align: right;">
+        $latex {\mathbb{C}}$ שדה כלומר מתקיים קומוטטיביות ולכן $latex {G}$ אבלית.
+      </p>&lt;/blockquote&gt; 
+      
+      <p dir="rtl" style="text-align: right;">
+        <b>2.1. $latex {(\mathbb{Z}_n,+)}$ - חבורת השאריות מודולו $latex {n}$, עם חיבור</b>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        חבורה חשובה במיוחד היא חבורת השאריות ממספר טבעי נתון.האדיש הוא כמובן $latex {0}$, וההופכי של $latex {a}$, כלומר $latex {-a}$, הוא $latex {n-a}$ אם $latex {a \neq 0}$, ו)כמובן( $latex {0}$ אם $latex {a=0}$. השאריות האפשריות בחלוקה ב-$latex {n}$ הן $latex {0,1, \ldots, n-1}$. לכן זוהי חבורה מסדר $latex {n}$.
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        <b><span style="font-size: 14pt;">3. חוק הצמצום</span> </b>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        בחבורה יש חוק צמצום: אם $latex {ax=bx}$ אז $latex {a=b}$. כדי לראות זאת, קחו את השוויון $latex {ax=bx}$ וכפלו את שני האגפים מימין ב-$latex {x^{-1}}$. תקבלו: $latex {axx^{-1}=bxx^{-1}}$ כלומר $latex {ae=be}$ כלומר $latex {a=b}$.
+      </p>
+      
+      <p style="direction: rtl;">
+        באותה צורה מוכיחים שמותר גם לצמצם משמאל.
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        מכירים פעולות שאין בהן צמצום? בוודאי. כפל בממשיים: $latex {0 \times 2=0\times 3}$, ובכל זאת $latex {2 \neq 3}$. הסיבה היא כמובן של-$latex {0}$ אין הופכי לגבי הכפל.
+      </p>
+      
+      <blockquote>
+        <p dir="rtl" style="text-align: right;">
+          <strong>תרגיל:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          חשבו את לוח הכפל של חבורה מסדר $latex {3}$. כמה חבורות מסדר $latex {3}$ קיימות? האם כל חבורה מסדר $latex {3}$ היא אבלית?
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          $latex {G=\left\{ e,a,b\right\} }$. בלוח הכפל אסור שבשורה או בעמודה כלשהי יופיע אותו איבר פעמיים.
+        </p>
+        
+        <table class=" aligncenter" style="height: 94px;">
+          <tr>
+            <td style="text-align: right;">
+              $latex {b}$
+            </td>
+            
+            <td style="text-align: right;">
+              $latex {a}$
+            </td>
+            
+            <td style="text-align: right;">
+              $latex {e}$
+            </td>
+            
+            <td dir="rtl" style="text-align: right;">
+
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+          </tr>
+        </table>
+        
+        <p dir="rtl" style="text-align: right;">
+          יש רק חבורה אחת כזו, עד כדי איזומורפיזם. כלומר - כל שתי חבורות מסדר $latex {3}$ הן איזומורפיות. נשים לב שבעצם $latex {b=a^{2}}$, כלומר $latex {G=\left\{ e,a,a^{2}\right\} }$. מאוחר יותר נראה שלכל מספר ראשוני $latex {p}$ יש רק חבורה אחת מסר $latex {p}$, והיא אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>תרגיל:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          חשבו את לוח הכפל של חבורה מסדר $latex {4}$. כמה חבורות מסדר $latex {4}$ קיימות? האם כל חבורה מסדר $latex {4}$ היא אבלית?
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong> נכתוב $latex {G=\left\{ e,a,b,c\right\} }$. נפריד לשני מקרים.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          מקרה I: הריבוע כל כל איבר הוא $latex {e}$. כלומר $latex {a^{2}=e,b^{2}=e,c^{2}=e}$:
+        </p>
+        
+        <table>
+          <tr>
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+          </tr>
+        </table>
+        
+        <p dir="rtl" style="text-align: right;">
+          חבורה שמקיימת את התנאים הנ"ל נקראת חבורת קליין.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          מקרה II:
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          קיים איבר לא אדיש שבחזקת שתיים לא שווה לאדיש. כלומר יש איבר שכפול עצמו הוא איבר שונה ממנו, שאינו אדיש. בה"כ נבחר $latex {a^{2}=b}$.
+        </p>
+        
+        <table>
+          <tr>
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {e}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              $latex {e}$
+            </td>
+            
+            <td>
+              $latex {a}$
+            </td>
+            
+            <td>
+              $latex {b}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+            
+            <td>
+              $latex {c}$
+            </td>
+          </tr>
+        </table>
+        
+        <p dir="rtl" style="text-align: right;">
+          ניתן היה לבחור אופציות נוספות והיינו מקבלים טבלת כפל שקולה.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אלה כל האפשרויות. בכל המקרים הטבלה היא סימטרית ולכן החבורה היא אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          החבורות לא איזומורפיות כי בחבורה הראשונה שנקראת חבורת קליין כל איבר בחזקת שתיים שווה לאדיש.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          החבורה השנייה היא בעצם החבורה $latex {G=\left\{ e,a,a^{2},a^{3}\right\} }$ שהיא איזומורפית (מדוע?) לחבורה $latex {\mathbb{Z}_{4}}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אלו שתי החבורות היחידות מסדר $latex {4}$.
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: right;">
+        <b><span style="font-size: 14pt;">4. חזקות</span> </b>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        כשמפעילים איבר $latex {a}$ על עצמו $latex {n}$ פעמים מסמנים את התוצאה ב-$latex {na}$ במקרה שסימן הפעולה הוא $latex {+}$, וב-$latex {a^n}$ אם סימן הפעולה הוא כפל. חוקי החזקות קיימים גם בחבורות. למשל, $latex {na+ma=(m+n)a,~~a^{n+m}=a^n\cdot a^m}$. כי אכן, חוק הפילוג של החיבור ושל החזקות הוא אותו חוק! זהו אותו כלל, בשני סימונים שונים. למדתם אותו בכיתה ג' או ד' בנוסח הראשון, ובתיכון בנוסח השני - בוודאי לא סיפרו לכם שזהו אותו חוק בדיוק!
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        עובדה שימושית היא שחזקות של אותו איבר מתחלפות. כלומר:
+      </p>
+      
+      <blockquote dir="rtl">
+        <p>
+          <b>משפט 4.1</b> <em><br /> </em>
+        </p>
+        
+        <p align="center">
+          $latex \displaystyle a^k \cdot a^\ell=a^\ell \cdot a^k$
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: right;">
+        הסיבה פשוטה - לפי האמור לעיל שני האגפים שווים ל-$latex {a^{k +\ell}}$.
+      </p>
+      
+      <blockquote>
+        <p dir="rtl" style="text-align: right;">
+          <strong>תרגיל:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          תהי $latex {G}$ חבורה עם פעולת כפל $latex {*}$. הוכיחו את הטענות הבאות:
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>א.</strong> אם $latex {\left(a*b\right)^{2}=a^{2}*b^{2}}$ לכל $latex {a,b\in G}$ אז $latex {G}$ אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          צריך להוכיח שלכל $latex {a,b\in G}$ מתקיים $latex {ab=ba}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex \left(ab\right)\left(ab\right)=aabb=e$
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex a^{-1}/\left(ab\right)\left(ab\right)=aabb/b^{-1}$
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex a^{-1}ababb^{-1}=a^{-1}aabbb^{-1}$
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex ba=ab$
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          לכן $latex {G}$ אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ב. </strong>הוכיחו כי אם $latex {a^{2}=e}$ לכל $latex {a\in G}$ אז $latex {G}$ אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון א':</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אם $latex {a^{2}=e}$ לכל $latex {a\in G}$ מתקיים $latex \displaystyle e=\left(ab\right)^{2}=a^{2}b^{2}=ee=e $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          ולכן לפי הסעיף הקודם, \L{$latex {G}$} אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון ב':</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          לכל $latex {a\in G}$ מתקיים $latex {a^{2}=e}$ ולכן
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex aa=e$
+        </p>
+        
+        <p dir="rtl" style="text-align: center;">
+          $latex a=a^{-1} $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          בפרט $latex {a^{-1}=a,b^{-1}=b,ba=\left(ba\right)^{-1}}$, לכן , $latex {ba=\left(ba\right)^{-1}=a^{-1}b^{-1}=ab}$, כלומר $latex {G}$ אבלית.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ג. </strong>הוכיחו כי $latex {G}$ אבלית אם ורק אם $latex {\left(a*b\right)^{n}=a^{n}*b^{n}}$ לכל $latex {n\geq1}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אם $latex {G}$ אבלית אז לכל $latex {a,b\in G}$ מתקיים $latex \displaystyle \left(ab\right)^{n}=\left(ab\right)\left(ab\right)\dots\left(ab\right)=\left(aa\dots a\right)\left(bb\dots b\right)=a^{n}b^{n} $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אם לכל $latex {a,b\in G}$ מתקיים $latex {\left(ab\right)^{n}=a^{n}b^{n}}$, אז בפרט עבור $latex {n=2}$ מתקיים $latex {\left(ab\right)^{2}=a^{2}b^{2}}$ ולכן לפי סעיף א', $latex {G}$ אבלית.
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: right;">
+        <span style="font-size: 14pt;"><b>5. סדר של חבורה וסדר של איבר </b></span>
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        כפי שכבר ציינו, מספר האיברים בחבורה $latex {G}$ נקרא סדר החבורה, והוא מסומן ב-$latex {|G|}$.
+      </p>
+      
+      <blockquote dir="rtl">
+        <p>
+          <b>משפט 5.1</b> <em>אם $latex {G}$ אבלית וסופית אז לכל איבר $latex {g}$ ב-$latex {G}$ מתקיים $latex {g^{|G|}=e}$. </em>
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: right;">
+        הוכחה: נסמן $latex {|G|=n}$. יהיו $latex {u_1,u_2,\ldots, u_n}$ איברי החבורה. נתבונן בקבוצת מכפלות איברי החבורה ב-$latex {g}$, כלומר ב-$latex {\{gu_1,gu_2,\ldots,gu_n\}}$. לפי חוק הצמצום, כל האיברים האלה שונים, ולכן אלה כל איברי החבורה. ($latex {n}$ איברים שונים בקבוצה בת $latex {n}$ איברים הם הקבוצה כולה.) לכן מכפלתם היא מכפלת כל איברי החבורה, כלומר מכפלת כל האיברים האלה היא $latex {gu_1gu_2gu_3\ldots gu_n=u_1u_2,\ldots u_n}$. בגלל הקומוטטיביות $latex {gu_1gu_2gu_3\ldots gu_n=g^nu_1u_2,\ldots u_n}$,
+      </p>
+      
+      <p style="direction: rtl;">
+        וקיבלנו $latex {g^nu_1u_2,\ldots u_n=u_1u_2,\ldots u_n}$. צמצום נותן $latex {g^n=e}$.
+      </p>
+      
+      <p dir="rtl" style="text-align: right;">
+        מאוחר יותר נוכיח שהמשפט נכון גם לחבורות לא אבליות. בינתיים נוכיח משפט חלש יותר:
+      </p>
+      
+      <blockquote dir="rtl">
+        <p>
+          <b>משפט 5.2</b>
+        </p>
+        
+        <p>
+          לכל איבר $latex {g}$ בחבורה $latex {G}$ יש חזקה $latex {k&gt;0}$ ש-$latex {g^k=e}$.
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: right;">
+        הוכחה: נסמן $latex {|G|=n}$. נראה שקיים $latex {k \le n}$ ש-$latex {g^k=e}$. נתבונן ב-$latex {n+1}$ האיברים $latex {e=g^0,g=g^1,g^2,g^3,\ldots, g^n}$. מכיוון שכולם איברים מתוך $latex {n}$ איברי החבורה, שניים מהם חייבים להיות שווים (אין מקום ל-$latex {n+1}$ איברים שונים!) כלומר קיימים $latex {m}$ ו-$latex {\ell}$ שונים ש-$latex {g^m=g^\ell}$. נניח בלי הגבלת הכלליות ש-$latex {\ell &gt;m}$, נאמר $latex {\ell=m+k~~(m&gt;0)}$. אז $latex {g^m=g^{m+k}=g^mg^k}$. צמצום ב-$latex {g^m}$ נותן $latex {g^k=e}$.
+      </p>
+      
+      <blockquote>
+        <p dir="rtl" style="text-align: right;">
+          <strong>תרגיל:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          הוכיחו שלכל חבורה $latex {G}$ מסדר זוגי, קיים איבר $latex {e\neq a\in G}$ כך ש-$latex {a^{2}=e}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          $latex {a^{2}=e}$ אם ורק אם $latex {a^{-1}=a}$ לכל $latex {a\neq e}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אם לא קיים איבר כנ"ל אז ניתן לחלק את כל אברי $latex {G}$ השונים מ-$latex {e}$ לזוגות, כלומר
+        </p>
+        
+        <p dir="rtl" style="text-align: center;" align="center">
+          $latex \displaystyle G=\left\{ e,a_{1},a_{1}^{-1},a_{2},a_{2}^{-1},\dots,a_{n},a_{n}^{-1}\right\} $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אבל אז ב-$latex {G}$ יש מספר אי זוגי של איברים בסתירה לנתון. לכן קיים איבר $latex {a}$ כך ש-$latex {a^{-1}=a}$, כלומר $latex {a^{2}=e}$.
+        </p>
+      </blockquote>
+      
+      <blockquote dir="rtl">
+        <p>
+          <b>הגדרה 5.3</b><em>המספר המינימלי $latex {k}$ ש-$latex {g^k=e}$ נקרא הסדר של $latex {g}$ ומסומן ב-$latex {o(g)}$.</em>
+        </p>
+      </blockquote>
+      
+      <blockquote>
+        <p dir="rtl" style="text-align: right;">
+          <strong>תרגיל:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          חשבו את הסדר של האיבר הנתון בחבורה הנתונה.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>א.</strong>$latex {6}$ ב- $latex {\mathbb{Z}_{21}}$ עם חיבור.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          מחפשים מספר הכי קטן שאם כופלים אותו ב-$latex {6}$ מקבלים כפולה של $latex {21}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          $latex {21}$ אינו כפולה של $latex {6}$. לעומת זאת, $latex {6\cdot7=42\equiv0\left(mod\;21\right)}$ ולכן $latex {o\left(6\right)=7}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ב.</strong>$latex {5}$ בחבורה הכפלית $latex {\mathbb{Z}_{7}^{*}}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: center;" align="center">
+          $latex \displaystyle 5^{2}=25\equiv4,5^{3}\equiv5\cdot4\equiv6,5^{4}\equiv5\cdot6\equiv2,5^{5}\equiv5\cdot2\equiv3,5^{6}\equiv5\cdot3\equiv1 $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          לכן $latex {o\left(5\right)=6}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ג.</strong>$latex {A=\left(\begin{array}{ccc} i &amp; 0 &amp; 0\\ 0 &amp; -1 &amp; 0\\ 0 &amp; 0 &amp; -i \end{array}\right)}$} ב-\L{$latex {GL_{3}(\mathbb{C})}$ - חבורת המטריצות ההפיכות מסדר $latex {3 \times 3}$ עם איברים ב-$latex {\mathbb{C}}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          אם מעלים בחזקת $latex {n}$ מטריצה אלכסונית אז מקבלים מטריצה אלכסונית שאיבריה הם איברי המטריצה המקורית בחזקת $latex {n}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          כלומר מחפשים $latex {k}$ מינימלי כך ש- $latex {\left(-i\right)^{k}=\left(-1\right)^{k}=i^{k}=1}$ ולכן $latex {k=4}$ לכן $latex {o\left(A\right)=4}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ד.</strong>$latex {1+i}$ בחבורה הכפלית $latex {\mathbb{C}^{*}}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          נעבור לייצוג טריגונומטרי: $latex {1+i=\sqrt{2}cis\left(45\right)}$ מחפשים $latex {k}$ כך ש- $latex {\left(1+i\right)^{k}=1}$,
+        </p>
+        
+        <p dir="rtl" style="text-align: center;" align="center">
+          $latex \displaystyle 1=\left(\sqrt{2}cis\left(45\right)\right)^{k}=\left(\sqrt{2}\right)^{k}cis\left(45k\right) $
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          כלומר $latex {1=\left(\sqrt{2}\right)^{k}}$ ו-$latex {45k=360n}$ אבל לכל $latex {k}$ מתקיים ש- $latex {\left(\sqrt{2}\right)^{k}\neq1}$ לכן $latex {o\left(1\right)=\infty}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>ה. </strong>$latex {\frac{1+i}{\sqrt{2}}}$ בחבורה הכפלית $latex {\mathbb{C}^{*}}$.
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          <strong>פתרון:</strong>
+        </p>
+        
+        <p dir="rtl" style="text-align: right;">
+          נעבור לייצוג טריגונומטרי: $latex {\frac{1+i}{2}=1cis\left(45\right)}$ מחפשים $latex {k}$ כך ש-$latex {\left(\frac{1+i}{\sqrt{2}}\right)^{k}=1}$,
+        </p>
+        
+        <p dir="rtl" style="text-align: center;" align="center">
+          $latex \displaystyle cis\left(0\right)=1=\left(cis\left(45\right)\right)^{k}=cis\left(45k\right) $
+        </p>
+      </blockquote>
+      
+      <p dir="rtl" style="text-align: center;">
+        $latex {45k=360}$ כלומר $latex {k=8}$.
+      </p>
+      
+      <p style="direction: rtl;">
+        בהמשך נוכיח:
+      </p>
+      
+      <blockquote dir="rtl">
+        <p>
+          <b>משפט 5.4 (משפט לגרנז')</b> <em> $latex {o(g)\mid |G|}$ (כלומר סדר של איבר מחלק את סדר החבורה). </em>
+        </p>
+      </blockquote>
+</p></li></ol>
+</blockquote>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/groups-part-2/">&laquo; חבורות - חלק ב</a>
+    
+    
+      <a class="next" href="/2015/05/01/editor-15/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/05/01/groups-part-1/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

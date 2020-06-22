@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>סימטריה | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="סימטריה" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="סימטריה היא אחת התחבולות היפות במתמטיקה. ״מטעמי סימטריה״ הוא נימוק שתשמעו הרבה אם תטו אוזן לשיחתם של מתמטיקאים. זוהי דרך לחסוך (ומתמטיקה אוהבת כידוע חיסכון), משום שאתם יכולים לעשות חצי עבודה והסימטריה תעשה את השאר. וזוהי גם שיטת הוכחה: העולם מתנהג על פי חוקים של סימטריה. גם המשוררים גילו את הסוד הזה, והמאמר הזה, הלקוח מן הספר ״מתמטיקה, שירה ויפי״, מספר על הסימטריה בשני התחומים." />
+<meta property="og:description" content="סימטריה היא אחת התחבולות היפות במתמטיקה. ״מטעמי סימטריה״ הוא נימוק שתשמעו הרבה אם תטו אוזן לשיחתם של מתמטיקאים. זוהי דרך לחסוך (ומתמטיקה אוהבת כידוע חיסכון), משום שאתם יכולים לעשות חצי עבודה והסימטריה תעשה את השאר. וזוהי גם שיטת הוכחה: העולם מתנהג על פי חוקים של סימטריה. גם המשוררים גילו את הסוד הזה, והמאמר הזה, הלקוח מן הספר ״מתמטיקה, שירה ויפי״, מספר על הסימטריה בשני התחומים." />
+<link rel="canonical" href="/2015/08/31/symmetry/" />
+<meta property="og:url" content="/2015/08/31/symmetry/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-08-31T22:03:33+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-08-31T22:03:33+03:00","datePublished":"2015-08-31T22:03:33+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/08/31/symmetry/"},"url":"/2015/08/31/symmetry/","description":"סימטריה היא אחת התחבולות היפות במתמטיקה. ״מטעמי סימטריה״ הוא נימוק שתשמעו הרבה אם תטו אוזן לשיחתם של מתמטיקאים. זוהי דרך לחסוך (ומתמטיקה אוהבת כידוע חיסכון), משום שאתם יכולים לעשות חצי עבודה והסימטריה תעשה את השאר. וזוהי גם שיטת הוכחה: העולם מתנהג על פי חוקים של סימטריה. גם המשוררים גילו את הסוד הזה, והמאמר הזה, הלקוח מן הספר ״מתמטיקה, שירה ויפי״, מספר על הסימטריה בשני התחומים.","headline":"סימטריה","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/08/31/algebraic-numbers/">&laquo; המספרים האלגבריים</a>
+    
+    
+      <a class="next" href="/2015/08/31/editor-18/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">סימטריה</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-08-31T22:03:33+03:00" itemprop="datePublished">Aug 31, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"></span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: ltr; text-align: left; font-size: 12px;">
+  Tyger! Tyger burning bright<br /> In the forests of the night<br /> What immortal hand or eye<br /> Could frame thy fearful symmetry.
+</p>
+
+<p style="direction: ltr; padding-left: 90px; font-size: 11px; text-align: left;">
+  ("Songs of innocence<br /> and experience", William<br /> Blake)
+</p>
+
+<p style="direction: rtl; padding-right: 420px; text-align: right;">
+  הוֹ נָמֵר זוֹהֵר שֶׁל לֵיל<br /> זָע בַּיַּעַר הָאָפֵל<br /> אֵיזוֹ יָד יָצְרָה אוֹתְךָ<br /> כֹּה נוֹרָא הוּא תָּאֳמְךָ.
+</p>
+
+<p style="direction: rtl; padding-right: 500px; font-size: 11px; text-align: right;">
+  ("שירים של תמימות וניסיון",<br /> ויליאם בלייק)
+</p>
+
+<h2 style="direction: rtl; text-align: right;">
+  <span lang="HE">חיסכון על ידי סימטריה</span>
+</h2>
+
+<p class="Bodyafterhead" style="direction: rtl; text-align: justify;">
+  <span lang="HE">במקראת בית ספר שהייתה לי בילדותי היה סיפור על מלך שהפקיד בידי שני ציירים את צביעתו של אולם המלכות, צד אחד של האולם בידי כל אחד מהם. צייר אחד עמל וטרח במשך חודשים, ואילו חברו ישב ונח. ביום האחרון, לאחר שהראשון סיים את עבודתו, התקין הצייר השני מראות בצד שלו. בא המלך, והתפעל מן הציורים בצד האחד. כשהגיע אל הצד השני, הראה לו הצייר השני שגם בצד שלו יש ציורים נאים, בדיוק באותה מידה. המלך שילם לצייר הראשון את שכרו, ואילו לשני אמר – הנה, אתה רואה במראָה את השטרות שאני נותן לחברך? אתה יכול לקחת אותם בצד שלך. </span>
+</p>
+
+<p class="Body" style="direction: rtl; text-align: justify;">
+  <span lang="HE">מתמטיקאים דווקא אוהבים מאוד את תחבולתו של הצייר השני. המתמטיקה לעולם אינה חוסכת במאמץ כדי להשיג חיסכון במאמץ, והיא משתמשת פעמים רבות בתחבולת הסימטריה, בהצלחה רבה. אין צורך לעמול פעמיים כשאפשר להסתפק בפעם אחת. לפעמים אחרי השיקוף במראָה קל יותר לראות את הדברים. הנה דוגמה ידועה. שני אנשים, א' ו-ב', נמצאים באותו צד של נחל </span>$latex L$<span lang="HE">. זהו נחל מתמטי, כלומר הוא קו ישר. אדם א' נמצא בנקודה </span>$latex A$<span lang="HE">, ואדם ב' בנקודה </span>$latex B$<span lang="HE">. ב' גווע בצמא, ו-א' רוצה להביא לו מים מן הנחל, מהר ככל האפשר. א' צריך אפוא להגיע ל-</span>$latex L$<span lang="HE">, ומשם לנקודה </span>$latex B$<span lang="HE"> שבה נמצא ב'. איזה מסלול יבחר כדי שדרכו תהיה קצרה ביותר? כלומר, מהו הקו הקצר ביותר שנוגע ב-</span>$latex L$<span lang="HE">, ומחבר את </span>$latex A$<span lang="HE"> עם </span>$latex B$<span lang="HE">? כדי להשיב על השאלה, נשקף את </span>$latex B$<span lang="HE"> ביחס ל-</span>$latex L$<span lang="HE"> ונקבל נקודה </span>$latex B'$<span lang="HE">. </span>
+</p>
+
+<p><img class="aligncenter wp-image-3103 size-medium" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry1-300x107.png" alt="" width="300" height="107" /></p>
+
+<p class="figtext" style="text-align: center; font-size: 11px; padding-right: 150px; padding-left: 150px;">
+  <span lang="HE">הקו הקצר ביותר המחבר את </span>$latex A$<span lang="HE"> עם </span>$latex B'$<span lang="HE"> הוא קו ישר. הקו הקצר ביותר מ-</span>$latex A$<span lang="HE"> ל-</span>$latex B$<span lang="HE"> שנוגע בנחל מתקבל משיקוף חלק מן הישר הזה, החלק שנמצא בתוך הנחל.</span>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כל קו המחבר את $latex A$ עם $latex B$ ופוגש את $latex L$ מתאים, כמו באיור, לקו בעל אותו אורך המחבר את $latex A$ עם $latex B'$. הקו הקצר ביותר המחבר את $latex A$ עם $latex B'$ הוא קו ישר. וכך יש דרך למצוא את הקו המבוקש בין $latex A$ ל-$latex B$: חברו את $latex A$ ל- $latex B'$ בקו ישר, ושקפו ביחס ל-$latex L$ את החלק של הקו הזה הנמצא בצד של $latex B'$. קל לראות שבקו המתקבל "זווית הפגיעה" $latex \alpha$ שווה ל"זווית ההחזרה", $latex \beta$. לכך יש שימוש פיזיקלי. עקרון ה"מינימיזציה של האנרגיה" אומר שקרן אור עוברת בין שתי נקודות (גם אם מדובר בהחזרה ממראה) בדרך הקצרה ביותר: גם הטבע "חוסך". מכאן נובע החוק המוכר מן האופטיקה, שזווית ההחזרה של קרן אור ממראָה שווה לזווית הפגיעה שלה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  עוד דוגמה לחיסכון על ידי שיקוף היא הדרך לבנות קשת. הרומאים היו אלו שהכניסו את הקשת כאלמנט בסיסי בבנייה. כידוע, הרומאים לא היו מחדשים גדולים, ואת תרבותם שאלו מן העמים שהכניעו, במיוחד מן היוונים. את השימוש בקשת בבנייה הם שאלו מן האטרוּסקים, תושבי איטליה שקדמו להם. זוהי אכן המצאה מפליאה – לבני בניין המחזיקות את עצמן, ללא צורך במלט מחבר. בקשת האידיאלית הלחץ על כל אחת מן האבנים הוא קטן ככל האפשר, ופירושו הדבר הוא בין השאר שהלחץ מתחלק שווה בשווה, כלומר על כל אבן מופעל אותו לחץ. בקשת מעגלית, שהיא אולי הטבעית ביותר וגם הנפוצה ביותר, התנאי הזה אינו מתקיים, שכֵּן הלחץ גדול יותר על הלבנים הנמצאות בצידי הקשת מאשר על אלה שבאמצעה. מהי אם כן הצורה הנכונה? אפשר להשיב על כך בעזרת חישובים, שבכלים המתמטיים של ימינו אינם מסובכים במיוחד (הכלי הנחוץ כאן הוא משוואה דיפרנציאלית). אולם יש גם דרך הרבה יותר פשוטה, שנמנעת מחישובים, והיא לתת לטבע לעשות זאת. במקום להעמיד קשת, לתלות חבל. קחו חבל באורך של הקשת המבוקשת, ותלו אותו בשתי נקודות שמרחקן כמרחק בין קצוות הקשת. החבל יסתדר בצורה שבה מתחלק המתח שווה בשווה בין כל נקודותיו. עתה כל מה שצריך לעשות הוא להפוך את החבל, כך שהקשת שלו תהיה כלפי מעלה. האדריכל הספרדי גאודי השתמש בעיקרון הזה כדי לתכנן את בנייניו.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <img class="aligncenter size-medium wp-image-3104" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry2-300x89.png" alt="symmetry2" width="300" height="89" />
+</p>
+
+<h1 style="direction: rtl; text-align: right;">
+  משחק השולחן העגול
+</h1>
+
+<p style="direction: rtl; text-align: right;">
+  הנה משחק לשני שחקנים. לפניהם שולחן עגול, ובידי כל אחד מהם מלאי בלתי מוגבל של מטבעות של חצי שקל. כל אחד שם בתורו מטבע אחת, במקום פנוי לגמרי, כלומר אסור לשתי מטבעות לחפוף. כלל הניצחון הוא שהמנצח הוא מי שהניח את המטבע האחרונה, כלומר שלאחר שעשה את מסעו אין לשני מקום לשים מטבע. איזה שחקן יכול להבטיח לעצמו זכייה?
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  התשובה היא שלשחקן הראשון יש אסטרטגיית זכייה. הוא מציב מטבע בדיוק במרכז השולחן. לאחר מכן עליו לנקוט ב"אסטרטגיית מראה" (או "אסטרטגיית קוף"): על כל מטבע שמניח השחקן השני במקום כלשהו, עליו להניח מטבע בדיוק במקום הסימטרי לו ביחס למרכז. האסטרטגיה הזאת מבטיחה שלאחר כל צעד שלו מצב המטבעות הוא סימטרי, כלומר מול כל מטבע יש מטבע. הדבר מבטיח לו זכייה, משום שתמיד יש לו מה להשיב. מכיוון שמצב השולחן סימטרי, אם יש לשחקן השני מקום פנוי, יהיה גם מקום פנוי לראשון, בדיוק ממול.
+</p>
+
+<p><img class="aligncenter wp-image-3105 size-medium" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry3-300x296.png" alt="" width="300" height="296" /></p>
+
+<p class="figtext" style="text-align: center; padding-left: 150px; padding-right: 150px; font-size: 11px;">
+  <span lang="HE">השחקן הראשון שם את המטבע האמצעית. עתה, על כל מסע של יריבו יניח מטבע בדיוק ממול.</span>
+</p>
+
+<p class="Body" style="direction: rtl; text-align: right;">
+  <span lang="HE">שימו לב שהשחקן השני אינו יכול לנקוט את אסטרטגיית המראה, בגלל מסע הפתיחה המיוחד שעשה השחקן הראשון: להצבת מטבע באמצע אין מענה סימטרי. המקום "מול" המרכז הוא המרכז עצמו, כך שהמסע הסימטרי הוא להציב מטבע שוב במרכז, וזה אינו צעד חוקי, בגלל איסור החפיפה של מטבעות. שימו לב גם לכך שצורת השולחן אינה חייבת להיות עיגול. אותה אסטרטגיה עובדת גם למלבן, ולכל צורה שיש לה סימטריה ביחס לנקודה מסוימת בתוכה. </span>
+</p>
+
+<h1 class="Body" style="text-align: right;">
+  בעיית דִידוֹ
+</h1>
+
+<p style="direction: rtl; text-align: right; padding-right: 60px; font-size: 12px;">
+  לרועה ניתן חבל, ונאמר לו שהוא רשאי לגדר בעזרתו תחום כרצונו.<br /> איזו צורה כדאי לו לבחור, כדי לגדור שטח גדול ככל האפשר?
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  שמה של הבעיה הזאת הוא "הבעיה האיזופרימטרית" ("איזופרימטרי" פירושו "שווה היקף"). בלשון מתמטית אפשר לנסח אותה כך: בין כל הצורות בעלות היקף נתון, מהי הצורה בעלת השטח הגדול ביותר? כינוי מקובל אחר לבעיה הוא "בעיית דִידוֹ", על שם מלכת קרתגו הראשונה. אחיה של דידו, שהיה מלכה העריץ של העיר צור, הרג את בעלה העשיר בגלל בצע כסף, ורצה לרשת גם אותה. דידו נמלטה באוניה, ועם כמה חברים ירדה אל החוף בטוניסיה של היום. היא שילמה למקומיים סכום כסף, שתמורתו הבטיחו לה שטח אדמה. ההסכם היה שהיא תוכל לקבל שטח שאותו תצליח לגדור בעזרת עור של שור אחד. דידו חתכה את עור השור לרצועות, וחיברה אותן לחבל. בעזרת החבל הייתה רשאית לגדור תחום, שצד אחד שלו הוא חוף הים. השאלה היא – מהי צורת התחום שהיה עליה לבחור? דידו בחרה בתשובה הנכונה – חצי עיגול. זהו "חצי" מבעיית הרועה שבה פתחנו. הפתרון לבעייתו של הרועה, כפי שלא קשה לנחש, היא הצורה בעלת הסימטריה הרבה ביותר, כלומר עיגול.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בהמשך ננסה להסביר מדוע זה כך. אבל לפני כן, כדאי להסתכל בבעיה פשוטה יותר. נניח שהרועה רוצה לבנות מכלאה לא בצורה כללית, אלא בצורת מלבן. כמובן, אפשר לבחור את המלבן בדרכים רבות – למשל מלבן גבוה מאוד וצר מאוד, או מלבן רחב מאוד ונמוך מאוד. באיזה מלבן כדאי לו לבחור? אם נביא את עניין ה"צר מאוד" לידי קיצוניות, כלומר מלבן ברוחב 0, יהיה השטח 0; גם אם נביא את עניין ה"נמוך מאוד" לקיצוניות, כלומר מלבן בגובה 0, יהיה השטח 0. יש לשער על כן שהטוב ביותר הוא האמצע בין שני המקרים הקיצוניים האלה, כלומר ריבוע. ואכן, בין כל המלבנים בעלי היקף נתון, בעל השטח הגדול ביותר הוא ריבוע. כלומר, כדאי לרועה לתחום בעזרת החבל שלו ריבוע. לעובדה הזאת יש אינספור הוכחות (כבר ציינו שלטענות פשוטות יש לעתים קרובות הוכחות רבות). הנה אחת ההוכחות הפשוטות ביותר. נסמן ב-$latex L$ את הממוצע של אורכי הצלעות של המלבן, כלומר $latex L$ הוא היקף המלבן (שהוא כזכור אורך החבל) מחולק ב-4. סכום אורכי שתי צלעות סמוכות הוא חצי מהיקף המלבן, שהוא $latex 2L$. נניח שאורך אחת משתי הצלעות הסמוכות הוא $latex L+X$. מכיוון שסכום אורכי הצלעות הסמוכות הוא $latex 2L$, אורך הצלע האחרת הוא $latex L-X$ (כי $latex L+X+L-X=2L$). שטח מלבן הוא מכפלת אורכי צלעות סמוכות, ובמקרה זה הוא $latex (L+X)\cdot(L-X)$. על פי נוסחה ידועה (שמתקבלת בסך הכול מפתיחת סוגריים), $latex (L+X)\cdot(L-X)=L^2-X^2$. אבל $latex X^2$ הוא תמיד מספר חיובי, בין אם $latex X$ חיובי ובין אם הוא שלילי. לכן הביטוי $latex L^2-X^2$ אינו עולה על $latex L^2$, שהוא שטח הריבוע בעל אותו היקף (שאורך כל צלעותיו הוא $latex L$). שטח המלבן גדול יותר ככל ש-$latex X$ קטן יותר, כלומר ככל שהצלעות קרובות יותר זו לזו באורכן.
+</p>
+
+<p><img class="aligncenter wp-image-3106 size-medium" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry4-300x92.png" alt="" width="300" height="92" /></p>
+
+<p class="Body" style="direction: rtl; text-align: center; padding-left: 150px; padding-right: 150px; font-size: 11px;">
+  לריבוע ולמלבן שבתמונה אותו היקף, 4L. השטח של הריבוע גדול יותר.
+</p>
+
+<p class="Body" style="direction: rtl; text-align: right;">
+  <span lang="HE">כאן אנו מגיעים לעניין הסימטריה. נניח שהרועה נדרש עדיין לבחור תחום מלבני, אבל הוא יכול להשתמש בגְדַת נחל כאחד הגבולות של המרעה שלו, בדיוק כמו בבעייתה של דידו. כרגיל, נניח שזהו נחל מתמטי, כלומר קו ישר. מהי צורת המלבן שכדאי לו לבחור? גם כאן אפשר להשתמש בנוסחאות, אבל הפשוט ביותר הוא להשתמש בסימטריה. שקפו את התחום של הרועה ביחס לקו של גדת הנהר, הנה כך: </span>
+</p>
+
+<p><img class="aligncenter wp-image-3107 size-full" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry5.png" alt="" width="155" height="212" /></p>
+
+<p class="figtext" style="text-align: center; font-size: 11px; padding-left: 150px; padding-right: 150px;">
+  <span lang="HE">הרועה רוצה לבנות מן החבל שלו מלבן משמאל לנהר, שצלע אחת שלו היא הנהר. שיקוף המלבן הזה (הקו המקווקו) נותן מלבן בעל היקף שהוא פעמיים אורך החבל ושטח שהוא פעמיים שטח המלבן המקורי. מבין כל המלבנים שהיקפם פעמיים אורך החבל, בעל השטח הגדול ביותר הוא ריבוע. לכן כדאי לרועה לבחור במלבן שהוא חצי ריבוע. </span>
+</p>
+
+<p style="text-align: right;">
+  צירוף המלבן המקורי עם המלבן המשוקף הוא תחום מלבני שאינו נעזר בנחל. כל היקפו הוא "חבל" (אף כי בחלקו חבל דמיוני), שהיקפו כפול מאורך החבל שבידי הרועה. אם כן, היקפו נתון וקבוע, ולכן כפי שאנו כבר יודעים שטחו הוא מקסימלי אם הוא ריבוע. מכיוון ששטח המלבן המקורי של הרועה הוא חצי משטח המלבן הכולל, כדאי לרועה לבחור חצי ריבוע. במילים אחרות, אורך הצלעות האופקיות של המלבן שיבחר צריך להיות מחצית מאורכה של הצלע האנכית.
+</p>
+
+<h1 style="text-align: right;">
+  חזרה לדידו ולבעיה האיזופרימטרית
+</h1>
+
+<p style="text-align: right;">
+  בבעיה המקורית, ה"איזופרימטרית", אין מגבילים את הרועה בבחירת צורת המרעה, והוא יכול לבחור צורה כלשהי. כבר סיפרנו שכדאי לו אז לבחור בתחום מעגלי. הטענה הזאת נקראת "אי השוויון האיזופרימטרי":
+</p>
+
+<p class="Bodycaligraph" style="text-align: center;">
+  <span lang="HE">בין כל התחומים בעלי היקף נתון, בעל השטח הגדול ביותר הוא עיגול.</span>
+</p>
+
+<p class="Bodycaligraph" style="text-align: right;">
+  למשפט הזה יש גם נוסח תלת ממדי, גם הוא טבעי אבל קשה יותר להוכחה: מבין כל הגופים בעלי שטח פנים נתון, הכדור הוא בעל הנפח הגדול ביותר. זוהי אחת הסיבות לכך שראשם של יונקים הוא בעל צורה כדורית למדי. מדוע האדם אינו מנצל זאת, ובונה יותר מבנים כדוריים? בין השאר, משום שכדורים אינם נארזים היטב. הרבה יותר קל לארוז מלבנים ותיבות, ומשום כך למשל חדרים בבתים סטנדרטיים הם בעלי זוויות ישרות.
+</p>
+
+<p style="text-align: right;">
+  אבל בואו נחזור למקרה הדו ממדי. קל לנחש שהמעגל הוא הצורה האופטימלית, עניין אחר הוא להוכיח זאת. בעוד שאת המשפט ניחשו כבר היוונים הקדמונים, הוכחה מדויקת (כמעט) ניתנה רק באמצע המאה ה-19, על ידי השוויצרי יעקב שטיינר (Jacob Steiner, 1796-1863), בן זמנו של גאוס. שטיינר היה אוטודידקט, והעיד על עצמו ששנא נוסחאות (הן "מסתירות את החשיבה", לטענתו), ואהב גיאומטריה. שטיינר השתמש ברעיון הסימטריה, בכיוון ההפוך מזה שהשתמשנו בו קודם לכן. בעוד שבמקרה של המלבן הסקנו מן השלם על חציו, הפעם נסיק מן החלק על השלם. כלומר, כמו הצייר בסיפור, נפתור "חצי בעיה", ונסיק ממנה על הכול. כמו בסיפור של דידו, נאמר לרועה שהוא רשאי לגַדֵר בעזרת החבל שלו (שאורכו קבוע) תחום שצד אחד שלו יהיה גדת הנחל. כאמור, כדאי לו (כמו לדידו) לבחור חצי עיגול. כדי להראות זאת נניח שהרועה הצליח לגדר בעזרת החבל שלו והישר $latex L$ תחום בעל שטח מקסימלי. תהיינה $latex A$ ו-$latex B$ נקודות הנגיעה של החבל ב-$latex L$. (ראו איור). תהא $latex X$ נקודה כלשהי על החבל. אנו נראה את הדבר הבא: הזווית $latex AXB$ חייבת להיות בת 90 מעלות.
+</p>
+
+<p><img class="aligncenter wp-image-3108 size-thumbnail" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry6-150x115.png" alt="" width="150" height="115" /></p>
+
+<p class="Body" style="text-align: center; padding-left: 200px; padding-right: 200px; font-size: 11px;">
+  אם החבל גודר שטח מקסימלי עם הישר $latex L$, אז כל נקודה $latex X$ על החבל "רואה" את הקטע $latex AB$ בזווית ישרה.
+</p>
+
+<p class="Body" style="text-align: right;">
+  <span lang="HE">טענה זו נובעת מן הטענה הבאה:</span>
+</p>
+
+<p style="text-align: center;">
+  בין כל המשולשים שיש להם שתי צלעות באורכים נתונים $latex a$ ו-$latex b$, המשולש בעל השטח המקסימלי הוא כזה שבו שתי הצלעות האלה ניצבות.
+</p>
+
+<p style="text-align: right;">
+  הסיבה: כאשר הצלעות ניצבות, שטח המשולש הוא מחצית מכפלת אורכיהן, כלומר $latex \frac{1}{2}ab$. שטח משולש כלשהו שאורכי צלעותיו הם $latex a$ ו-$latex b$ הוא $latex \frac{1}{2}ah$, כאשר $latex h$ הוא הגובה ל-$latex a$. הגובה $latex h$ אינו עולה על $latex b$, משום שהוא ניצב במשולש ישר זווית שהיתר שלו הוא $latex b$ (ראה איור). לכן שטח המשולש, $latex \frac{1}{2}ah$, אינו עולה על $latex \frac{1}{2}ab$.
+</p>
+
+<p><img class="aligncenter wp-image-3109 size-thumbnail" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry7-150x120.png" alt="" width="150" height="120" /></p>
+
+<p style="text-align: center; font-size: 11px; padding-left: 200px; padding-right: 200px;">
+  שטח המשולש שצלעותיו $latex a$ ו-$latex b$ הוא $latex \frac{1}{2}ah$, ומכיוון ש-$latex b$ גדול או שווה ל-$latex h$, שטח המשולש אינו עולה על $latex \frac{1}{2}ab$.
+</p>
+
+<p style="text-align: right;">
+  נניח עתה שיש נקודה X על העקום, שעבורה הזווית $latex AXB$ אינה ישרה (כלומר אינה בת 90 מעלות). נשנה את העקום, על ידי שנשנה את הזווית הזאת ל-90 מעלות, בלי לשנות את שתי הקשתות על $latex AX$ ועל $latex BX$, בהתאמה (ראה איור). על פי הטענה, השטח גדל – בניגוד להנחה שהעקום גודר עם $latex L$ שטח מקסימלי.
+</p>
+
+<p><img class="aligncenter wp-image-3110 size-medium" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry8-300x63.png" alt="" width="300" height="63" /></p>
+
+<p style="text-align: center; font-size: 11px; padding-left: 200px; padding-right: 200px;">
+  הציור הימני מתקבל מן השמאלי על ידי סגירת המִפְתַח בין הצלעות $latex XA$ ו-$latex XB$, כך שהזווית ביניהן הופכת לישרה. ה"כיפות" $latex C$ ו-$latex D$ נשמרות. אורך העקום (ה"חבל") אינו משתנה בכך. השטח, לעומת זאת, גדל, משום ששטח המשולש גדל, בעוד ששטח שתי הכיפות נשאר כשהיה.
+</p>
+
+<p style="text-align: right;">
+  כל שנותר הוא להשתמש במשפט פשוט מן הגיאומטריה התיכונית: אוסף הנקודות X ה"רואות" קטע $latex AB$ בזווית ישרה (כלומר שהזווית $latex AXB$ היא ישרה) הוא מעגל שקוטרו $latex AB$. בנוסח מעט שונה: אוסף הנקודות מצד <strong>אחד</strong> של הישר שרואות את $latex AB$ בזווית ישרה הוא <strong>חצי</strong> מעגל שמרכזו באמצע הקטע $latex AB$. צירופם של המשפט הזה והעובדה שגילינו נותן את מה שרצינו להוכיח: השטח שיגדור הרועה על שפת הנחל הוא חצי עיגול.
+</p>
+
+<p style="text-align: right;">
+  עתה נחזור אל הבעיה השלמה, של הרועה המקורי, שאין לו נחל אשר יכול לשמש כחלק מגבול התחום שלו. כדי להראות שכדאי לו לגדור בעזרת החבל שלו תחום מעגלי, נניח שהוא בחר בתחום בעל צורה אחרת. ניקח שתי נקודות על החבל, $latex A$ ו-$latex B$, שמחלקות את החבל (שיוצר צורה סגורה) לשני חלקים שווים (ראה איור שמאלי להלן).
+</p>
+
+<p><img class="aligncenter wp-image-3111 size-medium" src="http://net-gar.net/wp-content/uploads/2015/08/symmetry9-300x103.png" alt="" width="300" height="103" /></p>
+
+<p style="text-align: center; font-size: 11px; padding-left: 200px; padding-right: 200px;">
+  לשתי הצורות אותו היקף. העיגול שמימין מתקבל על ידי החלפת החלקים העליון והתחתון (שניהם בין $latex A$ ו-$latex B$) בצורה השמאלית בחצאי עיגולים (תוך שינוי אפשרי של המרחק בין $latex A$ ו-$latex B$). על פי מה שהוכחנו לעיל, הדבר מגדיל את השטח, ולכן לעיגול שטח גדול יותר מאשר לצורה השמאלית. זהו "אי השוויון האיזופרימטרי".
+</p>
+
+<p style="text-align: right;">
+  על פי האמור לעיל, כדאי לרועה להחליף גם את החלק התחתון וגם את החלק העליון של התחום שבחר בחצי עיגול. אבל פירוש הדבר הוא שכדאי לו להחליף את התחום שלו בעיגול. זהו בדיוק מה שרצינו להוכיח.
+</p>
+
+<h1 style="text-align: right;">
+  סימטריה בשירה
+</h1>
+
+<p style="direction: rtl; text-align: right; padding-right: 90px;">
+  אָדָם זָקֵן – מַה יֵּשׁ לוֹ בְּחַיָּיו?<br /> הוּא קָם בַּבֹּקֶר, וּבֹקֶר בּוֹ לֹא קָם.
+</p>
+
+<p><span style="direction: rtl; font-size: 11px; text-align: right; padding-right: 120px;">(“ערב פתאומי”, דויד אבידן, מתוך “שירי לחץ”)</span></p>
+
+<p style="direction: rtl; text-align: right;">
+  אלה הן שורותיו הפותחות של שיר זיקנה נוגע ללב שנכתב בידי צעיר בן 28. דויד אבידן, ה"ילד הנורא" של השירה העברית, נולד ב-1934. כשמת ב-1996, גלמוד וחסר כל, קשה היה לא להיזכר בשיר הזה. הבאתי אותו כאן בגלל השורה השנייה, הבנויה במתכונת של "הצלבה": המילים "קם בבוקר" מצטלבות, כדי לקבל "בוקר (לא) קם בו". ההצלבה כה נפוצה בשירה, עד כי זכתה למונח אקדמי – "כיאַסְמוּס". מקור השם באות היוונית "חִי", בעלת צורת $latex X$, מקבילת ה"חית" העברית. בדוגמה הזאת הולכת ההצלבה בכיוון מן החוץ פנימה, מבוקר בחוץ לבוקר (שאיננו) בפנים. אותו מהלך שב ומופיע בהמשך השיר:
+</p>
+
+<p style="direction: rtl; text-align: right; padding-right: 90px;">
+  הוּא מְדַשְׁדֵּשׁ אֶל הַמִּטְבָּח, וְשָׁם<br /> הַמַּיִם הַפּוֹשְׁרִים יַזְכִּירוּ לוֹ,<br /> שֶׁבְּגִילוֹ, שֶׁבְּגִילוֹ, שֶׁבְּגִילוֹ<br /> אָדָם זָקֵן – מַה יֵּשׁ לוֹ בִּבְקָרָיו?<br /> הוּא קָם בְּבֹקֶר קַיִץ, וּכְבָר סְתָו<br /> נִמְהָל בָּעֶרֶב בְּנוּרוֹת חַדְרוֹ. [&#8230;]
+</p>
+
+<p style="direction: rtl; text-align: right; text-indent: 20px;">
+  שוב, החוץ משתקף בִּפְנים: המים הפושרים מזכירים לזקן את דמו הפושר ואת חייו הפושרים. ובשורה האחרונה יש שיקוף על דרך הניגוד, משום שבמראה משתקף ההפך, סתיו במקום קיץ.
+</p>
+
+<p style="direction: rtl; text-align: right; text-indent: 20px;">
+  גם בשיר הבא, "האסופי" של אלתרמן, המציאות הפנימית היא תמונת ראי של המציאות החיצונית. במציאות החיצונית האם נטשה את תינוקה; האמת הפנימית שלה היא שהוא נטש אותה. לאורך השיר הפער בין התמונה לבין השתקפותה במראה גדל והולך. לסימטריית התפקידים מצטרפת סימטריה זמנית – הסוף, מותה של האם, הוא תמונת ראי של ההתחלה, לידתו של הבן, ותכריכיה הם תמונת ראי של בגדי התינוק שלו. מתוך השיר הארוך אצטט רק שלושה בתים:
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  הִנִּיחַתְנִי אִמִּי לְרַגְלֵי הַגָּדֵר,<br /> קְמוּט פָּנִים וְשׁוֹקֵט, עַל גַּב.<br /> וָאַבִּיט בָּהּ מִלְּמַטָּה, כְּמוֹ מִן הַבְּאֵר,<br /> עַד נֻסָּה כְּהַנָּס מִן הַקְּרָב.
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  וָאַבִּיט בָּהּ מִלְּמַטָּה, כְּמוֹ מִן הַבְּאֵר<br /> וְיָרֵחַ עָלֵינוּ הוּרַם כְּמוֹ נֵר. [&#8230;]
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  הִיא זָקְנָה בְּכִלְאִי וַתִּדַּל וַתִּקְטַן<br /> וּפָנֶיהָ קֻמְּטוּ כְּפָנַי.<br /> אָז יָדַי הַקְּטַנּוֹת הִלְבִּישׁוּהָ לָבָן<br /> כְּמוֹ אֵם אֶת הַיֶּלֶד הַחַי.
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  אָז יָדַי הַקְּטַנּוֹת הִלְבִּישׁוּהָ לָבָן<br /> וָאֶשָּׂא אוֹתָהּ בְּלִי לְהַגִּיד לָהּ לְאָן.
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  וָאָנִיחַ אוֹתָהּ לְרַגְלֵי הַגָּדֵר<br /> צוֹפִיָּה וְשׁוֹקֶטֶת, עַל גַּב.<br /> וַתַּבִּיט בִּי שׂוֹחֶקֶת, כְּמוֹ מִן הַבְּאֵר,<br /> וַנֵּדַע כִּי סִיַּמְנוּ הַקְּרָב.
+</p>
+
+<p style="text-align: right; padding-right: 90px;">
+  וַתַּבִּיט בִּי שׂוֹחֶקֶת כְּמוֹ מִן הַבְּאֵר.<br /> וְיָרֵחַ עָלֵינוּ הוּרַם כְּמוֹ נֵר.
+</p>
+
+<p style="direction: rtl; text-align: right; text-indent: 120px; font-size: 11px;">
+  ("האסופי", נתן אלתרמן, מתוך "עיר היונה")
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/08/31/algebraic-numbers/">&laquo; המספרים האלגבריים</a>
+    
+    
+      <a class="next" href="/2015/08/31/editor-18/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/08/31/symmetry/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>ההוכחה הנכונה למשפט פיתגורס | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="ההוכחה הנכונה למשפט פיתגורס" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="על אף שמשפט פיתגורס הוא כבר בן למעלה מאלפיים וחמש מאות שנים, הוא עדיין בעל חיוניות ועניין גם לבני דורנו. הוא המפתח לנוסחת המרחק בין נקודות במישור, שפירושו שהוא נמצא בכל מודל במדע ובהנדסה שמכיל גיאומטריה או טריגונומטריה. הוא שותף סמוי למכפלה הסקלרית של וקטורים, ובתפקיד הזה הוא ממלא מקום במשוואות היסודיות של הפיזיקה. הוא הרוח החיה מאחורי משוואות תורת היחסות הפרטית ותורת הקוואנטים. הוא גם אחד המשפטים היחידים שמוכרים בציבור הרחב עם הוכחה." />
+<meta property="og:description" content="על אף שמשפט פיתגורס הוא כבר בן למעלה מאלפיים וחמש מאות שנים, הוא עדיין בעל חיוניות ועניין גם לבני דורנו. הוא המפתח לנוסחת המרחק בין נקודות במישור, שפירושו שהוא נמצא בכל מודל במדע ובהנדסה שמכיל גיאומטריה או טריגונומטריה. הוא שותף סמוי למכפלה הסקלרית של וקטורים, ובתפקיד הזה הוא ממלא מקום במשוואות היסודיות של הפיזיקה. הוא הרוח החיה מאחורי משוואות תורת היחסות הפרטית ותורת הקוואנטים. הוא גם אחד המשפטים היחידים שמוכרים בציבור הרחב עם הוכחה." />
+<link rel="canonical" href="/2015/02/01/pythagorean-theorem-correct-proof/" />
+<meta property="og:url" content="/2015/02/01/pythagorean-theorem-correct-proof/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-02-01T00:34:14+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-02-01T00:34:14+02:00","datePublished":"2015-02-01T00:34:14+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/02/01/pythagorean-theorem-correct-proof/"},"url":"/2015/02/01/pythagorean-theorem-correct-proof/","description":"על אף שמשפט פיתגורס הוא כבר בן למעלה מאלפיים וחמש מאות שנים, הוא עדיין בעל חיוניות ועניין גם לבני דורנו. הוא המפתח לנוסחת המרחק בין נקודות במישור, שפירושו שהוא נמצא בכל מודל במדע ובהנדסה שמכיל גיאומטריה או טריגונומטריה. הוא שותף סמוי למכפלה הסקלרית של וקטורים, ובתפקיד הזה הוא ממלא מקום במשוואות היסודיות של הפיזיקה. הוא הרוח החיה מאחורי משוואות תורת היחסות הפרטית ותורת הקוואנטים. הוא גם אחד המשפטים היחידים שמוכרים בציבור הרחב עם הוכחה.","headline":"ההוכחה הנכונה למשפט פיתגורס","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/02/01/tamar-ziegler-interview/">&laquo; ראיון עם פרופסור תמר ציגלר</a>
+    
+    
+      <a class="next" href="/2015/02/01/magical-number/">מספר קסום &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">ההוכחה הנכונה למשפט פיתגורס</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-02-01T00:34:14+02:00" itemprop="datePublished">Feb 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אלכסנדר גיבנטל</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  <a href="http://net-gar.net/wp-content/uploads/2015/01/pitagor.png"><br /> </a>על אף שמשפט פיתגורס הוא כבר בן למעלה מאלפיים וחמש מאות שנים, הוא עדיין בעל חיוניות ועניין גם לבני דורנו. הוא המפתח לנוסחת המרחק בין נקודות במישור, שפירושו שהוא נמצא בכל מודל במדע ובהנדסה שמכיל גיאומטריה או טריגונומטריה. הוא שותף סמוי למכפלה הסקלרית של וקטורים, ובתפקיד הזה הוא ממלא מקום במשוואות היסודיות של הפיזיקה. הוא הרוח החיה מאחורי משוואות תורת היחסות הפרטית ותורת הקוואנטים. הוא גם אחד המשפטים היחידים שמוכרים בציבור הרחב עם הוכחה.
+</p>
+
+<p style="direction: rtl;">
+  מאות הוכחות יש למשפט. רובן בעלות אותו אופי: גזירה והרכבה מחדש של צורות. למשל, כמו בהוכחה המשכנעת הבאה:
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter  wp-image-1963" src="http://net-gar.net/wp-content/uploads/2015/01/pitagor1.png" alt="pitagor" width="472" height="214" />
+</p>
+
+<p style="direction: rtl;">
+  אבל ההוכחות האלה משאירות אותנו בתהייה: אחת העובדות הבסיסיות ביותר בטבע היא בסך הכל עניין של גזירה וצירוף מחדש.
+</p>
+
+<p style="direction: rtl;">
+  לאחרונה עלעלתי בכתביו של אוקלידס, והגעתי להוכחה שמרבית חברי אומרים עליה שהיא הראשונה שהם מבינים באמת. היא לא רק קצרה ופשוטה, אלא גם אינה נעשית על דרך של קסם של גזירה. היא מגיעה ללב העניין.
+</p>
+
+<p style="direction: rtl;">
+  משפט פיתגורס, שידוע גם כ"אוקלידס $latex {I.47}$" אומר שסכום שטחי הריבועים שבנויים על הניצבים של משולש ישר זווית שווה לשטח הריבוע הבנוי על היתר. מתברר שבספר השישי של אוקלידס יש הכללה הרבה פחות מפורסמת, שתופסת את המשפט בקרניו. אין זו חובה שעל צלעות המשולש ייבנו ריבועים. מספיק שהצורות יהיו דומות. למשל, חצאי עיגולים, כמו בציור הבא:
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter  wp-image-1964" src="http://net-gar.net/wp-content/uploads/2015/01/semicircle.jpg" alt="semicircle" width="176" height="161" />
+</p>
+
+<p style="direction: rtl;">
+  הרי השטח פרופורציוני לריבוע של הצלע. מצד שני - מספיק להוכיח שוויון לעיגולים: פירוש שוויון השטחים הוא (חישבו מדוע) ש: $latex {\pi \frac{a^2}{8}+\pi \frac{b^2}{8}=\pi \frac{c^2}{8}}$, שנותן מייד את המשפט.
+</p>
+
+<p style="direction: rtl;">
+  למעשה מספיק להראות לצורה אחת ושתי צורות דומות לה, שסכום שטח שתי הצורות על הניצבים שווה לשטח הצורה הבנויה על היתר. הפרופורציונליות לריבוע הצלע תעשה את העבודה.
+</p>
+
+<p style="direction: rtl;">
+  אבל אם כך, מדוע לא לשים על הצלעות משולשים, כמו בציור הבא?
+</p>
+
+<p style="direction: rtl;">
+  <img class="aligncenter size-full wp-image-1965" src="http://net-gar.net/wp-content/uploads/2015/01/images-2.jpg" alt="images (2)" width="229" height="220" />
+</p>
+
+<p style="direction: rtl; ">
+  הסתכלו באיור. נאמר שאורכי הניצבים של המשולש הם $latex {a}$ - $latex {b}$, ואורך היתר הוא $latex {c}$.
+</p>
+
+<p style="direction: rtl; ">
+  נאמר ששטח המשולש הבנוי על היתר הוא $latex {s}$. אזי השטח של המשולשים על הניצבים הם $latex {\frac{a^2}{c^2}s}$ ו-$latex {\frac{b^2}{c^2}s}$ בהתאמה. (שטח של משולשים דומים נמצא ביחס ישר לריבוע האורכים שלהם: אם מגדילים את האורכים במשולש פי $latex {\alpha}$ אז גם האורך וגם הרוחב של המשולש גדלים פי $latex {\alpha}$, ולכן שטח המשולש גדל פי $latex {\alpha^2}$).
+</p>
+
+<p style="direction: rtl; ">
+  המשולשים שעל הניצבים חופפים לשני המשולשים שמחלקים את המשולש המקורי, ואילו המשולש שעל היתר חופף למשולש המקורי. לכן סכום שטחי המשולשים על הניצבים שווה לשטח המשולש על היתר, כלומר
+</p>
+
+<p style="direction: rtl; " align="center">
+  $latex \displaystyle \frac{a^2}{c^2}s + \frac{b^2}{c^2}s =s$
+</p>
+
+<p style="direction: rtl; ">
+  וצמצום ב-$latex {s}$ נותן
+</p>
+
+<p style="direction: rtl; " align="center">
+  $latex \displaystyle \frac{a^2}{c^2} + \frac{b^2}{c^2} =1$
+</p>
+
+<p style="direction: rtl; ">
+  שהוא משפט פיתגורס.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/02/01/tamar-ziegler-interview/">&laquo; ראיון עם פרופסור תמר ציגלר</a>
+    
+    
+      <a class="next" href="/2015/02/01/magical-number/">מספר קסום &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/02/01/pythagorean-theorem-correct-proof/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

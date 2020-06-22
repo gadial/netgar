@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>השערת הכיסוי הכפול במעגלים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="השערת הכיסוי הכפול במעגלים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="קומבינטוריקה היא תורת הקבוצות הסופיות. היא דנה במבנים שכל מה שיש בהם הוא איברים ויחסים ביניהם, בדרך כלל מספר סופי של איברים, ואז גם היחסים סופיים, כמובן." />
+<meta property="og:description" content="קומבינטוריקה היא תורת הקבוצות הסופיות. היא דנה במבנים שכל מה שיש בהם הוא איברים ויחסים ביניהם, בדרך כלל מספר סופי של איברים, ואז גם היחסים סופיים, כמובן." />
+<link rel="canonical" href="/2014/08/31/the-double-circle-cover-conjecture/" />
+<meta property="og:url" content="/2014/08/31/the-double-circle-cover-conjecture/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-08-31T21:06:55+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-08-31T21:06:55+03:00","datePublished":"2014-08-31T21:06:55+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/08/31/the-double-circle-cover-conjecture/"},"url":"/2014/08/31/the-double-circle-cover-conjecture/","description":"קומבינטוריקה היא תורת הקבוצות הסופיות. היא דנה במבנים שכל מה שיש בהם הוא איברים ויחסים ביניהם, בדרך כלל מספר סופי של איברים, ואז גם היחסים סופיים, כמובן.","headline":"השערת הכיסוי הכפול במעגלים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/08/31/chomp-chomp/">&laquo; צ'ומפ צ'ומפ</a>
+    
+    
+      <a class="next" href="/2014/08/31/editor-7/">דבר העורך &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">השערת הכיסוי הכפול במעגלים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-08-31T21:06:55+03:00" itemprop="datePublished">Aug 31, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">רון אהרוני</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  קומבינטוריקה היא תורת הקבוצות הסופיות. היא דנה במבנים שכל מה שיש בהם הוא איברים ויחסים ביניהם, בדרך כלל מספר סופי של איברים, ואז גם היחסים סופיים, כמובן.
+</p>
+
+<p style="direction: rtl;">
+  תורת הגרפים היא חלק מן הקומבינטוריקה, חלק שנשמע כאילו הוא אמור להיות טריוויאלי לגמרי: תורת הקבוצות מגודל $latex {2}$. <em>גרף </em> הוא קבוצה $latex {V}$ של נקודות, או בשם הרשמי יותר "קדקודים" ($latex {vertices}$)- מכאן הסימון $latex {V}$, בצירוף אוסף זוגות מתוכן. לזוגות קוראים "צלעות"($latex {edges}$).
+</p>
+
+<p style="direction: rtl;">
+  מה כבר אפשר לומר על אובייקט כל כך פשוט? הרבה מאוד דברים. הנה למשל משפט מפורסם, שהתגלה לראשונה על ידי מנטל, והתגלה מחדש והוכלל על ידי המתמטיקאי פול טורן שסיפורו הופיע באחד הגליונות הקודמים. אגב - את המשפט הזה גילה טורן בזמן שהיה כלוא במחנה עבודה גרמני במלחמת העולם השנייה .
+</p>
+
+<blockquote>
+  <p style="direction: rtl;">
+  משפט 1
+</p>
+
+  <p style="direction: rtl;">
+  <em> בגרף על $latex {n}$ קדקודים עם יותר מ-$latex {\frac{n^2}{4}}$ צלעות יש משולש. </em>
+</p>
+</blockquote>
+
+<p style="direction: rtl;">
+  האם אתם יכולים להראות שהמספר $latex {\frac{n^2}{4}}$ הוא אכן הטוב ביותר? או אולי אפילו להוכיח את המשפט?
+</p>
+
+<p style="direction: rtl;">
+  על כך שהפשטות לכאורה שת תורת הגרפי מטעה מלמדת גם העובדה שיש בה הרבה מאוד השערות, שנשמעות פשוטות מאוד, ובכל זאת עומדות בפני מאמציהם של המתמטיקאים לאורך שנים רבות. כאן נספר על אחת מהן: השערת הכיסוי הכפול במעגלים. "מעגל" הוא מה שהוא נשמע - אוסף צלעות שמחבר סדרת קדקודים כל האחד לעוקבו, והאחרון לראשון.
+</p>
+
+<p style="direction: rtl;">
+  אם בגרף כל צלע משתתפת במעגל, אז יש אוסף מעגלים שמכסה כל צלע בגרף בדיוק פעמיים.
+</p>
+
+<p style="direction: rtl;">
+  כדי להבין את ההשערה, רשמו תחילה גרף שבו יש צלע שאינה משתתפת במעגל. אחר כך נסו את ההשערה בדוגמאות הבאות:
+</p>
+
+<p style="direction: rtl;">
+  א. מעגל אחד.
+</p>
+
+<p style="direction: rtl;">
+  ב. גרף המורכב מ-$latex {4}$ קדקודים, שכולם מחוברים זה לזה.
+</p>
+
+<p style="direction: rtl;">
+  ג. גרף המורכב מ-$latex {5}$ קדקודים, שכולם מחוברים זה לזה.
+</p>
+
+<p style="direction: rtl;">
+  ד. גרף המורכב מ-$latex {n}$ קדקודים, שכולם מחוברים זה לזה.
+</p>
+
+<p style="direction: rtl;">
+  ההשערה הזאת פורסמה לראשונה על ידי סקרש )$latex {George~~Szekeres}$, חבר של פואל ארדש שהיגר מהונגריה לאוסטרליה( ב-$latex {1973}$, והתגלתה מחדש באופן בלתי תלוי על ידי פאול סימור ב-$latex {1980}$. נעשתה בה מעט מאוד התקדמות מאז - אתם מוזמנים לנסות את כוחכם!
+</p>
+
+<p style="direction: rtl;">
+  הנה היא ההשערה בויקיפדיה: $latex {http://en.wikipedia.org/wiki/Cycle_double_cover}$
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/08/31/chomp-chomp/">&laquo; צ'ומפ צ'ומפ</a>
+    
+    
+      <a class="next" href="/2014/08/31/editor-7/">דבר העורך &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/08/31/the-double-circle-cover-conjecture/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

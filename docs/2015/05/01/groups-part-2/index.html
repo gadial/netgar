@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>חבורות - חלק ב | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="חבורות - חלק ב" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק." />
+<meta property="og:description" content="האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק." />
+<link rel="canonical" href="/2015/05/01/groups-part-2/" />
+<meta property="og:url" content="/2015/05/01/groups-part-2/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-05-01T00:02:45+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-05-01T00:02:45+03:00","datePublished":"2015-05-01T00:02:45+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/05/01/groups-part-2/"},"url":"/2015/05/01/groups-part-2/","description":"האלגברה המתקדמת עוסקת בקבוצות עם פעולות. המושג הפשוט ביותר מסוג זה הוא &quot;חבורה&quot;, קבוצה שיש בה בסך הכל פעולה אחת, שמקיימת אותן תכונות שמקיימת פעולת החיבור במספרים השלמים. ההגדרה פשוטה, אבל זה לא אומר שחבורות הן פשוטות להבנה! זהו עולם עשיר ומרתק.","headline":"חבורות - חלק ב","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/">&laquo; שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות</a>
+    
+    
+      <a class="next" href="/2015/05/01/groups-part-1/">חבורות - חלק א &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">חבורות - חלק ב</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-05-01T00:02:45+03:00" itemprop="datePublished">May 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אנה ליזהטוב</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p dir="rtl" style="text-align: right;">
+  <b><span style="font-size: 14pt;">6. סכום ישר של חבורות</span> </b>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  קבוצת הוקטורים במישור, עם פעולת החיבור, גם היא חבורה. אבל כידוע אפשר לזהות את קבוצת הוקטורים במישור עם נקודות במישור - כל נקודה מזוהה עם הוקטור מן הראשית אליה. בייצוג הזה, החיבור הוא קואורדינטה-קואורדינטה (למשל $latex {(2,3)+(10,20)=(12,23)}$). הבנייה הזאת, של זוגות של איברים עם פעולה קואורדינטה-קואורדינטה, היא כללית. כך מגדירים את $latex {(\mathbb{R}^2,+)}$, $latex {(\mathbb{Q}^2,+)}$ (הראשון הוא המישור הממשי, השני המישור של המספרים הרציונליים).
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  באופן כללי, בהינתן שתי חבורות (שמותר להן להיות גם שוות - כך היה במקרים לעיל) $latex {(G, \cdot)}$ ו-$latex {(H, \cdot)}$, (בשתיהן השתמשנו באותו סימן פעולה, אבל זה לא חייב להיות כך), הסכום הישר שלהן $latex {G \oplus H}$ הוא אוסף הזוגות $latex {(g,h),~g \in G, ~h \in H}$ עם הפעולה: $latex {(g,h)\cdot (g',h')=(g\cdot g',h\cdot h')}$.
+</p>
+
+<p style="direction: rtl;">
+  קל לראות שאם $latex {G}$ ו-$latex {H}$ סופיות, אז $latex {|G \bigoplus H|=|G| \times |H|}$. משום כך משתמשים לפעמים בסימון $latex {G \times H}$ לסכום הישר, ואז קוראים לו "מכפלה".
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  עכשיו אתם מבינים את מקור השם $latex {\mathbb{R}^2}$ - זוהי מכפלת $latex {\mathbb{R}}$ בעצמו, אם כן זוהי חזקה שנייה שלו.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  <span style="font-size: 14pt;"><b>7. איזומורפיזם </b></span>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  כבר הזכרנו את מושג האיזומורפיזם. כאמור, "איזומורפי" פירוש "שווה צורה". באופן כללי שני גופים נקראים "איזומורפיים" אם הם למעשה שווים כשרק שינוי שמות האיברים מפריד ביניהם. "איזומורפיזם" מוגדר לכל מבנה מתמטי. הנה ההגדרה במקרה של חבורות:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>הגדרה 7.1</b>
+  </p>
+  
+  <p>
+    שתי חבורות $latex {G}$ ו-$latex {H}$ נקראות <em>איזומורפיות</em> אם יש פונקציה
+  </p>
+  
+  <p>
+    $latex {\phi: G \rightarrow H}$ חד-חד ערכית ועל ששומרת על הפעולה, כלומר, $latex {\phi(gh)=\phi(g)\phi(H)}$.
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  (הערה: פעמים רבות נשתמש באות $latex {\phi}$ לציון פונקציה. הסיבה היא שזוהי ה-$latex {f}$ היוונית.)
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  פירוש הדבר ששתי החבורות נראות אותו דבר, פרט לקריאה בשמות שונים. במקום להסביר, הנה דוגמה: $latex {\mathbb{Z}_2}$, שהיא $latex {\{0,1\}}$ עם פעולת החיבור, איזומורפית ל-$latex {\{1,-1\}}$ עם פעולת הכפל. הפונקציה שמראה זאת היא:
+</p>
+
+<p style="direction: rtl;">
+  $latex {\phi(0)=1,~\phi(1)=-1}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  כל חבורה היא איזומורפית לעצמה (כמובן - הרי כל דבר הוא "שווה צורה" לעצמו), כשהאיזומורפיזם הוא הזהות: $latex {\phi(x)=x}$. זהו האיזומורפיזם ה"טריוויאלי" (כלומר, פשוט).
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  עובדה מעניינת: שתי חבורות יכולות להיות איזומורפיות עם יותר מאיזומורפיזם אחד. במיוחד, חבורה יכולה להיות איזומורפית לעצמה באיזומורפיזם לא טריוויאלי.
+</p>
+
+<blockquote>
+  <p dir="rtl" style="text-align: right;">
+  <strong>תרגיל:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  הוכיחו שכל חבורה איזומורפית לעצמה והראו דוגמה בה קיים יותר מאיזומורפיזם אחד מחבורה לעצמה.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  <strong>פתרון:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  נסתכל על העתקת הזהות $latex {Id:G\rightarrow G}$ כך ש- $latex {Id(a)=a}$ לכל $latex {a\in G}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  ברור שזו העתקה חח"ע ועל. בנוסף מתקיים $latex {Id\left(ab\right)=ab=Id\left(a\right)Id\left(b\right)}$ כלומר זו העתקה ששומרת על הכפל ולכן היא איזומורפיזם.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  דוגמה לאיזומורפיזם שאינו הזהות:
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  נגדיר$latex {\phi:\mathbb{Z}_{4}\rightarrow\mathbb{Z}_{4}}$ שמקיימת: $latex {\phi\left(1\right)=3,\phi\left(2\right)=2,\phi\left(3\right)=1,{\phi}\left(0\right)=0}$, זו העתקה חח"ע ועל ששומרת על הפעולה שאינה הזהות.
+</p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  <span style="font-size: 14pt;"><b>8. חבורות ציקליות </b></span>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  איבר $latex {a}$ בחבורה $latex {G}$ מסדר $latex {n}$ נקרא "יוצר" של $latex {G}$ אם $latex {G=\{a^0=e_G, a, a^2, a^3, \ldots ,a^{n-1}\}}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  טענה: אם $latex {a}$ יוצר של חבורה $latex {G}$ מסדר $latex {n}$ אז $latex {a^n=e}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  הוכחה: נניח שלא. מכייון שעל פי ההנחה כל איבר הוא מן הצורה $latex {a^k}$ ל $latex {k&lt;n}$ כלשהו, נובע ש: $latex {a^n = a^k}$ לאיזשהו $latex {k&lt;n}$. ההנחה $latex {a^n \neq e}$ משמעה ש-$latex {k&gt;0}$. אבל אז צמצום נותן לנו $latex {a^{n-k}=e}$, מה שאינו אפשרי: ההנחה היא שעבור $latex {0 &lt;i &lt;n}$ כל איבר $latex {a^i}$ הוא איבר שונה מ-$latex {e}$.
+</p>
+
+<p style="direction: rtl;">
+  חבורה שיש לה יוצר נקראת "ציקלית". התרגיל הבא הוא שימוש פשוט בהגדרה:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>תרגיל 8.1</b> <em>הראו ש-$latex {a}$ הוא יוצר של החבורה אם הסדר שלו שווה לסדר החבורה. </em>
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  אם כן, אפשר להגדיר "חבורה ציקלית" כך:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>הגדרה 8.2</b> <em>חבורה היא ציקלית אם יש בה איבר שסדרו כסדר החבורה. </em>
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  תהא $latex {G}$ חבורה ציקלית מסדר $latex {n}$, עם יוצר $latex {a}$. מכיוון ש-$latex {a^n=e}$, לכל מספר $latex {k}$ מתקיים $latex {a^{kn}=(a^n)^k=e}$. לכן לכל $latex {k}$ ו-$latex {\ell}$ מתקיים $latex {a^{kn+\ell}=a^\ell}$. שפירושו הוא ש-$latex {a^m=a^{m\mod(n)}}$
+</p>
+
+<p style="direction: rtl;">
+  ($latex {m\mod(n)}$ מציין את השארית של $latex {m}$ בחלוקה ב-$latex {n}$. $latex {mod}$ הוא "מודולו".)
+</p>
+
+<p>כמסקנה מקבלים:</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>משפט 8.3</b> <em>חבורה ציקלית $latex {G}$ מסדר $latex {n}$ איזומורפית ל-$latex {(\mathbb{Z}_n,+)}$. </em>
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  הוכחה: יהא $latex {a}$ יוצר של $latex {G}$. נגדיר איזומורפיזם: $latex {\phi: \mathbb{Z}_n \rightarrow G}$ על ידי $latex {\phi(i)=a^i}$. נראה ש-$latex {\phi}$ שומר על הפעולה. לפי ההגדרה
+</p>
+
+<p dir="rtl" style="text-align: right;" align="center">
+  $latex \displaystyle \phi(i+j)=a^{i+j}=a^{i+j \mod(n)}$
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  מצד שני,
+</p>
+
+<p dir="rtl" style="text-align: right;" align="center">
+  $latex \displaystyle \phi(i)\cdot \phi(j)=a^i\cdot a^{j}=a^{i+j}$
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  ולפי ההבחנה לעיל
+</p>
+
+<p dir="rtl" style="text-align: right;" align="center">
+  $latex \displaystyle a^{i+j}=a^{i+j \mod(n)}$
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  ולכן
+</p>
+
+<p dir="rtl" style="text-align: right;" align="center">
+  $latex \displaystyle \phi(i+j)=\phi(i)\cdot \phi(j)$
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  כפי שנדרש מאיזומורפיזם. שתי התכונות האחרות שנדרשות מאיזומורפיזם, חד חד ערכיות ועל, נובעות ישר מן ההגדרה - האם תוכלו להסביר אותן לעצמכם?
+</p>
+
+<p style="direction: rtl;">
+  הנה מסקנה פשוטה:
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  $latex {\mathbb{Z}_2 \bigoplus \mathbb{Z}_3 \cong \mathbb{Z}_6}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  הוכחה -כדי להוכיח את הטענה, נראה ש-$latex {\mathbb{Z}_{2}\oplus\mathbb{Z}_{3}}$ היא חבורה ציקלית מסדר $latex {6}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  שימו לב, שכאשר הפעולה היא פעולת חיבור, אז $latex {g^{k}}$ הכוונה היא $latex {k}$ פעמים להפעיל את הפעולה חיבור, כלומר $latex {kg}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  ניקח $latex {g=\left(1,1\right)}$, אז $latex {2g=\left(0,2\right)}$, $latex {3g=\left(1,0\right)}$, $latex {4g=\left(0,1\right)}$, $latex {5g=\left(1,2\right)}$, $latex {6g=\left(0,0\right)}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  קיבלנו את כל אברי החבורה ולכן זוהי חבורה ציקלית והיא איזומורפית ל-$latex {\mathbb{Z}_{6}}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  המשפט הזה הוא מקרה פרטי של משפט כללי:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>משפט 8.4</b> <em>אם $latex {k, \ell}$ הם מספרים זרים (כלומר אין להם מחלק משותף גדול מ-1) אז $latex {\mathbb{Z}_k \bigoplus \mathbb{Z}_\ell \cong \mathbb{Z}_{k\ell}}$. </em>
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  נוכיח זאת בהמשך.
+</p>
+
+<blockquote>
+  <p style="direction: rtl;">
+  <strong>תרגיל:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  מצאו את כל היוצרים של $latex {\mathbb{Z}_{10}}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  <strong>פתרון:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  $latex {\mathbb{Z}_{10}=\left\{ 0,1,2,\dots,9\right\} }$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  היוצרים של $latex {\mathbb{Z}_{10}}$ הם כל האיברים $latex {a\in\mathbb{Z}_{10}}$ כך ש- $latex {o\left(a\right)=10}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  כיוון שהפעולה היא חיבור, סדר של איבר $latex {a}$ הוא המספר הטבעי המינימלי $latex {k}$ כך ש-$latex {ka\equiv0\left(mod10\right)}$ ($latex {ka}$ מתחלק ב-$latex {10}$) והיוצרים הם אלה שה- $latex {k}$ המינימלי הוא $latex {10}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  נעבור על אברי החבורה אחד אחד:
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  $latex {1\cdot0=0}$ ולכן $latex {o\left(0\right)=1}$, $latex {k\cdot1\equiv o\left(mod10\right)}$ גורר $latex {k=10}$ .
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  $latex {k\cdot2\equiv0}$ גורר $latex {k=5}$, $latex {k\cdot3\equiv0}$ גורר $latex {k=10}$, $latex {k\cdot4\equiv0}$ גורר $latex {k=5}$
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  $latex {k\cdot5\equiv0}$ גורר $latex {k=2}$, $latex {k\cdot6\equiv0}$ גורר $latex {k=5}$, $latex {k\cdot7\equiv0}$ גורר $latex {k=10}$
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  $latex {k\cdot8\equiv0}$ גורר $latex {k=5}$, $latex {k\cdot9\equiv0}$ גורר $latex {k=10}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  לכן היוצרים הם $latex {1,3,7,9}$ וניתן לשים לב שאלה בעצם כל המספרים הזרים ל-$latex {10}$.
+</p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  <strong>הערה:</strong>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  זה נכון באופן כללי: כל היוצרים ל $latex {\mathbb{Z}_{n}}$ אלה בעצם כל המספרים שזרים ל-$latex {n}$.
+</p>
+
+<blockquote>
+  <p dir="rtl" style="text-align: right;">
+  <strong>תרגיל:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  הוכיחו שבחבורה אבלית סופית, סדר של איבר מחלק את הסדר של החבורה.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  <strong>פתרון:</strong>
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  בתרגול הקודם הוכחנו שבחבורה אבלית סופית $latex {G}$, לכל $latex {a\in G}$ מתקיים $latex {a^{n}=e}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  נסמן $latex {o\left(a\right)=k}$ , כלומר $latex {a^{k}=e}$ ו-$latex {k}$ הוא המספר הטבעי המינימלי שמקיים זאת.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  לכן $latex {n\geq k}$. מחלוקה עם שארית, קיימים $latex {d,r}$ כך ש- $latex {n=dk+r}$ כאשר $latex {r&lt;k}$.
+</p>
+
+  <p dir="rtl" style="text-align: right;">
+  לכן $latex {e=a^{n}=a^{dk+r}=a^{dk}\cdot a^{r}=\left(a^{k}\right)^{d}a^{r}=e^{d}a^{r}=a^{r}}$, אם $latex {r&gt;0}$ אז זו סתירה למינימליות של $latex {k}$, לכן בהכרח $latex {r=0}$, כלומר $latex {n=dk}$ ולכן $latex {k|n}$.
+</p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  בהמשך נוכיח שהמשפט הזה נכון גם לחבורות לא אבליות.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  <span style="font-size: 14pt;"><b>9. תת חבורות </b></span>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  תת קבוצה של חבורה שהיא בעצמה חבורה, לגבי אותה פעולה כמו של החבורה כולה, נקראת "תת חבורה". למשל, הקבוצה $latex {\{e\}}$ שמכילה רק את האיבר האדיש היא תת חבורה של כל חבורה. גם החבורה כולה היא תת חבורה של עצמה. שתי אלה נקראות "תת חבורות טריוויאליות".
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  דוגמה: לחבורה $latex {\mathbb{Z}_4=\{0,1,2,3\}}$ יש תת חבורה מסדר $latex {2}$, הלא היא $latex {\{0,2\}}$. תת חבורה צריכה להיות סגורה לגבי פעולת החבורה, וגם לגבי היפוך. כלומר, כדי ש- $latex {H}$ תהיה תת חבורה של $latex {G}$ נחוץ שאם $latex {a,b \in H}$ אז $latex {ab \in H}$ וכן שאם $latex {a \in H}$ אז $latex {a^{-1}\in H}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  <span style="font-size: 14pt;"><b>10. $latex {(\mathbb{Z}_p^*,\cdot)}$ ו-$latex {U_n}$ </b></span>
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  האם $latex {\mathbb{Z}_n}$ היא חבורה גם לגבי הכפל? יש יחידה (איבר אדיש), הלא היא המספר $latex {1}$, אבל לא לכל איבר יש הופכי. למשל, ל-$latex {0}$ אין הופכי.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  מה יקרה אם נזרוק את $latex {0}$? גם אז לא תמיד יש הופכי. למשל, ב-$latex {\mathbb{Z}_6}$ לאיברים $latex {2}$ ו-$latex {4}$ אין הופכיים, כי כל כפולה שלהם היא זוגית, וגם לאיבר $latex {3}$ אין הופכי, כי כל כפולה שלו מתחלקת ב-$latex {3}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  אבל כאשר $latex {n}$ ראשוני אכן זריקת ה-$latex {0}$ עוזרת. למספר ראשוני $latex {p}$ נסמן ב-$latex {\mathbb{Z}_p^*}$ את קבוצת האיברים ב-$latex {\mathbb{Z}_p}$ כשזורקים ממנו את ה-$latex {0}$. כלומר - אלה הם האיברים $latex {1,2,\ldots,p-1}$.
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>משפט 10.1</b>
+  </p>
+  
+  <p>
+    א. מכפלה של כל שני איברים ב-$latex {\mathbb{Z}_p^*}$ נמצאת ב-$latex {\mathbb{Z}_p^*}$ (כלומר היא שונה מ-$latex {0}$).
+  </p>
+  
+  <p>
+    ב. לכל איבר ב-$latex {\mathbb{Z}_p^*}$ יש הופכי לגבי הכפל.
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  <b>הוכחה</b> א' נובע מכך שמכפלת שני מספרים שאין להם הגורם $latex {p}$ אינה מתחלקת ב-$latex {p}$ (דבר שאינו נכון למספר לא ראשוני. למשל, $latex {2}$ אינו מתחלק ב-$latex {6}$, וגם $latex {3}$ אינו מתחלק ב-$latex {6}$, אבל מכפלתם כן מתחלקת ב-$latex {6}$).
+</p>
+
+<p style="direction: rtl;">
+  הוכחת ב': תהא $latex {a}$ שארית. אם נכפול את $latex {a}$ בכל $latex {p-1}$ איברי $latex {\mathbb{Z}_p^*}$ נקבל, לפי חוק הצמצום, $latex {p-1}$ תוצאות שונות. אחת מהן חייבת להיות $latex {1}$.
+</p>
+
+<p dir="rtl" style="text-align: right;">
+  משמעות המשפט הזה היא ש-$latex {(\mathbb{Z}_p^*,\cdot)}$ היא חבורה.
+</p>
+
+<p style="direction: rtl;">
+  את התוצאה הזאת אפשר להכליל גם ל-$latex {n}$ שאינו ראשוני - אמנם לא לכל החבורה $latex {\mathbb{Z}_n^*}$, אלא לחלק ממנה. נסמן ב-$latex {U_n}$ (ה-$latex {U}$ הוא קיצור של $latex {units}$) את השאריות הזרות ל-$latex {n}$. למשל, $latex {U(10)=\{1,3,7,9\}}$ (כל שאר $latex {5}$ השאריות, $latex {2,4,5,6,8}$ אינן זרות ל-$latex {10}$). אזי בדיוק אותו משפט נכון:
+</p>
+
+<blockquote dir="rtl">
+  <p>
+    <b>משפט 10.2</b>
+  </p>
+  
+  <p>
+    א. מכפלה של כל שני איברים ב-$latex {U_n}$ נמצאת ב-$latex {U_n}$ (כלומר היא זרה ל-$latex {n}$).
+  </p>
+  
+  <p>
+    ב. לכל איבר ב-$latex {U_n}$ יש הופכי לגבי הכפל.
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+</blockquote>
+
+<p dir="rtl" style="text-align: right;">
+  המסקנה היא ש-$latex {(U_n, \cdot)}$ היא חבורה לגבי הכפל.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/05/01/pythagorean-triplets-complex-numbers-and-abelian-groups/">&laquo; שלשות פיתגוריות, מספרים מרוכבים וחבורות אבליות</a>
+    
+    
+      <a class="next" href="/2015/05/01/groups-part-1/">חבורות - חלק א &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/05/01/groups-part-2/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

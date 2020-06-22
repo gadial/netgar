@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>מספרים עולים ויורדים | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="מספרים עולים ויורדים" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="כשקולגה שלי היה צריך לספר על השערות מתמטיות לילדי הכיתה של בתו, הוא בחר בבעיה הזאת – כה פשוט הוא ניסוחה. ועם זאת, ועל אף עבודה אינטנסיבית על ההשערה, לא הייתה שום התקדמות של ממש בכיוון פתרונה. קל לנסות את ההשערה במחשב, ועד כה היא אומתה בכל המקרים שנבדקו, אבל כיום אין ולו גם קצה חוט להוכחת השערתו של קולץ" />
+<meta property="og:description" content="כשקולגה שלי היה צריך לספר על השערות מתמטיות לילדי הכיתה של בתו, הוא בחר בבעיה הזאת – כה פשוט הוא ניסוחה. ועם זאת, ועל אף עבודה אינטנסיבית על ההשערה, לא הייתה שום התקדמות של ממש בכיוון פתרונה. קל לנסות את ההשערה במחשב, ועד כה היא אומתה בכל המקרים שנבדקו, אבל כיום אין ולו גם קצה חוט להוכחת השערתו של קולץ" />
+<link rel="canonical" href="/2014/09/30/ascending-and-descending-numbers/" />
+<meta property="og:url" content="/2014/09/30/ascending-and-descending-numbers/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-09-30T23:21:09+03:00" />
+<script type="application/ld+json">
+{"dateModified":"2014-09-30T23:21:09+03:00","datePublished":"2014-09-30T23:21:09+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/09/30/ascending-and-descending-numbers/"},"url":"/2014/09/30/ascending-and-descending-numbers/","description":"כשקולגה שלי היה צריך לספר על השערות מתמטיות לילדי הכיתה של בתו, הוא בחר בבעיה הזאת – כה פשוט הוא ניסוחה. ועם זאת, ועל אף עבודה אינטנסיבית על ההשערה, לא הייתה שום התקדמות של ממש בכיוון פתרונה. קל לנסות את ההשערה במחשב, ועד כה היא אומתה בכל המקרים שנבדקו, אבל כיום אין ולו גם קצה חוט להוכחת השערתו של קולץ","headline":"מספרים עולים ויורדים","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/09/30/reinforcements-in-the-experimental-math-department/">&laquo; תגבור כוחות במחלקה למתמטיקה ניסויית</a>
+    
+    
+      <a class="next" href="/2014/09/30/mathematical-harmonies/">הרמוניות מתמטיות &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">מספרים עולים ויורדים</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2014-09-30T23:21:09+03:00" itemprop="datePublished">Sep 30, 2014
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">רון אהרוני</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl;">
+  הבעיה הבאה, שהומצאה על ידי לותָר קולָץ (Lothar Kollatz) הגרמני ב-1937, היא משחק "סולמות וחבלים" מתמטי. עולים ויורדים בסדרה, על פי הכלל הבא: כשמגיעים למספר זוגי מחלקים אותו ב-2; כשמגיעים למספר אי זוגי כופלים אותו ב-3 ומוסיפים 1. נניח, כדוגמה, שמתחילים מ-10. מכיוון ש-10 זוגי, עלינו לחלקו ב-2. התוצאה, 5, אינה זוגית, ועל כן יש לכפול אותה ב-3 ולהוסיף 1. הגענו ל-16, שהוא זוגי, ועל כן נחלקו ב-2. הסדרה המתקבלת היא:$latex 10,5,16,8,4,2,1$. אם מתחילים מ-100 מקבלים את הסדרה:
+</p>
+
+<p style="direction: rtl; text-align: center;">
+  $latex 100,50,25,76,38,19,58,29,88,44,22,11,34,17,52,26,13,40,20,10,5,16,8,4,2,1$
+</p>
+
+<p style="direction: rtl;">
+   בשני המקרים הגענו לבסוף ל-1. השערתו של קולץ היא שכך קורה תמיד - לא משנה מהיכן נתחיל, הסדרה תסתיים ב-1. כשקולגה שלי היה צריך לספר על השערות מתמטיות לילדי הכיתה של בתו, הוא בחר בבעיה הזאת – כה פשוט הוא ניסוחה. ועם זאת, ועל אף עבודה אינטנסיבית על ההשערה, לא הייתה שום התקדמות של ממש בכיוון פתרונה. קל לנסות את ההשערה במחשב, ועד כה היא אומתה בכל המקרים שנבדקו, אבל כיום אין ולו גם קצה חוט להוכחה. המתמטיקאי ההונגרי פאול ארדש אמר פעם ש"למתמטיקה של ימינו אין כלים לגשת לבעיה הזאת".
+</p>
+
+<p style="direction: rtl;">
+  מדוע אם כן מאמינים בכל זאת בהשערה? יש סיבה "היוריסטית", כלומר לא מדויקת, להאמין בנכונותה. הסיבה היא שיש יותר "חבלים" מאשר "סולמות". אומנם, הסולמות ארוכים יותר, משום שכאשר עולים כופלים ב-3, ומוסיפים 1, בעוד שכאשר יורדים מחלקים רק ב-2. אולם כנראה מספר הירידות גדול יותר, משום שלאחר כל עלייה באה ירידה. עלייה מתרחשת כשמגיעים למספר אי זוגי; אבל כפל מספר אי זוגי ב-3 נותן מספר אי זוגי, ולאחר הוספת 1 מתקבל מספר זוגי, שבו על פי הכלל יורדים. הנחה שאין לה הוכחה אבל הכול מאמינים בה היא שלאחר כל ירידה יש עדיין סיכוי של 50% לרדת שוב, ואחר כך שוב סיכוי של 50% לרדת, וכן הלאה. אם אומנם כך הוא, קל להראות שעל כל עליה (שהיא בערך פי 3) יורדים בממוצע פי 4. כלומר בממוצע יורדים יותר מאשר עולים, כך שבסופו של דבר חייבים להגיע ל-1.
+</p>
+
+<p style="direction: rtl;">
+  בעיה אחרת היא שהמספרים יכולים להיכנס למעגל – אין סיבה שאם נתחיל מן המספר 537 הסידרה לא תחזור בסופו של דבר ל-537 (בדיקה פשוטה מראה שהדבר לא קורה). אבל בהנחות דומות לאלה שהוזכרו, יש לכך סיכוי לא גדול, והסיכוי קטן והולך ככל שמתחילים ממספר גדול יותר. לכן רוב הסיכויים הם שההשערה נכונה.
+</p>
+
+<p style="direction: rtl;">
+  האם ההשערה גם חשובה? הדבר תלוי בפתרון (אם בכלל יופיע אי פעם). אם אכן הפתרון יראה שהסדרה הזאת "מקרית" מבחינה זו שלאחר שני שלבים של "סולם" ו"חבל" יכול לבוא באותה הסתברות סולם כמו חבל, יהיה לכך ערך. בוודאי נבין משהו על הרכבם של מספרים.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2014/09/30/reinforcements-in-the-experimental-math-department/">&laquo; תגבור כוחות במחלקה למתמטיקה ניסויית</a>
+    
+    
+      <a class="next" href="/2014/09/30/mathematical-harmonies/">הרמוניות מתמטיות &raquo;</a>
+    
+  </div><a class="u-url" href="/2014/09/30/ascending-and-descending-numbers/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

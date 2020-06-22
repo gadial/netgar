@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>לוגיקה - לחשוב על החשיבה המתמטית | נטגר</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="לוגיקה - לחשוב על החשיבה המתמטית" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים." />
+<meta property="og:description" content="בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים." />
+<link rel="canonical" href="/2015/11/30/logic-thinking-about-math-thinking/" />
+<meta property="og:url" content="/2015/11/30/logic-thinking-about-math-thinking/" />
+<meta property="og:site_name" content="נטגר" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-11-30T22:01:44+02:00" />
+<script type="application/ld+json">
+{"dateModified":"2015-11-30T22:01:44+02:00","datePublished":"2015-11-30T22:01:44+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2015/11/30/logic-thinking-about-math-thinking/"},"url":"/2015/11/30/logic-thinking-about-math-thinking/","description":"בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.","headline":"לוגיקה - לחשוב על החשיבה המתמטית","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$latex','$'] ],
+        processEscapes: true
+      },
+      TeX: {extensions: ["AMSmath.js","AMSsymbols.js"]},
+      "HTML-CSS": { 
+        linebreaks: { automatic: true }
+      },
+      SVG: { 
+        linebreaks: { automatic: true } 
+      }
+    });
+  </script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  
+</head>
+<body><header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">נטגר</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">אודות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/issues/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">גליונות</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/gilionot/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "גליונות למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/pages_math_physics/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "דפים למתמטיקה ופיזיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header><main class="page-content" aria-label="Content" role="main">
+      <div class="wrapper text-right">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting"><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/11/30/riddles-13/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/11/30/computing-sqrt-2/">חישוב 2√ &raquo;</a>
+    
+  </div><header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">לוגיקה - לחשוב על החשיבה המתמטית</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-11-30T22:01:44+02:00" itemprop="datePublished">Nov 30, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">אנה ליזהטוב</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p style="direction: rtl; text-align: right;">
+  <a href="http://net-gar.net/%d7%9e%d7%94-%d7%96%d7%95-%d7%9c%d7%95%d7%92%d7%99%d7%a7%d7%94-%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%aa/">בגיליון נטגר הקודם</a> סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג'ורג' בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  "איך חושבים", אתם בוודאי חושבים לעצמכם, היא שאלה ערטילאית. מה זה "איך חושבים"? לגמרי לא ברור. אולי זוהי הסיבה שהלוגיקה הייתה רדומה כל כך הרבה זמן. צריך לפרוט זאת לשאלות קונקרטיות, ובול אכן עשה את הצעד הראשון: הוא הראה איך אפשר לעשות פורמליזציה לטענות מתמטיים פשוטות, שמכילות רק קשרים פשוטים בין טענות, כמו "ו" או "או".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  זו הייתה חוליה נוספת בשרשרת של מהפכות שפרויד קרא להן "מהפכות קופרניקאיות", כלומר כאלה שמשנות את תפיסת האדם את עצמו, מראיית עצמו כמרכז היקום להבנה שהוא אינו אלא חלק מן העולם הפיזיקלי, חלק שאולי מעניין במיוחד את עצמו אבל אינו ייחודי כפי שנדמה לו. פרויד הבחין בשלוש מהפכות קופרניקאיות. הראשונה היא הקוסמולוגיה של קופרניקוס עצמו, שהבין שכדור הארץ אינו מרכז היקום בשום מובן אפשרי. השנייה היא תורת האבולוציה של דרווין, שלימד אותנו כי אף אם האדם הוא החבר האינטליגנטי ביותר בממלכת החי, הוא כפוף לאותם חוקים שלהם מצייתים שאר חברי הממלכה. את המהפכה השלישית ייחס פרויד, שמעולם לא סבל מעודף צניעות, לעצמו. תורתו, הפסיכואנליזה, הבהירה שגם בממלכה האחרונה שנותרה לכאורה לשליטתו הבלעדית של האדם, נפשו שלו עצמו, אין הוא מלך יחיד. עמקי נפשו אינם נגישים לו יותר מאשר לסובבים אותו, וייתכן שדווקא את מאווייו שלו הוא מכיר פחות מאשר את העולם החיצוני.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  פרויד דיבר לראשונה על מהפכות קופרניקאיות ב-1914, בסדרת הרצאות שנשא באוניברסיטת וינה. אבל באותו זמן כבר החלו לנוע גלגליה של מהפכה רביעית, חשובה עוד יותר משלוש קודמותיה משום שהובילה להמצאת המחשב. זו הייתה התובנה שאפילו הדבר שנראה ייחודי מכל לאדם - החשיבה המופשטת, אינה אלא חלק מן העולם הפיזיקלי. מאמצע המאה התשע- עשרה החלה לחלחל ההבנה שגם החשיבה המופשטת אינה אלא תהליך פיזיקלי, כמו תנועתם של גופים או זרימה של מים. אפשר לתאר אותה במונחים מכאניים, והיא יכולה להיות גם נחלתה של מכונה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  באופן לא מפתיע, זרעיו של המפנה נזרעו באנגליה של המהפכה התעשייתית. בעקבות ניצחונן המוחץ של המכונות החלו הוגים לייחס מכאניוּת לכל תופעות העולם, ובהן האנושיות. מקצת ההוגים היו תיאורטיקנים, כמו קרל מרקס, שהחיל מושגים דטרמיניסטיים על תהליכים חברתיים, והיו גם שניסו ליישם זאת בפועל. המפורסם שבהם היה צ'רלס בבג' ($latex Charles ~~Babbage$), שנהוג לייחס לו את הבנייה (על הנייר) של המחשב הראשון. ב-1820 הוא פירסם תוכנית לבנייתה של מכונת חישוב שיתרונה הגדול הוא שהיא ניתנת לתכנות, ואפילו השיג מימון ממשלתי להרכבתה. את מלאכת ההרכבה המעשית לא השלים מעולם, אבל בסוף המאה העשרים הושלמה המלאכה במוזיאון המדע הבריטי, והתברר שבבג' לא רימה. המכונה פעלה.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  את ניצחונה הגדול ביותר נחלה המהפכה המחשבתית הזאת דווקא במתמטיקה. החשיבה המתמטית היא המופשטת ביותר מבין סוגי החשיבה, אבל גם המאורגנת ביותר, ולכן אפשר לחקור אותה בצורה מתמטית. כאמור, הראשון שעשה זאת בצורה שיטתית היה ג'ורג' בול. הוא הראה איך לעשות פורמליזציה של טענות מתמטיות. ואכן, טענות מתמטיות הן לבני הבניין שמהן בונים מגדלים מתמטיים. אבל לבנים עדיין אינן יוצרות בית. נחוץ מלט שיחבר אותן למבנים בעלי משמעות. את התפקיד הזה ממלאות ההוכחות. הוכחות הן גולת הכותרת של הפעילות המתמטית. הן מוודאות מה נכון, אבל חשוב מכך, הן עדות להבנה. "הוכחה לא נועדה להראות לנו שמשפט מתמטי הוא נכון. כוונתה להראות לנו למה הוא נכון," אמר המתמטיקאי האמריקני רלף בואז $latex (Ralph ~Boas)$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  היה זה פילוסוף-מתמטיקאי גרמני בשם גוטלוב פְרֶגֶה $latex (Gottlob~~ Frege)$ שעשה את הצעד האמיץ הבא: להראות שגם הוכחות אפשר לחקור בצורה מתמטית-פורמלית. הדבר הראשון שפרגה עשה היה להעשיר את השפה המתמטית. הוא הוסיף סימן ל"לכול". הסימון שלו הוחלף מאז, וכיום משתמשים בסימון $latex \forall$, שהוא $latex A$ הפוכה, ונגזר מן המילה "$latex All$", או "$latex Alles$" הגרמני. למשל, $latex \forall x(x \ge 0)$ אומר ש"כל מספר גדול או שווה מ-$latex 0$" – טענה נכונה במספרים הטבעיים. מאוחר יותר הוכנס גם סימון ל"קיים" – $latex \exists$, היפוכה של $latex E$, הגזורה מ-$latex Exists$. למשל, $latex \exists x(x \lt 1)$ אומר "קיים מספר קטן מ-$latex 1$" (שוב, טענה נכונה במספרים הטבעיים, משום שאכן קיים מספר כזה, הלוא הוא 0).
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בשפה החדשה אפשר להביע כל טענה מתמטית מוכרת, ומכאן היה פרגה יכול להמריא למשימה הבאה: הגדרה מהי הוכחה. כל מי שראה מימיו הוכחות מתמטיות מכיר את התכונה העיקרית שלהן: הליניאריות. הן בנויות לבנה על גבי לבנה. זו היתה הגדרתו של פרגה ל"הוכחה":
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  <strong>הוכחה היא סדרה של טענות, שכל אחת נובעת מאלה שהופיעו לפניה.</strong>
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  בכך אין חידוש גדול. האופי הנדבכי של הוכחות הוא כאמור עניין ידוע. תגליתו המפתיעה של פרגה היתה ש"נביעה" היא מושג פשוט. משחק ההוכחה אינו כה מסובך כפי שנדמה. הוא מתנהל בסך הכול על פי שני כללים. הכלל הראשון, שניסח כבר אריסטו, נקרא "ניתוק רישא". אם בסדרת הטענות שמרכיבות את ההוכחה מופיעה, למשל, הטענה "אם היום יום שלישי, אז יורד גשם", ומופיעה גם הטענה "היום יום שלישי", אתם יכולים להוסיף בבטחה לסדרה את הטענה "יורד גשם". אם הוכחתם "אם א' אז ב'" וגם הוכחתם את א', הרי הוכחתם את ב'.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הכלל השני אינו מסובך יותר, אבל הוא מפתיע במקצת. הוא נקרא "הכללה", והוא אומר כך: נניח שהוכחתם ש-"יוסי הוא בן תמותה", ונניח שלא השתמשתם בשום תכונה מיוחדת של יוסי מלבד היותו בן אדם. אם עשיתם זאת, הוכחתם בעצם שכל אדם הוא בן תמותה. הרי ההוכחה תקפה לכל אדם. בניסוח פורמלי, הכלל הוא זה:
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  אם בסדרת הטענות שמהווה הוכחה הגעתם לתכונה כלשהי (נקרא לה $latex P$) של עצם $latex x$, הרי אתם רשאים להוסיף לסדרת הנוסחאות נוסחה חדשה, שגם היא הוכחה בזאת: "לכל $latex x$ מתקיימת התכונה $latex P$", ובסימון המתמטי – $latex \forall x P$.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  למעשה, מבחינתנו לא חשוב מהם בדיוק כללי ההוכחה, אלא רק שהם פשוטים וספורים. פירוש הדבר הוא שמשחק ההוכחה פשוט מאוד. אם מגיע אליכם אדם ובידיו סדרת טענות שהוא אומר כי היא הוכחה, קל מאוד לבדוק זאת. לבנות הוכחה – זה כבר סיפור אחר. קל יותר לזהות עצם כ"מחט", לאחר שהציגו אותו בפניכם, מאשר למצוא את המחט בערמת שחת.
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  כל אחד משני כללי ההיסק – ניתוק הרישא וההכללה – מוכיח נוסחאות על פי נוסחאות קודמות. אבל לא די בכך. כדור הארץ עומד כידוע על גבו של צב – אבל על מה עומד הצב? הרי צריך להתחיל ממקום כלשהו, מטענות שאינן נובעות מטענות קודמות. אלה הן האקסיומות, הנחות מוצא שעל יסודותיהן אפשר לבנות את הבניין. פרגה הגדיר כמה אקסיומות בסיסיות, שנכונות בכל תחום. למשל, "אם היום יום שלישי אז היום יום שלישי", או בצורה פורמלית $latex \alpha \rightarrow \alpha$. "כל דבר גורר את עצמו". או כלל אחר: אם לא נכון שלא נכון שהיום יום שלישי, אז היום יום שלישי. "לא לא" משמעו "כן", ובניסוח פורמלי: $latex \sim\sim \alpha \rightarrow \alpha$. שפירושו "אם לא נכון שלא $latex \alpha$ אז $latex \alpha$ נכונה".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  נוסף על האקסיומות הכלליות, לכל תחום מתמטי יש האקסיומות המיוחדות לו. בגיאומטריה, למשל, האקסיומות יהיו טענות כמו "דרך כל שתי נקודות עובר רק קו ישר אחד" (את המילים האלה צריך לתרגם, כמובן, לנוסחאות). בתורת המספרים, כל מערכת אקסיומות סבירה תכיל בוודאי את האקסיומה שאם מוסיפים 0 למספר, הוא לא משתנה, ופורמלית - $latex \forall x (x+0=x)$. הגדרתו של פרגה להוכחה היא אפוא זו: הוכחה היא סדרת נוסחאות שכל אחת מהן היא או אקסיומה, או נובעת על פי אחד משני כללי ההיסק מנוסחאות קודמות. להשלמת ההגדרה נחוץ לומר עוד דבר אחד: מה מוכיחה סדרת הנוסחאות הזאת? פשוט: את הנוסחה האחרונה שבה, את "שורת המחץ".
+</p>
+
+<p style="direction: rtl; text-align: right;">
+  הרעיונות החדשים של פרגה היו כה מהפכניים, שאף אחד לא התייחס אליהם ברצינות. מישהו אחד שכן התייחס היה גיאורג קנטור, מהפכן בעצמו, שבנה במו ידיו את תורת הקבוצות המודרנית. הוא כתב על ספרו של פרגה מאמר קטילה. פרגה נעשה מר נפש ומסוגר. באחרית ימיו גם לקה באנטישמיות קשה (ייתכן שהיה לכך קשר לעובדה שקנטור היה יהודי). למזלה של המתמטיקה, הייתה לברטראנד ראסל האגלי בילדותו אומנת גרמנייה, ובזכותה הוא ידע גרמנית. כך הגיע, כעשרים שנים מאורח יותר, לקרוא את כתביו של פרגה. הוא הבין את חשיבות המהפכה החדשה, ופרסם אותה דרך ספר שכתב עם ידידו ומורו וויטהד ($latex Whitehead$). הספר, שנקרא "עקרונות המתמטיקה" ($latex Principia ~Mathematica$), היה נקודת מפנה. מאותו רגע הפכה הלוגיקה המתמטית לענף מרכזי. וזה היה פתח למהלכים מרחיקי לכת, שבסופו של דבר הובילו להמצאת המחשב.
+</p>
+
+  </div><div class="PageNavigation">
+    
+      <a class="prev" href="/2015/11/30/riddles-13/">&laquo; חידות</a>
+    
+    
+      <a class="next" href="/2015/11/30/computing-sqrt-2/">חישוב 2√ &raquo;</a>
+    
+  </div><a class="u-url" href="/2015/11/30/logic-thinking-about-math-thinking/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">נטגר</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">נטגר</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>עיתון מתמטי לנוער</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>
