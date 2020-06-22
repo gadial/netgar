@@ -11,6 +11,8 @@ permalink: '/2015/11/01/computing-fibonacci-using-generating-functions/'
 categories:
   - גליון 20 נובמבר 2015
   - כללי
+issue: 20
+place: 2
 ---
 <h2 style="direction: rtl; text-align: right;">
   1 ההגדרה של סדרת פיבונצ׳י

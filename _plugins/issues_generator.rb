@@ -11,10 +11,9 @@ module Jekyll
                 issues[key].sort_by!{|post| post.data['place']}
             end
             for number in issues.keys
-                puts number
-                puts issues[number].inspect
                 site.pages << IssuePage.new(site, site.source, number, issues[number])
             end
+            site.data['issue_numbers'] = issues.keys.sort
         end
     end
 

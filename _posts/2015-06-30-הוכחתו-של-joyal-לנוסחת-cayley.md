@@ -11,6 +11,8 @@ permalink: '/2015/06/30/joyal-proof-of-cayley-formula/'
 categories:
   - גליון 17 יולי 2015
   - מאמרים כלליים
+issue: 17
+place: 2
 ---
 <p style="direction: rtl;">
   <b>1. קישור ערים ע"י כבישים</b>

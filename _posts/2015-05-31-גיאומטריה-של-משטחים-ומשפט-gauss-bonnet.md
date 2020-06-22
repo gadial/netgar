@@ -11,6 +11,8 @@ permalink: '/2015/05/31/geometry-of-surfaces-and-gauss-bonnet-theorem/'
 categories:
   - גיאומטריה
   - גליון 16 יוני 2015
+issue: 16
+place: 3
 ---
 <p style="direction: rtl; text-align: center;">
   <b>החוג למתמטיקה באוניברסיטת ברקלי</b>
