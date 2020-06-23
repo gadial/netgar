@@ -1,7 +1,7 @@
 title: נטגר
 description: >- 
   עיתון מתמטי לנוער
-baseurl: ""
+baseurl: "/netgar"
 url: ""
 markdown: kramdown
 theme: minima

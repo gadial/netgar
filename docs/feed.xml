@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-06-22T16:29:26+03:00</updated><id>/feed.xml</id><title type="html">נטגר</title><subtitle>עיתון מתמטי לנוער</subtitle><entry><title type="html">דבר העורך</title><link href="/2015/11/30/editor-21/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-30T22:03:13+02:00</published><updated>2015-11-30T22:03:13+02:00</updated><id>/2015/11/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-21</id><content type="html" xml:base="/2015/11/30/editor-21/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/netgar/feed.xml" rel="self" type="application/atom+xml" /><link href="/netgar/" rel="alternate" type="text/html" /><updated>2020-06-23T14:10:56+03:00</updated><id>/netgar/feed.xml</id><title type="html">נטגר</title><subtitle>עיתון מתמטי לנוער</subtitle><entry><title type="html">דבר העורך</title><link href="/netgar/2015/11/30/editor-21/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-30T22:03:13+02:00</published><updated>2015-11-30T22:03:13+02:00</updated><id>/netgar/2015/11/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-21</id><content type="html" xml:base="/netgar/2015/11/30/editor-21/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. פעם היו מלמדים זאת בבית ספר תיכון - האם אתם מאמינים? השני הוא תרומה של אנה ליזהטוב (כבר אמרנו: אם היא לא הייתה קיימת היה צריך להמציא אותה), על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה. זהו תחום שנדמה שיש בו ניחוח פילוסופי אבל מי שמבין אותו באמת יודע שבדיוק ההפך, הוא מראה שהחשיבה האנושית היא חלק מן העולם הפיזיקלי.
 &lt;/p&gt;
 
@@ -12,7 +12,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   ובינתיים - תודה לכל העושים במלאכה. אורי פרץ ומיכאל ליטבק, שהיו ממונים על הצדדים המחשוביים של הפרויקט. לדני לובזנס שערך את מדור החידות. יוסי כהן, שהיה האחראי והדוחף, אליהו לוי ואנה ליזהטוב שהתמידו כתורמי מאמרים, ולשאר המתמטיקאים שתרמו מזמנם ומן הידע שלהם.
-&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. השני הוא תרומה של אנה ליזהטוב על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה.</summary></entry><entry><title type="html">חישוב 2√</title><link href="/2015/11/30/computing-sqrt-2/" rel="alternate" type="text/html" title="חישוב 2√" /><published>2015-11-30T22:02:07+02:00</published><updated>2015-11-30T22:02:07+02:00</updated><id>/2015/11/30/%D7%97%D7%99%D7%A9%D7%95%D7%91-2e2889a</id><content type="html" xml:base="/2015/11/30/computing-sqrt-2/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">בגיליון זה יש שני מאמרים. האחד, של דויד בלנק מאוניברסיטת חיפה, על איך מחשבים שורש ריבועי. השני הוא תרומה של אנה ליזהטוב על הלוגיקה המתמטית, מן המוזרים בתחומי המתמטיקה.</summary></entry><entry><title type="html">חישוב 2√</title><link href="/netgar/2015/11/30/computing-sqrt-2/" rel="alternate" type="text/html" title="חישוב 2√" /><published>2015-11-30T22:02:07+02:00</published><updated>2015-11-30T22:02:07+02:00</updated><id>/netgar/2015/11/30/%D7%97%D7%99%D7%A9%D7%95%D7%91-2e2889a</id><content type="html" xml:base="/netgar/2015/11/30/computing-sqrt-2/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   כולנו מכירים את משפט פיתאגוראס, האומר שריבוע היתר במשולש ישר זווית שווה לסכום ריבועי הצלעות האחרות. המשפט הזה היה ידוע (כעובדה אמפירית לפחות) מאות שנים לפני פיתאגוראס, אך הוא היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע $latex A$ של ריבוע כלשהו ואורך האלכסון שלו $latex B$ אינם &lt;span style=&quot;text-decoration: underline;&quot;&gt;בני השוואה&lt;/span&gt; - כלומר, אין מספרים שלמים חיוביים $latex m$ ו-$latex n$ כך ש-$latex n\cdot A=m\cdot B$.
 &lt;/p&gt;
 
@@ -250,7 +250,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
   $latex \displaystyle 1.41421356237$
-&lt;/p&gt;</content><author><name>[&quot;דוד בלנק&quot;]</name></author><summary type="html">פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה.</summary></entry><entry><title type="html">לוגיקה - לחשוב על החשיבה המתמטית</title><link href="/2015/11/30/logic-thinking-about-math-thinking/" rel="alternate" type="text/html" title="לוגיקה - לחשוב על החשיבה המתמטית" /><published>2015-11-30T22:01:44+02:00</published><updated>2015-11-30T22:01:44+02:00</updated><id>/2015/11/30/%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9C%D7%97%D7%A9%D7%95%D7%91-%D7%A2%D7%9C-%D7%94%D7%97%D7%A9%D7%99%D7%91%D7%94-%D7%94%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/2015/11/30/logic-thinking-about-math-thinking/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>[&quot;דוד בלנק&quot;]</name></author><summary type="html">פיתאגוראס היה הראשון שגילה את העובדה המפתיעה שבכל יחידות אורך שנקבע, אורך הצלע של ריבוע כלשהו ואורך האלכסון שלו אינם בני השוואה. למרות שאי אפשר לבטא את 2√ במדוייק באמצעות מספרים רציונאליים, אפשר לקרב אותו - או כל שורש ריבועי אחר - על-ידי מספרים רציונאליים בכל מידת דיוק שנרצה, בדרך שהייתה ידועה כבר לבבלים לפני כמעט 4000 שנה.</summary></entry><entry><title type="html">לוגיקה - לחשוב על החשיבה המתמטית</title><link href="/netgar/2015/11/30/logic-thinking-about-math-thinking/" rel="alternate" type="text/html" title="לוגיקה - לחשוב על החשיבה המתמטית" /><published>2015-11-30T22:01:44+02:00</published><updated>2015-11-30T22:01:44+02:00</updated><id>/netgar/2015/11/30/%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9C%D7%97%D7%A9%D7%95%D7%91-%D7%A2%D7%9C-%D7%94%D7%97%D7%A9%D7%99%D7%91%D7%94-%D7%94%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/netgar/2015/11/30/logic-thinking-about-math-thinking/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   &lt;a href=&quot;http://net-gar.net/%d7%9e%d7%94-%d7%96%d7%95-%d7%9c%d7%95%d7%92%d7%99%d7%a7%d7%94-%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%aa/&quot;&gt;בגיליון נטגר הקודם&lt;/a&gt; סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג'ורג' בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.
 &lt;/p&gt;
 
@@ -312,7 +312,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   הרעיונות החדשים של פרגה היו כה מהפכניים, שאף אחד לא התייחס אליהם ברצינות. מישהו אחד שכן התייחס היה גיאורג קנטור, מהפכן בעצמו, שבנה במו ידיו את תורת הקבוצות המודרנית. הוא כתב על ספרו של פרגה מאמר קטילה. פרגה נעשה מר נפש ומסוגר. באחרית ימיו גם לקה באנטישמיות קשה (ייתכן שהיה לכך קשר לעובדה שקנטור היה יהודי). למזלה של המתמטיקה, הייתה לברטראנד ראסל האגלי בילדותו אומנת גרמנייה, ובזכותה הוא ידע גרמנית. כך הגיע, כעשרים שנים מאורח יותר, לקרוא את כתביו של פרגה. הוא הבין את חשיבות המהפכה החדשה, ופרסם אותה דרך ספר שכתב עם ידידו ומורו וויטהד ($latex Whitehead$). הספר, שנקרא &quot;עקרונות המתמטיקה&quot; ($latex Principia ~Mathematica$), היה נקודת מפנה. מאותו רגע הפכה הלוגיקה המתמטית לענף מרכזי. וזה היה פתח למהלכים מרחיקי לכת, שבסופו של דבר הובילו להמצאת המחשב.
-&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.</summary></entry><entry><title type="html">חידות</title><link href="/2015/11/30/riddles-13/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-30T22:00:35+02:00</published><updated>2015-11-30T22:00:35+02:00</updated><id>/2015/11/30/%D7%97%D7%99%D7%93%D7%95%D7%AA-13</id><content type="html" xml:base="/2015/11/30/riddles-13/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">בגיליון נטגר הקודם סיפרנו לכם איך הלוגיקה המתמטית, ענף מתמטי שהיה רדום כאלפיים וארבע מאות שנים, התעורר באמצע המאה התשע עשרה בעבודתו של האנגלי ג’ורג’ בול. הלוגיקה המתמטית עושה דבר מוזר ביותר: היא חוקרת את הפעילות המתמטית. כלומר מתארת בצורה פורמלית איך מתמטיקאים חושבים.</summary></entry><entry><title type="html">חידות</title><link href="/netgar/2015/11/30/riddles-13/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-30T22:00:35+02:00</published><updated>2015-11-30T22:00:35+02:00</updated><id>/netgar/2015/11/30/%D7%97%D7%99%D7%93%D7%95%D7%AA-13</id><content type="html" xml:base="/netgar/2015/11/30/riddles-13/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   לחידות המוצגות בגיליון זה יפורסמו רמזים בגיליון הבא ופתרונות מלאים בזה שלאחריו. נשמח לקבל את פתרונותיכם באמצעות המקום המיועד לכך בתחתית העמוד עד &lt;strong&gt;24.12.2015 &lt;/strong&gt;, אנא ציינו את שמכם, היישוב בו אתם גרים, שם ביה&quot;ס שלכם והכיתה בה אתם לומדים. בגיליון הבא יפורסמו שמות הפותרים נכונה, וכן יובאו פתרונות יפים שייכתבו על ידכם.
 &lt;/p&gt;
 
@@ -337,7 +337,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3557&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles1_dec15.png&quot; alt=&quot;puzzles1_dec15&quot; width=&quot;511&quot; height=&quot;206&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3557&quot; src=&quot;/netgar/assets/img/2015/11/puzzles1_dec15.png&quot; alt=&quot;puzzles1_dec15&quot; width=&quot;511&quot; height=&quot;206&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -349,7 +349,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3558&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles2_dec15.png&quot; alt=&quot;puzzles2_dec15&quot; width=&quot;228&quot; height=&quot;220&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3558&quot; src=&quot;/netgar/assets/img/2015/11/puzzles2_dec15.png&quot; alt=&quot;puzzles2_dec15&quot; width=&quot;228&quot; height=&quot;220&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -400,7 +400,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3559&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles3_dec15-1024x430.png&quot; alt=&quot;puzzles3_dec15&quot; width=&quot;632&quot; height=&quot;265&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3559&quot; src=&quot;/netgar/assets/img/2015/11/puzzles3_dec15-1024x430.png&quot; alt=&quot;puzzles3_dec15&quot; width=&quot;632&quot; height=&quot;265&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -420,11 +420,11 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3560&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles4_dec15.png&quot; alt=&quot;puzzles4_dec15&quot; width=&quot;532&quot; height=&quot;496&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3560&quot; src=&quot;/netgar/assets/img/2015/11/puzzles4_dec15.png&quot; alt=&quot;puzzles4_dec15&quot; width=&quot;532&quot; height=&quot;496&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3566&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/sol1_last-drawing.jpg&quot; alt=&quot;sol1_last drawing&quot; width=&quot;414&quot; height=&quot;414&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3566&quot; src=&quot;/netgar/assets/img/2015/11/sol1_last-drawing.jpg&quot; alt=&quot;sol1_last drawing&quot; width=&quot;414&quot; height=&quot;414&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -565,7 +565,7 @@
 
 &lt;p style=&quot;direction: rtl;&quot;&gt;
   
-&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/2015/11/01/editor-20/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-01T11:46:35+02:00</published><updated>2015-11-01T11:46:35+02:00</updated><id>/2015/11/01/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-20</id><content type="html" xml:base="/2015/11/01/editor-20/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/netgar/2015/11/01/editor-20/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-11-01T11:46:35+02:00</published><updated>2015-11-01T11:46:35+02:00</updated><id>/netgar/2015/11/01/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-20</id><content type="html" xml:base="/netgar/2015/11/01/editor-20/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   אחד הדברים היפים במתמטיקה הוא חיבור של תחומים שונים. בגיליון הנוכחי יש לנו דוגמה יפה לכך - פתרון בעיה קומבינטורית בעזרת טורי חזקות. הרעיון המקורי היה של אוילר, והוא נקרא &quot;פונקציות יוצרות&quot;. פרופ' רוס פינסקי מן הטכניון הסכים לכתוב מאמר על הנושא - אנחנו מקווים שתיהנו, וכמו כן אנחנו מקווים להוסיף מאמרי המשך בנושא בעתיד.
 &lt;/p&gt;
 
@@ -583,7 +583,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   העורך.
-&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">אחד הדברים היפים במתמטיקה הוא חיבור של תחומים שונים. בגיליון הנוכחי יש לנו דוגמה יפה לכך – פתרון בעיה קומבינטורית בעזרת טורי חזקות. אנה ליזהטוב תרמה גם היא מאמר, על אחד מתחומי המתמטיקה החידתיים ביותר, הלוגיקה המתמטית. ויש לנו גם ראיון עם מתמטיקאי – מן הדמויות המוכרות והצבעוניות ביותר בעולם המתמטי של ימינו – מתמטיקאי ישראלי המתגורר בארצות הברית, דורון ציילברגר.</summary></entry><entry><title type="html">חישוב מספרי Fibonacci בעזרת פונקציות יוצרות</title><link href="/2015/11/01/computing-fibonacci-using-generating-functions/" rel="alternate" type="text/html" title="חישוב מספרי Fibonacci בעזרת פונקציות יוצרות" /><published>2015-11-01T11:45:24+02:00</published><updated>2015-11-01T11:45:24+02:00</updated><id>/2015/11/01/%D7%97%D7%99%D7%A9%D7%95%D7%91-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99-fibonacci-%D7%91%D7%A2%D7%96%D7%A8%D7%AA-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%99%D7%95%D7%A6%D7%A8%D7%95%D7%AA</id><content type="html" xml:base="/2015/11/01/computing-fibonacci-using-generating-functions/">&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>רון אהרוני</name></author><summary type="html">אחד הדברים היפים במתמטיקה הוא חיבור של תחומים שונים. בגיליון הנוכחי יש לנו דוגמה יפה לכך – פתרון בעיה קומבינטורית בעזרת טורי חזקות. אנה ליזהטוב תרמה גם היא מאמר, על אחד מתחומי המתמטיקה החידתיים ביותר, הלוגיקה המתמטית. ויש לנו גם ראיון עם מתמטיקאי – מן הדמויות המוכרות והצבעוניות ביותר בעולם המתמטי של ימינו – מתמטיקאי ישראלי המתגורר בארצות הברית, דורון ציילברגר.</summary></entry><entry><title type="html">חישוב מספרי Fibonacci בעזרת פונקציות יוצרות</title><link href="/netgar/2015/11/01/computing-fibonacci-using-generating-functions/" rel="alternate" type="text/html" title="חישוב מספרי Fibonacci בעזרת פונקציות יוצרות" /><published>2015-11-01T11:45:24+02:00</published><updated>2015-11-01T11:45:24+02:00</updated><id>/netgar/2015/11/01/%D7%97%D7%99%D7%A9%D7%95%D7%91-%D7%9E%D7%A1%D7%A4%D7%A8%D7%99-fibonacci-%D7%91%D7%A2%D7%96%D7%A8%D7%AA-%D7%A4%D7%95%D7%A0%D7%A7%D7%A6%D7%99%D7%95%D7%AA-%D7%99%D7%95%D7%A6%D7%A8%D7%95%D7%AA</id><content type="html" xml:base="/netgar/2015/11/01/computing-fibonacci-using-generating-functions/">&lt;h2 style=&quot;direction: rtl; text-align: right;&quot;&gt;
   1 ההגדרה של סדרת פיבונצ׳י
 &lt;/h2&gt;
 
@@ -784,7 +784,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  (הדבר נובע גם מנוסחת ויאטה &amp;#8212; מכפלת השורשים היא האיבר החופשי.)
+  (הדבר נובע גם מנוסחת ויאטה — מכפלת השורשים היא האיבר החופשי.)
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -921,7 +921,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   אכן הפונקציה $latex F(x)=\frac x{1-x-x^2}$ &quot;יצרה&quot; לנו את מספרי פיבונצ'י!
-&lt;/p&gt;</content><author><name>[&quot;רוס פינסקי&quot;]</name></author><summary type="html">סדרת פיבונצ’י היא אחת הסדרות המפורסמות ביותר במתמטיקה. במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי בסדרת פיבונצ’י בעזרת כלי הנקרא פונקציות יוצרות.</summary></entry><entry><title type="html">מה זו לוגיקה מתמטית</title><link href="/2015/11/01/what-is-mathematica-logic/" rel="alternate" type="text/html" title="מה זו לוגיקה מתמטית" /><published>2015-11-01T11:44:28+02:00</published><updated>2015-11-01T11:44:28+02:00</updated><id>/2015/11/01/%D7%9E%D7%94-%D7%96%D7%95-%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/2015/11/01/what-is-mathematica-logic/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>[&quot;רוס פינסקי&quot;]</name></author><summary type="html">סדרת פיבונצ’י היא אחת הסדרות המפורסמות ביותר במתמטיקה. במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי בסדרת פיבונצ’י בעזרת כלי הנקרא פונקציות יוצרות.</summary></entry><entry><title type="html">מה זו לוגיקה מתמטית</title><link href="/netgar/2015/11/01/what-is-mathematica-logic/" rel="alternate" type="text/html" title="מה זו לוגיקה מתמטית" /><published>2015-11-01T11:44:28+02:00</published><updated>2015-11-01T11:44:28+02:00</updated><id>/netgar/2015/11/01/%D7%9E%D7%94-%D7%96%D7%95-%D7%9C%D7%95%D7%92%D7%99%D7%A7%D7%94-%D7%9E%D7%AA%D7%9E%D7%98%D7%99%D7%AA</id><content type="html" xml:base="/netgar/2015/11/01/what-is-mathematica-logic/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   מהי המתמטיקה?
 &lt;/p&gt;
 
@@ -953,7 +953,7 @@
   הצעד הראשון נעשה בידי לוגיקאי אנגלי בשם ג'ורג' בול. לבול לא היו חיים קלים. כנער נאלץ לפרנס את משפחתו בשיעורים פרטיים, וכך לא למד בצורה מסודרת בעצמו: הוא היה אוטודידקט. לאחר קריירה לא ארוכה מת בגיל כחמישים מדלקת ריאות, שהוחמרה בטיפולים של אמבטיות קרות בהמלצת אשתו שהאמינה ש&quot;התרופה צריכה להיות דומה לגורם למחלה&quot;.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3442&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/George_Boole_color.jpg&quot; alt=&quot;&quot; width=&quot;188&quot; height=&quot;252&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3442&quot; src=&quot;/netgar/assets/img/2015/10/George_Boole_color.jpg&quot; alt=&quot;&quot; width=&quot;188&quot; height=&quot;252&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
   ג׳ורג׳ בול, 1815 - 1864
@@ -998,7 +998,7 @@
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   אבל זה היה רק צעד ראשון של פרגה. היה לו צעד חשוב הרבה יותר - הוא הגדיר בצורה מדויקת מהי &quot;הוכחה מתמטית&quot;. וזה היה כבר באמת הישג גדול. אספר עליו במאמר הבא בסדרה.
-&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">מהי המתמטיקה? &quot;המדע של הצורה והמספר&quot;, אומרת אחת ההגדרות המפורסמות ביותר. המאמר הזה הוא ראשון בסדרת מאמרים על תחום מתמטי שמפריך בקיומו את ההגדרה הזאת: הוא לא עוסק לא בצורות ולא במספרים. זוהי הלוגיקה המתמטית - אחד החידתיים ביותר בין תחומי המתמטיקה.</summary></entry><entry><title type="html">ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג’רזי</title><link href="/2015/11/01/doron-zeilberger-interview/" rel="alternate" type="text/html" title="ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג'רזי" /><published>2015-11-01T11:43:21+02:00</published><updated>2015-11-01T11:43:21+02:00</updated><id>/2015/11/01/%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A2%D7%9D-%D7%93%D7%95%D7%A8%D7%95%D7%9F-%D7%A6%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%92%D7%A8-%D7%9E%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA-%D7%A8</id><content type="html" xml:base="/2015/11/01/doron-zeilberger-interview/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>[&quot;אנה ליזהטוב&quot;]</name></author><summary type="html">מהי המתמטיקה? &quot;המדע של הצורה והמספר&quot;, אומרת אחת ההגדרות המפורסמות ביותר. המאמר הזה הוא ראשון בסדרת מאמרים על תחום מתמטי שמפריך בקיומו את ההגדרה הזאת: הוא לא עוסק לא בצורות ולא במספרים. זוהי הלוגיקה המתמטית - אחד החידתיים ביותר בין תחומי המתמטיקה.</summary></entry><entry><title type="html">ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג’רזי</title><link href="/netgar/2015/11/01/doron-zeilberger-interview/" rel="alternate" type="text/html" title="ראיון עם דורון ציילברגר מאוניברסיטת רטגרס, ניו ג'רזי" /><published>2015-11-01T11:43:21+02:00</published><updated>2015-11-01T11:43:21+02:00</updated><id>/netgar/2015/11/01/%D7%A8%D7%90%D7%99%D7%95%D7%9F-%D7%A2%D7%9D-%D7%93%D7%95%D7%A8%D7%95%D7%9F-%D7%A6%D7%99%D7%99%D7%9C%D7%91%D7%A8%D7%92%D7%A8-%D7%9E%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA-%D7%A8</id><content type="html" xml:base="/netgar/2015/11/01/doron-zeilberger-interview/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   פרופ' ציילברגר הוא מתמטיקאי ידוע ומוכר בשל הישגיו בתחום המנייה הקומבינטורית. אבל לא פחות מכך הוא מפורסם בשל פריצת הדרך שלו בכתיבת תוכניות מחשב שמגלות בעצמן משפטים מתמטיים, במיוחד זהויות קומבינטוריות. את דעתו, שבסופו של דבר המחשבים יוכלו למלא לא רק את מקומם של מחשבי חשבונות אלא גם של מתמטיקאים, הוא מפיץ בדרכים שונות. בראיון הזה ניסינו להתחקות אחרי התפתחותו כמתמטיקאי ולשמוע מעט מדעותיו.
 &lt;/p&gt;
 
@@ -1046,7 +1046,7 @@
   החלטתי לחזור למכון וייצמן, לעשות דוקטורט. בחרתי כמנחה בהרי דים, חבר סגל צעיר בפקולטה. סיימתי את הדוקטורט ארבע שנים אחר כך, בגיל 26, שהוא גיל צעיר לישראלי ששירת בצבא.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3438 &quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/Doron_Zeilberger_circa_2005-228x300.jpg&quot; alt=&quot;&quot; width=&quot;199&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3438 &quot; src=&quot;/netgar/assets/img/2015/10/Doron_Zeilberger_circa_2005.jpg&quot; alt=&quot;&quot; width=&quot;199&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
   &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1104,7 +1104,7 @@
   &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
     כמובן, בזמנך הפנוי אתה יכול להשתעשע גם בפתרון הבעיה בדרך הישנה, בעצמך. אבל זה צריך להיות שעשוע, כמו סודוקו. ועל זה אינך אמור לקבל משכורת.
   &lt;/p&gt;
-&lt;/p&gt;</content><author><name>[&quot;רון אהרוני&quot;]</name></author><summary type="html">פרופ' ציילברגר הוא מתמטיקאי ידוע ומוכר בשל הישגיו בתחום המנייה הקומבינטורית. אבל לא פחות מכך הוא מפורסם בשל פריצת הדרך שלו בכתיבת תוכניות מחשב שמגלות בעצמן משפטים מתמטיים, במיוחד זהויות קומבינטוריות. את דעתו, שבסופו של דבר המחשבים יוכלו למלא לא רק את מקומם של מחשבי חשבונות אלא גם של מתמטיקאים, הוא מפיץ בדרכים שונות. בראיון הזה ניסינו להתחקות אחרי התפתחותו כמתמטיקאי ולשמוע מעט מדעותיו.</summary></entry><entry><title type="html">חידות</title><link href="/2015/11/01/riddles-12/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-01T11:42:25+02:00</published><updated>2015-11-01T11:42:25+02:00</updated><id>/2015/11/01/%D7%97%D7%99%D7%93%D7%95%D7%AA-12</id><content type="html" xml:base="/2015/11/01/riddles-12/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>[&quot;רון אהרוני&quot;]</name></author><summary type="html">פרופ' ציילברגר הוא מתמטיקאי ידוע ומוכר בשל הישגיו בתחום המנייה הקומבינטורית. אבל לא פחות מכך הוא מפורסם בשל פריצת הדרך שלו בכתיבת תוכניות מחשב שמגלות בעצמן משפטים מתמטיים, במיוחד זהויות קומבינטוריות. את דעתו, שבסופו של דבר המחשבים יוכלו למלא לא רק את מקומם של מחשבי חשבונות אלא גם של מתמטיקאים, הוא מפיץ בדרכים שונות. בראיון הזה ניסינו להתחקות אחרי התפתחותו כמתמטיקאי ולשמוע מעט מדעותיו.</summary></entry><entry><title type="html">חידות</title><link href="/netgar/2015/11/01/riddles-12/" rel="alternate" type="text/html" title="חידות" /><published>2015-11-01T11:42:25+02:00</published><updated>2015-11-01T11:42:25+02:00</updated><id>/netgar/2015/11/01/%D7%97%D7%99%D7%93%D7%95%D7%AA-12</id><content type="html" xml:base="/netgar/2015/11/01/riddles-12/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   לחידות המוצגות בגיליון זה יפורסמו רמזים בגיליון הבא ופתרונות מלאים בזה שלאחריו. נשמח לקבל את פתרונותיכם באמצעות המקום המיועד לכך בתחתית העמוד עד &lt;strong&gt;24.11.2015&lt;/strong&gt; , אנא ציינו את שמכם, היישוב בו אתם גרים, שם ביה&quot;ס שלכם והכיתה בה אתם לומדים. בגיליון הבא יפורסמו שמות הפותרים נכונה, וכן יובאו פתרונות יפים שייכתבו על ידכם.
 &lt;/p&gt;
 
@@ -1113,7 +1113,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3427&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles1_nov15.png&quot; alt=&quot;puzzles1_nov15&quot; width=&quot;660&quot; height=&quot;130&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3427&quot; src=&quot;/netgar/assets/img/2015/10/puzzles1_nov15.png&quot; alt=&quot;puzzles1_nov15&quot; width=&quot;660&quot; height=&quot;130&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1149,7 +1149,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3428&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles2_nov15.png&quot; alt=&quot;puzzles2_nov15&quot; width=&quot;290&quot; height=&quot;167&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3428&quot; src=&quot;/netgar/assets/img/2015/10/puzzles2_nov15.png&quot; alt=&quot;puzzles2_nov15&quot; width=&quot;290&quot; height=&quot;167&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1197,7 +1197,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3497 size-full&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/Screen-Shot-2015-11-08-at-11.09.15.png&quot; alt=&quot;&quot; width=&quot;247&quot; height=&quot;208&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3497 size-full&quot; src=&quot;/netgar/assets/img/2015/11/Screen-Shot-2015-11-08-at-11.09.15.png&quot; alt=&quot;&quot; width=&quot;247&quot; height=&quot;208&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1213,7 +1213,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3430&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles3_nov15.png&quot; alt=&quot;puzzles3_nov15&quot; width=&quot;572&quot; height=&quot;237&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3430&quot; src=&quot;/netgar/assets/img/2015/10/puzzles3_nov15.png&quot; alt=&quot;puzzles3_nov15&quot; width=&quot;572&quot; height=&quot;237&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1410,7 +1410,7 @@
 
 &lt;p style=&quot;direction: rtl;&quot;&gt;
   
-&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/2015/09/30/editor-19/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-09-30T22:04:08+03:00</published><updated>2015-09-30T22:04:08+03:00</updated><id>/2015/09/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-19</id><content type="html" xml:base="/2015/09/30/editor-19/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
+&lt;/p&gt;</content><author><name>דניאל לובזנס</name></author><summary type="html">מדור החידות לילדים ונוער המחודש, יותר אתגר, יותר עניין בעריכת דניאל לובזנס.</summary></entry><entry><title type="html">דבר העורך</title><link href="/netgar/2015/09/30/editor-19/" rel="alternate" type="text/html" title="דבר העורך" /><published>2015-09-30T22:04:08+03:00</published><updated>2015-09-30T22:04:08+03:00</updated><id>/netgar/2015/09/30/%D7%93%D7%91%D7%A8-%D7%94%D7%A2%D7%95%D7%A8%D7%9A-19</id><content type="html" xml:base="/netgar/2015/09/30/editor-19/">&lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
   אנחנו חוזרים לנושא אהוב עלינו (ונראה שגם עליכם, הקוראים) של השערות. במאמר של כותבינו הותיק, אליהו לוי, יסופר על השערות שלכל אחת מהן הוכרז פרס של מיליון דולרים.
 &lt;/p&gt;
 

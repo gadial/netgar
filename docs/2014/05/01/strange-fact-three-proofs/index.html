@@ -9,18 +9,18 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="זהו פרק חותם לסדרה של שלושה מאמרים על שברים עשרוניים אינסופיים, והוא הקצר בין השלושה. אני רוצה לספר בו על מסקנה מאוד מוזרה ממה שלמדנו." />
 <meta property="og:description" content="זהו פרק חותם לסדרה של שלושה מאמרים על שברים עשרוניים אינסופיים, והוא הקצר בין השלושה. אני רוצה לספר בו על מסקנה מאוד מוזרה ממה שלמדנו." />
-<link rel="canonical" href="/2014/05/01/strange-fact-three-proofs/" />
-<meta property="og:url" content="/2014/05/01/strange-fact-three-proofs/" />
+<link rel="canonical" href="/netgar/2014/05/01/strange-fact-three-proofs/" />
+<meta property="og:url" content="/netgar/2014/05/01/strange-fact-three-proofs/" />
 <meta property="og:site_name" content="נטגר" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2014-05-01T00:41:08+03:00" />
 <script type="application/ld+json">
-{"dateModified":"2014-05-01T00:41:08+03:00","datePublished":"2014-05-01T00:41:08+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2014/05/01/strange-fact-three-proofs/"},"url":"/2014/05/01/strange-fact-three-proofs/","description":"זהו פרק חותם לסדרה של שלושה מאמרים על שברים עשרוניים אינסופיים, והוא הקצר בין השלושה. אני רוצה לספר בו על מסקנה מאוד מוזרה ממה שלמדנו.","headline":"עובדה מוזרה עם שלוש הוכחות","@context":"https://schema.org"}</script>
+{"dateModified":"2014-05-01T00:41:08+03:00","datePublished":"2014-05-01T00:41:08+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/netgar/2014/05/01/strange-fact-three-proofs/"},"url":"/netgar/2014/05/01/strange-fact-three-proofs/","description":"זהו פרק חותם לסדרה של שלושה מאמרים על שברים עשרוניים אינסופיים, והוא הקצר בין השלושה. אני רוצה לספר בו על מסקנה מאוד מוזרה ממה שלמדנו.","headline":"עובדה מוזרה עם שלוש הוכחות","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link href="/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
+<link href="/netgar/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/netgar/assets/css/main.css' }}">
+  <link rel="shortcut icon" href="/netgar/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/netgar/favicon.ico" type="image/x-icon"><link type="application/atom+xml" rel="alternate" href="/netgar/feed.xml" title="נטגר" /><script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
         inlineMath: [ ['$latex','$'] ],
@@ -43,7 +43,7 @@
 </head>
 <body><header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="/">נטגר</a>
+    <a class="navbar-brand" href="/netgar/">נטגר</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,9 +63,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/scans/quarterly/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ארכיון של "רבעון למתמטיקה"</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/riddles/" id="dropdown_scans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">חידות</a>
         </li>
       </ul>
     </div>
@@ -172,59 +169,46 @@
 </p>
 
 <ol>
-  <li>
-    <p style="direction: rtl;">
- <span style="font-family: arial, helvetica, sans-serif;">אם $latex {k,\ell \in \Phi}$ אז $latex {k\ell \in \Phi}$.</span>
-    </p>
-  </li>
+  <li>אם $latex {k,\ell \in \Phi}$ אז $latex {k\ell \in \Phi}$.</li>
+  <li>אם $latex {a,b,c \in \Phi}$ ו-$latex {a\cdot b=a\cdot c}$ אז $latex {b=c}$.
+  (הסיבה: $latex {a\cdot ((b-c)(mod~n))=0(mod~ n)}$, ומכיוון ש-$latex {a}$ זר ל-$latex {n}$ זה מחייב ש-$latex {b-c=0(mod~ n)}$, שפירושו ש-$latex {b=c}$.)</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span style="font-family: arial, helvetica, sans-serif;"&gt; &lt;/span&gt;&lt;/li&gt; 
+<p style="direction: rtl;">
+  <span style="font-family: arial, helvetica, sans-serif;">נסתכל עכשיו בחזקות של $latex {10}$ לגבי פעולת הכפל מודולו $latex {n}$. שוב, לפי עקרון שובך היונים, קיימים $latex {0&lt;p&lt;q \le n}$ שעבורם $latex {10^p=10^q}$. נכתוב זאת</span>
+</p>
 
-  * &lt;p style="direction: rtl;"&gt;
-      &lt;span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;"&gt;אם $latex {a,b,c \in \Phi}$ ו-$latex {a\cdot b=a\cdot c}$ אז $latex {b=c}$.&lt;/span&gt;
-    &lt;/p&gt;
-    
-    &lt;p style="direction: rtl;"&gt;
-      &lt;span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;"&gt;(הסיבה: $latex {a\cdot ((b-c)(mod~n))=0(mod~ n)}$, ומכיוון ש-$latex {a}$ זר ל-$latex {n}$ זה מחייב ש-$latex {b-c=0(mod~ n)}$, שפירושו ש-$latex {b=c}$.)&lt;/span&gt;
-    &lt;/p&gt;&lt;/ol&gt; 
+<p style="direction: rtl;" align="center">
+  <span style="font-family: arial, helvetica, sans-serif;">$latex \displaystyle 10^p\cdot (10^{q-p})=10^p$</span>
+</p>
 
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;נסתכל עכשיו בחזקות של $latex {10}$ לגבי פעולת הכפל מודולו $latex {n}$. שוב, לפי עקרון שובך היונים, קיימים $latex {0&lt;p&lt;q \le n}$ שעבורם $latex {10^p=10^q}$. נכתוב זאת&lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;">לפי ההבחנה השנייה לעיל, משמעות הדבר היא ש-$latex {10^{q-p}\equiv 1(mod~n)}$. אם נסמן את $latex {q-p}$ ב-$latex {m}$, משמעות הדבר היא ש-$latex {n}$ מחלק את $latex {999\ldots 9}$, מספר שבו $latex {m}$ תשיעיות. </span>
+</p>
 
-&lt;p style="direction: rtl;" align="center"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;$latex \displaystyle 10^p\cdot (10^{q-p})=10^p$&lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;">
+  <span style="font-family: arial, helvetica, sans-serif;">למשפט 2 יש מסקנה מעניינת. על פיו אם $latex {n}$ זר ל-$latex {10}$ אז קיים מספר $latex {p}$ ש-$latex {n\times p=999\ldots 9}$, נאמר $latex {m}$ תשיעיות. על ידי הוספת אפסים לפניו, אם צריך, אפשר לכתוב את $latex {p}$ בייצוג העשרוני שלו כמספר עם $latex {m}$ ספרות, נאמר</span>
+</p>
 
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;"&gt;לפי ההבחנה השנייה לעיל, משמעות הדבר היא ש-$latex {10^{q-p}\equiv 1(mod~n)}$. אם נסמן את $latex {q-p}$ ב-$latex {m}$, משמעות הדבר היא ש-$latex {n}$ מחלק את $latex {999\ldots 9}$, מספר שבו $latex {m}$ תשיעיות. &lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;" align="center">
+  <span style="font-family: arial, helvetica, sans-serif;">$latex \displaystyle p=a_1a_2 \ldots a_m$</span>
+</p>
 
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;למשפט 2 יש מסקנה מעניינת. על פיו אם $latex {n}$ זר ל-$latex {10}$ אז קיים מספר $latex {p}$ ש-$latex {n\times p=999\ldots 9}$, נאמר $latex {m}$ תשיעיות. על ידי הוספת אפסים לפניו, אם צריך, אפשר לכתוב את $latex {p}$ בייצוג העשרוני שלו כמספר עם $latex {m}$ ספרות, נאמר&lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;">
+  <span style="font-family: arial, helvetica, sans-serif;">ואז, בהעברת אגפים,</span>
+</p>
 
-&lt;p style="direction: rtl;" align="center"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;$latex \displaystyle p=a_1a_2 \ldots a_m$&lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;" align="center">
+  <span style="font-family: arial, helvetica, sans-serif;">$latex \displaystyle \frac{1}{n}=\frac{p}{999\ldots 9}=\frac{p=a_1a_2 \ldots a_m}{999\ldots 9}$</span>
+</p>
 
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;ואז, בהעברת אגפים,&lt;/span&gt;
-&lt;/p&gt;
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;">משמעות הדבר היא שכאשר מפתחים את $latex {\frac{1}{n}}$ לשבר עשרוני על ידי חילוק, המזור שלו מתחיל כבר מן האיבר הראשון. </span>
+</p>
 
-&lt;p style="direction: rtl;" align="center"&gt;
-  &lt;span style="font-family: arial, helvetica, sans-serif;"&gt;$latex \displaystyle \frac{1}{n}=\frac{p}{999\ldots 9}=\frac{p=a_1a_2 \ldots a_m}{999\ldots 9}$&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;"&gt;משמעות הדבר היא שכאשר מפתחים את $latex {\frac{1}{n}}$ לשבר עשרוני על ידי חילוק, המזור שלו מתחיל כבר מן האיבר הראשון. &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p style="direction: rtl;"&gt;
-  &lt;span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;"&gt;יש להבין שלא כל שבר עשרוני הוא כזה. הנה דוגמה לשבר עשרוני שאינו כזה: $latex {0.000232323&amp;#8230;}$. המחזור כאן מתחיל לא מן הספרה הראשונה אחרי הנקודה. מה שהראינו הוא שמספר כזה אינו יכול להיות מהצורה $latex {\frac{1}{n}}$ עבור $latex {n}$ זר ל-$latex {100}$. ל-$latex {n}$ כזה יכולה (למשל) להיות הצורה $latex {0.00023000230002300023&amp;#8230;}$, אבל לא $latex {0.000232323&amp;#8230;}$. מעניין, לא?&lt;/span&gt;
-&lt;/p&gt;
-</code></pre></div></div>
+<p style="direction: rtl;">
+  <span style="font-size: 14px; line-height: 1.5em; font-family: arial, helvetica, sans-serif;">יש להבין שלא כל שבר עשרוני הוא כזה. הנה דוגמה לשבר עשרוני שאינו כזה: $latex {0.000232323&#8230;}$. המחזור כאן מתחיל לא מן הספרה הראשונה אחרי הנקודה. מה שהראינו הוא שמספר כזה אינו יכול להיות מהצורה $latex {\frac{1}{n}}$ עבור $latex {n}$ זר ל-$latex {100}$. ל-$latex {n}$ כזה יכולה (למשל) להיות הצורה $latex {0.00023000230002300023&#8230;}$, אבל לא $latex {0.000232323&#8230;}$. מעניין, לא?</span>
+</p>
 
   </div><div class="PageNavigation">
     
@@ -233,12 +217,12 @@
     
       <a class="next" href="/2014/05/01/eratosthenes-legendre-sieve/">הנפה של ארטוסטנס-לז'נדר &raquo;</a>
     
-  </div><a class="u-url" href="/2014/05/01/strange-fact-three-proofs/" hidden></a>
+  </div><a class="u-url" href="/netgar/2014/05/01/strange-fact-three-proofs/" hidden></a>
 </article>
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <data class="u-url" href="/netgar/"></data>
 
   <div class="wrapper">
 
