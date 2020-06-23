@@ -1,5 +1,6 @@
 ---
 layout: scans
+permalink: /scans/quarterly/
 title: "רבעון למתמטיקה"
 volumes:
     - title: "כרך 1"

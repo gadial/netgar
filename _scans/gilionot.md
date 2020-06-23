@@ -1,5 +1,6 @@
 ---
 layout: scans
+permalink: /scans/gilionot/
 title: "גליונות למתמטיקה"
 volumes:
     - title: "כרך א"

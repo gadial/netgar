@@ -1,5 +1,6 @@
 ---
 layout: scans
+permalink: /scans/pages_math_physics/
 title: "דפים למתמטיקה ופיזיקה"
 volumes:
 - title: "כרך א"
