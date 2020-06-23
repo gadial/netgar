@@ -4,7 +4,7 @@ title: הוכחתו של Joyal לנוסחת Cayley
 date: 2015-06-30T22:03:13+03:00
 author:
   - 'Gyu Eun Lee and Doron Zeilberger, Rutgers University תרגם ועיבד: רון הולצמן, הטכניון'
-excerpt: '<p style="direction: rtl;"><img class="  wp-image-2789 alignright" src="http://net-gar.net/wp-content/uploads/2015/06/grapy2.png" alt="grapy2" width="151" height="84" />טוב לחזור לאותו משפט מזוויות שונות. בגיליון 14 תיאר אליהו לוי הוכחה של משפט קיילי, על מספור עצים בגרפים. במאמר הזה תינתן הוכחה נוספת. הכותבים הם הפעם גיו יון לי ודורון ציילברגר, בתרגומו ובעיבודו של רון הולצמן מן הפקולטה למתמטיקה בטכניון.</p>'
+excerpt: '<p style="direction: rtl;"><img class="  wp-image-2789 alignright" src="{{site.baseurl}}/assets/img/2015/06/grapy2.png" alt="grapy2" width="151" height="84" />טוב לחזור לאותו משפט מזוויות שונות. בגיליון 14 תיאר אליהו לוי הוכחה של משפט קיילי, על מספור עצים בגרפים. במאמר הזה תינתן הוכחה נוספת. הכותבים הם הפעם גיו יון לי ודורון ציילברגר, בתרגומו ובעיבודו של רון הולצמן מן הפקולטה למתמטיקה בטכניון.</p>'
 layout: post
 guid: http://net-gar.net/?p=2752
 permalink: '/2015/06/30/joyal-proof-of-cayley-formula/'
@@ -27,7 +27,7 @@ place: 2
 </p>
 
 <p style="direction: rtl; text-align: center;">
-  <img class="aligncenter  wp-image-2759" src="http://net-gar.net/wp-content/uploads/2015/06/grapy1.png" alt="grapy1" width="596" height="191" />איור 1
+  <img class="aligncenter  wp-image-2759" src="{{site.baseurl}}/assets/img/2015/06/grapy1.png" alt="grapy1" width="596" height="191" />איור 1
 </p>
 
 <p style="direction: rtl;">
@@ -249,7 +249,7 @@ place: 2
 </p>
 
 <p style="direction: rtl; text-align: center;">
-  <img class="aligncenter  wp-image-2789" src="http://net-gar.net/wp-content/uploads/2015/06/grapy2.png" alt="grapy2" width="467" height="260" />
+  <img class="aligncenter  wp-image-2789" src="{{site.baseurl}}/assets/img/2015/06/grapy2.png" alt="grapy2" width="467" height="260" />
 </p>
 
 <p style="direction: rtl; text-align: center;">
@@ -301,7 +301,7 @@ place: 2
 </p>
 
 <p style="direction: rtl; text-align: center;">
-  <img class="aligncenter size-full wp-image-2788" src="http://net-gar.net/wp-content/uploads/2015/06/grapy3.png" alt="grapy3" width="542" height="336" />
+  <img class="aligncenter size-full wp-image-2788" src="{{site.baseurl}}/assets/img/2015/06/grapy3.png" alt="grapy3" width="542" height="336" />
 </p>
 
 <p style="direction: rtl; text-align: center;">
@@ -333,7 +333,7 @@ place: 2
 </p>
 
 <p style="direction: rtl;">
-  <img class="aligncenter size-full wp-image-2787" src="http://net-gar.net/wp-content/uploads/2015/06/grapy4.png" alt="grapy4" width="637" height="234" />
+  <img class="aligncenter size-full wp-image-2787" src="{{site.baseurl}}/assets/img/2015/06/grapy4.png" alt="grapy4" width="637" height="234" />
 </p>
 
 <p style="direction: rtl; text-align: center;">

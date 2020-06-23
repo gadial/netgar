@@ -337,7 +337,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3557&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles1_dec15.png&quot; alt=&quot;puzzles1_dec15&quot; width=&quot;511&quot; height=&quot;206&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3557&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles1_dec15.png&quot; alt=&quot;puzzles1_dec15&quot; width=&quot;511&quot; height=&quot;206&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -349,7 +349,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3558&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles2_dec15.png&quot; alt=&quot;puzzles2_dec15&quot; width=&quot;228&quot; height=&quot;220&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3558&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles2_dec15.png&quot; alt=&quot;puzzles2_dec15&quot; width=&quot;228&quot; height=&quot;220&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -400,7 +400,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3559&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles3_dec15-1024x430.png&quot; alt=&quot;puzzles3_dec15&quot; width=&quot;632&quot; height=&quot;265&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3559&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles3_dec15-1024x430.png&quot; alt=&quot;puzzles3_dec15&quot; width=&quot;632&quot; height=&quot;265&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -420,11 +420,11 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3560&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/puzzles4_dec15.png&quot; alt=&quot;puzzles4_dec15&quot; width=&quot;532&quot; height=&quot;496&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3560&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/puzzles4_dec15.png&quot; alt=&quot;puzzles4_dec15&quot; width=&quot;532&quot; height=&quot;496&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3566&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/sol1_last-drawing.jpg&quot; alt=&quot;sol1_last drawing&quot; width=&quot;414&quot; height=&quot;414&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3566&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/sol1_last-drawing.jpg&quot; alt=&quot;sol1_last drawing&quot; width=&quot;414&quot; height=&quot;414&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -953,7 +953,7 @@
   הצעד הראשון נעשה בידי לוגיקאי אנגלי בשם ג'ורג' בול. לבול לא היו חיים קלים. כנער נאלץ לפרנס את משפחתו בשיעורים פרטיים, וכך לא למד בצורה מסודרת בעצמו: הוא היה אוטודידקט. לאחר קריירה לא ארוכה מת בגיל כחמישים מדלקת ריאות, שהוחמרה בטיפולים של אמבטיות קרות בהמלצת אשתו שהאמינה ש&quot;התרופה צריכה להיות דומה לגורם למחלה&quot;.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3442&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/George_Boole_color.jpg&quot; alt=&quot;&quot; width=&quot;188&quot; height=&quot;252&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3442&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/George_Boole_color.jpg&quot; alt=&quot;&quot; width=&quot;188&quot; height=&quot;252&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
   ג׳ורג׳ בול, 1815 - 1864
@@ -1046,7 +1046,7 @@
   החלטתי לחזור למכון וייצמן, לעשות דוקטורט. בחרתי כמנחה בהרי דים, חבר סגל צעיר בפקולטה. סיימתי את הדוקטורט ארבע שנים אחר כך, בגיל 26, שהוא גיל צעיר לישראלי ששירת בצבא.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3438 &quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/Doron_Zeilberger_circa_2005-228x300.jpg&quot; alt=&quot;&quot; width=&quot;199&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-3438 &quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/Doron_Zeilberger_circa_2005-228x300.jpg&quot; alt=&quot;&quot; width=&quot;199&quot; height=&quot;262&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
   &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1113,7 +1113,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3427&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles1_nov15.png&quot; alt=&quot;puzzles1_nov15&quot; width=&quot;660&quot; height=&quot;130&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3427&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles1_nov15.png&quot; alt=&quot;puzzles1_nov15&quot; width=&quot;660&quot; height=&quot;130&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1149,7 +1149,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: center;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3428&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles2_nov15.png&quot; alt=&quot;puzzles2_nov15&quot; width=&quot;290&quot; height=&quot;167&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3428&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles2_nov15.png&quot; alt=&quot;puzzles2_nov15&quot; width=&quot;290&quot; height=&quot;167&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1197,7 +1197,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3497 size-full&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/11/Screen-Shot-2015-11-08-at-11.09.15.png&quot; alt=&quot;&quot; width=&quot;247&quot; height=&quot;208&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3497 size-full&quot; src=&quot;{{site.baseurl}}/assets/img/2015/11/Screen-Shot-2015-11-08-at-11.09.15.png&quot; alt=&quot;&quot; width=&quot;247&quot; height=&quot;208&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
@@ -1213,7 +1213,7 @@
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;
-  &lt;img class=&quot;aligncenter wp-image-3430&quot; src=&quot;http://net-gar.net/wp-content/uploads/2015/10/puzzles3_nov15.png&quot; alt=&quot;puzzles3_nov15&quot; width=&quot;572&quot; height=&quot;237&quot; /&gt;
+  &lt;img class=&quot;aligncenter wp-image-3430&quot; src=&quot;{{site.baseurl}}/assets/img/2015/10/puzzles3_nov15.png&quot; alt=&quot;puzzles3_nov15&quot; width=&quot;572&quot; height=&quot;237&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p style=&quot;direction: rtl; text-align: right;&quot;&gt;

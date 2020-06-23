@@ -4,7 +4,7 @@ title: חישוב מספרי Fibonacci בעזרת פונקציות יוצרות
 date: 2015-11-01T11:45:24+02:00
 author:
   - רוס פינסקי
-excerpt: '<p style="direction: rtl; text-align: right;"><img class="alignright wp-image-3483 " src="http://net-gar.net/wp-content/uploads/2015/10/Fibonacci-150x150.jpg" alt="Fibonacci" width="123" height="123" />סדרת פיבונצ’י היא אחת הסדרות המפורסמות ביותר במתמטיקה. במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי בסדרת פיבונצ’י בעזרת כלי הנקרא פונקציות יוצרות.</p>'
+excerpt: '<p style="direction: rtl; text-align: right;"><img class="alignright wp-image-3483 " src="{{site.baseurl}}/assets/img/2015/10/Fibonacci-150x150.jpg" alt="Fibonacci" width="123" height="123" />סדרת פיבונצ’י היא אחת הסדרות המפורסמות ביותר במתמטיקה. במאמר הזה נמצא נוסחה מפורשת לאיבר הכללי בסדרת פיבונצ’י בעזרת כלי הנקרא פונקציות יוצרות.</p>'
 layout: post
 guid: http://net-gar.net/?p=3449
 permalink: '/2015/11/01/computing-fibonacci-using-generating-functions/'

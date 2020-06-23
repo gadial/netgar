@@ -5,7 +5,7 @@ date: 2014-01-27T09:24:02+02:00
 author:
   - רון הולצמן
 excerpt: |
-  <img class="alignright" style="text-align: right;" alt="" src="http://net-gar.net/wp-content/uploads/2013/10/220px-PeterFrankl.jpg" width="121" height="83" />
+  <img class="alignright" style="text-align: right;" alt="" src="{{site.baseurl}}/assets/img/2013/10/220px-PeterFrankl.jpg" width="121" height="83" />
   <p style="text-align: right;">הבעיה הקומבינטורית עליה אכתוב כאן היא קלה לניסוח והבנה, אך ככל הנראה קשה מאוד לפתרון. היא ידועה בשם  "Union-closed conjecture", ונוסחה ע"י המתמטיקאי Peter Frankl בשנת 1979 (אם כי, לפי עדויות מסוימות, היתה ידועה עוד קודם).</p>
 layout: post
 guid: http://gadial.net/etgar/?p=275

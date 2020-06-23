@@ -29,19 +29,19 @@ place: 3
 
 על פניו זה נשמע שאנחנו מאוד מוגבלים עם הכלים הללו ולא יכולים לעשות יותר מדי, אבל מסתבר שאפשר לעשות הרבה מאוד דברים, וזה בהחלט מפתיע. למשל, קל מאוד להעביר אנך לישר נתון: לוקחים שתי נקודות על הישר ומעבירים שני מעגלים, כך שכל אחד מהם עובר דרך אחת הנקודות ומרכזו בנקודה השניה. שני המעגלים הללו עומדים להיחתך בשתי נקודות; נעביר קו ישר דרך שתי הנקודות הללו והופס - קיבלנו אנך לישר המקורי. הנה איך כל זה נראה בציור:
 
-[<img class="aligncenter size-full wp-image-324" alt="PerpConst" src="http://gadial.net/etgar/wp-content/uploads/2013/10/PerpConst.png" width="500" height="368" />](http://gadial.net/etgar/wp-content/uploads/2013/10/PerpConst.png)
+[<img class="aligncenter size-full wp-image-324" alt="PerpConst" src="{{site.baseurl}}/assets/img/2013/10/PerpConst.png" width="500" height="368" />]({{site.baseurl}}/assets/img/2013/10/PerpConst.png)
 
 למה זה עובד? ובכן, הנה דרך אחת לראות את זה: נתבונן בקווים המחברים את הנקודות שעל הישר שממנו התחלנו, עם נקודות החיתוך של המעגלים. כל קו כזה הוא רדיוס של אחד מהמעגלים, ולשני המעגלים אותו הרדיוס. מסקנה: ארבעת הקווים הללו הם מאותו האורך, ולכן ביחד הם יוצרים מעוין. אחד מהאלכסונים של המעוין הוא הישר שממנו התחלנו, והשני הוא הישר שעובר דרך שתי נקודות החיתוך של המעגלים; כעת נשתמש במשפט ידוע מגיאומטריה שקובע שהאלכסונים במעוין מאונכים זה לזה, וסיימנו.
 
-[<img class="aligncenter size-full wp-image-325" alt="PerpConst2" src="http://gadial.net/etgar/wp-content/uploads/2013/10/PerpConst2.png" width="500" height="353" />](http://gadial.net/etgar/wp-content/uploads/2013/10/PerpConst2.png)
+[<img class="aligncenter size-full wp-image-325" alt="PerpConst2" src="{{site.baseurl}}/assets/img/2013/10/PerpConst2.png" width="500" height="353" />]({{site.baseurl}}/assets/img/2013/10/PerpConst2.png)
 
 וזה רק קצה הקרחון של מה שאפשר לעשות. המשתמש Aldoaldoz בויקיפדיה האנגלית יצר כמה סרטונים נפלאים שמציגים בניות אפשריות. למשל, בניה של ריבוע (כאן האתגר גדול יותר מסתם לבנות ישר מאונך; צריך לבנות קווים מאונכים זה לזה שכולם באותו האורך):
 
-[<img class="aligncenter size-full wp-image-327" alt="Straight_Square_Inscribed_in_a_Circle_240px" src="http://gadial.net/etgar/wp-content/uploads/2013/10/Straight_Square_Inscribed_in_a_Circle_240px.gif" width="240" height="240" />](http://gadial.net/etgar/wp-content/uploads/2013/10/Straight_Square_Inscribed_in_a_Circle_240px.gif)
+[<img class="aligncenter size-full wp-image-327" alt="Straight_Square_Inscribed_in_a_Circle_240px" src="{{site.baseurl}}/assets/img/2013/10/Straight_Square_Inscribed_in_a_Circle_240px.gif" width="240" height="240" />]({{site.baseurl}}/assets/img/2013/10/Straight_Square_Inscribed_in_a_Circle_240px.gif)
 
 והנה תעלול אחר - אנחנו מתחילים עם קטע, ומחלקים אותו לשלושה חלקים - דהיינו, אנחנו "גוזרים" ממנו קטע שאורכו הוא שליש מאורך הקטע המקורי:
 
-[<img class="aligncenter size-full wp-image-326" alt="Trisectsegment" src="http://gadial.net/etgar/wp-content/uploads/2013/10/Trisectsegment.gif" width="500" height="280" />](http://gadial.net/etgar/wp-content/uploads/2013/10/Trisectsegment.gif)
+[<img class="aligncenter size-full wp-image-326" alt="Trisectsegment" src="{{site.baseurl}}/assets/img/2013/10/Trisectsegment.gif" width="500" height="280" />]({{site.baseurl}}/assets/img/2013/10/Trisectsegment.gif)
 
 אם אתם רוצים להשתשע במשחקים הללו בעצמכם, תוכנה נוחה מאוד לשימוש שמאפשרת לבצע בדיוק את הדברים הללו נקראת Geogebra וזמינה בחינם [כאן](http://www.geogebra.org/cms/en/).
 
@@ -59,7 +59,7 @@ place: 3
 
 הבעיה השלישית נראית מנותקת לגמרי ממספרים - איך נעבור מזווית לאורך של צלע? כאן נחלצת לעזרתנו הטריגונומטריה. הדרך הפשוטה ביותר להסביר זאת היא על ידי התבוננות באיור הבא:
 
-[<img class="aligncenter size-full wp-image-328" alt="Trigonometry_triangle" src="http://gadial.net/etgar/wp-content/uploads/2013/10/Trigonometry_triangle.png" width="176" height="271" />](http://gadial.net/etgar/wp-content/uploads/2013/10/Trigonometry_triangle.png)
+[<img class="aligncenter size-full wp-image-328" alt="Trigonometry_triangle" src="{{site.baseurl}}/assets/img/2013/10/Trigonometry_triangle.png" width="176" height="271" />]({{site.baseurl}}/assets/img/2013/10/Trigonometry_triangle.png)
 
 במשולש ישר זווית, הצלע שנמצאת מול הזווית בת ה-90 מעלות נקראת **היתר** של המשולש. שתי הצלעות האחרות נקראת "אנכים". כעת, הפונקציות המתמטיות של סינוס וקוסינוס ניתנות להגדרה עבור זוויות במשולש באופן הבא: **סינוס** של זווית במשולש (שאינה הזווית בת 90 המעלות) הוא היחס בין אורך האנך שנמצא **מול** הזווית (כלומר, לא נוגע בה) ובין אורך היתר, ואילו **קוסינוס** הזווית הוא היחס בין אורך האנך שנמצא **ליד** הזווית ובין אורך היתר. כלומר, עבור המשולש שבאיור, $latex \sin\alpha=\frac{a}{c}$ ו-$latex \cos\alpha=\frac{b}{c}$.
 
