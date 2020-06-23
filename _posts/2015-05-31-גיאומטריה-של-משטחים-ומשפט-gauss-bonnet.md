@@ -39,12 +39,9 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="alignright  wp-image-2677" src="{{site.baseurl}}/assets/img/2015/05/plane-300x155.png" alt="plane" width="192" height="100" /> <img class="alignright  wp-image-2678" src="{{site.baseurl}}/assets/img/2015/05/cyli.png" alt="cyli" width="83" height="107" /> <img class="alignright  wp-image-2676" src="{{site.baseurl}}/assets/img/2015/05/shape.png" alt="shape" width="121" height="112" /><img class="  wp-image-2679 alignnone" src="{{site.baseurl}}/assets/img/2015/05/face.png" alt="face" width="92" height="117" />
+  <img class="alignright  wp-image-2677" src="{{site.baseurl}}/assets/img/2015/05/plane.png" alt="plane" width="192" height="100" /> <img class="alignright  wp-image-2678" src="{{site.baseurl}}/assets/img/2015/05/cyli.png" alt="cyli" width="83" height="107" /> <img class="alignright  wp-image-2676" src="{{site.baseurl}}/assets/img/2015/05/shape.png" alt="shape" width="121" height="112" /><img class="  wp-image-2679 alignnone" src="{{site.baseurl}}/assets/img/2015/05/face.png" alt="face" width="92" height="117" />
 </p>
-
-<p style="direction: rtl; text-align: center;">
-  $latex מישור\qquad \qquad גליל\qquad \qquad פני \: כדור \qquad \qquad מסכה \qquad$
-</p>
+מישור           גליל            פני כדור               מישור
 
 <p style="direction: rtl; text-align: right;">
   אילו מבין המשטחים שבציור אפשר <i>לעוות</i> זה לזה (כלומר להפוך זה לזה בלי לחתוך ובלי להדביק) ואילו אי אפשר?
@@ -75,7 +72,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class=" size-medium wp-image-2686 aligncenter" src="{{site.baseurl}}/assets/img/2015/05/pic1-300x145.png" alt="pic1" width="300" height="145" />
+  <img class=" size-medium wp-image-2686 aligncenter" src="{{site.baseurl}}/assets/img/2015/05/pic1.png" alt="pic1" width="300" height="145" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
@@ -103,7 +100,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2687" src="{{site.baseurl}}/assets/img/2015/05/pic2-300x285.png" alt="pic2" width="300" height="285" />
+  <img class="aligncenter size-medium wp-image-2687" src="{{site.baseurl}}/assets/img/2015/05/pic2.png" alt="pic2" width="300" height="285" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
@@ -119,7 +116,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2688" src="{{site.baseurl}}/assets/img/2015/05/pic3-300x126.png" alt="pic3" width="300" height="126" />
+  <img class="aligncenter size-medium wp-image-2688" src="{{site.baseurl}}/assets/img/2015/05/pic3.png" alt="pic3" width="300" height="126" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
@@ -139,15 +136,15 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: center;">
-  <img class="aligncenter size-medium wp-image-2690" src="{{site.baseurl}}/assets/img/2015/05/zero-300x104.png" alt="zero" width="300" height="104" />גירעון זוויתי אפס
+  <img class="aligncenter size-medium wp-image-2690" src="{{site.baseurl}}/assets/img/2015/05/zero.png" alt="zero" width="300" height="104" />גירעון זוויתי אפס
 </p>
 
 <p style="direction: rtl; text-align: center;">
-  <img class="aligncenter size-medium wp-image-2689" src="{{site.baseurl}}/assets/img/2015/05/positive-300x109.png" alt="positive" width="300" height="109" />גירעון זוויתי חיובי
+  <img class="aligncenter size-medium wp-image-2689" src="{{site.baseurl}}/assets/img/2015/05/positive.png" alt="positive" width="300" height="109" />גירעון זוויתי חיובי
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2691" src="{{site.baseurl}}/assets/img/2015/05/native-300x114.png" alt="native" width="300" height="114" />
+  <img class="aligncenter size-medium wp-image-2691" src="{{site.baseurl}}/assets/img/2015/05/native.png" alt="native" width="300" height="114" />
 </p>
 
 <p style="direction: rtl; text-align: center;">
@@ -263,7 +260,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2697" src="{{site.baseurl}}/assets/img/2015/05/7_6-300x113.png" alt="7_6" width="300" height="113" />
+  <img class="aligncenter size-medium wp-image-2697" src="{{site.baseurl}}/assets/img/2015/05/7_6.png" alt="7_6" width="300" height="113" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
@@ -339,7 +336,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2698" src="{{site.baseurl}}/assets/img/2015/05/8_6-300x88.png" alt="8_6" width="300" height="88" />
+  <img class="aligncenter size-medium wp-image-2698" src="{{site.baseurl}}/assets/img/2015/05/8_6.png" alt="8_6" width="300" height="88" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
@@ -347,7 +344,7 @@ place: 3
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  <img class="aligncenter size-medium wp-image-2700" src="{{site.baseurl}}/assets/img/2015/05/9_6-300x101.png" alt="9_6" width="300" height="101" />
+  <img class="aligncenter size-medium wp-image-2700" src="{{site.baseurl}}/assets/img/2015/05/9_6.png" alt="9_6" width="300" height="101" />
 </p>
 
 <p style="direction: rtl; text-align: right;">
