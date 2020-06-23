@@ -215,7 +215,7 @@ place: 2
 </p>
 
 <p style="direction: rtl; text-align: right;">
-  (הדבר נובע גם מנוסחת ויאטה &#8212; מכפלת השורשים היא האיבר החופשי.)
+  (הדבר נובע גם מנוסחת ויאטה — מכפלת השורשים היא האיבר החופשי.)
 </p>
 
 <p style="direction: rtl; text-align: right;">
