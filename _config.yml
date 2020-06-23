@@ -11,3 +11,8 @@ plugins:
 collections:
   scans:
     output: true
+
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
